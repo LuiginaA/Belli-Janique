@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<!-- Bootstrap -->
+<!-- Bootstrap 5 CDN Links -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -19,6 +19,26 @@
 
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
+<!-- Box icons Link -->
+<!-- 
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
+
+<!-- Remix icons Link -->
+
+    <!-- <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    /> -->
+
+<!-- js Link -->
+
+    <!-- <script src="js/script.js"></script>   -->
+
+<!-- Animation Link -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <!-- Custom File's Link -->
 
     <link rel="stylesheet" href="assets/css/style.css">  
@@ -28,14 +48,23 @@
 </head>
 
 <body>
+
+<!-- header section starts -->
+
     <header>
+
         <nav class="navbar navbar-expand-lg">
             <div class="container">
+
+                <a href="#" class="logo">
+                    <img src="assets/image/logo.png" alt="">
+                </a>
+
                 <a class="navbar-brand" href="#">Dr Janique Belli</a>
-                
+
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbar-content">
-                    <i class="fas fa-stream text-white"></i>
+                    <i class="fas fa-stream text-#938270"></i>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbar-content">
@@ -43,7 +72,8 @@
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" style=" 
+                                color: #938270" aria-current="page" href="#">Home</a>
                         </li>
                         
                         <li class="nav-item dropdown">
@@ -53,24 +83,24 @@
                                 <ul class="dropdown-menu shadow">
                                 
                                     <li><a class="dropdown-item" href="#">Dr Janique</a></li>
-                                    <li>
+                                    <!-- <li>
                                         <hr class="dropdown-divider">
-                                    </li>
+                                    </li> -->
                                     <li><a class="dropdown-item" href="blog.html">Why Choose</a></li>
-                                    <li>
+                                    <!-- <li>
                                         <hr class="dropdown-divider">
-                                    </li>
+                                    </li> -->
                                     <li class="dropstart">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Why Choose</a>
-                                    <li>
+                                    <!-- <li>
                                         <hr class="dropdown-divider">
-                                    </li>
+                                    </li> -->
                                         <ul class="dropdown-menu shadow">
                                         
                                             <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                            <li>
+                                            <!-- <li>
                                                 <hr class="dropdown-divider">
-                                            </li>
+                                            </li> -->
                                             <li><a class="dropdown-item" href=""> Third level 2</a></li>
                                         
                                             <li><a class="dropdown-item" href=""> Third level 3</a></li>
@@ -145,32 +175,30 @@
                                     <li class="dropend">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> F A Q
                                     </a>
-<!--                                     
-                                        <ul class="dropdown-menu shadow">
+                                    
+                                    
                                         
-                                            <li><a class="dropdown-item" href=""> Back Pain</a></li>
+                                            <li><a class="dropdown-item" href=""> Blog</a></li>
                                         
-                                            <li><a class="dropdown-item" href=""> Headaches</a></li>
+                                            <li><a class="dropdown-item" href=""> ???</a></li>
                                         
-                                            <li><a class="dropdown-item" href=""> Neck Pain</a></li>
+                                            <li><a class="dropdown-item" href=""> ???</a></li>
                                         
-                                        <li><a class="dropdown-item" href=""> Hip Pain</a></li>
-                                        
-                                    </ul> -->
-                                </li>
+                                    <!-- </ul> 
+                                </li> -->
                                 
                                 <li class="dropend">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
                                         data-bs-auto-close="outside"> Your First Visit</a>
 
-                                    <!-- <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href=""> Leg Pain</a></li>
-                                        <li><a class="dropdown-item" href=""> Knee, Ankle & Foot</a></li>
-                                        <li><a class="dropdown-item" href="">  Shoulder & Elbow</a></li>
-                                        <li><a class="dropdown-item" href=""> Arm & Wrist</a></li>
-                                    </ul> -->
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item" href=""> Discuss</a></li>
+                                        <li><a class="dropdown-item" href=""> Assessment</a></li>
+                                        <li><a class="dropdown-item" href="">  Adjust</a></li>
+                                        <li><a class="dropdown-item" href=""> Book Follow up Appoint</a></li>
+                                    </ul> 
                                 </li>
-
+<!-- 
                                 <li class="dropend">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
                                         data-bs-auto-close="outside"> Blog </a>
@@ -181,7 +209,7 @@
                                         <li><a class="dropdown-item" href="">  Pinched Nerve</a></li>
                                         <li><a class="dropdown-item" href=""> Work, Sport Injuries or Accident</a></li>
 
-                                    </ul>
+                                    </ul> -->
                                 </li>
                             </ul>
                         </li>
@@ -211,12 +239,12 @@
                                 </li>
                             </ul>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                        </li>
                     
                     </ul>
-
-                        <button class="btn border-0" type="submit"> BOOK TODAY <strong>!</strong></button>
-
-                    </div>
                 </div>
             </div>
         </nav>
@@ -224,513 +252,295 @@
 
 <!------- Hero Quote Section ------->
 
-    <section class="quote-container my-2">
-        <div class="quote-con bg-color">   
-            <img src="assets/image/skeleton-jan.png" style=" width: 700px; height:800px" alt="">   
+    <section class="hero">
+
+        <div class="hero-text">
+     
+            <h5 data-aos="fade-right" data-aos-duration="1400">
+                "A bright smile lights up your face,<br>When your bones are in place!"
+            </h5>
+
+            <h1 data-aos="zoom-in-left" data-aos-duration="1400"data-aos-delay="200">You Deserve This!</h1> 
+            
+            <p data-aos="fade-right" data-aos-duration="1400"data-aos-delay="300">
+                &ldquo;The sky has never been the limit. We are our own limits.<br>It&rsquo;s then about breaking our personal limits and outgrowing ourselves to live our best
+                lives&rdquo;. <br> &#8764; Author Unknown &#8764;
+            </p>
+ 
+            <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">
+
+                <a href="#" class="btn">Book an Appointment Today ! </a>
+            
+            </div>
         </div>
 
-<div class="heading-quote">
-    <h3>Quote</h3>
-    <div class="paragraph-quote">
-    &ldquo;The sky has never been the limit. We are our own limits.<br>
-    It&rsquo;s
-    then about
-    breaking
-    our
-    personal limits and outgrowing ourselves to live our best
-    lives&rdquo;. - Author Unknown
-    </div>
+        <div class="hero-img" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1400" data-aos-delay="400"> 
+
+            <img src="assets/image/skeleton-Janique.png" alt="">
+
+        </div>
+
+</section>         
+
+
+        <section class="contact-container contact-con">
+            <div class="contactUs">
+                <div class="title">
+                    <h2>Get in Touch</h2>
+                </div>
+
+                <div class="contactBox">
+
+    <!-------------- Form Box ------>
+
+                    <div class="contact form">
+                        <h3>Send a Message</h3>
+
+                        <form>
+                            <div class="contactFormBox">
+                                <div class="row50">
+                                    <div class="contact-inputBox">
+                                        <span>First Name</span>
+                                        <input type="text" placeholder="John">
+                                    </div>
+
+                                    <div class="contact-inputBox">
+                                        <span>Last Name</span>
+                                        <input type="text" placeholder="Doe">
+                                    </div>
+                                </div>
+
+                                <div class="row50">
+                                    <div class="contact-inputBox">
+                                        <span>Email</span>
+                                        <input type="text" placeholder="johndoe@gmail.com">
+                                    </div>
+                                    <div class="contact-inputBox">
+                                        <span>Contact Number</span>
+                                        <input type="text" placeholder="+27 55 555 5555">
+                                    </div>
+                                </div>
+
+                                <div class="row100">
+                                    <div class="contact-inputBox">
+                                        <span>Message</span>
+                                        <textarea placeholder="Write your message here ...."></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row100">
+                                    <div class="contact-inputBox">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-------------- Info Box ------>
+
+                    <div class="contact info">
+                        <h3>Contact Info</h3>
+                        <div class="infoBoxContact">
+
+                            <div>
+                                <span>
+                                    <i class="fa fa-stethoscope" aria-hidden="true"></i> 
+                                  </span>
+                                <p>Dr Janique<br>Practice based at:
+                                </p>
+                            </div>
+
+                            <div>
+                                <span><ion-icon name="location"></ion-icon> </ion-icon></span>
+                                <p>
+                                    Natural Health Centre <br> 87 6th Street <br> Boksburg North <br>1459
+                                </p>
+                            </div>
+
+                            <div>
+                                <span><ion-icon name="mail"></ion-icon></span>
+                                <a href="mailto:janiquechiro@gmail.com">janiquechiro@gmail.com</a>
+                            </div>
+
+                            <div>
+                                <span><ion-icon name="call"></ion-icon></span>
+                                <a href="tel:+27835724444">+27 83 572 4444</a>
+                            </div>
+
+                            <!-------------- Social Media ------>
+
+                            <ul class="mediaIcons">
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-tiktok"></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-------------- Map Box ------>
+
+                    <div class="contact map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.76108651926!2d28.256632875162357!3d-26.204449063983628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9517ab8a940445%3A0xbcfcb55090fd806e!2sDr%20Janique%20Belli%20Chiropractic!5e0!3m2!1sen!2sit!4v1693130752699!5m2!1sen!2sit"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-------------- Clinico Appointment Section ------>
+
+                <section>
+                    <div class="appointment">
+                        <div class="title2">
+                            <h2>Schedule Your Online Appointment Today!</h2>
+                        </div>
+
+                        <div class="clinicoBox">
+
+                            <!-------------- Clinico Box Section ------>
+
+                            <div class="clinico bookings">
+                                <h3>Book Now!</h3>
+
+                                <div class="appointClinico">
+
+                                    <iframe id='cliniko-49363333'
+                                        src='https://dr-janique-chiropractic.au3.cliniko.com/bookings?embedded=true'
+                                        frameborder='0' scrolling='auto' width='100%' height='1000'
+                                        style='pointer-events: auto;'></iframe>
+
+                                </div>
+                              
+                                <h5>
+                                    It’s Time to Treat Yourself Right!"
+                                    </h5>
+                                <h6>Embrace It And</h6>
+                                <h3>"Claim the Care You Deserve"</h3>
+
+                            </div>
+
+                            <!-------------- Clinico Image1 Box ------>
+
+                            <section>
+                                <div class="imageBox">
+                                    <div class="care-image">
+                                        <h3>We don't just provide care,<br> We do care!</h3>
+                                        <div class="imageCare">
+                                            <div class="care">
+                                                <img class="care" src="assets/image/care.jpg" alt="care">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-------------- Clinico Image2 Box ------>
+
+                                <div class="imageBox2">
+                                    <div class="fun-image">
+                                        <h3>For a healthier life, choose<br> Chiropractic Care!</h3>
+                                        <div class="imageFun">
+                                            <div class="fun">
+                                                <img class="fun" src="assets/image/janfun.jpg" alt="fun">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+   
+
   
 
-    </section>
+    <div class="scroll " data-aos="zoom-out-down" data-aos-duration="1400"data-aos-delay="550">
+        <a href="#">
+
+             
+            <i class='fas fa-angle-double-down'>&ensp;Scroll&ensp;Down</i>
+        </a>
+    </div> 
+
 
     <footer class="bg-dark p-4 text-white text-center">
         <p class="p-0">Copyright <a href="#">© Lugina Argentin</a> All Rights Reserved</p>
     </footer>
 
     
-    
+
     
 <!-- Bootstrap 5 JS CDN Links -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 
-</body>
 
+    <!-- Font Awesome and Ion Icons Link  -->
+
+    <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+
+    
+    <!-- JS Link
+
+   <script src="script.js"></script>  -->
+
+     <!-- Animation Link -->  
+       
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+        offset:1,
+       });
+     </script>
+
+
+<!-- Clinico Link -->
+    <script type='text/javascript'>
+        window.addEventListener('message', function handleIFrameMessage(e) {
+            var clinikoBookings = document.getElementById('cliniko-49363333');
+            if (typeof e.data !== 'string') return;
+            if (e.data.search('cliniko-bookings-resize') > -1) {
+                var height = Number(e.data.split(':')[1]);
+                clinikoBookings.style.height = height + 'px';
+            }
+            e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
+        });
+    </script>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Bootstrap -->
-
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-<!-- Font Awesome & ion-icons -->
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/style.css">  -->
-
-    <!-- <title>Dr Janique</title> -->
-
-</head>
-
-<body>  -->
-<!-- 
-    <div class="header">
-        <div class="container-fluid gx-0"> -->
-
-<!------ Fixed Top Navbar Header Section ------->
-
-<!-- <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: salmon;">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">Dr Janique Belli</a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Your Doctor</a>
-          </li>
-
-     
-              <li><a class="dropdown-item" href="#">Another link</a></li>
-              <li><a class="dropdown-item" href="#">A third link</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="text-center arrow" href="#">Conditions Treated&nbsp;
-            <span>
-                <ion-icon name="caret-down"></ion-icon>
-            </span>
-            </a>
-            <ul class="sub-menu">
-                <li>
-                    <a class="arrow-forward"  href="#">Spinal Health&nbsp;
-                        <ion-icon name="caret-forward"></ion-icon>
-                    </a>
-
-                    <ul class="subMenu">
-                        <li>
-                            <a class="arrow-forward"   href="#">Back Pain&nbsp;&nbsp; 
-                            <ion-icon name="caret-forward"></ion-icon>
-                            </a>
-                        </li>
-
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Conditions Treated
-            </a>
-            
-            <ul class="dropdown-menu">
-             
-              <li class="nav-item dropend">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Spinal Health
-                </a>
-
-                <ul class="dropdown-menu">
-                  
-                    <li>   
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Back Pain
-                    </a>
-                  </li>
-
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-
-                   <li>
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Headaches
-                    </a>
-                   </li> 
-
-                   <ul class="dropdown-menu">
-             
-                    <li class="nav-item dropend">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Spinal Health  
-                      </a>
-                <li class="nav-item dropend">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Extremities
-                    </a>
-
-
-                <ul class="dropdown-menu">
-                  
-                    <li>   
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Back Pain
-                    </a>
-                  </li>
-
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-
-                   <li>
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Headaches
-                    </a>
-                   </li> 
-
-                   <li>
-                    <hr class="dropdown-divider">
-                   </li>
-
-                   <li>
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Neck Pain
-                    </a>
-                   </li> 
-
-                   <li>
-                    <hr class="dropdown-divider">
-                   </li>
-
-                   <li>
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Hip Pain
-                    </a>
-                   </li> 
-
-                   <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                    
-                
-                   
-                 
-                    <ul class="dropdown-menu">
-                        <li class="nav-item dropend">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
-                            </a>
-                    
-                         
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li class="nav-item dropend">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Link</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-</nav> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand title" href="#">dr janique</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Chiro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Conditions Treat
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#">Spinal</a>
-            
-                <ul class="dropdown-link sub-menu">
-                    <li>
-                        <a class="arrow-forward"   href="#">Back Pain&nbsp;&nbsp; 
-                        <ion-icon name="caret-forward"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="arrow-forward"  href="#">Headaches &nbsp;&nbsp;
-                        <ion-icon name="caret-forward"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="arrow-forward"  href="#">Neck Pain &nbsp;&nbsp;
-                        <ion-icon name="caret-forward"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="arrow-forward" href="#">Hip Pain&nbsp;&nbsp; 
-                        <ion-icon name="caret-forward"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-        
-            
-            
-            
-            </li>
-              <li><a class="dropdown-item" href="#">Extremities</a></li>
-              <li><a class="dropdown-item" href="#">Injuries</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              all you need to know
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">FAq</a></li>
-              <li><a class="dropdown-item" href="#">Your first visit</a></li>
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-
-          </li>
-
-          <li class="nav-item">
-            <a class="btn-navbar" href="#">Book an Appointment tody</a>
-          </li>
-        </ul>
-
-        
-      </div>
-    </div>
-  </nav> -->
-
-
-
-
-
-
-    <!-- <div class="hero-section"></div>
-    <h1>Hello, world!</h1> -->
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-          
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                
-                <div class="dropdown-menu p-2 border-0 shadow">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="#" class="text-dark text-decoration-none">
-                                <div class="d-flex p-2 align-items-center rounded-3">
-                                    <div class="icon fs-1 px-3 bg-warning-subtle rounded-3">
-                                        <i class="bi bi-tv"></i>
-                                    </div>
-                                    <div class="text px-3">
-                                        <h5>Add Text here</h5>
-                                        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <a href="" class="text-dark text-decoration-none">
-                                <div class="d-flex p-2 align-items-center rounded-3 ">
-                                    <div class="icon fs-1 px-3 bg-danger-subtle rounded-3">
-                                        <i class="bi bi-headphones"></i>
-                                    </div>
-                                    <div class="text px-3">
-                                        <h5>Add Text here</h5>
-                                        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <a href="" class="text-dark text-decoration-none">
-                                <div class="d-flex p-2 align-items-center rounded-3">
-                                    <div class="icon fs-1 px-3 bg-success-subtle rounded-3">
-                                        <i class="bi bi-smartphone"></i>
-                                    </div>    
-                                    <div class="text px-3">
-                                        <h5>Add Text here</h5>
-                                        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="" class="text-dark text-decoration-none">
-                                <div class="d-flex p-2 align-items-center rounded-3">
-                                    <div class="icon fs-1 px-3 bg-secondary-subtle rounded-3">
-                                        <i class="bi bi-smartwatch"></i>
-                                    </div>   
-                                    <div class="text px-3">
-                                        <h5>Add Text here</h5>
-                                        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="" class="text-dark text-decoration-none">
-                                <div class="d-flex p-2 align-items-center rounded-3">
-                                    <div class="icon fs-1 px-3 bg-tertiary-subtle rounded-3">   
-                                        <i class="bi bi-Laptop"></i>
-                                    </div>     
-                                    <div class="text px-3">
-                                        <h5>Add Text here</h5>
-                                        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <a href="" class="text-dark text-decoration-none">
-                                <div class="d-flex p-2 align-items-center rounded-3">
-                                    <div class="icon fs-1 px-3 bg-primary-subtle rounded-3">
-                                        <i class="bi bi-earbuds"></i>
-                                    </div>    
-                                    <div class="text px-3">
-                                        <h5>Add Text here</h5>
-                                        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
-  
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav> -->
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-</body>
-</html>   -->
 
