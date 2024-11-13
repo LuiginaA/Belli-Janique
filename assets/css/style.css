@@ -482,8 +482,8 @@ footer {
 footer .cont-foot {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  grid-gap: 25px;
+  grid-template-columns: 2.5fr 2fr 2.5fr 2fr;
+  grid-gap: 30px;
 }
 
 footer .cont-foot .sec h6 {
@@ -506,15 +506,25 @@ footer .cont-foot .sec ul li a {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 5px; 
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+footer .cont-foot .sec ul li a ion-icon,
+footer .cont-foot .quicklinks ul li a ion-icon {
+  color: var(--text-color-b);
+  font-size: 1.3rem;
+  padding-top: 0;
   text-decoration: none;
 }
 
 footer .cont-foot .quicklinks {
-  position: relative;   
+  position: relative; 
 }   
   
 footer .cont-foot .quicklinks ul li {
   list-style: none;
+
 }
   
 footer .cont-foot .quicklinks ul li a {
@@ -522,6 +532,13 @@ footer .cont-foot .quicklinks ul li a {
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
+}
+
+footer .cont-foot .quicklinks ul li a i {
+  color: var(--text-color-b);
+  font-size: 1.3rem;
+  padding-top: 0px;
+  text-decoration: none;
 }
 
 footer .wrapper .social-button {
@@ -535,11 +552,10 @@ footer .wrapper .social-button {
   display: inline-block; 
   height: 60px;
   width: 60px;
-  float: left;
+  float: left; 
   text-decoration: none;
   margin: 0 5px; 
   overflow: hidden;
-  background: #fff; 
   background: var(--bg-color-b);
   border-radius: 50px;
   cursor: pointer;
@@ -606,6 +622,18 @@ footer .wrapper .social-button:nth-child(3) span {
   color: #c32aa3;  
 }
 
+footer .sec .logo .logo-img {
+  position: relative;
+}
+
+footer .sec .logo .logo-img   {
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  transition: all .5s ease-in-out;
+}
+
 .foot .head-name h5 {
   width: 100%;
   color: var(--text-color-a);
@@ -646,13 +674,18 @@ footer .wrapper .social-button:nth-child(3) span {
     grid-gap:20px;
   }
 
+  footer .cont-foot .logo .logo-img {
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  
   .foot .head-name h5  {
     padding: 30px 15px 15px;
   }
 
-.copyrightText span {
-  padding: 30px 15px 15px;
-  }
+  .copyrightText span {
+    padding: 30px 15px 15px;
+    }
 
 }
 
@@ -664,9 +697,8 @@ footer .wrapper .social-button:nth-child(3) span {
     grid-template-columns: repeat(1, 1fr);
     grid-gap:20px;
   }
+
 }
-
-
 
 
 /* ---------------------------------Contact Us Section */
