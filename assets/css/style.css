@@ -545,20 +545,37 @@ ul.dropdown-menu {
 
 /* Media Queries Intro Section */
 
-@media(max-width: 992px) {
+@media(max-width: 920px) {
   .intro {
-    padding: 150px 10px 40px 40px;
-    width: 100%;
+    padding: 150px 10px 40px 40px;  
+justify-content: center;
+  } 
+
+  .description {
+    padding: 150px 100px 20px 20px;   
   }
 
   .description .textbox {
-    margin-left: 20px; 
-    margin-right: 25px;
-    margin-top: -180px;
+    margin-left: 5px; 
+    margin-right: 60px;
+    margin-top: -150px;
+    max-width: 480px;
   }
 
+  .description .textbox p {
+    width: 280px;
+    margin-top: 20px;
+    margin-right: 10px;
+    line-height: 2rem; 
+    color: var(--text-color-a);
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+
   .intro img {
-    margin-left: -1rem;
+    margin-left: 1rem;
     margin-top: -6rem;
   }  
 }
