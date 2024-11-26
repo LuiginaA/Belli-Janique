@@ -547,36 +547,38 @@ ul.dropdown-menu {
 
 @media(max-width: 920px) {
   .intro {
-    padding: 150px 10px 40px 40px;  
+    padding: 100px 10px 40px 40px;  
 justify-content: center;
   } 
 
   .description {
-    padding: 150px 100px 20px 20px;   
+    padding: 40px 100px 20px 20px;   
   }
 
   .description .textbox {
     margin-left: 5px; 
-    margin-right: 60px;
-    margin-top: -150px;
-    max-width: 480px;
+    margin-right: 50px;
+    margin-top: -40px;
+    max-width: 360px;
   }
 
   .description .textbox p {
-    width: 280px;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 0px;
+    margin-left: px;
     line-height: 2rem; 
     color: var(--text-color-a);
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 1rem;
+    padding: 20px;
   }
 
 
   .intro img {
-    margin-left: 1rem;
+    margin-left: 3rem;
     margin-top: -6rem;
+    z-index: 100;
   }  
 }
 
