@@ -474,7 +474,7 @@ ul.dropdown-menu {
   left: 0;
   right: 0px;
   height: 100%;
-  border-left: 4px solid var(--bg-color-d) ;
+  border-left: 4px solid var(--text-color-a) ;
   background-color: rgb(59, 58, 58);
   animation: text 5s infinite backwards steps(10);
   background-color: var(--bg-color-a)
@@ -559,7 +559,7 @@ ul.dropdown-menu {
 
 @media(max-width: 768px) {
   .intro {
-    padding: 150px 10px 40px 40px;
+    padding: 80px 10px 40px 40px;
   }
 
   .description {
@@ -637,7 +637,16 @@ ul.dropdown-menu {
     flex-direction: column;
     grid-template-columns: 1fr;
     width: 100%;
-    padding: 120px 20px 20px 20px;
+    padding: 10px;
+  }
+
+  .description .textbox p {
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0px;
   }
 
   .description .textbox h2 span:after {
@@ -650,6 +659,37 @@ ul.dropdown-menu {
     grid-template-columns: 1fr;
     margin-top: 3rem;
   }
+ }
+
+ @media(max-width: 440px) {
+  .description {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description .textbox {
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+  }
+  .description .textbox p {
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+  }
+
+
  }
 
  @media(max-width: 320px) {
