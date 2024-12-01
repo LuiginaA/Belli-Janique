@@ -642,7 +642,7 @@ ul.dropdown-menu {
 
   .description .textbox h2 span:after {
     border-left: 4px solid var(--text-color-b);
-    background-color: var(--bg-color-h);
+    background-color: var(--bg-color-d);
 }
 
   .intro img {
@@ -652,10 +652,7 @@ ul.dropdown-menu {
   }
  }
 
-
-
-
- media(max-width: 320px) {
+ @media(max-width: 320px) {
   .intro {
     padding: 50px 10px 30px 15px;
     width: 100%;
@@ -723,11 +720,10 @@ ul.dropdown-menu {
       left: 0;
       right: 0px;
       height: 100%;
-      border-left: 4px solid var(--bg-color-d) ;
+      border-left: 4px solid var(--text-color-f) ;
       background-color: rgb(59, 58, 58);
       animation: text 5s infinite backwards steps(10);
-      background-color:#F9F9F2;
-      /* background-color: var(--bg-color-d);  */
+      background-color: var(--bg-color-h); 
     }
   }
 
@@ -758,14 +754,13 @@ ul.dropdown-menu {
 .mission-content {
   max-width: 630px;
 } 
+
 .mission-content h1 {
   font-size: 40px;
   line-height: 1.2;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: 1s;   
- /* font-size: 50px; */
-
 } 
 
 .mission-content h3 {
@@ -785,7 +780,6 @@ ul.dropdown-menu {
 
 .mission-img {
   position: relative;
-  /* right: -25%; */
   right: -7%;  
   width: 450px;
   height: 450px;
@@ -957,7 +951,7 @@ ul.dropdown-menu {
     top: 0;
     width: 400px;
     height: 400px;
-    z-index: -100;
+    z-index: -1000;
   }
 
   .mission-img .rhombus {
@@ -966,7 +960,7 @@ ul.dropdown-menu {
     height: 100%;
     top: -180px;
     margin-left: 100px;
-    z-index: -100;
+    z-index: -1000;
   }
 
   .mission-img .rhombus img {
@@ -974,13 +968,15 @@ ul.dropdown-menu {
     top: -70px;
     left: 0px;
     max-width: 450px;
-    z-index: -100;
+    z-index: 1000;
   }
 
   .mission .rhombus2 {
     position: relative;
-    z-index: -1000;
-  }
+    top: -350px;
+    right: -650px;
+    z-index: -10000;
+  }  
 } 
 
 @media(max-width: 768px) {
@@ -1023,13 +1019,11 @@ ul.dropdown-menu {
     z-index: -1000;
   } 
 
-
   .mission-img .rhombus img {
     position: relative;
     top: 10px;
     left: 50px;
     width: 100%;
-
   } 
 
   .mission .rhombus2 {
@@ -1041,10 +1035,98 @@ ul.dropdown-menu {
     background-color: var(--bg-color-h); 
     transform: rotate(45deg);
     z-index: -10000;
-   
   }  
 
 }
+
+@media(max-width: 575px) {
+  .state {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }  
+
+  .mission {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    row-gap: 150px;
+    padding: 20px;
+    overflow: hidden; 
+  } 
+
+  .mission-img {
+    position: relative;
+    flex-direction: column;
+    right: 210px;
+    width: 430px;
+    height: 430px;
+    transform: rotate(45deg); 
+    z-index: -1000;
+  } 
+
+  .mission-img .rhombus img {
+    position: relative;
+    flex-direction: column;
+    top: 10%;
+    left: 10px;
+    width: 100%;
+  } 
+}
+
+@media(max-width: 440px) {
+  .mission-img .rhombus img {
+    position: relative;
+    flex-direction: column;
+    top: 60px;
+    left: -30px;
+    width: 100%;
+  } 
+
+  .mission-img {
+    position: relative;
+    flex-direction: column;
+    right: 10%;
+    width: 430px;
+    height: 430px;
+    transform: rotate(45deg); 
+    z-index: -1000;
+  } 
+
+  .mission-img .rhombus img {
+    position: relative;
+    flex-direction: column;
+    top: 20%;
+    left: 200;
+    width: 100%;
+  } 
+
+  .mission .rhombus2 {
+    display: none;
+  }  
+}
+
+@media(max-width: 320px) {
+  .mission-img .rhombus img {
+    display: none;
+  }
+
+  .mission-img {
+    display: none;
+  }
+
+  .mission-img .rhombus img {
+    display: none;
+  }
+
+  .mission .rhombus2 {
+    display: none;
+  }  
+}
+
 /* ---------------------------------Why Choose Dr Janique Section */
 
 .bg-color-why {
