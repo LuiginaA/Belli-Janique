@@ -1347,8 +1347,11 @@ ul.dropdown-menu {
   padding: 40px;
 }
 
-.whyChoose-cont {
-    background-color: var(--bg-color-); 
+
+.bg-color-why {
+  background-color: var(--bg-color-a);
+}
+.whyChoose-cont { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1406,6 +1409,7 @@ ul.dropdown-menu {
     width: 100%;
     height: 150px;
     background: #252525;
+    background: #3F3B51;
     border-radius: 15px;
     border-top-left-radius: 0;
     padding: 0 30px;
@@ -1425,6 +1429,7 @@ ul.dropdown-menu {
     height: 80px;
     width: 50%;
     background: #252525;
+    background: #3F3B51;
     border-top: 10px solid var(--bg-color-g);
     border-right: 10px solid var(--bg-color-g);
     border-top-right-radius: 25px;
@@ -1450,6 +1455,7 @@ ul.dropdown-menu {
     background: transparent;
     border-radius: 50%;
     box-shadow: -10px 10px 0 #252525;
+    box-shadow: -10px 10px 0 #3F3B51;
 }
 
 .card-whyInfo .contentWhy .why-title a {
@@ -1460,6 +1466,7 @@ ul.dropdown-menu {
     display: block;
     border-radius: 7px;
     color: #252525;
+    color: #3F3B51;
     font-weight: 400;
     text-decoration: none;
     font-size: 14px;
@@ -1485,7 +1492,7 @@ ul.dropdown-menu {
   background: radial-gradient(#EDE6DE, #BDA686,#F9F9F2);
 
   margin-top: 0px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   border-radius: 20px; 
 }  
 
@@ -1580,6 +1587,7 @@ ul.dropdown-menu {
 .rule-icon ion-icon {
   color: #4A3729;
   color: #252525; 
+  color: #3F3B51;
   position: relative;
   font-size: 4em;
   z-index: 10000;
@@ -1602,7 +1610,8 @@ ul.dropdown-menu {
   text-align: center;
   margin-bottom: 10px;
   color: #FFE4E1;
-  color: #252525;   
+  color: #252525; 
+  color: #3F3B51;  
 } 
 
 .content-rule p {
@@ -1614,6 +1623,7 @@ ul.dropdown-menu {
   line-height: 1.5em;
   color: #FFE4E1;
   color: #252525;
+  color: #3F3B51;
 }
 
 /* -------------- Media Queries----- */
@@ -1640,6 +1650,165 @@ ul.dropdown-menu {
   }
 
 }
+
+
+
+/* ------------------------------  Testimonial Section */
+
+
+section .testi-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+section .testi-head-text h2 {
+  color: var(--text-color-c);
+  text-align: center;
+  font-family: Merriweather, sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 40px 0 10px 0; 
+}
+.container-testimonial-bx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding-top: 0;
+  background: linear-gradient(45deg, #887561, #EDE6DE);
+}
+
+.container-testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px; 
+}
+
+.container-testimonial .card-testimonial {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+
+.card-testimonial {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+
+.container-testimonial .card-testimonial {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  background-color: var(--bg-color-b);
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+  transition: 0.5s;
+}
+
+.container-testimonial .card-testimonial:hover {
+  height: 400px;
+}
+
+.container-testimonial .card-testimonial .imgBx {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container-testimonial .card-testimonial:hover .imgBx {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.container-testimonial .card-testimonial .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+} 
+
+.container-testimonial .card-testimonial .content span i {
+  display: inline-flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  align-items: center;  
+  font-size: 18px;
+  color:#f9d71c;
+  justify-content: space-between;
+}
+
+.container-testimonial .card-testimonial .content {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  padding: 0 30px;
+  height: 35px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container-testimonial .card-testimonial:hover .content {
+  top: 120px;
+  height: 250px;
+}
+
+.container-testimonial .card-testimonial .content h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-color-c);
+}
+
+.container-testimonial .card-testimonial .content p {
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-color-c);
+  padding-top: 10px;
+}
+
+.container-testimonial .card-testimonial .content i {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 500
+}
+
+
 
 
 
@@ -1932,15 +2101,19 @@ oooooooooooo
 }
 
 .contactUs .title  h2 {
-  color: #4A3729;
-  color: red;
+  color: var(--bg-color-a);
+  /* font-size: 1.4rem; */
+
+  color: var(--text-color-a);
+  -webkit-text-stroke: var(--text-color-d) 1px;
   font-family: Merriweather, sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   font-style: italic;
   letter-spacing: 2px;
   margin-bottom: 34px;
   padding-top: 30px;
+  padding-left: 100px;
 }
 
 .form {
@@ -1957,8 +2130,7 @@ oooooooooooo
 
 .contact {
   padding: 40px;
-  background: #fefefe;
-  background: yellow;
+  background: var(--bg-color-a);
   box-shadow: 0 5px 35px rgba(0,0,0,0.15);
   border-radius: 20px;
 }
@@ -1977,8 +2149,7 @@ oooooooooooo
 
 .contact h3 {
   text-align: center;
-  color:#4A3729;
-  color: #42ffdb;
+  color: var(--text-color-c);
   font-family: Merriweather, sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -2014,6 +2185,7 @@ oooooooooooo
 .contact-inputBox span {
   color: #4A3729;
   color: #0100ec;
+  color: var(--text-color-c);
   font-size: 1.1em;
   font-weight: 500;
   margin-top: 10px;
@@ -2041,7 +2213,8 @@ oooooooooooo
 
 .contact-inputBox input[type="submit"] {
   background: #111;
-  color: #FEFEFE;
+  background: var(--text-color-c);
+  color: var(--bg-color-a);
   border: none;
   font-size: 1.1em;
   font-weight: 500;
@@ -2061,10 +2234,11 @@ oooooooooooo
 
 .info {
   background: #000;
+  background: var(--bg-color-c);
 }
 
 .info h3 {
-  color: #fefefe;
+  color: var(--bg-color-a);
 }
 
 .info .infoBoxContact div {
@@ -2080,6 +2254,7 @@ oooooooooooo
   min-width: 40px;
   height: 40px;
   color: #fefefe;
+  color: var(--bg-color-a);
   font-size: 1.5em;
   margin-right: 15px;
   border-radius: 50%;
@@ -2087,33 +2262,36 @@ oooooooooooo
 
 .info .infoBoxContact div p {
   color: #fefefe;
+  color: var(--bg-color-a);
   font-size: 1.1em;
 }
 
 .info .infoBoxContact div a {
   color: #fefefe;
+  color: var(--bg-color-a);
   text-decoration: none;
   font-size: 1.1em;
 }
 
-.mediaIcons {
+.mediaIcons  {
   margin-top: 40px;
-  display: flex;
+  display: flex; 
 }
 
-.mediaIcons li {
+.mediaIcons li  {
   list-style: none;
   margin-right: 15px;
 }
 
 .mediaIcons li a {
-  color: #fefefe;
   font-size: 2em;
-  color: #ccc;
+  color: var(--bg-color-a);
+  padding: 5px;
 }
 
 .mediaIcons a:hover {
-  color: #EDE6DE;
+  color:  var(--bg-color-h);
+  border: 2px solid var(--text-color-b);
 }
 
 .map {
