@@ -1482,17 +1482,8 @@ ul.dropdown-menu {
   align-items: center;  
   min-height: 100vh;
   background-size: 100%; 
-  /* background: linear-gradient(90deg, #FFEAE6 40%, #ffffff 40%); */
-  /* background: linear-gradient(90deg, rgb(255, 234, 228) 40%, rgb(250, 248, 246) 40%); */
-
-  background: linear-gradient(135deg, rgb(147, 130, 112) 30%, rgb(219, 207, 195) 35%) 35deg, rgb(147, 130, 112) ;
-
-  /* background: linear-gradient(155deg, #fefefe 20%, #FFEAE6 60%); */
-  
   background: radial-gradient(#EDE6DE, #BDA686,#F9F9F2);
-
   margin-top: 0px;
-  /* margin-bottom: 50px; */
   border-radius: 20px; 
 }  
 
@@ -1510,9 +1501,6 @@ ul.dropdown-menu {
   width: 280px;
   height: 450px;
   margin: 0px; 
-
-  background-color: #EADACB; 
-  background-color: #FFEAE6;
   background-color: var(--bg-color-h);
   border-radius: 20px;
   border-bottom-left-radius: 160px;
@@ -1539,7 +1527,6 @@ ul.dropdown-menu {
 }
 
 .card:nth-child(1) {
-  background: linear-gradient(to bottom #EADACB, #4A3729);
   background: linear-gradient(to bottom rgb(255, 234, 228) 40%, rgb(250, 248, 246) 40%);
 } 
 
@@ -1547,8 +1534,6 @@ ul.dropdown-menu {
   position: relative;
   width: 140px;
   height: 120px;
-  background-color: #EADACB;
-  background-color: #FFEAE6;
   background-color: var(--bg-color-h);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
@@ -1585,8 +1570,6 @@ ul.dropdown-menu {
 }
 
 .rule-icon ion-icon {
-  color: #4A3729;
-  color: #252525; 
   color: #3F3B51;
   position: relative;
   font-size: 4em;
@@ -1609,8 +1592,6 @@ ul.dropdown-menu {
   font-style: italic;
   text-align: center;
   margin-bottom: 10px;
-  color: #FFE4E1;
-  color: #252525; 
   color: #3F3B51;  
 } 
 
@@ -1621,13 +1602,10 @@ ul.dropdown-menu {
   font-style: italic;
   text-align: center;
   line-height: 1.5em;
-  color: #FFE4E1;
-  color: #252525;
   color: #3F3B51;
 }
 
 /* -------------- Media Queries----- */
-
 
 @media (min-width: 768px) {
   .card {
@@ -1651,10 +1629,7 @@ ul.dropdown-menu {
 
 }
 
-
-
 /* ------------------------------  Testimonial Section */
-
 
 section .testi-head {
   display: flex;
@@ -1664,7 +1639,7 @@ section .testi-head {
 }
 
 section .testi-head-text h2 {
-  color: var(--text-color-c);
+  color: var(--bg-color-c);
   text-align: center;
   font-family: Merriweather, sans-serif;
   font-size: 34px;
@@ -1807,14 +1782,6 @@ section .testi-head-text h2 {
   font-size: 18px;
   font-weight: 500
 }
-
-
-
-
-
-
-
-
 
 
 /* ----- Footer ----- */
@@ -2058,7 +2025,7 @@ footer .sec .logo .logo-img   {
 }
 
 
-oooooooooooo
+
 
 
 
@@ -2576,148 +2543,3 @@ color: #3F3B51;
       padding: 0;
   }
 }
-
-
-
-
-
-
-
-    /* nav {
-      padding: 10px 23px;
-    } */
-
-
-
-
-
-  /* @media (max-width:768px){
-
-
-
-   */
-  /* @media (max-width:450px){
-    html{
-      font-size: 50%;
-    }
-  } */
-
-
-  .contain_Mystory {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    /* margin: 30px;
-    padding: 50px; */
-    margin-top: 15px;
-    padding-top: 30px;
-
-    /* background: url(assets/image/janiquey.png);
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-
-    /* gap: 2rem; */
-
-    z-index: 2000;
-
-
-  }
-
-
-  .contain_back {
-   color: #5726d1;
-    width: 100%;
-    height: 100%;
-    margin-top: 5px;
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-
-  .my_story h2 {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .container_story {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 250px;
-    background: #4a2702;
-    background-color: #0aed21;
-
-
-    border-bottom-left-radius: 60%;
-    border-bottom-right-radius: 60%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 60em;
-    padding-top: -30px;
-    padding-bottom: 20px;
-  }
-
-  .myStory-card {
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    background-color: #eb3ad6;
-    border-radius: 20%;
-  }
-
-  .myStory-card img {
-    width: 450px;
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    background-color: #0e0f0f;
-    padding: 25px 0 30px 30px;
-    margin: 30px 0 20px 30px;
-    border-radius: 20%;
-  }
-
-  .myStory-card-body {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 30px 30px 0px;
-    margin: 30px 30px 20px 0px;
-    z-index: 1000;
-    background-color: #0f6e6e;
-    border-radius: 35%;
-  }
-
-  .myStory-card-body h5 {
-    width: 100%;
-    height: 100%;
-    color: #f6f6f6;
-    text-align: center;
-    font-size: 2rem;
-    padding: 25px;
-    margin: 30px;
-  }
-
-  .myStory-card-body p {
-    width: 100%;
-    height: 100%;
-    color: #0AEDED;
-    font-size: 1.2rem;
-    padding: 25px;
-    margin: 30px;
-  }
-
-
-
-
