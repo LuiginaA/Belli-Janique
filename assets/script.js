@@ -11,10 +11,11 @@
 //  JS Link
 
 
+
 // Clinico Link 
 
     <script type='text/javascript'>
-        window.addEventListener('message', function handleIFrameMessage(e) {
+       
             var clinikoBookings = document.getElementById('cliniko-49363333');
             if (typeof e.data !== 'string') return;
             if (e.data.search('cliniko-bookings-resize') > -1) {
