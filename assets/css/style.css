@@ -73,7 +73,8 @@
 
 body {
   min-height: 100vh;
-  max-width: auto;
+  /* max-width: auto; */
+  max-width: 100%;
   background: var(--bg-color-b);
 }
 
@@ -87,12 +88,13 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  right: 0;
+  /* right: 0; */
   z-index: 1000; 
-  padding: 15px 0;
+  /* padding: 15px 0; */
   background-color: var(--bg-color-a);
   transition: all .50s ease;
-  margin: 0 auto;
+  margin: auto;
+  padding: min(5em, 8%);
 }
 
 .logo img {
@@ -107,7 +109,7 @@ header {
 }
 
 .navbar-brand {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text-color-a);
   -webkit-text-stroke: var(--text-color-d) 1px;
@@ -173,21 +175,48 @@ ul.dropdown-menu {
 
 /* ----- Media Queries NavBar ----- */
 
-@media(max-width: 992px) {
-  .logo img {
+
+  /* Responsive */
+  
+  @media(max-width: 991.5px) {
+    .navbar-brand {
+        font-size: 30px
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 10px;
+    }
+
+    .logo  {
+      width: 100px;
+      height: 100px; 
+      margin-bottom: 15px;
+    }
+  }
+  
+
+
+media(min-width: 992px) { 
+
+  .navbar   {
+    width: 80%;
+  }
+
+logo  {
     width: 100px;
-    height: 100px;
+    height: 100px; 
+    margin-bottom: 15px;
   }
 
-  .navbar-brand {
-    font-size: 16px
+  navbar-brand {
+    font-size: 16px;
   }
 
-  .navbar-nav .nav-item {
+  navbar-nav .nav-item {
     margin: 5px 0px;
   }
 }
-
+/* 
 @media(max-width: 768px) {
   .logo img {
     width: 135px;
@@ -221,9 +250,9 @@ ul.dropdown-menu {
   .navbar-nav .nav-item {
     margin: 5px 25px;
   }
-}
+} */
 
-@media(max-width: 320px) {
+/* @media(max-width: 375px) {
   .logo img {
     width: 100px;
     height: 100px;
@@ -241,7 +270,7 @@ ul.dropdown-menu {
   .navbar-nav .nav-item {
     margin: 5px 25px;
   }
-}
+} */
 
 /* ----- Hero Page ----- */
 
@@ -3120,4 +3149,226 @@ color: #3F3B51;
       min-height: 300px;
       padding: 0;
   }
+}
+
+
+
+
+oooooooooooooooo
+
+/* ------------------------------Chiropractics How Quote Section  -*/
+
+.contain-condit {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.chiroQuote_con {
+  position: relative;
+  width: 100%;
+  padding: 40px 100px; 
+}
+
+.chiroQuote_con .quote_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerQuote {
+  box-sizing: border-box;
+  font-family: Merriweather, sans-serif;
+}
+
+.chiroQuote_con {
+  background: linear-gradient(90deg, #FFEAE6 40%, #232949 40%);
+  background: linear-gradient(90deg, #FFEAE6 20%, #232949 60%);
+  background: linear-gradient(90deg, #FFEAE6 30%, #232949 50%);
+  border-radius: 25px;
+}
+
+.headerQuote {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 120px;
+  margin-bottom: 30px;
+}
+
+.headerQuote .quote_title {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.headerQuote .quote_title h2 {
+  color: #000;
+  font-family: Merriweather, sans-serif;
+  font-size: 37px;
+  font-weight: 600;
+  font-style: italic;
+  word-spacing: 2.5px;
+  letter-spacing: 2px;
+  padding: 20px 0 20px 0; 
+}
+
+.headerQuote .quote_title h2 span {
+  color: #fff;
+  font-family: Merriweather, sans-serif;
+  font-size: 37px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 2px;
+  padding: 20px 0 20px 0; 
+}
+
+.quoteCont_two {
+  padding: 40px;
+  background: #fefefe;
+  box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+  border-radius: 25px;
+  margin-left: 50px;
+}
+
+.quoteCont2 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-top: 20px; 
+  margin-right: 250px; 
+}
+
+.quoteCont_two h3 {
+  text-align: center;
+  color:#232949;
+  font-family: Merriweather, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.quoteCont_two p {
+  color:#232949;
+  font-family: Merriweather, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+
+/* -------------- Media Queries----- */
+
+@media (max-width: 991px) {
+  .headerQuote .quote_title {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 300px;
+      justify-content: center;
+      align-items: center;  
+  }
+
+  .headerQuote .quote_title h2 {
+      color: #fff; 
+      font-family: Merriweather, sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      font-style: italic;
+      word-spacing: 2.5px;
+      letter-spacing: 2px;
+      padding: 20px 0 20px 0; 
+  }
+  
+  .headerQuote .quote_title h2 span {
+      color: #fff; 
+      font-family: Merriweather, sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: 2px;
+      padding: 20px 0 20px 0; 
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .headerQuote .quote_title {
+      display: flex;
+      margin-left: 150px;
+      justify-content: center;
+      align-items: center;   
+  }
+
+  .headerQuote .quote_title h2 {
+      color: #fff; 
+      font-family: Merriweather, sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      font-style: italic;
+      word-spacing: 2.5px;
+      letter-spacing: 2px;
+      padding: 20px 0 20px 0;  
+  }
+  
+  .headerQuote .quote_title h2 span {
+      color: #fff; 
+      font-family: Merriweather, sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: 2px;
+      padding: 20px 0 20px 0; 
+  }
+
+  .headerQuote {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      /* align-content: flex-end;
+      justify-content: flex-end; */
+      width: 100%;
+      padding-right: 0px;
+      margin-bottom: 30px;
+  }
+
+  .chiroQuote_con {
+      width: 100%;
+  }
+
+  .quoteCont2 {
+      display: flex;
+      flex-direction: column;      
+      margin-top: 20px; 
+      margin-right: 60px;
+      margin-left: -200px;
+      width: 100%;
+  }
+  
+  .quoteCont_two {
+      justify-content: center;
+      align-items: center;
+      margin-left: 75px;
+      width: 160%;
+  }
+
+  .quoteCont_two h3 {
+      margin-top: 20px;
+  }
+
+  .quoteCont_two p {
+      padding: 10px ;
+  }
+
 }
