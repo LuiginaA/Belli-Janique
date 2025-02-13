@@ -13,9 +13,22 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: 'Merriweather', serif;
 }
+
+html {
+  scroll-behavior: smooth;  
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* font-size: 62.5%;  
+  This % changes the normal base size of 16px to 10px --- 21px = 2.1rem (because 21 x 10 = 2.1rem */
 
 :root {
   --accent-clr: ;
@@ -38,7 +51,6 @@
   --text-color-g: #1F1E1E;
   --text-color-h: #F4EEED;
   --text-color-back: #FFFAF0;
-
 
 /* font families */
 
@@ -67,63 +79,150 @@
 --fs: 1.2em;
 }
 
-/* --------------------------------- Normal Styles */
-
-/* ----- Navbar ----- */
-
-body {
-  min-height: 100vh;
-  /* max-width: auto; */
-  max-width: 100%;
-  background: var(--bg-color-b);
-}
-
-button:focus,
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-header {
+.fixed-top {
   position: fixed;
-  width: 100%;
   top: 0;
-  /* right: 0; */
-  z-index: 1000; 
-  /* padding: 15px 0; */
-  background-color: var(--bg-color-a);
-  transition: all .50s ease;
-  margin: auto;
-  padding: min(5em, 8%);
+  right: 0;
+  left: 0;
+  min-height: 30vh; 
+  overflow: hidden;
+  z-index: 1030;
+} 
+
+/* --------------- Normal Styles */
+
+/* ----- Fixed Top Navbar Section ----- */  
+
+container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: -40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
 }
 
-.logo img {
+.container-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  /* height: 30px; */
+  margin-top: 8px;
+  text-align: center;
+}
+
+.topNav {
+  width: 100%;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;  
+  background-color: var(--bg-color-a); 
+  z-index: 1030;
+}
+
+.top-bar_content a {
+  font-family: var(--ff-1);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  font-style: italic;
+}
+
+.top-bar_content a:hover {
+  padding-top: 8px;
+  color: #252525;
+  border: 2px solid #BDA686;
+  border-radius: 15px;
+  z-index: 1030;
+  cursor: pointer;
+}
+
+/* ----- Logo Section ----- */
+
+.navbar-brand img {
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  height: 135px;
-  width: 135px;
-  margin-left: -20px;
-  margin-right: 25px;
+  height: 200px;
+  width: 200px; 
+  padding-bottom: 0px;
+  z-index: 1030; 
 }
 
-.navbar-brand {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-color-a);
-  -webkit-text-stroke: var(--text-color-d) 1px;
+/* ----- Toggle Btn Section ----- */
+
+.navbar-toggler {
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-bottom: 35px;
+  border: 2px solid #212529;
+  box-shadow: 5px 5px #3e8e41; 
+  max-width: 8em;
+  margin: 3em; 
 }
 
-.navbar-brand:hover {
-  color: var(--text-color-d);
+.navbar-toggler i {
+  width: 20px;
+  font-size: 2.5rem; 
+  font-weight: 600; 
+  justify-self: center;
+  align-self: center; 
+  color: #212529;
   cursor: pointer;
-  -webkit-text-stroke: var(--text-color-a) .5px;
+} 
+
+/* ----- Nav-End Section ----- */
+
+.title-cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(246, 214, 204);
+  background-color: var(--bg-color-a);
+  padding-top: 0px;
+  padding-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
+
+.titleName a {
+  font-family: var(--ff-1);
+  font-size: 1.6rem; 
+  font-weight: var(--fw-xb);
+  color: rgb(114, 27, 95);
+  font-style: italic;
+  text-align: center;
+  margin-left: 130px;
+  width: 100%; 
+}
+
+.titleName a span {
+  font-family: var(--ff-1);
+  font-size: 1rem; 
+  font-weight: var(--fw-xb);
+  color: rgb(114, 27, 95);
+  font-style: italic;
+  margin-left: 110px;
+  width: 100%;
+}
+
+/* ----- Navbar Section ----- */
+
+/* button:focus,
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}    */
 
 .navbar-nav .nav-item {
   margin: 0 8px;
-}
+} 
 
 .navbar-nav .nav-link {
   font-size: var(--fs-a);
@@ -160,8 +259,11 @@ ul.dropdown-menu {
 }
 
 .dropdown-menu .dropdown-item {
-  margin-bottom: 10px;
-  background: none;
+  margin-bottom: -5px;
+  margin-top: -5px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  background-color: none;
   color: var(--text-color-a);
   font-size: var(--fs-a);
   font-weight: var(--fw-n);
@@ -173,8 +275,11 @@ ul.dropdown-menu {
   cursor: pointer;
 }
 
-/* ----- Media Queries NavBar ----- */
+.shadow li:hover {
+  background-color: var(--bg-color-d);
+}
 
+/* ----- Media Queries NavBar ----- */
 
   /* Responsive */
   
@@ -275,7 +380,8 @@ logo  {
 /* ----- Hero Page ----- */
 
 .hero  {
-  padding: 0 14%;
+  /* padding: 0 14%; */
+  padding: 130px 14% 10px 14%;
 }
 
 .hero {
@@ -935,7 +1041,7 @@ logo  {
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  padding: 50px 8% 0;
+  padding: 40px 8% 0;
   overflow: hidden; 
   gap: 35px;
 } 

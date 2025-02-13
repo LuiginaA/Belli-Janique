@@ -41,28 +41,49 @@
 
 <body>
 
-<!-- header section starts -->
+<!----- Heading ----- Top Banner Section ----->
 
-    <header>
+<!----- Fixed Top Navbar Header Section ----->  
     
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-
-                <a href="#" class="logo">
-                    <img src="assets/image/logo.png" alt="">
+    <header class="fixed-top topNav navbar-expand-lg">     
+        <div class="container-fluid container-top"> 
+            <section class="top-bar_content">  
+                <a class="active" href="contact.html">
+                    <p>Call or Text: +27 83 572 4444</p>
                 </a>
+            </section> 
+            <section class="top-bar_content">  
+                <a class="active" href="index.html">
+                    <p>The Chiro Wellness Connection</p> 
+                </a>
+            </section>  
+            <section class="top-bar_content"> 
+                <a class="active" href="contact.html">
+                    <p>Request an Appointment</p>
+                </a>
+            </section> 
+        </div> 
+    
+<!----- Navbar Section ----->  
 
-                <a class="navbar-brand" href="#">Dr Janique Belli</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">  
 
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-content">
-                    <i class="fas fa-stream text-#938270"></i>
-                </button>
+                <section>
+                    <a class="navbar-brand" href="#home">
+                        <img src="assets/image/logo.png" alt="Logo" width="200" height="200" class="d-inline-block align-text-top">
+                    </a>
+                </section>
+
+<!----- Toggle Btn Section ----->
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 
-                <div class="collapse navbar-collapse" id="navbar-content">
-                    
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        
+    <i class="fa fa-stethoscope fa-lg"></i>
+</button> 
+
+                <div class="collapse navbar-collapse" id="navbarCollapse"> 
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> 
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -134,11 +155,11 @@
                                     
                                     
                                         
-                                            <li><a class="dropdown-item" href=""> Blog</a></li>
+                                            <!-- <li><a class="dropdown-item" href=""> Your First VisitBlog</a></li> -->
                                         
-                                            <li><a class="dropdown-item" href=""> ???</a></li>
+                                            <!-- <li><a class="dropdown-item" href=""> ???</a></li>
                                         
-                                            <li><a class="dropdown-item" href=""> ???</a></li>
+                                            <li><a class="dropdown-item" href=""> ???</a></li> -->
                                         
                                     <!-- </ul> 
                                 </li> -->
@@ -154,6 +175,8 @@
                                         <li><a class="dropdown-item" href=""> Book Follow up Appoint</a></li>
                                     </ul> 
                                 </li>
+
+                                <li><a class="dropdown-item" href=""> Blog</a></li>
 <!-- 
                                 <li class="dropend">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
@@ -177,11 +200,11 @@
                             
                                 <ul class="dropdown-menu shadow">
                                 
-                                    <li class="dropend">
+                                    <!-- <li class="dropend">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> Blog
                                     </a>
- 
-                                </li>
+
+                                </li> -->
                                 
                                 <li class="dropend">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
@@ -204,7 +227,18 @@
                 </div>
             </div>
         </nav>
+            <nav-end class="title-cont">  
+                <div class="titleName">
+                    <a> Dr Janique Belli</a>
+                    <a href="#">
+                        <span>Registered Chiropractor
+                            M.TECH. (CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
+                        </span>
+                    </a>
+                </div>
+            </nav-end>  
     </header>
+
     <main>
     <!------- Hero Quote Section ------->
 
@@ -614,18 +648,19 @@
             </div>
         </section>
     </main>
-        <!------------ Footer Section -->    
+<!------------ Footer Section -->    
 
     <footer class="foot">
         <div class="container cont-foot">
             <div class="sec aboutus">
                 <h6>The Chiro Wellness Connection</h6>
                 <ul>
-                    <li><a href="#"><ion-icon name="location"></ion-icon>&#8287;
-                        Natural Health Centre</a>
+                    <li>
+                        <a href="#">&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287; Natural Health Centre</a>
                     </li>
-                    <li>   
-                        &#8287;&#8287;&#8287;&#8287;&#8287;&#8287; 87 6th Street
+                    <li> 
+                        <a href="#"><ion-icon name="location"></ion-icon>
+                      &#8287;&#8287; 87 6th Street
                     </li>
                     <li>
                         &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287; Boksburg North
@@ -710,15 +745,15 @@
             </div>
         </div>
     
-        <div class="head-name">
+        <!-- <div class="head-name">
             <h5>Dr Janique Belli</h5>
             <p>
                 M.TECH. (CHIRO.) S.A. | MCASA | Registered Chiropractor | Practice N° 0872458 |AHPCSA N° A12196
             </p>
-        </div>
+        </div> -->
     </footer>
     
-          <!------------ Copyright Section --> 
+<!------------ Copyright Section --> 
 
     <div>
         <div class="copyrightText">
@@ -730,7 +765,7 @@
         </div>
     </div> 
 
-    
+
 <!-- Bootstrap 5 JS CDN Links -->
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script> This does not allow the dropdowns to work -->
