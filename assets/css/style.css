@@ -2422,9 +2422,9 @@ container-about {
 
 .bg-color-modal {
   position: relative;
-    background-color: var(--bg-color-d);
-    min-height: 15vh;
-    z-index: 1000;
+  background-color: var(--bg-color-d);
+  min-height: 15vh;
+  z-index: 2000;
 }
 
 
