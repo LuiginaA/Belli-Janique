@@ -154,6 +154,24 @@ container-fluid {
   z-index: 1030; 
 }
 
+
+.titleName {
+  font-family: var(--ff-1);
+  font-size: var(--fs-3);
+  /* font-weight: var(--fw-xb); */
+  color: var(--txt-clr-3);
+  max-width: 200px;
+  font-style: italic;
+  text-align: center;
+  margin-top: -20px;
+  color: #999B84;
+  color: #4d4c4b;
+  text-shadow: 1px 1px #4d4c4b;
+  text-shadow: 1px 1px #212529;
+  text-shadow: 2px 1px #999B84;
+  text-shadow: 2px 1px #7E806D;
+}
+
 /* ----- Toggle Btn Section ----- */
 
 .navbar-toggler {
@@ -182,8 +200,9 @@ container-fluid {
 .title-cont {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
-  background-color: rgb(246, 214, 204);
   background-color: var(--bg-color-a);
   padding-top: 0px;
   padding-bottom: 15px;
@@ -195,20 +214,30 @@ container-fluid {
   font-family: var(--ff-1);
   font-size: 1.6rem; 
   font-weight: var(--fw-xb);
-  color: rgb(114, 27, 95);
+  color: var(--text-color-e);
   font-style: italic;
   text-align: center;
   margin-left: 130px;
   width: 100%; 
 }
 
-.titleName a span {
+.title a  {
   font-family: var(--ff-1);
-  font-size: 1rem; 
-  font-weight: var(--fw-xb);
-  color: rgb(114, 27, 95);
+  font-size: 1.2rem; 
+  color: var(--text-color-a);
   font-style: italic;
-  margin-left: 110px;
+  margin-left: 90px;
+  margin-top: 0;
+  width: 100%;
+}
+
+.title span {
+  font-family: var(--ff-2);
+  font-size: 4px; 
+  color: var(--text-color-a);
+  font-style: italic; 
+  margin-left: 5px;
+  margin-top: 0;
   width: 100%;
 }
 
@@ -226,16 +255,17 @@ container-fluid {
 
 .navbar-nav .nav-link {
   font-size: var(--fs-a);
-  font-weight: var( --fw-n);
+  font-weight: var(--fw-b);
   display: inline-block;
-  color: var(--text-color-b);
+  color: var(--bg-color-c);
+
 }
 
 .active {
   font-size: var(--fs-a);
   font-weight: var(--fw-n);
   display: inline-block;
-  color: var(--text-color-b) !important;
+  color: var(--text-color-c) !important;
 }
 
 .active:hover {
@@ -248,18 +278,19 @@ container-fluid {
 
 .nav-item a:hover {
   text-decoration: none;
-  color: var(--text-color-g);
-  background: none;
+  color: var(--text-color-a);
+  border-radius: 10px;
+  border: 2px solid #BDA686;
   text-shadow: none;
   cursor: pointer;
 }
 
 ul.dropdown-menu {
-  background-color: var(--bg-color-a);
+  background-color: var(--bg-color-);
+  
 }
 
 .dropdown-menu .dropdown-item {
-  margin-bottom: -5px;
   margin-top: -5px;
   padding-top: 5px;
   padding-bottom: 2px;
@@ -270,23 +301,99 @@ ul.dropdown-menu {
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: none;
+  background-color: var(--bg-color-a);
   color: var(--text-color-a);
   cursor: pointer;
 }
 
 .shadow li:hover {
-  background-color: var(--bg-color-d);
+  background-color: var(--bg-color-a); 
 }
 
 /* ----- Media Queries NavBar ----- */
 
   /* Responsive */
+ 
+@media(max-width: 375px) {
+  .container-top {
+    display: none;
+  }
+
+  .navbar-brand img {
+    height: 120px;
+    width: 120px; 
+  }
+
+  .title-cont {
+    display: none;
+    /* width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px; */
+  }
+
+  .titleName a {
+    /* font-family: var(--ff-1);
+    font-weight: var(--fw-m); */
+    /* justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-align: center;
+    width: 50%; 
+    margin-left: 290px; */
+    display: none;
+  }
   
-  @media(max-width: 991.5px) {
-    .navbar-brand {
-        font-size: 30px
-    }
+  .titleName a span {
+    display: none;
+    /* font-family: var(--ff-1);
+    font-size: 10px; 
+    font-weight: var(--fw-n);
+    font-style: normal;
+    margin-left: -50px;
+    margin-right: 20px;
+    width: 100%; */
+  }
+  
+}
+
+  
+@media(max-width: 991.5px) {
+  .navbar-brand img {
+    height: 120px;
+    width: 120px; 
+  }
+
+  title-cont {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  titleName a {
+    font-family: var(--ff-1);
+    font-weight: var(--fw-m);
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-align: center;
+    width: 100%; 
+    margin-left: 90px;
+  }
+  
+  titleName a span {
+    font-family: var(--ff-1);
+    font-size: 10px; 
+    font-weight: var(--fw-n);
+    font-style: normal;
+    margin-left: -50px;
+    margin-right: 20px;
+    width: 50%;
+  }
+  
+
+
+}
 
     .navbar-nav .nav-item {
         margin: 5px 10px;
@@ -376,6 +483,7 @@ logo  {
     margin: 5px 25px;
   }
 } */
+
 
 /* ----- Hero Page ----- */
 
@@ -1541,6 +1649,7 @@ logo  {
   background: radial-gradient(#EDE6DE, #BDA686,#F9F9F2);
   margin-top: 0px;
   border-radius: 20px; 
+  
 }  
 
 .container-rules{
@@ -1839,16 +1948,15 @@ section .testi-head-text h2 {
 }
 
 
-/*  -------- About Page */
+/*  -------- ABOUT PAGE! */
 
   /*-------- About Chiropractics Section----------??? Mission and Vision Section */
 
   .aboutChiro {
     background: var(--bg-color-b); 
-    top: 0;
+    margin-top: 180px;
     left: 0;
     width: 100%;
-    min-height: 100vh;
     padding: 30px 8px;
     display: flex;
     align-items: center;
@@ -2155,7 +2263,6 @@ section .testi-head-text h2 {
       transform: rotate(45deg);
       z-index: -10000;
     }  
-  
   }
   
   @media(max-width: 575px) {
@@ -2248,251 +2355,203 @@ section .testi-head-text h2 {
 
 /* ------ About Chiropractics and The Chiropractor Section ------ */
 
-/* Information Section */
 
-.information__heading {
-  margin: 50px auto;
-  text-align: center;
-  font-family: var(--ff-1);
-  font-size: 35px;
+/* -------  Chiropractics Quote Section ------- */ 
+
+container-about {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  z-index: -1000;
+}
+
+.bg-color {
+  position: relative;
+  background-color: var(--bg-color-d);
+  min-height: 10vh;
+  z-index: 1000;
+}
+
+.quoteAbout_two {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  color: var(--bg-color-c);
+  z-index: 1000;
 }
 
-.information {
-  width: 100%;
-  height: 100vh; 
-  /* background-image: url("../image/adjustment.jpg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+.quoteAboutChiro-two h2 {
+  margin-top: 30px;
+  color: rgb(255, 94, 0);
+  text-align: center; 
+  padding-bottom: 20px;
+  padding-top: 30px; 
+  font-family: Merriweather, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.info-container {
-  color: var(--bg-color-b);
-  background-color: rgba(50, 50, 50, 0.4); 
-  width: 24%; 
-  height: 800px;
-  float: left;
-  padding: 600px 0 0 10px;
+.quoteAboutChiro-two p {
   text-align: center;
-  margin: 6px;
+  color: #f13c45; 
+  font-family: Merriweather, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  padding: 10px; 
+  margin: 10px;
 }
 
-.info-container .info-button {
-  background-color: var(--bg-color-a);
-  font-size: 8px;
-  color: var(--bg-color-c);
+/* -------  Chiropractics Modal Section ------- */ 
+
+.bg-color-modal {
+  position: relative;
+    background-color: var(--bg-color-d);
+    min-height: 15vh;
+    z-index: 1000;
 }
 
-.info-container .info-button:hover {
-  background-color: var(--bg-color-c);
-  font-size: 8px;
-  color: var(--bg-color-a);
+
+.but-modal {
+   background-color: #6b65e7;
+  /* background-color: transparent;   */
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 14px;
+  /* margin: 15px 30px 10px 60px;  */
+  font-style: italic;
+  align-items: center;
+  justify-items: center;
+} 
+ 
+.but-modal .four {
+  color: #25d366;
 }
+
 
 .modal-content {
-  background-color: var(--bg-color-a); 
-  color: var(--bg-color-c);
-  padding: 1rem, 1.5rem;
-  width: 35rem;
-  border-radius: 0.5rem;
+  pointer-events: auto;
+  background-color: #7cf91c;
+  width: 1000px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 100%;
+}
+
+.modal-header {
+  color: #060601;
+  color: #0100ec;
   text-align: left;
 }
 
-.modal-content h1 {
-  text-align: center;
-  font-family: var(--ff-1);
-  font-size: 22px;
-  font-weight: 600;
-  padding: 1rem, 1.5rem;
-  width: 35rem;
-  border-radius: 0.5rem;
-}
-
-.modal-content p {
-  line-height: 1.3rem;
-  font-family: var(--ff-2);
-  font-size: var(--fs-b);
-  
-}
-
-.modal-content  span{
-  line-height: 1.5rem;
-  font-family: var(--ff-2);
-  font-size: var(--fs-b);
-
-  margin-left: 35px;
-}
-
-
-/* media queries */
-
-@media (max-width: 1393px) {
-  
-  .information__heading {
-
-  }
-
-  .information {
-
-  }
-
-  .info-container div {
-    width: 100%;
-    clear: both;
-    height: 150%;
-    border-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #EDE6DE;
-    padding: 9;
-  }
-
+.modal-body  {
+  font-size: 14px;
+  opacity: 0.7;
+  color: #060601;
+  text-align: left;
 }
 
 
 
+000000000000000000000000000
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.chiro-info-heading {
-  margin-top: 0px;
+.aboutCont {
+  height: 2000px;
 }
 
-.chiro-info-heading h3 {
-  text-align: center;
-  color:#4A3729;
-  color: #7232bd;
-  font-family: Merriweather, sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-  font-style: italic;
-  letter-spacing: 1px;
-  padding-top: 28px; 
-  margin-bottom: 30px;
-}
-
-.chiro-info-heading h2 {
-  text-align: center;
-  justify-content: center;
-  color:#4A3729;
-  color: #c32aa3;
-  font-family: Merriweather, sans-serif;
-  font-size: 32px; 
-  font-weight: 600;
-  font-style: italic;
-  letter-spacing: 1px;
-  padding-bottom: 10px;
-  margin-bottom: 40px;
-}
-
-.chiro-info {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  min-height: 100vh;
-  color: #fefefe; 
-}
-
-.chiro-info-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding-bottom: 50px;    
-}
-
-.chiro-info-card {
+.bg-color-adjust {
   position: relative;
-  width: 500px;
-  height: 600px;
-  transition: 0.3s ease-out;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.7);  
+    background-color: var(--bg-color-d);
+    min-height: 100vh;
+    z-index: 1000;
 }
 
-.chiro-info-card .imgbox {
+.about_conditions {
+  height: 700px;
+  margin-left: 50px;
+}
+
+.about_conditions img {
+  width: 22%;
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;  
+  margin-top: 70px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  padding-left: 10px;
+  z-index: -1000;
 }
-
-.chiro-info-card .imgbox img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 85%;
-  display: block;
-  transition: 0.5s;  
-}
-
-.chiro-info-card .chiro-content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  padding: 10px;
-  background: #4A3729;
-  transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
-  box-sizing: border-box;
-  overflow: hidden;
+  
+.adjust-img1 {
+  left: 80px;
 }  
 
-.chiro-info-card:hover .chiro-content {
-  width: 100%;
-  height: 75%;
-  left: 0;
-  bottom: 0;
-} 
+.adjust-img2 {
+  left: 40px;
+}  
 
-.chiro-con p {
-  font-size: 15px;
-  color: #EADACB;
-  margin: 10px 0 0;
-  padding: 1em 1em;
-  transform: translateY(2em);
-  line-height: 1.3em;
-  transition: 0.3s;
-  text-align: justify;
-  opacity: 0;
-}
+.adjust-img3 {
+  left: -80px;
+}  
 
-.chiro-info-card:hover .chiro-content p {
-  transform: translateY(0);
-  opacity: 1;
-} 
+.adjust-img4 {
+  left: -40px;
+}  
 
-h2 {
-  font-size: 20px;
-  text-align: center;
-  color: #EADACB;
-} 
 
-.chiro-info-card:hover {
-  box-shadow: 0 0 5em rgba(0,0,0,0.4);
-} 
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2794,6 +2853,7 @@ footer .sec .logo .logo-img   {
   margin-bottom: 34px;
   padding-top: 30px;
   padding-left: 100px;
+  color: #8d3636;
 }
 
 .form {
@@ -2830,6 +2890,7 @@ footer .sec .logo .logo-img   {
 .contact h3 {
   text-align: center;
   color: var(--text-color-c);
+  color: #c32aa3;
   font-family: Merriweather, sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -3260,122 +3321,18 @@ color: #3F3B51;
 
 
 
-oooooooooooooooo
 
-/* ------------------------------Chiropractics How Quote Section  -*/
 
-.contain-condit {
-  display: flex;
-  flex-wrap: nowrap;
-}
 
-.chiroQuote_con {
-  position: relative;
-  width: 100%;
-  padding: 40px 100px; 
-}
 
-.chiroQuote_con .quote_title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.headerQuote {
-  box-sizing: border-box;
-  font-family: Merriweather, sans-serif;
-}
 
-.chiroQuote_con {
-  background: linear-gradient(90deg, #FFEAE6 40%, #232949 40%);
-  background: linear-gradient(90deg, #FFEAE6 20%, #232949 60%);
-  background: linear-gradient(90deg, #FFEAE6 30%, #232949 50%);
-  border-radius: 25px;
-}
 
-.headerQuote {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 120px;
-  margin-bottom: 30px;
-}
-
-.headerQuote .quote_title {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-
-.headerQuote .quote_title h2 {
-  color: #000;
-  font-family: Merriweather, sans-serif;
-  font-size: 37px;
-  font-weight: 600;
-  font-style: italic;
-  word-spacing: 2.5px;
-  letter-spacing: 2px;
-  padding: 20px 0 20px 0; 
-}
-
-.headerQuote .quote_title h2 span {
-  color: #fff;
-  font-family: Merriweather, sans-serif;
-  font-size: 37px;
-  font-weight: 600;
-  font-style: italic;
-  letter-spacing: 2px;
-  padding: 20px 0 20px 0; 
-}
-
-.quoteCont_two {
-  padding: 40px;
-  background: #fefefe;
-  box-shadow: 0 5px 35px rgba(0,0,0,0.15);
-  border-radius: 25px;
-  margin-left: 50px;
-}
-
-.quoteCont2 {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  margin-top: 20px; 
-  margin-right: 250px; 
-}
-
-.quoteCont_two h3 {
-  text-align: center;
-  color:#232949;
-  font-family: Merriweather, sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-  font-style: italic;
-  letter-spacing: 1px;
-  line-height: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.quoteCont_two p {
-  color:#232949;
-  font-family: Merriweather, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 2rem;
-  padding-top: 10px;
-  padding-bottom: 10px
-}
 
 
 /* -------------- Media Queries----- */
 
-@media (max-width: 991px) {
+/* media (max-width: 991px) {
   .headerQuote .quote_title {
       display: flex;
       flex-wrap: wrap;
@@ -3403,11 +3360,11 @@ oooooooooooooooo
       font-style: italic;
       letter-spacing: 2px;
       padding: 20px 0 20px 0; 
-  }
+  } */
   
-}
+/* } */
 
-@media (max-width: 480px) {
+/* media (max-width: 480px) {
   .headerQuote .quote_title {
       display: flex;
       margin-left: 150px;
@@ -3424,9 +3381,9 @@ oooooooooooooooo
       word-spacing: 2.5px;
       letter-spacing: 2px;
       padding: 20px 0 20px 0;  
-  }
+  } */
   
-  .headerQuote .quote_title h2 span {
+  /* .headerQuote .quote_title h2 span {
       color: #fff; 
       font-family: Merriweather, sans-serif;
       font-size: 30px;
@@ -3441,10 +3398,10 @@ oooooooooooooooo
       flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
+      justify-content: center; */
       /* align-content: flex-end;
       justify-content: flex-end; */
-      width: 100%;
+      /* width: 100%;
       padding-right: 0px;
       margin-bottom: 30px;
   }
@@ -3477,4 +3434,5 @@ oooooooooooooooo
       padding: 10px ;
   }
 
-}
+} */
+

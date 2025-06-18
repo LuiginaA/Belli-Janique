@@ -5,9 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<link rel="stylesheet" href=""> 
+
+
+
+<!-- Bootstrap 5 CDN Links -->
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+
  
 <!-- Font Awesome & ion-icons -->
 
@@ -32,606 +51,524 @@
 
     <link rel="stylesheet" href="assets/css/style.css">  
 
-    <link rel="stylesheet" href="assets/js/script.js">
+    <!-- <link rel="stylesheet" href="assets/js/script.js">  -->
     <title>Dr Janique</title> 
 
 </head>
 
 <body>
 
-<!-- header section starts -->
+<!----- Heading ----- Top Banner Section ----->
 
-    <header>
+<!----- Fixed Top Navbar Header Section ----->  
     
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+<header class="fixed-top topNav navbar-expand-lg">     
+    <div class="container-fluid container-top"> 
+        <section class="top-bar_content">  
+            <a class="active" href="contact.html">
+                <p>Call or Text: +27 83 572 4444</p>
+            </a>
+        </section> 
+        <section class="top-bar_content">  
+            <a class="active" href="index.html">
+                <p>The Chiro Wellness Connection</p> 
+            </a>
+        </section>  
+        <section class="top-bar_content"> 
+            <a class="active" href="contact.html">
+                <p>Request an Appointment</p>
+            </a>
+        </section> 
+    </div> 
 
-                <a href="#" class="logo">
-                    <img src="assets/image/logo.png" alt="">
+<!----- Navbar Section ----->  
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">  
+
+            <section>
+                <a class="navbar-brand" href="#home">
+                    <img src="assets/image/logo.png" alt="Logo" width="200" height="200" class="d-inline-block align-text-top">
+
+                    <h5 class="titleName">Dr Janique Belli</h5>
+
                 </a>
+            </section>
 
-                <a class="navbar-brand" href="#">Dr Janique Belli</a>
+<!----- Toggle Btn Section ----->
 
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-content">
-                    <i class="fas fa-stream text-#938270"></i>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbar-content">
-                    
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            
+                <i class="fa fa-stethoscope fa-lg"></i>
+            </button> 
+
+<!-- ----- Collapse Dropdown Links Section -----  -->   
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About Chiropractics</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="conditions.html" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Conditions Treated</a>
                         
-                        <li class="nav-item">
-                            <a class="nav-link active" style=" 
-                                color: #938270" aria-current="page" href="index.html">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">About Chiropractics</a>
-                        </li>
-
-<!--                         
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                data-bs-auto-close="outside">About Chiropractics</a>
+                            <ul class="dropdown-menu shadow">
                             
-                                <ul class="dropdown-menu shadow">
-                                
-                                    <li>
-                                        <a class="dropdown-item" href="#"></a>
-                                    </li>
-                           
-                                    <li>
-                                        <a class="dropdown-item" href="#">What is a Chiropractor?
-                                        </a>
-                                    </li>
-                              
-                                    <li class="dropstart">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">About Chiropractics</a>
-                               
-                                        <ul class="dropdown-menu shadow">
-                                        
-                                            <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                       
-                                            <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                        
-                                            <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                        
-                                        <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                        
-                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                                    </ul>
-                                </li>
-                            
-                            </ul>
-                        </li>  -->
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                data-bs-auto-close="outside">Conditions Treated</a>
-                            
-                                <ul class="dropdown-menu shadow">
-                                
-                                    <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> Spinal Health
-                                    </a>
-                                    
-                                        <ul class="dropdown-menu shadow">
-                                        
-                                            <li><a class="dropdown-item" href=""> Back Pain</a></li>
-                                        
-                                            <li><a class="dropdown-item" href=""> Headaches</a></li>
-                                        
-                                            <li><a class="dropdown-item" href=""> Neck Pain</a></li>
-                                        
-                                        <li><a class="dropdown-item" href=""> Hip Pain</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                
                                 <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside"> Extremities</a>
-
+                                <a href="conditions.html" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> Spinal Health
+                                </a>
+                                
                                     <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href=""> Leg Pain</a></li>
-                                        <li><a class="dropdown-item" href=""> Knee, Ankle & Foot</a></li>
-                                        <li><a class="dropdown-item" href="">  Shoulder & Elbow</a></li>
-                                        <li><a class="dropdown-item" href=""> Arm & Wrist</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside"> Injuries </a>
-
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href=""> Herniated Disc</a></li>
-                                        <li><a class="dropdown-item" href=""> Whiplash</a></li>
-                                        <li><a class="dropdown-item" href="">  Pinched Nerve</a></li>
-                                        <li><a class="dropdown-item" href=""> Work, Sport Injuries or Accident</a></li>
-
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                data-bs-auto-close="outside">All You Need To Know</a>
+                                    
+                                        <li><a class="dropdown-item" href=""> Back Pain</a></li>
+                                    
+                                        <li><a class="dropdown-item" href=""> Headaches</a></li>
+                                    
+                                        <li><a class="dropdown-item" href=""> Neck Pain</a></li>
+                                    
+                                    <li><a class="dropdown-item" href=""> Hip Pain</a></li>
+                                    
+                                </ul>
+                            </li>
                             
-                                <ul class="dropdown-menu shadow">
-                                
-                                    <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> F A Q
-                                    </a>
-                                    
-                                    
-                                        
-                                            <li><a class="dropdown-item" href=""> Blog</a></li>
-                                        
-                                            <li><a class="dropdown-item" href=""> ???</a></li>
-                                        
-                                            <li><a class="dropdown-item" href=""> ???</a></li>
-                                        
-                                    <!-- </ul> 
-                                </li> -->
-                                
-                                <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside"> Your First Visit</a>
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside"> Extremities</a>
 
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href=""> Discuss</a></li>
-                                        <li><a class="dropdown-item" href=""> Assessment</a></li>
-                                        <li><a class="dropdown-item" href="">  Adjust</a></li>
-                                        <li><a class="dropdown-item" href=""> Book Follow up Appoint</a></li>
-                                    </ul> 
-                                </li>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> Leg Pain</a></li>
+                                    <li><a class="dropdown-item" href=""> Knee, Ankle & Foot</a></li>
+                                    <li><a class="dropdown-item" href="">  Shoulder & Elbow</a></li>
+                                    <li><a class="dropdown-item" href=""> Arm & Wrist</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside"> Injuries </a>
+
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> Herniated Disc</a></li>
+                                    <li><a class="dropdown-item" href=""> Whiplash</a></li>
+                                    <li><a class="dropdown-item" href="">  Pinched Nerve</a></li>
+                                    <li><a class="dropdown-item" href=""> Work, Sport Injuries or Accident</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">All You Need To Know</a>
+                        
+                            <ul class="dropdown-menu shadow">
+                            
+                                <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> F A Q
+                                </a>
+                                
+                                
+                                    
+                                        <!-- <li><a class="dropdown-item" href=""> Your First VisitBlog</a></li> -->
+                                    
+                                        <!-- <li><a class="dropdown-item" href=""> ???</a></li>
+                                    
+                                        <li><a class="dropdown-item" href=""> ???</a></li> -->
+                                    
+                                <!-- </ul> 
+                            </li> -->
+                            
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside"> Your First Visit</a>
+
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> Discuss</a></li>
+                                    <li><a class="dropdown-item" href=""> Assessment</a></li>
+                                    <li><a class="dropdown-item" href="">  Adjust</a></li>
+                                    <li><a class="dropdown-item" href=""> Book Follow up Appoint</a></li>
+                                </ul> 
+                            </li>
+
+                            <li><a class="dropdown-item" href=""> Blog</a></li>
 <!-- 
-                                <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside"> Blog </a>
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside"> Blog </a>
 
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href=""> Herniated Disc</a></li>
-                                        <li><a class="dropdown-item" href=""> Whiplash</a></li>
-                                        <li><a class="dropdown-item" href="">  Pinched Nerve</a></li>
-                                        <li><a class="dropdown-item" href=""> Work, Sport Injuries or Accident</a></li>
-
-                                    </ul> -->
-                                </li>
-                            </ul>
-                        </li>
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                data-bs-auto-close="outside">Services</a>
-                            
                                 <ul class="dropdown-menu shadow">
-                                
-                                    <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> Blog
-                                    </a>
- 
-                                </li>
-                                
-                                <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside"> Privacy</a>
-                                </li>
+                                    <li><a class="dropdown-item" href=""> Herniated Disc</a></li>
+                                    <li><a class="dropdown-item" href=""> Whiplash</a></li>
+                                    <li><a class="dropdown-item" href="">  Pinched Nerve</a></li>
+                                    <li><a class="dropdown-item" href=""> Work, Sport Injuries or Accident</a></li>
 
-                                <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside">Terms and Conditions</a>
+                                </ul> -->
+                            </li>
+                        </ul>
+                    </li>
 
-                                </li>
-                            </ul>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Contact</a>
-                        </li>
-                    
-                    </ul>
-                </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Services</a>
+                        
+                            <ul class="dropdown-menu shadow">
+                            
+                                <!-- <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> Blog
+                                </a>
+
+                            </li> -->
+                            
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside"> Privacy</a>
+                            </li>
+
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">Terms and Conditions</a>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li> 
+                
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+        <nav-end class="title-cont">  
+            <div class="title">
+                <!-- <a> Dr Janique Belli</a> -->
+                <a href="#">Registered Chiropractor :<span>
+                        M.TECH. (CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196</span>
+                </a>
+            </div>
+        </nav-end>  
+</header>
+
 <main>
 
-<!-- About Chiropractics Section -->
+<!----- About Chiropractics Section ----->
 
-    <section class="aboutChiro">
-        <div class="chiro"> 
-            <div class="chiro-content">
-            <h1>&ldquo;Chiropractics and The Chiropractor&rdquo;</h1>
-            <h3>What is a Chiropractor?</h3>
-            <p>
-                A chiropractor is a licensed healthcare professional specializing in diagnosing, treating, and preventing biomechanical disorders of the neuromusculoskeletal system, which includes the bones, joints, nerves, muscles, tendons, and ligaments. In South Africa, chiropractors complete six years of rigorous study to earn their &ldquo;Doctor&rdquo; title.  
-            </p>
-            <p> 
-                Chiropractic care focuses on the body&rsquo;s natural ability to heal itself. Through manual adjustments, chiropractors restore proper joint alignment, helping to manage pain and improve overall body function. These adjustments can enhance the performance of various systems throughout the body.  
-            </p> 
-            <p>   
-                Chiropractors address a wide range of conditions and offer a holistic, drug-free approach to health. They serve as an alternative or complement to conventional medicine, aiming to reduce reliance on medications and avoid surgery whenever possible.
-            </p>
+<section class="aboutChiro">
+    <div class="chiro"> 
+        <div class="chiro-content">
+        <h1>&ldquo;Chiropractics and The Chiropractor&rdquo;</h1>
+        <h3>What is a Chiropractor?</h3>
+        <p>
+            A chiropractor is a licensed healthcare professional specializing in diagnosing, treating, and preventing biomechanical disorders of the neuromusculoskeletal system, which includes the bones, joints, nerves, muscles, tendons, and ligaments. In South Africa, chiropractors complete six years of rigorous study to earn their &ldquo;Doctor&rdquo; title.  
+        </p>
+        <p> 
+            Chiropractic care focuses on the body&rsquo;s natural ability to heal itself. Through manual adjustments, chiropractors restore proper joint alignment, helping to manage pain and improve overall body function. These adjustments can enhance the performance of various systems throughout the body.  
+        </p> 
+        <p>   
+            Chiropractors address a wide range of conditions and offer a holistic, drug-free approach to health. They serve as an alternative or complement to conventional medicine, aiming to reduce reliance on medications and avoid surgery whenever possible.
+        </p>
 
-            </div>
-
-            <div class="chiro-img">
-                <div class="rhombus">
-                    <img src="assets/image/chiro.png" alt="">
-                </div>
-            </div>
-            <div class="rhombus2"></div>
         </div>
-    </section>
 
-<!-- About Chiropractics and The Chiropractor Section -->
-
-    <section>
-        <div class="information__heading">
-            <h1>How Can Dr Janique Help You?</h1>
-        </div>
-    </section>
-
-    <section class="information">
-        <div>
-
-<!-- One Modal -->
-
-            <div class="info-container">
-                <h6>What Does a Chiropractor Do?</h6>
-
-<!-- Button trigger modal -->
-
-                <button type="button" class="info-button" data-bs-toggle="modal" data-bs-target="#exampleModal">&nbsp;Read More&nbsp;
-                </button>
-
-<!-- One Modal -->
-
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h1 class="modal-title" id="exampleModalLabel">What Does a Chiropractor Do?</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body fs-5">
-
-<p>
-    A chiropractor specializes in spinal manipulation, using gentle techniques to improve motion, blood flow, and overall function of the spine and other areas like shoulders, hips, and ankles. This holistic, non-invasive approach can address pain and promote a healthy lifestyle for individuals and families of all ages.
-</p>
-<p>
-    Chiropractors support the body's natural healing process through treatments like:
-</p>
-    <span>&nbsp; &nbsp; &#8226; Spinal manipulation<br></span>
-    <span>&nbsp; &nbsp; &#8226; Relaxation techniques<br></span>
-    <span>&nbsp; &nbsp; &#8226; Heat or ice therapy<br></span>
-    <span>&nbsp; &nbsp; &#8226; Stretching exercises<br></span>
-    <span>&nbsp; &nbsp; &#8226; Activity modifications to reduce discomfort and aid recovery</span>
-</p>
-<p>
-    Experience natural, effective care for better well-being!
-</p>
-
-
-
-
-<!--                             
-                            <p>
-                                A chiropractor is a highly trained professional specialising in spinal manipulation by using their hands or instruments to apply a gentle force to a joint in the spine to help improve the range of motion, blood flow, nutrients and functioning of the spine and other parts of the body, eg shoulders, hips,and ankles etc.
-                            </p>
-                            <p>
-                                Chiropractics, a holistic non-invasive approach, is commonly used for many conditions
-                                and various types of pain in the body, thus creating a healthy lifestyle for you and the
-                                whole family of any age. 
-                            </p>
-                            <p>
-                                Chiropractors rely on and assist the body's ability to heal itself. In addition to spinal manipulation, other treatments may be included,such as:<br>
-                                <span>&nbsp; &nbsp; &#8226; Stimulation<br></span>
-                                <span>&nbsp; &nbsp; &#8226; Relaxation<br></span> 
-                                <span>&nbsp; &nbsp; &#8226; Stimulation<br></span>
-                                <span>&nbsp; &nbsp; &#8226; Heat or ice treatment<br></span>
-                                <span>&nbsp; &nbsp; &#8226; Exercise &ndash; stretching<br>
-                                <span>&nbsp; &nbsp; &#8226; Activity modification<br></span>
-                                <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8226; &nbsp;  suggesting how to make changes to your day&ndash;to&ndash;day<br>
-                                <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; activities to alleviate discomfort and enable recovery.
-                                </span> 
-                            </p>                          -->
-                        </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-secondary">See My Blog
-                                </button>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-<!-- Two Modal -->
-
-            <div class="info-container">
-                <h6>Reasons to see a Chiropractor!</h6>
-
-<!-- Button trigger modal -->
-
-                <button type="button" class="info-button" data-bs-toggle="modal" data-bs-target="#exampleModal_2">&nbsp;Read More&nbsp;
-                </button>
-
-<!-- Two Modal -->
-
-                <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Reasons to see a Chiropractor!
-                                </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    The most fundamental reason is to manage or eliminate pain which occurs
-                                    mostly in their
-                                    lower back, neck, shoulders and head.<br>
-                                    Signs you need to schedule your visit with your Chiropractor:<br>
-
-                                    <span>&nbsp; &nbsp; &#8226; Limited range of motion.<br></span>
-
-                                    <span>&nbsp; &nbsp; &#8226; Frequent headaches / migraines.<br></span>
-
-                                    <span>&nbsp; &nbsp; &#8226; Chronic pain in joints and muscles.<br></span>
-
-                                    <span>&nbsp; &nbsp; &#8226; Healing from a recent accident.<br></span>
-
-                                    <span>&nbsp; &nbsp; &#8226; Whiplash.<br></span>
-
-                                    <span>&nbsp; &nbsp; &#8226; Sinus congestion / feeling ill. <br></span>
-
-                                    <span>&nbsp; &nbsp; &#8226; Numbness and tingling in your arms or legs.<br></span>
-
-                                    <span>&nbsp; &nbsp; &#8226; You have a immobile career or lifestyle.<br></span>
-                                </p>
-                                <p>
-                                    Our bodies are complex and respond to a variety of external stressors
-                                    each day. Physical, chemical and emotional stress play a role in
-                                    decreasing how our
-                                    bodies ability to function optimally.
-                                </p> 
-                                <p>
-                                    There are other reasons patients seek chiropractic care. They include
-                                    but are not
-                                    limited to the following:<br></span>
-                                <span>&#8226; Preventing disease / pain.<br></span>
-                                <span>&#8226; Increasing energy.<br></span>
-                                <span>&#8226; Strengthening immunity.<br></span>
-                                <span>&#8226; Fostering overall well being.</span>
-                                </p>
-                                                        
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-secondary">See My Blog
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<!-- Three Modal -->
-
-            <div class="info-container">
-                <h6>What is an Adjustment?</h6> 
-
-<!-- Button trigger modal -->
-
-                <button type="button" class="info-button" data-bs-toggle="modal" data-bs-target="#exampleModal_3">&nbsp;Read More&nbsp;
-                </button>
-
-<!-- Three Modal -->
-
-                <div class="modal fade" id="exampleModal_3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">What is an Adjustment?
-                                </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-
-                            <p>
-                            A chiropractic adjustment is the primary method chiropractors use to treat pain and dysfunction in the spine. Combining art and science, it applies gentle, targeted movements to restricted joints and tight muscles, reducing pain, inflammation, and muscle tightness while improving mobility.
-                            </p>
-                            <p>
-                            Chiropractic care is suitable for all ages, including newborns, with specialized techniques designed for them. Adjustments may involve quick movements or slow, constant pressure, tailored to the patient’s needs.
-                            </p>
-                            <p>
-                            The "cracking sound" often heard is simply gas released from joint fluid, similar to opening a soda can—harmless and part of the process.
-                            </p>
-                            <p>
-                            The goal? To restore spinal function, remove nervous system interference, and activate the body’s natural healing abilities.
-                            </p>
-
-
-
-
-
-
-                                <!-- <p>
-                                    The chiropractic adjustment represents the fundamental core principle of the chiropractic treatment.
-                                </p>
-                                <p>
-                                    It is used successfully to treat a variety of different soft tissue disorders as well as a number of other health problems.
-                                </p>
-                                <p>   
-                                    The Chiropractic Adjustment or Manipulation is the process of applying a quick but gentle pressure to "subluxated" vertebrae in a corrective manner.
-                                </p>
-                                <p>   
-                                    Subluxation exists when a vertebra loses its normal superior and inferior alignment, or when a vertebra loses its normal motion.
-                                </p>
-                                <p>   
-                                    The chiropractic adjustment delivers gentle movement into these restricted joints and tight muscles. By encouraging proper motion, pain and inflammation are reduced.
-                                </p>
-                                <p>   
-                                    The adjustments are not and should not be painful. In fact, most patients look forward to their chiropractic adjustments.
-                                </p>
-                                <p>  
-                                    The adjustments usually provide patients with immediate relief from pain and discomfort, improved mobility and muscle tightness and an increase in one's sense of well being.
-                                </p> -->
-                                                        
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-secondary">See My Blog
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<!-- Four Modal -->
-
-            <div class="info-container">
-                <h6>How a Chiropractic Adjustment Works!</h6>
-
-<!-- Button trigger modal -->
-
-
-                <button type="button" class="info-button" data-bs-toggle="modal" data-bs-target="#exampleModal_4">&nbsp;Read More&nbsp;
-                </button>
-
-<!-- Four Modal -->
-
-                <div class="modal fade" id="exampleModal_4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">How a Chiropractic Adjustment Works!
-                        </h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-<p>
-
-Chiropractic adjustments treat spinal pain by restoring motion to restricted joints and tight muscles. Safe for all ages, including newborns, they reduce pain, inflammation, and stiffness while improving mobility.
-</p>
-<p>
-The “cracking sound” during adjustments is harmless, caused by gas release from joint fluid. The goal is to normalize spinal function, remove nervous system interference, and support the body’s natural healing.
-</p>
-
-
-
-                            <!-- <p>
-                                A chiropractic adjustment is the primary method chiropractors use to treat spinal pain and dysfunction. Chiropractic blends art and science to address the effects of daily stressors that reduce the body’s ability to function optimally.
-                            </p>
-
-                            <p>
-                                Adjustments involve either quick movements or slow, steady pressure and are safe for all ages—even newborns, with specialized techniques available.
-                            </p>
-                            <p>  
-                                These gentle movements restore motion to restricted joints and tight muscles, reducing pain, inflammation, and stiffness. Many patients experience improved mobility and relief after treatment.
-                            </p>
-                            <p>   
-                                The “cracking sound” heard during adjustments is harmless, caused by gas releasing from joint fluid, much like opening a soda can.
-                            </p>
-                            <p>
-                                The goal is to restore spinal function, remove nervous system interference, and activate the body’s natural healing abilities.
-                            </p> -->
-
-
-
-
-                            <!-- <p>
-                                Chiropractic adjustment is the most common way that Chiropractic doctors treat painful and dysfunctional areas of the spine.<br>
-                                Chiropractic is an art as it is a science.
-                            </p>
-                            <p>
-                                Our bodies are complex and respond to a variety of external stressors each day, decreasing our body&lsquo;s ability to function optimally.
-                            </p>
-                            <p>
-                                Chiropractic adjustments are either a quick movement or slow with constant pressure.
-                            </p> 
-                            <p> 
-                                Even newborns can receive adjustments &ndash; there are techniques specifically designed for them.       
-                            </p> 
-                            <p>      
-                                The Chiropractic Adjustment delivers gentle movement into these
-                                restricted joints and tight muscles. By encouraging proper motion, pain
-                                and inflammation are reduced. Patients often experience improved
-                                mobility and decreased pain and muscle tightness with chiropractic
-                                treatments.
-                            </p>      
-                            <p>      
-                                A “cracking noise” is often heard during an adjustment,
-                                similar to that when opening a can of a cooldrink. These noises are
-                                generated when the gas is released from the joint fluid during quick
-                                distraction of the joint surfaces, and is not harmful to the vertebrae
-                                in any way.
-                            </p>  
-                            <p>
-                                The aim of adjustment is always to normalize spinal functioning and to
-                                remove interference in the nervous system, thus allowing innate healing
-                                abilities to function properly.
-                            </p> -->
-                                                        
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-secondary">See My Blog</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+        <div class="chiro-img">
+            <div class="rhombus">
+                <img src="assets/image/chiro.png" alt="">
             </div>
         </div>
-    </div>   
+        <div class="rhombus2"></div>
+    </div>
+</section>
+
+<!----- About Chiropractics Quote Section ----->    
+
+<section id="aboutChiro-page"> 
+    <div class="container-about bg-color">             
+        <div class="quoteAbout_two">
+            <div class="quoteAboutChiro-two">
+                <h2>All You Need to Know About Chiropractics </h2>
+                    <p>
+                        &ldquo;Chiropractic is a health profession specialising in the diagnosis,<br>
+                        treatment and prevention of mechanical disorders of the musculoskeletal<br>
+                        system and the effects of these disorders
+                        on the functioning of the nervous system and general health &rdquo;. - CASA
+                    </p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!----- About Chiropractics Image Section -----> 
+
+ <section class="bg-color-adjust">
+
+        <div class="about_conditions" >
+            <img class="adjust_img1" src="assets/image/column-1.jpg" alt="Chiropractic Adjustment" data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine" >
+
+            <img class="adjust_img2" src="assets/image/column-2.jpg" alt="Chiropractic Adjustment" data-aos="fade-up"    data-aos-duration="3000">  
+
+            <img class="adjust_img3" src="assets/image/column-3.jpg" alt="Chiropractic Adjustment" data-aos="fade-down"   data-aos-easing="linear" data-aos-duration="1500">  
+
+            <img class="adjust_img4" src="assets/image/column-4.jpg" alt="Chiropractic Adjustment" data-aos="fade-left" 
+            data-aos-anchor="#example-anchor" data-aos-offset="500"
+            data-aos-duration="500">
+        </div>  
+
     </section>
+
+<!-- Modals --> 
+    
+<!-- Button trigger modal -->
+<section class="bg-color-modal">
+<button type="button" class="btn but-modal" data-bs-toggle="modal" data-bs-target="#exampleModalone" data-bs-whatever="one">What Does a Chiropractor do? <br> Read More</button>
+
+<button type="button" class="btn but-modal" data-bs-toggle="modal" data-bs-target="#exampleModaltwo" data-bs-whatever="two">Reasons to see a Chiropractor<br>Read More</button> 
+
+<button type="button" class="btn but-modal" data-bs-toggle="modal" data-bs-target="#exampleModalthree" data-bs-whatever="three">What is an Adjustment? <br> Read More</button>
+
+<button type="button" class="btn but-modal" data-bs-toggle="modal" data-bs-target="#exampleModalfour" data-bs-whatever="four">How a Chiropractic Adjustment Works? <br>Read More</button>
+
+<!-- Modal One -->
+<div class="modal fade" id="exampleModalone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="exampleModalLabel">What Does a Chiropractor do?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn but-modal" data-bs-dismiss="modal">Close</button>
+       <button type="button" class="btn but-modal" data-bs-dismiss="modal">
+            <a href="blog.html">
+                <p>My Blog</p>
+            </a>
+       </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal two -->
+<div class="modal fade" id="exampleModaltwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="exampleModalLabel">Reasons to see a Chiropractor!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn but-modal" data-bs-dismiss="modal">Close</button>
+       <button type="button" class="btn but-modal" data-bs-dismiss="modal">
+            <a href="blog.html">
+                <p>My Blog</p>
+            </a>
+       </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal three -->
+<div class="modal fade" id="exampleModalthree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="exampleModalLabel">What is an Adjustment?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn but-modal" data-bs-dismiss="modal">Close</button>
+       <button type="button" class="btn but-modal" data-bs-dismiss="modal">
+            <a href="blog.html">
+                <p>My Blog</p>
+            </a>
+       </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal four -->
+<div class="modal fade" id="exampleModalfour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="exampleModalLabel">How a Chiropractic Adjustment Works!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero iste soluta consectetur rem, voluptas esse eligendi, quam nulla corporis quia dolor tempore eos. Laudantium aliquid pariatur ratione in voluptates.
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn but-modal" data-bs-dismiss="modal">Close</button>
+       <button type="button" class="btn but-modal" data-bs-dismiss="modal">
+            <a href="blog.html">
+                <p>My Blog</p>
+            </a>
+       </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>      
+
+
+
+
+
+
+<!----------- Chiropractics Treatment Card Section ------------>
+
+<section id="conditions-page">   
+
+ <!-- <div class="aboutCond-img">  -->
+    <!-- <div class="about-container-grid"> -->
+<!-- 
+                <div class="cont-grid-treat color"> 
+                    <div class="grid-container-treat">   -->
+                        <!-- <div class="treatment-card text-center">  -->
+                                       
+
+  <!---------- Treatment Card 1 ---------->
+
+</section> 
 
 
 </main>
 
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-<!-- <div class="scroll " data-aos="zoom-out-down" data-aos-duration="1400"data-aos-delay="550">
-    <a href="#">
-
-         
-        <i class='fas fa-angle-double-down'>&ensp;Scroll&ensp;Down</i>
-    </a>
-</div>  -->
-
-
+<!----- Footer Section ----->    
 
 <footer class="foot">
     <div class="container cont-foot">
         <div class="sec aboutus">
             <h6>The Chiro Wellness Connection</h6>
             <ul>
-                <li><a href="#"><ion-icon name="location"></ion-icon>&#8287;
-                    Natural Health Centre</a>
+                <li>
+                    <a href="#">&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287; Natural Health Centre</a>
                 </li>
-                <li>   
-                    &#8287;&#8287;&#8287;&#8287;&#8287;&#8287; 87 6th Street
+                <li> 
+                    <a href="#"><ion-icon name="location"></ion-icon>
+                    &#8287;&#8287; 87 6th Street
                 </li>
                 <li>
                     &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287; Boksburg North
@@ -706,7 +643,7 @@ The “cracking sound” during adjustments is harmless, caused by gas release f
                     <span>Instagram</span>
                 </a>
             </div>
-   
+    
             <div class="sec logo">
                 <a href="#" class="logo-img center">
                 <img src="assets/image/footerlogo.png" alt="">
@@ -716,90 +653,105 @@ The “cracking sound” during adjustments is harmless, caused by gas release f
         </div>
     </div>
 
-    <div class="head-name">
+    <!-- <div class="head-name">
         <h5>Dr Janique Belli</h5>
         <p>
             M.TECH. (CHIRO.) S.A. | MCASA | Registered Chiropractor | Practice N° 0872458 |AHPCSA N° A12196
         </p>
-    </div>
+    </div> -->
 </footer>
+    
+<!----- Copyright Section -----> 
 
-<div>
-    <div class="copyrightText">
-        <span>
-            <p>2024 © Luigina Argentin. All Rights Reserved.</p>
-            <p>Terms of use</p>
-            <p>Privacy policy</p>
-        </span>
-    </div>
-</div> 
-
-    <!-- Modal -->
-    <div class="modal fade" id="what-is-a-chiro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> What is a Chiropractor? </h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>this is where the text goes</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+    <div>
+        <div class="copyrightText">
+            <span>
+                <p>2025 © Luigina Argentin. All Rights Reserved.</p>
+                <p>Terms of use</p>
+                <p>Privacy policy</p>
+            </span>
         </div>
     </div> 
 
+<!----- Bootstrap 5 JS CDN Links ----->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script> This does not allow the dropdowns to work -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+
+    
+<!----- Font Awesome and Ion Icons Link ----->
+
+    <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    
+<!-- JS Link
+<script src="script.js"></script>   -->
+
+<!----- Script Section ----->
+
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<!----- JavaScript Bundle with Popper ----->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script> 
+    
+
+    <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    
+
+<!----- Animation Link ----->  
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        offset:1,
+        });
+    </script> 
 
 
 
-<!-- Bootstrap 5 JS CDN Links -->
+<!----- Clinico Link ----->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-
-
-<!-- Font Awesome and Ion Icons Link  -->
-
-<script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
-
-
-<!-- JS Link -->
- 
-let navlist = document.querySelector('.navlist');
-
-let menu = document.querySelector('menu-icon');
-let navlist = document.querySelector('.navlist');
-
-menu.onclick = () => {
-menu.classList.toggle('bx-x');
-navlist.classList.toggle('open'); }
-
-
-<!-- <script src="js/script.js"></script>   -->
-
- <!-- Animation Link -->  
-   
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- <script>
-   AOS.init({
-    offset:1,
-   });
- </script>
+    <!-- <script type='text/javascript'>
+        window.addEventListener('message', function handleIFrameMessage(e) {
+            var clinikoBookings = document.getElementById('cliniko-49363333');
+            if (typeof e.data !== 'string') return;
+            if (e.data.search('cliniko-bookings-resize') > -1) {
+                var height = Number(e.data.split(':')[1]);
+                clinikoBookings.style.height = height + 'px';
+            }
+            e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
+        });
+    </script> -->
 
 
 
+
+    
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
