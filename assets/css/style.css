@@ -310,11 +310,163 @@ ul.dropdown-menu {
   background-color: var(--bg-color-a); 
 }
 
+/* 📱 1. Small Phones (like iPhones) */
+@media (max-width: 576px) {
+  .container-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .titleName {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .title-cont .title a {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .title span {
+    font-size: 0.7rem;
+    display: block;
+    margin-left: 0;
+  }
+}
+
+/* 📲 2. Tablets (like iPads) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .container-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .titleName {
+    font-size: 2.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .title-cont .title a {
+    font-size: 1.1rem;
+  }
+
+  .title span {
+    font-size: 0.8rem;
+  }
+}
+
+/* 💻 3. Laptops and Desktops */
+@media (min-width: 992px) {
+  .navbar-brand img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .titleName {
+    font-size: 2.8rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.4rem;
+  }
+
+  .title-cont .title a {
+    font-size: 1.3rem;
+  }
+
+  .title span {
+    font-size: 1rem;
+  }
+}
+
+/* 📱 Small screens — clean mobile header and menu */
+@media (max-width: 576px) {
+
+  .container-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+  }
+
+  .top-bar_content {
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .titleName {
+    font-size: 1.6rem;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    margin: 1em auto;
+    display: block;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .title-cont {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title a {
+    font-size: 1rem;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .title span {
+    font-size: 0.8rem;
+    display: block;
+    margin: 0;
+  }
+}
+
 /* ----- Media Queries NavBar ----- */
 
   /* Responsive */
  
-@media(max-width: 375px) {
+/* @media(max-width: 375px) {
   .container-top {
     display: none;
   }
@@ -330,9 +482,9 @@ ul.dropdown-menu {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 50px; */
-  }
+  /* } */
 
-  .titleName a {
+  /* .titleName a { */
     /* font-family: var(--ff-1);
     font-weight: var(--fw-m); */
     /* justify-content: center;
@@ -341,11 +493,11 @@ ul.dropdown-menu {
     text-align: center;
     width: 50%; 
     margin-left: 290px; */
-    display: none;
-  }
+    /* display: none; */
+  /* } */
   
-  .titleName a span {
-    display: none;
+  /* .titleName a span {
+    display: none; */
     /* font-family: var(--ff-1);
     font-size: 10px; 
     font-weight: var(--fw-n);
@@ -353,12 +505,12 @@ ul.dropdown-menu {
     margin-left: -50px;
     margin-right: 20px;
     width: 100%; */
-  }
+  /* }
   
-}
+/* } */ 
 
   
-@media(max-width: 991.5px) {
+/* @media(max-width: 991.5px) {
   .navbar-brand img {
     height: 120px;
     width: 120px; 
@@ -393,9 +545,9 @@ ul.dropdown-menu {
   
 
 
-}
+} */
 
-    .navbar-nav .nav-item {
+    /* .navbar-nav .nav-item {
         margin: 5px 10px;
     }
 
@@ -404,11 +556,11 @@ ul.dropdown-menu {
       height: 100px; 
       margin-bottom: 15px;
     }
-  }
+  } */
   
 
 
-media(min-width: 992px) { 
+/* media(min-width: 992px) { 
 
   .navbar   {
     width: 80%;
@@ -427,7 +579,7 @@ logo  {
   navbar-nav .nav-item {
     margin: 5px 0px;
   }
-}
+} */
 /* 
 @media(max-width: 768px) {
   .logo img {
@@ -588,7 +740,110 @@ logo  {
 
 /* ----- Media Queries Hero Section ----- */
 
-@media (max-width: 992px) { 
+@media (max-width: 576px) {
+  /* ----- HERO SECTION ----- */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 5% 30px 5%;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .hero-text h5 {
+    font-size: 1.2em;
+    margin: 50px 0 10px 0;
+    padding: 10px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .hero-img {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .main-hero {
+    justify-content: center;
+  }
+
+  /* ----- INTRO SECTION ----- */
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 5% 30px 5%;
+    text-align: center;
+  }
+
+  .intro img {
+    width: 280px;
+    height: auto;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .description {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .description .textbox {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .description .textbox h1 {
+    font-size: 1.6rem;
+  }
+
+  .description .textbox h1 span {
+    font-size: 2.4rem;
+  }
+
+  .description .textbox h2 {
+    font-size: 1.3rem;
+  }
+
+  .description .textbox p {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  /* Hide animation cursor if text looks weird on small screens */
+  .description .textbox h2 span:after {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 992px) { 
   .hero  {
     padding: 20px;
     gap: 1rem;
@@ -606,9 +861,9 @@ logo  {
     justify-content: center;
     align-items: center;
   }
-}
+} */
 
-@media (max-width: 768px) { 
+/* @media (max-width: 768px) { 
   .hero  {
     padding: 20px;
     gap: 1rem;
@@ -649,9 +904,9 @@ logo  {
     font-size: 14px;
     margin-top: 20px;
   }
-}
+} */
 
-@media (max-width: 576px) { 
+/* @media (max-width: 576px) { 
   .hero  {
     padding: 10px;
     gap: 1rem;
@@ -692,7 +947,7 @@ logo  {
     font-size: 14px;
     margin-top: 20px;
   }
-}
+} */
 
 /* ----- Intro Meet Dr Janique Section ----- */
 
@@ -821,7 +1076,7 @@ logo  {
 
 /* ----- Media Queries Intro Section ----- */
 
-@media(max-width: 992px) {
+/* @media(max-width: 992px) {
   .intro {
     padding: 100px 10px 40px 40px;
     justify-content: center;
@@ -904,9 +1159,9 @@ logo  {
   .description .textbox p {
     font-size: 15px;
   }
-}
+} */
 
-@media(max-width: 576px) {
+/* @media(max-width: 576px) {
   .intro {
     padding: 250px 10px 30px 15px;
     width: 100%;
@@ -969,25 +1224,25 @@ logo  {
     justify-content: center;
     flex-direction: column;
     /* grid-template-columns: 1fr; */
-    width: 100%;
+    /* width: 100%;
     padding: 0px;
-  }
+  } */
 
-  .description .textbox h2 span:after {
+  /* .description .textbox h2 span:after {
     border-left: 4px solid var(--bg-color-d);
     background-color: var(--bg-color-d);
-}
+} */
 
-  .intro img {
+  /* .intro img {
     flex-direction: column;
     /* grid-template-columns: 1fr; */
-    margin-top: 3rem;
+    /* margin-top: 3rem;
     width: 400px;
     height: 400px;
   }
- }
+ } */ 
 
- @media(max-width: 440px) {
+ /* @media(max-width: 440px) {
   .description {
     padding: 5px;
     position: relative;
@@ -1039,9 +1294,9 @@ logo  {
   .description .textbox p {
     width: 420px;
   }
- }
+ } */
 
- @media(max-width: 320px) {
+ /* @media(max-width: 320px) {
   .intro {
     padding: 50px 10px 30px 15px;
     width: 100%;
@@ -1127,7 +1382,7 @@ logo  {
     animation: text 5s infinite backwards steps(10);
     background-color: var(--bg-color-h); 
     }
-  }
+  } */
 
   /*-------------------- Pledge (Mission and Vision) Section */
 
@@ -1200,12 +1455,18 @@ logo  {
 
 /* ----- Media Queries Pledge (Mission and Vision)  Section ----- */
 
-@media(max-width: 992px) {
+
+
+
+
+
+
+/* @media(max-width: 992px) {
   .state {
     width: 100%;
-  }  
+  }   */
     
-  .pledge {
+  /* .pledge {
     padding: 50px 30px 10px 25px;    
     margin: 0px; 
   }
@@ -1216,17 +1477,17 @@ logo  {
   
   .pledge-content h1 {
     font-size: 30px;
-  } 
+  }  */
 
-  .pledge-content h3 {
+  /* .pledge-content h3 {
     font-size: 20px; 
   } 
   
   .pledge-content p {
     font-size: 12px;
-  } 
+  }  */
 
-  .pledge-img img {
+  /* .pledge-img img {
     position: relative;
     right: 0;
     top: 0;
@@ -1235,16 +1496,16 @@ logo  {
     z-index: 1;
   }
 
-}
+} */
 
-@media(max-width: 768px) {
+/* @media(max-width: 768px) {
   .state {
     width: 100%;
     display: flex;
     flex-direction: column;
-  }  
+  }   */
 
-  .pledge {
+  /* .pledge {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -1256,13 +1517,13 @@ logo  {
     margin-top: 0px;
     overflow: hidden;
     margin-bottom: 0;
-  } 
+  }  */
 
-  .pledge-content {
+  /* .pledge-content {
     max-width: 830px;
-  } 
+  }  */
 
-  .pledge-content p {
+  /* .pledge-content p {
     font-weight: 500;
     font-size: 15px;
     line-height: 2rem;
@@ -1270,9 +1531,9 @@ logo  {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1.3s;  
-  } 
+  }  */
 
-  .pledge-img img {
+  /* .pledge-img img {
     position: relative;
     right: 25%; 
     width: 450px;
@@ -1280,16 +1541,16 @@ logo  {
     margin-bottom: 10px;
     margin-top: 0px;
   } 
-}
+} */
  
-@media(max-width: 575px) {
+/* @media(max-width: 575px) {
   .state {
     width: 100%;
     display: flex;
     flex-direction: column;
-  }  
+  }   */
 
-  .pledge {
+  /* .pledge {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -1299,9 +1560,9 @@ logo  {
     row-gap: 150px;
     padding: 20px;
     overflow: hidden; 
-  } 
+  }  */
 
-  .pledge-img img {
+  /* .pledge-img img {
     position: relative;
     flex-direction: column;
     right: 210px;
@@ -1309,18 +1570,18 @@ logo  {
     height: 430px;
   } 
 
-}
+} */
 
-@media(max-width: 440px) {
+/* @media(max-width: 440px) {
   .pledge-img img {
     position: relative;
     flex-direction: column;
     top: 60px;
     left: -30px;
     width: 100%;
-  } 
+  }  */
 
-  .pledge-img img {
+  /* .pledge-img img {
     position: relative;
     flex-direction: column;
     top: 20%;
@@ -1328,14 +1589,14 @@ logo  {
     width: 100%;
   } 
 
-}
+} */
 
-@media(max-width: 320px) {
+/* @media(max-width: 320px) {
   .pledge-img img {
     display: none;
   }
 
-}
+} */
 
 /* ------------------ Why Choose Dr Janique Section */
 
@@ -2392,7 +2653,7 @@ container-about {
 
 .quoteAboutChiro-two h2 {
   margin-top: 30px;
-  color: rgb(255, 94, 0);
+  color:var(--text-color-a);
   text-align: center; 
   padding-bottom: 20px;
   padding-top: 30px; 
@@ -2408,6 +2669,7 @@ container-about {
 .quoteAboutChiro-two p {
   text-align: center;
   color: #f13c45; 
+  color:var(--text-color-a);
   font-family: Merriweather, sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
@@ -2422,14 +2684,14 @@ container-about {
 
 .bg-color-modal {
   position: relative;
-  background-color: var(--bg-color-d);
+  /* background-color: var(--bg-color-d); */
   min-height: 15vh;
   z-index: 2000;
 }
 
 
 .but-modal {
-   background-color: #6b65e7;
+   background-color: var(--bg-color-b);
   /* background-color: transparent;   */
   border: 0;
   border-radius: 5px;
@@ -3317,17 +3579,6 @@ color: #3F3B51;
       padding: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* -------------- Media Queries----- */
