@@ -1,3 +1,383 @@
+/* ----- Intro Meet Dr Janique Section ----- */ 
+
+.intro {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-color-d);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color-a);
+  clip-path: circle(70% at right -20%); 
+  /* clip-path: circle(80% at 80% 50%); */
+}
+
+.intro  {
+  background-color: var(--bg-color-d);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+  z-index: 100;
+}
+
+.intro img {
+  background-color: var(--bg-color-d);
+  padding: 20px;
+  margin-left: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px #252525;
+  filter: brightness(1.1);
+  z-index: 100;
+}
+
+.intro img:hover {
+  box-shadow: 0px 0px 50px var(--text-color-b);
+}
+
+.description {
+  padding: 00px 80px 20px 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.description .textbox {
+  position: relative; 
+  max-width: 600px;
+  margin-right: 20px; 
+  margin-left: 0px;
+  margin-top: -60px;
+  padding: 5px;
+  z-index: 100;
+}
+
+.description .textbox h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-color-c);
+  margin-bottom: 5px;
+}
+
+.description .textbox h1 span {
+  font-size: 55px;
+  color: var(--text-color-d);
+  -webkit-text-stroke: var(--text-color-c) 0.5px;
+}
+
+.description.textbox h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  color: var(--text-color-c);
+}
+
+.description .textbox h2 span {
+  color: var(--text-color-b);
+  position: relative;
+  transition: transform .3s ease;
+}
+
+.description .textbox h2 span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0px;
+  height: 100%;
+  border-left: 4px solid var(--bg-color-a) ;
+  background-color: var(--bg-color-a);
+  /* background-color: rgb(59, 58, 58); */
+  animation: text 5s infinite backwards steps(10); 
+}
+
+@keyframes text {
+
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+  }
+} 
+
+.description .textbox p {
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 2.5rem;
+  color: var(--text-color-a);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.intro .textbox h1,
+.intro .textbox h2,
+.intro .textbox p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- INTRO SECTION MEDIA QUERIES----- */
+
+/* Responsive: Intro Section Only */
+@media (max-width: 576px) {
+  .intro {
+    flex-direction: column;
+    padding: 60px 5% 30px 5%;
+    text-align: center;
+  }
+
+  .intro img {
+    width: 280px;
+    height: auto;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .description,
+  .textbox {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .textbox h1 {
+    font-size: 1.6rem;
+  }
+
+  .textbox h1 span {
+    font-size: 2.4rem;
+  }
+
+  .textbox h2 {
+    font-size: 1.3rem;
+  }
+
+  .textbox p {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  .textbox h2 span:after {
+    display: none;
+  }
+}
+
+
+
+/*-------------------- Pledge (Mission and Vision) Section */ 
+
+.state {
+  background: var(--bg-color-b); 
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 8%;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.pledge {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 30px 8% 0;
+  overflow: hidden; 
+  gap: 35px;
+  z-index: 1000;
+} 
+
+.pledge-content {
+  position: relative;
+  max-width: 530px;
+  padding: 10px;
+  z-index: 1000; 
+} 
+
+.pledge-content h1 {
+  font-size: 35px;
+  font-weight: var( --fw-m);
+  line-height: 1.2;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 1s; 
+} 
+
+.pledge-content h2 {
+  font-size: 25px;
+  font-weight: var( --fw-sb);
+  color: var(--bg-color-f);
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.6s;  
+} 
+
+.pledge-content p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 15px 0 30px;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1.3s; 
+} 
+
+.pledge-img img{
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 50px;
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, .75);
+  padding: 10px;
+  z-index: 1000;
+} 
+
+.pledge-img img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+} 
+
+@keyframes slideBottom {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+
+/* ----- PLEDGE SECTION Media Queries----- */ 
+@media (max-width: 576px) {
+
+  .state,
+  .pledge {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5% 30px 5%;
+    text-align: center;
+  }
+
+  .pledge-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .pledge-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .pledge-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .pledge-content p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .pledge-img img {
+    width: 280px;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+
+/* Small tablets (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .intro, .state, .pledge {
+    flex-direction: column;
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .pledge-img img, .intro img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+/* Tablets and small desktops (768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .intro {
+    padding: 60px 6%;
+    flex-direction: row;
+  }
+
+  .description .textbox {
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  .pledge {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .pledge-img img {
+    width: 350px;
+  }
+}
+
+/* Large devices (desktops 992px and up) */
+@media (min-width: 992px) {
+  .intro, .pledge {
+    flex-direction: row;
+    padding: 100px 8%;
+  }
+
+  .pledge-img img {
+    width: 420px;
+  }
+}    
+
+@media (min-width: 1200px) {
+  .pledge-img img {
+    width: 480px;
+  }
+
+  .pledge-content h1 {
+    font-size: 3rem;
+  }
+
+  .pledge-content h2 {
+    font-size: 2rem;
+  }
+}
 
 
 
@@ -7,7 +387,10 @@
 
 
 
-<!------- Intro Meet Dr Janique Section ------->
+
+
+
+/* <!------- Intro Meet Dr Janique Section ------->
 
 <section class="intro" id="intro">
 <div class="circle"></div>
@@ -69,4 +452,4 @@
 
         <div class="triangle"></div>
 
-</section>
+</section> */

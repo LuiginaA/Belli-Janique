@@ -730,12 +730,14 @@ logo  {
 .scroll a {
   font-size: 8px;
   color: var(--text-color-b);
+  color: #c32aa3;
 }
 
 .scroll i {
   font-size: 8px;
   color: var(--text-color-b);
   margin-right: 6px;
+  color: #25d366;
 }
 
 /* ----- Media Queries Hero Section ----- */
@@ -1395,7 +1397,7 @@ logo  {
   display: flex;
   align-items: center;
   justify-content: space-between;
-} 
+}  
 
 .pledge {
   position: relative; 
@@ -1407,11 +1409,11 @@ logo  {
   padding: 40px 8% 0;
   overflow: hidden; 
   gap: 35px;
-} 
+}  
 
 .pledge-content {
   max-width: 630px;
-} 
+}  
 
 .pledge-content h1 {
   font-size: 35px;
@@ -1420,7 +1422,7 @@ logo  {
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: 1s;   
-} 
+}  
 
 .pledge-content h2 {
   font-size: 25px;
@@ -1429,7 +1431,7 @@ logo  {
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 1.6s;  
-} 
+}  
 
 .pledge-content p {
   font-weight: 500;
@@ -1440,7 +1442,7 @@ logo  {
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1.3s;  
-} 
+}  
 
 .pledge-img img{
   position: relative;
@@ -1451,7 +1453,7 @@ logo  {
   border-radius: 50px;
   box-shadow: -15px 15px 15px rgba(0, 0, 0, .5);
   z-index: 1;
-} 
+}  
 
 /* ----- Media Queries Pledge (Mission and Vision)  Section ----- */
 
