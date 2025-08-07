@@ -1,0 +1,308 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-1);
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Color & font variables */
+  --bg-a: #EDE6DE;
+  --text-c: #3F3B51;
+  --ff-1: 'Merriweather', serif;
+  --ff-2: 'Lato', sans-serif;
+  --fw-n: 400; --fw-b: 700;
+  --fs-head: 2.8rem;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  background: var(--bg-a);
+  z-index: 1030; /* only here */
+}
+.container-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+}
+.top-bar_content a {
+  font-style: italic;
+  font-weight: 800;
+  transition: 0.3s;
+}
+.top-bar_content a:hover {
+  padding-top: 8px;
+  border: 2px solid var(--text-c);
+  border-radius: 15px;
+}
+
+.navbar-brand img {
+  width: 200px; height: 200px;
+}
+.titleName {
+  font-size: var(--fs-head);
+  text-align: center;
+  color: var(--text-c);
+}
+.navbar-toggler {
+  padding: 1em;
+  border: 2px solid var(--text-c);
+  margin: 1em auto;
+}
+.navbar-nav .nav-link {
+  font-weight: var(--fw-b);
+  color: var(--text-c);
+  transition: 0.3s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #777;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.title-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-a);
+  padding: 15px 0;
+}
+.title span {
+  font-size: 1rem; /* >10px now! */
+}
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 130px 14% 10px;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+}
+.book-appointment-btn {
+  padding: 1.4rem 2.8rem;
+  transition: transform 0.3s;
+}
+.book-appointment-btn:hover {
+  transform: scale(1.05);
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 8%;
+  background: var(--bg-a);
+}
+.description .textbox {
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.pledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 8%;
+}
+.pledge-img img {
+  width: 420px;
+  border-radius: 50px;
+}
+
+footer .cont-foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  footer .cont-foot {
+    grid-template-columns: 1fr;
+  }
+}
+.wrapper .social-button {
+  transition: width 0.5s;
+}
+
+@media (max-width: 576px) {
+  /* Mobile adjustments */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 5% 30px;
+  }
+  .hero-text h1 { font-size: 2rem; }
+  .intro, .pledge {
+    flex-direction: column;
+    padding: 60px 5%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  /* Tablet tweaks */
+  .titleName { font-size: 2.2rem; }
+  .hero img, .intro img, .pledge-img img { width: 300px; }
+}
+
+@media (min-width: 992px) {
+  /* Desktop style */
+  .hero { grid-template-columns: 1fr 1fr; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-1);
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Color & font variables */
+  --bg-a: #EDE6DE;
+  --text-c: #3F3B51;
+  --ff-1: 'Merriweather', serif;
+  --ff-2: 'Lato', sans-serif;
+  --fw-n: 400; --fw-b: 700;
+  --fs-head: 2.8rem;
+}
+
+
+
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #777;
+  border-radius: 5px;
+  background: transparent;
+}
+
+
+.title-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-a);
+  padding: 15px 0;
+}
+.title span {
+  font-size: 1rem; /* >10px now! */
+}
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 130px 14% 10px;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+}
+.book-appointment-btn {
+  padding: 1.4rem 2.8rem;
+  transition: transform 0.3s;
+}
+.book-appointment-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 8%;
+  background: var(--bg-a);
+}
+.description .textbox {
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+
+.pledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 8%;
+}
+.pledge-img img {
+  width: 420px;
+  border-radius: 50px;
+}
+
+
+footer .cont-foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  footer .cont-foot {
+    grid-template-columns: 1fr;
+  }
+}
+.wrapper .social-button {
+  transition: width 0.5s;
+}
+
+
+@media (max-width: 576px) {
+  /* Mobile adjustments */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 5% 30px;
+  }
+  .hero-text h1 { font-size: 2rem; }
+  .intro, .pledge {
+    flex-direction: column;
+    padding: 60px 5%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  /* Tablet tweaks */
+  .titleName { font-size: 2.2rem; }
+  .hero img, .intro img, .pledge-img img { width: 300px; }
+}
+
+@media (min-width: 992px) {
+  /* Desktop style */
+  .hero { grid-template-columns: 1fr 1fr; }
+}

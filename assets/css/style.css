@@ -110,7 +110,6 @@ container-fluid {
   align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
-  /* height: 30px; */
   margin-top: 8px;
   text-align: center;
 }
@@ -154,11 +153,9 @@ container-fluid {
   z-index: 1030; 
 }
 
-
 .titleName {
   font-family: var(--ff-1);
   font-size: var(--fs-3);
-  /* font-weight: var(--fw-xb); */
   color: var(--txt-clr-3);
   max-width: 200px;
   font-style: italic;
@@ -168,8 +165,6 @@ container-fluid {
   color: #4d4c4b;
   text-shadow: 1px 1px #4d4c4b;
   text-shadow: 1px 1px #212529;
-  text-shadow: 2px 1px #999B84;
-  text-shadow: 2px 1px #7E806D;
 }
 
 /* ----- Toggle Btn Section ----- */
@@ -243,12 +238,6 @@ container-fluid {
 
 /* ----- Navbar Section ----- */
 
-/* button:focus,
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}    */
-
 .navbar-nav .nav-item {
   margin: 0 8px;
 } 
@@ -258,7 +247,6 @@ container-fluid {
   font-weight: var(--fw-b);
   display: inline-block;
   color: var(--bg-color-c);
-
 }
 
 .active {
@@ -287,7 +275,6 @@ container-fluid {
 
 ul.dropdown-menu {
   background-color: var(--bg-color-);
-  
 }
 
 .dropdown-menu .dropdown-item {
