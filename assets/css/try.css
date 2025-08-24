@@ -77,9 +77,11 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  min-height: 30vh;
+  /* min-height: 30vh;   */
+  min-height: auto;
+  /* overflow: hidden; */
   overflow: visible;
-  /* z-index: 1030; */
+  z-index: 1030;
 } 
 
 /* --------------- Normal Styles */
@@ -112,53 +114,36 @@ body {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;  
-  background-color: var(--bg-color-a);
+  background-color: var(--bg-color-a);  
 }
 
-.topNav a {
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.top {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-/* number */
-.top-bar_content p {
+.top-bar_content a {
   font-family: var(--ff-1);
   font-size: 16px;
   font-weight: 800;
   letter-spacing: .5px;
   font-style: italic;
+  text-decoration: none; 
   padding-left: 2px;
   padding-right: 2px;
 }
 
-/* Name */
-.top-barContent p {
+.top-barContent a {
   font-family: var(--ff-1);
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: .5px;
   font-style: italic;
+  text-decoration: none; 
 }
 
-/* Request */
-.top_bar_content p  {
+.top_bar_content a {
   font-family: var(--ff-1);
   font-size: 16px;
   font-weight: 800;
   letter-spacing: .5px;
   font-style: italic;
+  text-decoration: none; 
 }
 
 /* ----- Logo Section ----- */
@@ -176,14 +161,19 @@ body {
 .titleName {
   font-family: var(--ff-1);
   /* font-size: var(--fs-3); */
-  font-size: 1.6rem;
-  font-weight: 800;
+  letter-spacing: 1.3px;
+  font-size: 1.8rem;
   max-width: 200px;
   font-style: italic;
   text-align: center;
   margin-top: -20px;
+  color: #999B84;
   color: #4d4c4b;
-  text-shadow: .5px .5px #38e209;
+  /* text-shadow: 1px 1px #4d4c4b; */
+  /* text-shadow: 1px 1px #212529; */
+  /* text-shadow: 2px 1px #999B84; */
+  text-shadow: 2px 1px #7E806D;
+  letter-spacing: 1.3px;
 }
 
 /* ----- Toggle Btn Section ----- */
@@ -196,7 +186,7 @@ body {
   margin-bottom: 35px; */
   border: 2px solid #212529;
   box-shadow: 5px 5px #3e8e41; 
-  box-shadow: 5px 5px #6f9170;
+   box-shadow: 5px 5px #6f9170;
   max-width: 8em;
   padding: 10px;
   margin: 1em;
@@ -221,16 +211,32 @@ body {
   align-items: center;
   width: 100%;
   background-color: var(--bg-color-a);
-  padding: 0px 0;
-  margin-top: -30px;
+  /* padding-top: 0px;
+  padding-bottom: 15px; */
+  padding: 5px 0;
+  margin: 0;
+  /* margin-top: 0px; */
+  /* margin-bottom: 15px; */
+
 }
 
-.title a {
+.titleName a {
   font-family: var(--ff-1);
-  font-size: 8px; 
+  font-size: 1.6rem; 
+  font-weight: var(--fw-xb);
+  color: var(--text-color-e);
+  font-style: italic;
+  text-align: center;
+  margin-left: 130px;
+  width: 100%; 
+}
+
+.title a  {
+  font-family: var(--ff-1);
+  font-size: 14px; 
   color: var(--text-color-a);
   font-style: italic;
-  margin-left: 95px;
+  margin-left: 90px;
   margin-top: 0;
   width: 100%;
   text-decoration: none; 
@@ -247,6 +253,7 @@ body {
   font-weight: var(--fw-b);
   display: inline-block;
   color: var(--bg-color-c);
+  font-size: var();
 }
 
 .active {
@@ -308,23 +315,33 @@ ul.dropdown-menu {
   vertical-align: middle;
 }
 
-.scroll i {
+.scroll {
   position: absolute;
   top: 82%;
   right: 4%;
   transform: translate(-50%);
   color: var(--bg-color-c);
-  font-size: 1.2rem;
-  font-weight: 900;
 }
 
+.scroll i {
+  font-size: 1rem;
+  color: var(--bg-color-c);
+}
+
+/* Global Responsive Media Queries */
+
+/* -------------- Media Queries  TopBar and NavBar----- */
 
 
+/* 📉 Extra Small Screens (Optional for extreme cases) */
+/* @media screen and (max-width: 400px) {
+  .titleName {
+    font-size: 1.4rem;
+  }
+} */
 
-/* ===========================
-   📲 Small tablets (≥576px)
-   =========================== */
-/* @media (min-width: 576px) {
+/* 📱 Small screens — clean mobile header and menu */
+@media screen and (max-width: 576px) {
   .container-top {
     flex-direction: column;
     align-items: center;
@@ -333,309 +350,122 @@ ul.dropdown-menu {
   }
 
   .top-bar_content {
-  text-align: center;
-  padding: 5px 0;
-  }
-
-
-.navbar-brand img {
-    height: 120px;   /* shrink logo a bit */
-    /* width: 120px; */
-/* } */
-
-
-
- /* */ 
-
-
-
-
-/* .titleName {
-  font-size: 1.6rem;
-  margin-top: 5px;
-  text-align: center;
-}
-
-.scroll,
-.scroll i {
-  display: none;
-
-} 
-} */
-
-/* ===========================
-   📱 Very Small Devices (max-width: 480px) This targets screen widths of 480px and below 
-   =========================== */
-@media (max-width: 480px) {
-  .container-top {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
     text-align: center;
-    padding: 0;
+    padding: 5px 0;
   }
 
-.topNav a { 
-  margin-bottom: -20px;
-  padding-top: 5px;
-} 
-
-/* number */
-  .top-bar_content p {
-    font-family: var(--ff-1);
-    font-size: 14px;
-    font-weight: 600;
-  } 
-
-/* Name */
-  .top-barContent p {
-    font-family: var(--ff-1);
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    line-height: normal;
-    padding-top: 8px;
-  } 
-
-/* Request */
-  .top_bar_content p {
-    font-size: 14px;
-    font-weight: 600;
-    padding-top: 8px;
-    margin-bottom: 20px;
-  } 
-
-a.navbar-brand  {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-brand img {
-  height: 150px;
-  width: 150px;
-  /* margin-left: 50px;
-  margin-top: -18px; */
-}
-
-.titleName {
-  font-size: 1.2rem; /*smaller title text  */
-  max-width: 120px;
-  text-align: center;
-  margin-left: 54px;
-} 
-
-.navbar-toggler {
-  max-width: 5em; /* smaller button */
-  padding: 6px;
-  margin-left: 55px;
-}
-
-.navbar-nav .nav-link {
-  font-size: 0.9rem;
-}
-
-.dropdown-menu .dropdown-item {
-  margin-top: -5px;
-  margin-bottom: 2px;
-  margin-left: 20px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: transparent;
-  color: var(--text-color-a);
-  color: #212529;
-  font-size: var(--fs-a);
-  font-size: .8px;
-}
-
-.nav-item a:hover {
-  text-decoration: none;
-  color: var(--text-color-a);
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.title-cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: var(--bg-color-a);
-  padding-bottom: 5px;
-  padding-top: 10px;
-  padding-left: 50px;
-  padding-right: 20px;
-  margin-bottom: -24px;
-}
-
-.title a {
-  font-family: var(--ff-2);
-  font-size: 6px; 
-  color: var(--text-color-a);
-  margin-left: 0px;
-  margin-right: 10px;
-  margin-right: 5px;
-  padding-right: 5px;
-  text-decoration: none; 
-}
-
-.scroll i {
-  display: none;
-}
-
-} 
-
-
-
-
-
-
-
-/* ===========================
-   💻 Tablets / small laptops (≥768px)
-   =========================== */
-@media (min-width: 768px) {
-  .container-top {
-    justify-content: space-between; 
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-/* number */
-  .top-bar_content p {
-    font-family: var(--ff-1);
-    font-size: 14px;
-    font-weight: 800;
-  } 
-
-/* Name */
-  .top-barContent p {
-    font-family: var(--ff-1);
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: 0px;
-    line-height: normal;
-    padding-top: 8px;
-  } 
-
-/* Request */
-  .top_bar_content p {
-    font-size: 14px;
-    font-weight: 800;
-    padding-top: 8px;
-    margin-bottom: 20px;
-  } 
 
   .navbar-brand img {
-    height: 130px;
-    width: 130px;
+    width: 60px;
+    height: 60px;
   }
 
   .titleName {
-    font-size:1.4rem;
+    font-size: 1.6rem;
+    margin-top: 5px;
+    text-align: center;
   }
 
   .navbar-toggler {
-  max-width: 4em; /* smaller button */
-  padding: 6px;
-  margin-left: 55px;
+    padding: 8px 10px;
+    margin: 10px auto;
   }
 
-  .navbar-nav .nav-link {
-  font-size: 14.5px; /* slightly larger menu text */
-  font-weight: 600;
+  .navbar-nav {
+    text-align: center;
   }
 
-  .dropdown-menu .dropdown-item {
-  margin-top: -5px;
-  margin-bottom: 2px;
-  margin-left: 20px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: transparent;
-  color: var(--text-color-a);
-  color: #212529;
-  font-size: 12px;
-  font-weight: 600;
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
   }
 
   .title-cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: var(--bg-color-a);
-  padding-bottom: 5px;
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: -24px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
   }
 
   .title a {
-  font-family: var(--ff-2);
-  font-size: 6px; 
-  color: var(--text-color-a);
-  margin-left: 0;
-  margin-right: 5px;
-  padding-right: 5px;
-  text-decoration: none; 
+    font-size: 1rem;
+    padding: 0 10px;
+    margin-left: 0;
   }
+
+  .title span {
+    font-size: 1rem;
+    display: block;
+    margin-top: 4px;
+  }
+
 }
 
 
-/* ===========================
-   🖥️ Desktops (≥992px)
-   =========================== */
-/* @media (min-width: 992px) {
+📲 Tablets (like iPads) – 577px to 991px
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .container-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .navbar-brand img {
-    height: 140px;
-    width: 140px;
+    width: 80px;
+    height: 80px;
   }
 
   .titleName {
-    font-size: 2.5rem;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem; /* give links breathing room */
-  /* }
-
-  .navbar-nav .nav-item {
-    margin: 0 12px; spread out nav items */
-  /* }
-}  */
-
-
-/* ===========================
-   🖥️ Large desktops (≥1200px)
-   =========================== */
-/* @media (min-width: 1200px) {
-  .navbar-brand img {
-    height: 150px;
-    width: 150px;
-  }
-
-  .titleName {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+    margin-top: 5px;
   }
 
   .navbar-nav .nav-link {
     font-size: 1.3rem;
   }
-} */
+
+  .title-cont .title a {
+    font-size: 1.1rem;
+  }
+
+  .title span {
+    font-size: 0.9rem;
+  }
+
+  .scroll {
+  display: none;
+}
+
+}
 
 
+🖥️ Large Devices - Laptops and Desktops – 992px and Up
+@media screen and (min-width: 992px) {
+  .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
 
+  .titleName {
+    font-size: 2rem;
+  }
 
+  .navbar-nav .nav-link {
+    font-size: 1.4rem;
+  }
 
+  .title-cont .title a {
+    font-size: 1.2rem;
+  }
+
+  .title span {
+    font-size: 1rem;
+  }
+}
 
 
 /* ----- Hero Page ----- */
@@ -810,18 +640,7 @@ a.navbar-brand  {
 
 /* ----- HERO SECTION ----- */
 
-/* ===========================
-   📱 Very Small Devices (max-width: 480px) This targets screen widths of 480px and below 
-   =========================== */
-@media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 1.6rem;
-  }
-
-}
-
-
- screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .hero {
     grid-template-columns: 1fr;
     padding: 60px 5% 30px 5%;
@@ -861,8 +680,35 @@ a.navbar-brand  {
 
 }
 
-/* 📉 Extra Small Screens (Optional for extreme cases) */
 
+@media (min-width: 577px) and (max-width: 991px) {
+  bok-appointment-btn {
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img img {
+    max-width: 90%;
+    height: auto;
+    margin: 1rem 0;
+  }
+}
+
+/* 📉 Extra Small Screens (Optional for extreme cases) */
+@media screen and (max-width: 400px) {
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+}
 
 /* ----- Intro Meet Dr Janique Section ----- */ 
 
@@ -1007,6 +853,19 @@ a.navbar-brand  {
   
  } 
 
+ @media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .intro img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
 /*-------------------- Pledge (Mission and Vision) Section */ 
 
 .state {
@@ -1110,6 +969,7 @@ a.navbar-brand  {
 
 /* ----- PLEDGE SECTION Media Queries----- */ 
 @media (max-width: 576px) {
+
   .state,
   .pledge {
     flex-direction: column;
@@ -1913,7 +1773,7 @@ a.navbar-brand  {
 /* Media Reason Why Choose Dr Janique Section */
 
 /* Responsive */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .reason-heading h2 {
     font-size: 1.75rem;
   }
@@ -1923,7 +1783,28 @@ a.navbar-brand  {
   .reason-img {
     height: 160px;
   }
+} */
+
+@media (max-width: 992px) {
+  .reasons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .reasons .card {
+    flex: 1 1 45%;
+    margin: 0.5rem;
+  }
 }
+@media (max-width: 576px) {
+  .reasons .card {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+
 @media (max-width: 768px) {
   .reason-heading h2 {
     font-size: 1.5rem;
@@ -2732,6 +2613,20 @@ footer .sec .logo .logo-img   {
 
 }
 
+@media (max-width: 768px) {
+  .foot .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .foot .container > div {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
 /* 📉 Extra Small Screens (Optional for extreme cases) */
 @media screen and (max-width: 400px) {
 
@@ -2740,5 +2635,3 @@ footer .sec .logo .logo-img   {
     margin-bottom: 1rem;
   }
 }
-
-
