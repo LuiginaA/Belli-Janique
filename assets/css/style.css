@@ -79,7 +79,7 @@ body {
   left: 0;
   min-height: 30vh;
   overflow: visible;
-  /* z-index: 1030; */
+  z-index: 1030; 
 } 
 
 /* --------------- Normal Styles */
@@ -225,7 +225,7 @@ body {
   margin-top: -30px;
 }
 
-.title a {
+.title-cont .title a {
   font-family: var(--ff-1);
   font-size: 8px; 
   color: var(--text-color-a);
@@ -466,7 +466,7 @@ a.navbar-brand  {
 }
 
 .title-cont {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: var(--bg-color-a);
@@ -474,18 +474,20 @@ a.navbar-brand  {
   padding-top: 10px;
   padding-left: 50px;
   padding-right: 20px;
-  margin-bottom: -24px;
+  margin-bottom: -24px; */
+  display: none;
 }
 
-.title a {
-  font-family: var(--ff-2);
+.title-cont .title a {
+  /* font-family: var(--ff-2);
   font-size: 6px; 
   color: var(--text-color-a);
   margin-left: 0px;
   margin-right: 10px;
   margin-right: 5px;
   padding-right: 5px;
-  text-decoration: none; 
+  text-decoration: none;  */
+  display: none;
 }
 
 .scroll i {
@@ -593,12 +595,13 @@ a.navbar-brand  {
 /* ===========================
    🖥️ Desktops (≥992px)
    =========================== */
-/* @media (min-width: 992px) {
+@media (max-width: 991px) {
   .navbar-brand img {
     height: 140px;
     width: 140px;
   }
-
+}
+ /*
   .titleName {
     font-size: 2.5rem;
   }
@@ -821,7 +824,7 @@ a.navbar-brand  {
 }
 
 
- screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .hero {
     grid-template-columns: 1fr;
     padding: 60px 5% 30px 5%;
