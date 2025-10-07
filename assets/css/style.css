@@ -21,7 +21,9 @@ html {
 }
 
 body {
-  width: 100%;
+ width: 1200px;
+
+  /* width: 100%; */
   min-height: 100vh;
 }
 
@@ -79,7 +81,8 @@ body {
   left: 0;
   min-height: 30vh;
   overflow: visible;
-  z-index: 1030; 
+  z-index: 1030;  
+
 } 
 
 /* --------------- Normal Styles */
@@ -92,8 +95,10 @@ body {
   margin-left: auto;
   margin-top: 0;
   margin-bottom: -40px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 0;
 }
 
@@ -311,7 +316,8 @@ ul.dropdown-menu {
 .scroll i {
   position: absolute;
   top: 82%;
-  right: 4%;
+  /* right: 4%; */
+    right: 8%;
   transform: translate(-50%);
   color: var(--bg-color-c);
   font-size: 1.2rem;
