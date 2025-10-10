@@ -349,7 +349,7 @@ ul.dropdown-menu {
 /* ===========================
    📱 Very Small Devices (max-width: 480px) This targets screen widths of 480px and below
    =========================== */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .container-top {
     display: flex;
     flex-direction: column;
