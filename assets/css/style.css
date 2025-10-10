@@ -77,13 +77,15 @@ body {
 .fixed-top {
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
-  min-height: 30vh;
+  /* right: 0;
+  left: 0;  */
+  /* min-height: 30vh; */
   overflow: visible;
   z-index: 1030;
-
+  width: 100%;
+  max-height: fit-content;
 }
+
 
 /* --------------- Normal Styles */
 
@@ -95,10 +97,10 @@ body {
   margin-left: auto;
   margin-top: 0;
   margin-bottom: -40px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 15px;
+  padding-right: 15px; 
+  /* padding-left: 100px;
+  padding-right: 100px; */
   padding-top: 0;
 }
 
@@ -117,7 +119,7 @@ body {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: var(--bg-color-a);
+  background-color: var(--bg-color-a); 
 }
 
 .topNav a {
@@ -270,7 +272,6 @@ title-cont title  {
   display: inline-block;
   color: var(--bg-color-c);
   color: #c32aa3;
-
 }
 
 .active {
@@ -348,13 +349,13 @@ ul.dropdown-menu {
 /* ===========================
    📱 Very Small Devices (max-width: 480px) This targets screen widths of 480px and below
    =========================== */
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .container-top {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 0;
+    margin-top: -10px;
     margin-bottom: -35px;
     text-align: center;
     padding: 10px;
@@ -362,14 +363,16 @@ ul.dropdown-menu {
 
   .topNav a {
     margin-bottom: -20px;
-    padding-top: 5px;
+    padding-top: 15px;
   }
 
 /* number */
   .top-bar_content p {
     font-family: var(--ff-1);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    padding-bottom: 8px; 
+    margin-bottom: 5px;
   }
 
 /* Name */
@@ -379,17 +382,16 @@ ul.dropdown-menu {
     font-weight: 800;
     letter-spacing: 0px;
     line-height: normal;
-    padding-top: 8px;
+    padding-bottom: 8px;
     text-align: center;
+    margin-bottom: 5px;
   }
 
 /* Request */
   .top_bar_content p {
     font-size: 14px;
     font-weight: 600;
-    padding-top: 8px;
-    padding-bottom: 4px;
-    margin-bottom: 20px;
+    padding-top: -8px;
   }
 
   a.navbar-brand  {
@@ -407,7 +409,7 @@ ul.dropdown-menu {
   }
 
   .titleName {
-    font-size: 1.4rem; /*smaller title text  */
+    font-size: 1.4rem; 
     max-width: 120px;
     margin-left: 15px;
     margin-right: 70px;
@@ -416,22 +418,39 @@ ul.dropdown-menu {
   }
 
   .navbar-toggler {
-    max-width: 5em; /* smaller button */
+    max-width: 5em; 
     padding: 6px;
     /* margin-left: 140px; */
     align-items: center;
   }
 
   .navbar-nav .nav-link {
+    font-size: var(--fs-a);
+    font-weight: var(--fw-b);
+    display: inline-block;
+    color: var(--bg-color-c);
+  }
+
+  .active {
+    font-size: var(--fs-a);
+    font-weight: var(--fw-n);
+    display: inline-block;
+    color: var(--text-color-c) !important; 
+  }
+
+  .navbar-nav .nav-link {
     font-size: 0.9rem;
+    margin: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   .dropdown-menu .dropdown-item {
-    margin-top: -5px;
+    margin-top: -8px;
     margin-bottom: 2px;
     margin-left: 20px;
     padding-top: 2px;
-    padding-bottom: 2px;
+    padding-bottom: px;
     background-color: transparent;
     color: var(--text-color-a);
     color: #212529;
@@ -439,9 +458,13 @@ ul.dropdown-menu {
     font-size: .8px;
   }
 
+  .dropdown-menu .dropdown-item {
+    width: 80%;
+  }
+
   .nav-item a:hover {
     text-decoration: none;
-    color: var(--text-color-a);
+    color: var(--0text-color-a);
     border-radius: none;
     border: none;
     cursor: pointer;
@@ -450,6 +473,8 @@ ul.dropdown-menu {
 
   .title-cont {
     display: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .title-cont .title a {
@@ -466,8 +491,7 @@ ul.dropdown-menu {
    📱 Small Devices (min-width:576px) and (max-width: 992px) This targets screen widths of 576px and below
    =========================== */
 
-
-@media (min-width: 576px) {
+edia (min-width: 576px) and (max-width 991px) {
   /* .container-fluid {
     width: 100%;
     margin-right: auto;
@@ -479,7 +503,7 @@ ul.dropdown-menu {
     padding-top: 0;
   } */
 
-    .container-top {
+    container-top {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,7 +514,7 @@ ul.dropdown-menu {
     padding: 10px;
   }
 
-  container-top {
+  .container-top {
     display: flex;
     flex-direction: row; 
     align-items: center;
@@ -513,6 +537,7 @@ ul.dropdown-menu {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
+ 
   }
 
 /* Name */
@@ -603,7 +628,7 @@ edia (min-width: 768px) {
     padding-top: 0;
   }
 
-  .container-top {
+  .-top {
     display: flex;
     flex-direction: row; 
     align-items: center;
@@ -614,14 +639,14 @@ edia (min-width: 768px) {
     padding: 10px;
   }
 
-  .topNav a {
+  topNav a {
     padding-bottom: 20px;
     padding-top: 5px;
     margin-bottom: -20px;
   }
 
 /* number */
-  .top-bar_content p {
+  top-bar_content p {
     font-family: var(--ff-1);
     font-size: 16px;
     font-weight: 700;
@@ -629,7 +654,7 @@ edia (min-width: 768px) {
   }
 
 /* Name */
-  .top-barContent p {
+  top-barContent p {
     font-family: var(--ff-1);
     font-size: 20px;
     font-weight: 800;
@@ -713,14 +738,14 @@ edia (min-width: 768px) {
   }
 
 /* number */
-  .top-bar_content p {
+.top-bar_content p {
     font-family: var(--ff-1);
     font-size: 14px;
     font-weight: 800;
   }
 
 /* Name */
-  .top-barContent p {
+  top-barContent p {
     font-family: var(--ff-1);
     font-size: 18px;
     font-weight: 800;
@@ -731,7 +756,7 @@ edia (min-width: 768px) {
   }
 
 /* Request */
-  .top_bar_content p {
+  top_bar_content p {
     font-size: 14px;
     font-weight: 800;
     padding-top: 8px;
@@ -743,7 +768,7 @@ edia (min-width: 768px) {
     width: 130px;
   }
 
-  .titleName {
+  titleName {
     font-size:1.4rem;
   }
 
