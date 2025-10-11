@@ -21,11 +21,11 @@ html {
 }
 
 body {
- /* width: 1200px; */
-
-  width: 100%; 
-  /* min-height: 100vh; */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 
 /* font-size: 62.5%;
   This % changes the normal base size of 16px to 10px --- 21px = 2.1rem (because 21 x 10 = 2.1rem */
