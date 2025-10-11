@@ -349,7 +349,7 @@ ul.dropdown-menu {
 /* ===========================
    📱 Very Small Devices (max-width: 480px) This targets screen widths of 480px and below
    =========================== */
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .container-top {
     display: flex;
     flex-direction: column;
@@ -491,7 +491,7 @@ ul.dropdown-menu {
    📱 Small Devices (min-width:576px) and (max-width: 992px) This targets screen widths of 576px and below
    =========================== */
 
-edia (min-width: 576px) and (max-width 991px) {
+edia (min-width: 576px)  {
   /* .container-fluid {
     width: 100%;
     margin-right: auto;
