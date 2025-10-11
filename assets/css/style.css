@@ -578,6 +578,11 @@ ul.dropdown-menu {
 }
 
 
+@media (max-width: 575px) {
+  body {
+    background-color: pink; /* Just for testing */
+  }
+}
 
 
 
@@ -588,7 +593,7 @@ ul.dropdown-menu {
    📱 Small Devices (min-width:576px) and (max-width: 992px) This targets screen widths of 576px and below
    =========================== */
 
-edia (min-width: 576px)  {
+/* edia (min-width: 576px)  {
   /* .container-fluid {
     width: 100%;
     margin-right: auto;
@@ -701,7 +706,7 @@ edia (min-width: 576px)  {
     display: none; 
   }
 
-}
+} */
 
 
 
@@ -709,7 +714,7 @@ edia (min-width: 576px)  {
 
 
 
-
+/* 
 /* ===========================
    📲 Small tablets 
    =========================== */
@@ -815,7 +820,7 @@ edia (min-width: 768px) {
     display: none; 
   }
 
-}
+} */
 
 
 
@@ -829,7 +834,7 @@ edia (min-width: 768px) {
 /* ===========================
    💻 Tablets / small laptops (≥768px)
    =========================== */
-edia (min-width: 768px) {
+/* edia (min-width: 768px) {
   .container-top {
     justify-content: space-between;
   }
@@ -914,17 +919,18 @@ edia (min-width: 768px) {
   padding-right: 5px;
   text-decoration: none;
   }
-}
+} */
 
 
 /* ===========================
    🖥️ Desktops (≥992px)
-   =========================== */edia (max-width: 991px) {
+   /* =========================== */
+   /* edia (max-width: 991px) {
   .navbar-brand img {
     height: 140px;
     width: 140px;
-  }
-}
+  } */
+} */
  /*
   .titleName {
     font-size: 2.5rem;
