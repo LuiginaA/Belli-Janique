@@ -21,10 +21,10 @@ html {
 }
 
 body {
- width: 1200px;
+ /* width: 1200px; */
 
-  /* width: 100%; */
-  min-height: 100vh;
+  width: 100%; 
+  /* min-height: 100vh; */
 }
 
 /* font-size: 62.5%;
@@ -302,7 +302,7 @@ title-cont title  {
 
 ul.dropdown-menu {
   background-color: var(--bg-color-a);
-  z-index: 1050; /* higher than navbar’s 1030 */
+  z-index: 1050; 
   position: absolute;
 }
 
@@ -314,6 +314,7 @@ ul.dropdown-menu {
   color: var(--text-color-a);
   font-size: var(--fs-a);
   font-weight: var(--fw-n);
+  z-index: 1050;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -446,7 +447,7 @@ ul.dropdown-menu {
   }
 
   .dropdown-menu .dropdown-item {
-    margin-top: -8px;
+    margin-top: 8px;
     margin-bottom: 2px;
     margin-left: 20px;
     padding-top: 2px;
@@ -464,7 +465,7 @@ ul.dropdown-menu {
 
   .nav-item a:hover {
     text-decoration: none;
-    color: var(--0text-color-a);
+    color: var(--text-color-a);
     border-radius: none;
     border: none;
     cursor: pointer;
@@ -486,6 +487,102 @@ ul.dropdown-menu {
   }
 
 }
+
+
+
+
+/* Extra Small Devices (phones, <576px) */
+@media (max-width: 575px) {
+  .navbar-brand img {
+    width: 100px;
+    height: auto;
+  }
+
+  .titleName {
+    font-size: 1.2rem;
+    max-width: 100px;
+  }
+
+  .navbar-toggler {
+    max-width: 4em;
+    padding: 5px;
+  }
+
+  .dropdown-menu .dropdown-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Devices (phones landscape, 576px–767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar-brand img {
+    width: 120px;
+    height: auto;
+  }
+
+  .titleName {
+    font-size: 1.3rem;
+  }
+
+  .dropdown-menu .dropdown-item {
+    font-size: 1rem;
+  }
+}
+
+/* Medium Devices (tablets, 768px–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand img {
+    width: 140px;
+    height: auto;
+  }
+
+  .titleName {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* Large Devices (laptops, 992px–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand img {
+    width: 160px;
+    height: auto;
+  }
+
+  .titleName {
+    font-size: 1.6rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra Large Devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar-brand img {
+    width: 180px;
+    height: auto;
+  }
+
+  .titleName {
+    font-size: 1.8rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
 
 /* ===========================
    📱 Small Devices (min-width:576px) and (max-width: 992px) This targets screen widths of 576px and below
