@@ -359,7 +359,7 @@ ul.dropdown-menu {
 
 
 
-.dropdown-menu {
+ul.dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
