@@ -30,6 +30,8 @@ body {
 
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: auto;
+
    /* min-height: 30vh; */
 }
 
@@ -299,6 +301,15 @@ margin-right: auto;
 
 /* ----- Navbar Section ----- */
 
+
+.navbar {
+  position: relative;
+  overflow: visible;
+}
+
+
+
+
 .navbar-nav .nav-item {
   margin: 0 8px; 
 
@@ -345,6 +356,24 @@ ul.dropdown-menu {
   z-index: 1050; 
   position: absolute;
 }
+
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1050;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  margin: 0;
+  background-color: var(--bg-color-a);
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+
+
 
 .dropdown-menu .dropdown-item {
   margin-top: -5px;
