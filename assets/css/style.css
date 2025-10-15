@@ -354,13 +354,18 @@ margin-right: auto;
 ul.dropdown-menu {
   background-color: var(--bg-color-a);
   z-index: 1050; 
-  position: absolute;
+  /* position: absolute; */
+
+
+    box-shadow: none;
+  margin: 0;
+  padding: 0.5rem 0;
 }
 
 
 
 ul.dropdown-menu {
-  position: absolute;
+  position: absolute; 
   top: 100%;
   left: 0;
   z-index: 1050;
@@ -384,6 +389,16 @@ ul.dropdown-menu {
   font-weight: var(--fw-n);
   /* z-index: 1050; */
 }
+
+
+
+.dropdown-item {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+
+
 
 .dropdown-menu .dropdown-item:hover,
 .shadow li:hover {
