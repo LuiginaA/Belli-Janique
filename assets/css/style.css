@@ -14,8 +14,6 @@
   box-sizing: border-box;
   list-style: none;
   font-family: 'Merriweather', serif;
-
-  border: 1px solid red;
 }
 
 html {
@@ -23,18 +21,14 @@ html {
   overflow-x: hidden; 
   width: 100%;
   max-width: 100%;
-
 }
 
 body {
   width: 100%;
   max-width: 100%;
-
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: auto;
-
-   /* min-height: 30vh; */
 }
 
 /* font-size: 62.5%;
@@ -87,19 +81,11 @@ body {
 .fixed-top {
   position: fixed;
   top: 0;
-  /* right: 0;
-  left: 0;  */
-  /* min-height: 30vh;  */
   overflow: visible;
   z-index: 1030;
   width: 100%;
   max-width: 100%;
-
-  /* max-height: fit-content; */
 }
-
-
-
 
 /* --------------- Normal Styles */
 
@@ -108,12 +94,8 @@ body {
 .container-fluid {
   width: 100%;
   max-width: 100%;
-
   margin: 0 auto -40px auto;
   padding: 0 15px;
-
-  /* padding-left: 100px;
-  padding-right: 100px; */
 }
 
 .container-top {
@@ -122,23 +104,17 @@ body {
   align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
-
+  max-width: 100%;
   margin-top: 8px;
   text-align: center;
-
-
-    max-width: 100%;
-
 }
 
 .topNav {
   width: 100%;
+  max-width: 100%; 
   margin: 0;
   padding: 0;
   background-color: var(--bg-color-a); 
-
-    max-width: 100%;
-
 }
 
 .topNav a {
@@ -153,11 +129,6 @@ body {
   justify-content: space-evenly; 
   margin: 0;
   padding: 0px;
-
-    /* width: 100%; */
-  /* height: 30px; */
-  /* margin-top: 8px;
-  text-align: center; */
 }
 
 /* Number */
@@ -194,18 +165,12 @@ body {
 .navbar-brand img {
   background-size: cover;
   background-repeat: no-repeat;
-  /* align-items: center;
-  justify-content: center; */
-
   height: 150px;
   width: 150px;  
-
-  /* padding-bottom: 0px; */
 }
 
 .titleName {
   font-family: var(--ff-1);
-  /* font-size: var(--fs-3); */
   font-size: 1.6rem;
   font-weight: 800;
   max-width: 200px;
@@ -226,14 +191,10 @@ body {
   margin: 1em;
 }
 
-
-
 .navbar-toggler i {
   width: 20px;
   font-size: 1.4rem;
   font-weight: 600;
-  /* justify-self: center;
-  align-self: center; */
   color: #212529;
   cursor: pointer;
 }
@@ -255,43 +216,22 @@ body {
   font-size: 8px;
   color: var(--text-color-f);
   font-style: italic;
-  /* margin-left: 95px;
-  margin-right: 20px; */
   width: 100%;
   text-decoration: none;
-
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   word-wrap: break-word;
   white-space: normal;
   display: block;
   text-align: center;
-
 }
 
-  /* {
-  font-size: 8px;
-  color: var(--text-color-a);
-  font-style: italic;
-  margin-left: 100px;
-  margin-right: 20px;
-  margin-top: 0;
-  width: 100%;
-  text-decoration: none;
-  color: #df3f5a;
-  flex-direction: row;
-}  */
-
 /* ----- Navbar Section ----- */
-
 
 .navbar {
   position: relative;
   overflow: visible;
 }
-
-
-
 
 .navbar-nav .nav-item {
   margin: 0 8px; 
@@ -300,19 +240,16 @@ margin-right: auto;
 .navbar-nav .nav-link {
   font-size: var(--fs-a);
   font-weight: var(--fw-b);
-  /* display: inline-block; */
   color: var(--bg-color-c);
 }
 
 .active {
   font-size: var(--fs-a);
   font-weight: var(--fw-n);
-  /* display: inline-block; */
   color: var(--text-color-c) !important; 
 }
 
 .active:hover {
-  /* text-decoration: none; */
   color: var(--text-color-g) !important; 
   background: transparent;
   text-shadow: none;
@@ -320,10 +257,8 @@ margin-right: auto;
 }
 
 .nav-item a:hover {
-  /* text-decoration: none; */
   color: var(--text-color-a);
   border-radius: 10px;  
-  /* border: 2px solid #BDA686;  */
   border: 2px solid #6f9170;  
   text-shadow: none;
   cursor: pointer;
@@ -343,28 +278,19 @@ ul.dropdown-menu {
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 
-
-
-
 .dropdown-menu .dropdown-item {
   margin-top: -5px;
-  padding: 5px 0 2px;
+  padding: 5px 5px 2px;
   background-color: transparent;
   color: var(--text-color-a);
   font-size: var(--fs-a);
   font-weight: var(--fw-n);
-  /* z-index: 1050; */
 }
-
-
 
 .dropdown-item {
   white-space: normal;
   word-wrap: break-word;
 }
-
-
-
 
 .dropdown-menu .dropdown-item:hover,
 .shadow li:hover {
@@ -372,10 +298,6 @@ ul.dropdown-menu {
   color: var(--text-color-a); 
   cursor: pointer;
 }
-
-/* .shadow li:hover {
-  background-color: var(--bg-color-a);
-} */
 
 /* Make default caret (dropdown arrow) bigger */
 .navbar .dropdown-toggle::after {
@@ -386,14 +308,10 @@ ul.dropdown-menu {
 
 .scroll i {
   position: fixed;
-
-bottom: 10px;
+  bottom: 10px;
   right: 10px;
   font-size: 1rem;
   z-index: 999;
-
-  /* top: 82%; */
-
   transform: translate(-50%);
   color: var(--bg-color-c);
   font-size: 1.2rem;
@@ -465,7 +383,6 @@ bottom: 10px;
   .title-cont .title a {
     font-size: 6px;
     margin: 0 5px;
-  
     text-align: center;
   }
 
@@ -509,9 +426,7 @@ bottom: 10px;
     padding: 8px;
   }
 
-
-
-   .navbar-nav {
+  .navbar-nav {
     flex-direction: column;
     align-items: center;
   }
@@ -520,11 +435,6 @@ bottom: 10px;
     position: static;
     box-shadow: none;
   }
-}
-
-
-
-
 
   .title-cont .title a {
     font-size: 6px;
