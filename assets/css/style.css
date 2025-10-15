@@ -18,11 +18,16 @@
 
 html {
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
+  overflow-x: hidden; 
+  width: 100%;
+  max-width: 100%;
+
 }
 
 body {
   width: 100%;
+  max-width: 100%;
+
   margin: 0 auto;
   overflow-x: hidden;
    /* min-height: 30vh; */
@@ -84,6 +89,8 @@ body {
   overflow: visible;
   z-index: 1030;
   width: 100%;
+  max-width: 100%;
+
   /* max-height: fit-content; */
 }
 
@@ -98,6 +105,8 @@ body {
 
 .container-fluid {
   width: 100%;
+  max-width: 100%;
+
   margin: 0 auto -40px auto;
   padding: 0 15px;
 
@@ -111,6 +120,7 @@ body {
   align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
+
   margin-top: 8px;
   text-align: center;
 
@@ -260,12 +270,13 @@ body {
   font-size: 8px;
   color: var(--text-color-f);
   font-style: italic;
-  margin-left: 95px;
-  margin-right: 20px;
+  /* margin-left: 95px;
+  margin-right: 20px; */
   width: 100%;
   text-decoration: none;
 
-
+margin-left: auto;
+margin-right: auto;
   word-wrap: break-word;
   white-space: normal;
   display: block;
