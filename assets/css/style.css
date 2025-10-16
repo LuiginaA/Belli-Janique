@@ -717,8 +717,8 @@ ro  {
     justify-content: flex-start;
     padding: 100px 5% 30px 5%;
     margin-top: 70px; 
-    gap: 1rem;
-    overflow-y: auto; /* 👈 allows vertical scrolling */
+    gap: 0.5rem;
+    /* overflow-y: auto; 👈 allows vertical scrolling */
   }
 
   .hero-text {
@@ -741,19 +741,20 @@ ro  {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   .hero-img img {
-    width: 80%;
+    width: 70%;
     height: auto;
+    margin-bottom: 0; /* 👈 remove extra space below image */
   }
 
   .appoint-btn {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .appoint-btn .btn {
