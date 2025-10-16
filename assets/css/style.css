@@ -409,6 +409,14 @@ ul.dropdown-menu {
     font-size: 0.9rem;
   }
 
+  .title-cont .title a {
+    font-size: 6px;
+    margin-left: 5px;
+  } 
+
+  
+
+
   /* .title-cont {
     display: none;
     padding-bottom: 0;
@@ -494,7 +502,7 @@ ul.dropdown-menu {
     max-width: 100%;
     padding: 0 10px;
     /* margin: 0 auto; */
-KC
+
 
   /* .title-cont .title a {
     display: inline-block;
@@ -503,7 +511,7 @@ KC
     word-wrap: break-word;
     white-space: normal;
     text-align: center;
-  } */ */
+  } */ 
 
 
 
