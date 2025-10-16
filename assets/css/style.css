@@ -120,6 +120,7 @@ body {
 .topNav a {
   text-decoration: none;
   padding: 0 10px;
+  margin-bottom: 0;
 }
 
 .top {
@@ -381,14 +382,10 @@ ul.dropdown-menu {
     font-size: 0.9rem;
   }
 
+  .title-cont,
   .title-cont .title a {
-    display: none; 
-  } 
-
-  .title-cont  {
-    margin: 0;
-    padding: 0;
-  } 
+    display: none;
+  }
 
   /* Scroll icon repositioned */
   .scroll i {
@@ -399,18 +396,31 @@ ul.dropdown-menu {
 }
 
 @media (max-width: 480px) {
+  .topnav,
+  .top-bar {
+    padding: 5px 10px;
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-bar p,
+  .title-cont p {
+    font-size: 0.85rem;
+    margin: 2px 0;
+    padding: 0;
+    line-height: 1.2rem;
+  }
+
+  .title-cont,
   .title-cont .title a {
     display: none;
   }
 
-  .title-cont {
-    margin: 0;
-    padding: 0;
-  }
 }
-
-
-
 
 
 /* 📱 Phones */
@@ -459,8 +469,6 @@ ul.dropdown-menu {
     margin-left: 5px; 
   }  
 
-  
-
   .scroll i {
     top: 90%;
     right: 5%;
@@ -497,11 +505,6 @@ ul.dropdown-menu {
 
 /* ----- Hero Page ----- */
 
-ro  {
-  /* padding: 0 14%; */
-  /* padding: 130px 14% 10px 14%; */
-}
-
 .hero {
   position: relative;
   width: 100%;
@@ -513,7 +516,7 @@ ro  {
   gap: 2rem;
   margin-top: 70px;
   margin-bottom: 10px;
-    padding: 130px 14% 10px 14%;
+  padding: 130px 14% 10px 14%; 
   z-index: 1000;
 }
 
@@ -674,62 +677,50 @@ ro  {
     margin-top: 70px; /* 👈 This pushes it below the navbar */
     grid-template-columns: 1fr;
     gap: 1rem;
-
   }
 
-  /* .hero-text h3 {
-    font-size: 1rem;
-    margin: 20px 0;
+  .hero-img {
+  margin-bottom: 0;
+  padding-bottom: 0;
   }
-
-  .hero-text h1 {
-    font-size: 1.4rem;
-    margin: 10px 0;
-  }
-
-  .hero-text p {
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-    margin-bottom: 20px;
-  } */
 
   .hero-img img{
     width: 80%;
     height: auto;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .appoint-btn {
-  width: 100%;
-  justify-content: center;
-
-    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .appoint-btn .btn {
-  width: 90%;
-  height: 50px;
-}
+    width: 90%;
+    height: 50px;
+  }
 
-.hero-text h3,
-.hero-text h1,
-.hero-text p {
-  font-size: 0.9rem;
-  line-height: 1.3rem;
-  margin: 10px 0;
-  padding: 0 5px;
-  text-align: center;
-}
+  .hero-text h3,
+  .hero-text h1,
+  .hero-text p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin: 10px 0;
+    padding: 0 5px;
+    text-align: center;
+  }
 
 }
 
 /* 📱 Small Devices  */
-
 @media (max-width: 480px) {
   body {
     overflow-x: hidden;
   }
-
 
   .hero {
     display: flex;
@@ -783,29 +774,9 @@ ro  {
     width: 80%;
     height: 40px;
   }
+
 }
 
-
-
-
-
-
-
-/* @media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 1.6rem;
-  }
-
-  .appoint-btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .appoint-btn .btn {
-    width: 90%;
-    height: 60px;
-  }
-} */
 
 @media screen and (max-width: 576px) {
   .hero {
@@ -825,12 +796,6 @@ ro  {
     margin: 10px 0;
     padding: 10px 0;
   }
-
-  /* .hero-text h5 {
-    font-size: 1.2em;
-    margin: 50px 0 10px 0;
-    padding: 10px 0;
-  } */
 
   .hero-text p {
     font-size: 1rem;
@@ -880,7 +845,7 @@ ro  {
   
 }
 
-/* 📉 Extra Small Screens (Optional for extreme cases) */
+
 
 
 /* ----- Intro Meet Dr Janique Section ----- */
