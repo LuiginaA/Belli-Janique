@@ -718,7 +718,8 @@ ro  {
     padding: 100px 5% 30px 5%;
     margin-top: 70px; 
     gap: 0.5rem;
-    /* overflow-y: auto; 👈 allows vertical scrolling */
+    max-height: 100vh;
+    overflow-y: auto; /* 👈 allows vertical scrolling  */
   }
 
   .hero-text {
@@ -729,9 +730,9 @@ ro  {
   .hero-text h3,
   .hero-text h1,
   .hero-text p {
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    margin: 10px 0;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    margin: 8px 0;
     padding: 0 10px;
     word-wrap: break-word;
     white-space: normal;
@@ -745,7 +746,7 @@ ro  {
   }
 
   .hero-img img {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin-bottom: 0; /* 👈 remove extra space below image */
   }
@@ -758,8 +759,8 @@ ro  {
   }
 
   .appoint-btn .btn {
-    width: 90%;
-    height: 50px;
+    width: 80%;
+    height: 40px;
   }
 }
 
