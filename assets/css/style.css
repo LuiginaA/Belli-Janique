@@ -382,8 +382,12 @@ ul.dropdown-menu {
   }
 
   .title-cont .title a {
-    font-size: 6px;
-    margin-left: 5px;
+    display: none; 
+  } 
+
+  .title-cont  {
+    margin: 0;
+    padding: 0;
   } 
 
   /* Scroll icon repositioned */
@@ -393,6 +397,21 @@ ul.dropdown-menu {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 480px) {
+  .title-cont .title a {
+    display: none;
+  }
+
+  .title-cont {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+
 
 /* 📱 Phones */
 @media (max-width: 576px) {
@@ -437,8 +456,10 @@ ul.dropdown-menu {
 
   .title-cont .title a {
     font-size: 6px;
-    margin-left: 5px;
-  } 
+    margin-left: 5px; 
+  }  
+
+  
 
   .scroll i {
     top: 90%;
@@ -755,7 +776,7 @@ ro  {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 25px;
   }
 
   .appoint-btn .btn {
