@@ -201,7 +201,7 @@ body {
 
 /* ----- Nav-End Section ----- */
 
-.title-cont {
+/* .title-cont {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -209,9 +209,9 @@ body {
   width: 100%;
   background-color: var(--bg-color-a);
   margin-top: -30px;
-}
+} */
 
-.title-cont .title a {
+/* .title-cont .title a {
   font-family: var(--ff-1);
   font-size: 8px;
   color: var(--text-color-f);
@@ -224,7 +224,37 @@ body {
   white-space: normal;
   display: block;
   text-align: center;
+} */
+
+.title-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-align: center;
+  background-color: var(--bg-color-a)
 }
+
+.title-cont .title a {
+  display: inline-block;
+  font-size: 0.8rem;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: var(--text-color-f);
+}
+
+
+
 
 /* ----- Navbar Section ----- */
 
@@ -379,12 +409,15 @@ ul.dropdown-menu {
     font-size: 0.9rem;
   }
 
-  /* Title bar text smaller */
-  .title-cont .title a {
-    font-size: 6px;
-    margin: 0 5px;
-    text-align: center;
+  /* .title-cont {
+    display: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
+
+  .title-cont .title a {
+    display: none;
+  } */
 
   /* Scroll icon repositioned */
   .scroll i {
@@ -394,6 +427,18 @@ ul.dropdown-menu {
   }
 }
 
+/* 📱 Small Devices */
+/* @media (max-width: 480px) {
+  .title-cont {
+    display: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .title-cont .title a {
+    display: none;
+  }
+}  */
 
 /* 📱 Phones */
 @media (max-width: 576px) {
@@ -438,14 +483,36 @@ ul.dropdown-menu {
 
   .title-cont .title a {
     font-size: 6px;
-    margin-left: 20px;
-  }
+    margin-left: 5px;
+  } 
+
+/* 
+
+  .title-cont {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    /* margin: 0 auto; */
+KC
+
+  /* .title-cont .title a {
+    display: inline-block;
+    font-size: 0.6rem;
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+  } */ */
+
+
+
 
   .scroll i {
     top: 90%;
     right: 5%;
     font-size: 1rem;
-  }
+  } 
 }
 
 /* 📲 Tablets */
