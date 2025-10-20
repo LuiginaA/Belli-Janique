@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
@@ -58,15 +57,21 @@
 
 <!----- Navbar Section ----->  
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
         <div class="container">  
 
             <section>
-                <a class="navbar-brand" href="#home">
+                <!-- <a class="navbar-brand" href="#home">
                     <img src="assets/image/logo.png" alt="Logo" width="150px" height="150px">
-<!-- width="200px" height=200"class="d-inline-block align-text-top" -->
                     <h5 class="titleName">Dr Janique Belli</h5>
+                </a> -->
+
+                <a class="navbar-brand d-flex flex-column align-items-center" href="#home">
+                <img src="assets/image/logo.png" alt="Dr Janique Logo" class="logo-img">
+                <h5 class="titleName">Dr Janique Belli</h5>
                 </a>
+
+
             </section>
 
 <!----- Toggle Btn Section ----->
@@ -212,14 +217,6 @@
         </div>
     </nav>
 
-    <!-- Registration Title Bar -->
-        <div class="title-cont">  
-            <div class="title">
-                <a href="#"><strong>REGISTERED CHIROPRACTOR &#8287;:&#8287;</strong>(CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
-                </a>
-            </div>  
-        </div>  
-
     <!-- Scroll Icon -->
         <div class="scroll">
             <a href="#">
@@ -230,6 +227,19 @@
 </header>
 
 <main>
+
+<!-- Registration Title Bar -->
+
+<section class="registration-section">
+    <div class="registration-container">
+        <div class="title-cont">  
+            <div class="title">
+                <a href="#"><strong>REGISTERED CHIROPRACTOR &#8287;:&#8287;</strong>(CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
+                </a>
+            </div>
+        </div>  
+    </div>  
+</section>
 
 <!------- Hero Quote Section ------->
 
@@ -248,13 +258,14 @@
             &ldquo;The sky has never been the limit. We are our own limits.<br>It&rsquo;s then about breaking our personal limits and outgrowing ourselves to live our best
             lives&rdquo;. <br> &#8764; Author Unknown &#8764;
         </p>
-
+   
+    <div>
         <div class="appoint-btn" data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">
             <div class="btn"><a href="#">Book An Appointment NOW!</a></div>
         </div>
     
     </div>
-
+ </div>
     <div class="hero-img" data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1400" data-aos-delay="400"> 
@@ -262,7 +273,7 @@
         <picture>
             <source srcset="assets/image/skeleton-Janique1.avif" type="image/avif">
             <source srcset="assets/image/skeleton-Janique.webp" type="image/webp">
-            <img src="assets/image/skeleton-Janique1.png" alt="Illustration of a skeleton for chiropractic care"> 
+            <img src="assets/image/skeleton-Janique1.png" alt="skeleton illustration for chiro"> 
         </picture>
     </div>
 </section>  
