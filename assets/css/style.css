@@ -978,7 +978,7 @@ ul.dropdown-menu {
 }
 
 /* 💻 Medium Laptops */
-
+/* 
 @media (max-width: 1200px) {
   .hero {
     grid-template-columns: 1fr 1fr;
@@ -1009,7 +1009,7 @@ ul.dropdown-menu {
     width: 45%;
     margin: 10px;
   }
-}
+} */
 
 
 
