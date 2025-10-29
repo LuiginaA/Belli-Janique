@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-
   <title>Dr Janique</title>
 
   <!-- ✅ Bootstrap CSS -->
@@ -25,7 +24,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
   <!-- ✅ Your custom styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/sty.css">
 
   <!-- ✅ JavaScript file (if you wrote one) -->
   <!-- <script src="script.js" defer></script>  -->
@@ -61,11 +60,16 @@
         <div class="container">  
 
             <section>
-                <a class="navbar-brand" href="#home">
+                <!-- <a class="navbar-brand" href="#home">
                     <img src="assets/image/logo.png" alt="Logo" width="150px" height="150px">
-<!-- width="200px" height=200"class="d-inline-block align-text-top" -->
                     <h5 class="titleName">Dr Janique Belli</h5>
+                </a> -->
+
+                <a class="navbar-brand d-flex flex-column align-items-center" href="#home">
+                <img src="assets/image/logo.png" alt="Dr Janique Logo" class="logo-img">
+                <h5 class="titleName">Dr Janique Belli</h5>
                 </a>
+
             </section>
 
 <!----- Toggle Btn Section ----->
@@ -166,7 +170,6 @@
                             <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Adjust</a></li>
 
                             <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Book a Follow-up Appointment</a></li>
-
                         </ul>
                         </li>
 
@@ -179,7 +182,6 @@
                         <li class="dropend">
                         <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
                         </li>
-
                     </ul>
                     </li>
                 
@@ -209,11 +211,12 @@
                 </ul>
             </div>
         </div>
-        
-         
     </nav>
 
-<!-- Scroll Icon -->
+<!-- Scroll Down Icon -->
+
+    <!-- Scroll Icon -->
+
         <div class="scroll">
             <a href="#">
                 <i class="fa-solid fa-arrow-down"></i>
@@ -252,13 +255,15 @@
             &ldquo;The sky has never been the limit. We are our own limits.<br>It&rsquo;s then about breaking our personal limits and outgrowing ourselves to live our best
             lives&rdquo;. <br> &#8764; Author Unknown &#8764;
         </p>
-
-        <div class="appoint-btn" data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">
-            <div class="btn"><a href="#">Book An Appointment NOW!</a></div>
+   
+        <div>
+            <div class="appoint-btn" data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">
+                <div class="btn"><a href="#">Book An Appointment NOW!</a></div>
+            </div>
+        
         </div>
-    
     </div>
-
+    
     <div class="hero-img" data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1400" data-aos-delay="400"> 
@@ -266,7 +271,7 @@
         <picture>
             <source srcset="assets/image/skeleton-Janique1.avif" type="image/avif">
             <source srcset="assets/image/skeleton-Janique.webp" type="image/webp">
-            <img src="assets/image/skeleton-Janique1.png" alt="Illustration of a skeleton for chiropractic care"> 
+            <img src="assets/image/skeleton-Janique1.png" alt="skeleton illustration for chiro"> 
         </picture>
     </div>
 </section>  
