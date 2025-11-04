@@ -16,7 +16,10 @@
   box-sizing: border-box;
   list-style: none;
   font-family: 'Merriweather', serif;
+
+  border: 1px solid red;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -106,16 +109,16 @@ body {
   .container-top {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
      align-items: flex-start;
-    justify-content: space-between; 
-    padding: 10px 20px;
+    /* justify-content: space-between;  */
+    justify-content: space-evenly;
+    padding: 8px 0px;
     text-align: center;
   width: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   margin-top: 8px;
-  /* padding: 10px 20px;
-    gap: 1rem; */
+   
   }
 
 .topNav {
@@ -123,17 +126,15 @@ body {
  width: 100%;
   max-width: 100%;
   margin: 0;
-  /* padding: 10px 0; */
-  
-    padding: 0;
+  padding: 0 10px;
 }
 
 .topNav a {
   background-color: var(--bg-color-a);
-  /* padding: 10px 0; */
   text-decoration: none !important;
-    padding: 0 10px;
-      margin-bottom: 0;
+  padding: 0 10px;
+  margin-bottom: 0;
+  background-color: #25d366;
 }
 
 .top {
@@ -176,20 +177,20 @@ body {
 }
 
 /* ✅ Logo Section */
-/* .navbar-brand {
+.navbar-brand {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-} */
+} 
 
-.navbar-brand img,
+/* .navbar-brand img, */
 .logo-img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+
 }
 
 .titleName {
@@ -222,21 +223,22 @@ body {
 }
 
 /* ✅ Navbar Layout */
-  .navbar {
-    padding: 10px 20px;
-
-      position: relative;
+.navbar {
+  padding: 10px 20px;
+  position: relative;
   overflow: visible;
   z-index: 1000;
 
-  }
+   width: 100%;
+  max-width: 100%;
+
+}
 
 .navbar-nav .nav-item {
-  margin: 0 8px;
+  margin: 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
   border-radius: 10px;
 }
-
 
 .navbar-nav .nav-link {
   font-size: var(--fs-a);
@@ -281,7 +283,7 @@ position: absolute;
   top: 100%;
   left: 0;
   z-index: 1050;
-  min-width: 200px;
+  min-width: 200px; 
   padding: 0.5rem 0;
   margin: 0;
   background-color: var(--bg-color-a);
@@ -289,12 +291,14 @@ position: absolute;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 border-radius: 10px;
 
-
+ /* max-width: 100vw;
+  overflow-x: hidden; */
 }
 
 .dropdown-menu .dropdown-item {
   font-size: 0.95rem;
-  padding: 6px 12px; 
+  /* padding: 6px 12px;  */
+  padding: 5px 0 2px;
   color: var(--text-color-a);
   white-space: normal;
   word-wrap: break-word; 
@@ -354,12 +358,43 @@ border-radius: 10px;
   margin: 0 auto;
 }
 
+.title-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+
+
+
 .title-cont .title a {
-  font-size: 0.75rem;
+  /* font-size: 0.75rem;
   font-weight: 600;
   font-style: italic;
   color: var(--text-color-c);
   text-decoration: none;
+
+   width: 100%; */
+
+  display: inline-block;
+  font-size: 0.8rem;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+
+
 }
 
 /* .registration-container { 
@@ -380,9 +415,11 @@ border-radius: 10px;
   /* Top bar sections stack vertically */
   .container-top {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 5px;
+    gap: 2px;
+    padding-top: 0;
   }
 
   .top-barContent p {
@@ -390,52 +427,53 @@ border-radius: 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     text-align: center;
-    height: auto;
-  }
-
-  .top-barContent {
-    padding: 0px;
-    text-align: center;
-    margin: 0;
-    height: auto;
+  
   }
 
   .top-bar_content p,
   .top_bar_content p {
-    text-align: center;
     font-size: 0.75rem;
     text-align: center;
-    line-height: 1rem;
-    margin: 2px 0;
+    line-height: 1.75rem; 
+    margin: 0;
     padding: 0;
+      
+
+ 
   }
 
   /* Logo and name shrink */
-  .navbar-brand img {
-    height: 60px;
-    width: 60px;
+  .navbar-brand {
+  margin-top: 18px;
+}
+
+  .logo-img {
+    height: 120px;
+    width: 120px;
     margin-top: 5px;
     padding-top: 14px;
   }
 
   .titleName {
-    font-size: 0.9rem;
+    font-size: 0.5rem;
     margin-top: -10px;
     line-height: 1.1rem;
   }
 
   /* Toggle button smaller */
   .navbar-toggler {
-    max-width: 5em;
+    max-width: 2em;
     padding: 6px;
     margin: 0.5em;
+    border: 0.75px solid #212529;;
+    box-shadow: 2px 2px #6f9170;
   }
 
   .navbar-toggler i {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   /* Nav links stack and shrink */
@@ -452,16 +490,16 @@ border-radius: 10px;
   .dropdown-menu {
     position: static;
     box-shadow: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
-  /* .registration-section {
+  .registration-section {
     display: none;
   }
 
   .title-cont .title a {
     display: none;
-  } */
+  } 
 
   /* Scroll icon repositioned */
   .scroll i {
@@ -470,10 +508,10 @@ border-radius: 10px;
     font-size: 0.9rem;
   }
 
-  .registration-section .title-cont .title a {
+  /* .registration-section .title-cont .title a {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
+  } */
 }
 
 /* 📱 Small Phones */
@@ -489,9 +527,21 @@ border-radius: 10px;
     justify-content: center;
   }
 
-  .top-barContent p,
-  .top-bar_content p,
-  .top_bar_content p {
+  .top-bar_content p {
+    font-size: 0.85rem;
+    margin: 2px 0;
+    padding: 0;
+    line-height: 1.2rem;
+  }
+
+  .top-barContent p {
+    font-size: 0.85rem;
+    margin: 2px 0;
+    padding: 0;
+    line-height: 1.2rem;
+  }
+
+   .top_bar_content p {
     font-size: 0.85rem;
     margin: 2px 0;
     padding: 0;
@@ -556,7 +606,7 @@ border-radius: 10px;
   .dropdown-menu {
     position: static;
     box-shadow: none;
-    padding: 0;
+    /* padding: 0; */
   }
 
   .dropdown-item {
@@ -675,9 +725,11 @@ border-radius: 10px;
 
 /* 💻 1200px Screens - Large Desktops */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .container-top {
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-direction: row;
+
     align-items: center;
     text-align: center;
   }
@@ -712,11 +764,11 @@ border-radius: 10px;
     font-size: 0.9rem;
     line-height: 1.3rem;
   }
-}
+} */
 
 /* 🖥️ 1400px Screens Extra-Large Desktops*/
 
-@media (min-width: 1201px) and (max-width: 1400px) {
+/* @media (min-width: 1201px) and (max-width: 1400px) {
   .navbar-brand img {
     width: 160px;
     height: 160px;
@@ -742,7 +794,7 @@ border-radius: 10px;
   .title-cont .title a {
     font-size: 1rem;
   }
-}
+} */
 
 
 
@@ -909,7 +961,7 @@ line-height: 32px;
   left: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to left, rgba(255,255,255,0.15)) transparent;
+  background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
   transform: skewX(45deg) translateX(0);
   transition: 0.5s;
 }
