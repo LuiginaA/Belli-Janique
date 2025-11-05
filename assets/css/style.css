@@ -17,9 +17,8 @@
   list-style: none;
   font-family: 'Merriweather', serif;
 
-  border: 1px solid red;
+  /* border: 1px solid red;   */
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -106,35 +105,30 @@ body {
   padding: 0 15px;
 }
 
-  .container-top {
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-     align-items: flex-start;
-    /* justify-content: space-between;  */
-    justify-content: space-evenly;
-    padding: 8px 0px;
-    text-align: center;
+.container-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 8px 0px;
+  text-align: center;
   width: 100%;
-  /* max-width: 100%; */
   margin-top: 8px;
-   
-  }
+}
 
 .topNav {
-  background-color: var(--bg-color-a);
- width: 100%;
+  background-color: var(--bg-color-a); 
+  width: 100%;
   max-width: 100%;
   margin: 0;
   padding: 0 10px;
 }
 
 .topNav a {
-  background-color: var(--bg-color-a);
+  background-color: var(--bg-color-a); 
   text-decoration: none !important;
   padding: 0 10px;
   margin-bottom: 0;
-  background-color: #25d366;
 }
 
 .top {
@@ -183,14 +177,16 @@ body {
   align-items: center;
 } 
 
-/* .navbar-brand img, */
-.logo-img {
-  width: 200px;
-  height: 200px;
+/* .navbar-brand img */
+.logo-img { 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  align-items: center; 
+  justify-content: center; 
+  padding-bottom: 0px; 
+  width: 150px;
+  height: 150px;
   object-fit: contain;
-  /* background-size: cover;
-  background-repeat: no-repeat; */
-
 }
 
 .titleName {
@@ -224,14 +220,12 @@ body {
 
 /* ✅ Navbar Layout */
 .navbar {
-  padding: 10px 20px;
   position: relative;
   overflow: visible;
-  z-index: 1000;
-
-   width: 100%;
+  padding: 10px 20px;
+  width: 100%;
   max-width: 100%;
-
+  z-index: 1000;
 }
 
 .navbar-nav .nav-item {
@@ -245,7 +239,6 @@ body {
   font-weight: var(--fw-b);
   color: var(--bg-color-c);
   border-radius: 10px;
-  
 }
 
 .active {
@@ -272,48 +265,33 @@ body {
 
 /* ✅ Dropdown Menu */
 ul.dropdown-menu {
-  /* background-color: var(--bg-color-a);
-  border-radius: 6px;
-  padding: .5rem; 
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);  */
-
-
-position: absolute; 
+  position: absolute; 
   top: 100%;
   left: 0;
   z-index: 1050;
   min-width: 200px; 
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   margin: 0;
   background-color: var(--bg-color-a);
   border: none;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-border-radius: 10px;
-
- /* max-width: 100vw;
-  overflow-x: hidden; */
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .dropdown-menu .dropdown-item {
-  font-size: 0.95rem;
+  font-size: 0.95rem;  
+  font-weight: var(--fw-n);
   /* padding: 6px 12px;  */
   padding: 5px 0 2px;
+  margin-top: -5px;
   color: var(--text-color-a);
   white-space: normal;
   word-wrap: break-word; 
   border-radius: 10px;
   background: var(--bg-color-a);
-
-
-  margin-top: -5px;
-
   background-color: transparent;
-  color: var(--text-color-a);
-  font-weight: var(--fw-n);
-
 }
-
 
 .dropdown-menu .dropdown-item:hover,
 .shadow li:hover {
@@ -342,75 +320,9 @@ border-radius: 10px;
   transition: all 0.3s ease;
 }
 
-/* ✅ Registration Section */
-.registration-section {
-  position: relative;
-  background-color: var(--bg-color-a);
-  width: 100%;
-  padding: 0px 0px;
-  margin-top: 232px;  /* Pushes it below the fixed navbar */
-  text-align: center;
-  z-index: 1000;  
-} 
-
-.registration-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.title-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  padding: 0 10px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  text-align: center;
-}
-
-
-
-
-.title-cont .title a {
-  /* font-size: 0.75rem;
-  font-weight: 600;
-  font-style: italic;
-  color: var(--text-color-c);
-  text-decoration: none;
-
-   width: 100%; */
-
-  display: inline-block;
-  font-size: 0.8rem;
-  max-width: 100%;
-  word-wrap: break-word;
-  white-space: normal;
-  text-align: center;
-  margin: 0 auto;
-  box-sizing: border-box;
-
-
-
-}
-
-/* .registration-container { 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 800px;
-  margin: 100px auto 40px auto;
-  padding: 10px;
-} */
-
-
 /* ----- MEDIA QUERIES SECTION TOPNAV NAVBAR AND REGISTRATION  ----- */
 
 /* 📱 Very Small Phones */
-
 @media (max-width: 320px) {
   /* Top bar sections stack vertically */
   .container-top {
@@ -430,7 +342,6 @@ border-radius: 10px;
     margin-top: 0;
     padding: 0;
     text-align: center;
-  
   }
 
   .top-bar_content p,
@@ -440,15 +351,12 @@ border-radius: 10px;
     line-height: 1.75rem; 
     margin: 0;
     padding: 0;
-      
-
- 
   }
 
   /* Logo and name shrink */
   .navbar-brand {
-  margin-top: 18px;
-}
+    margin-top: 18px;
+  }
 
   .logo-img {
     height: 120px;
@@ -493,29 +401,15 @@ border-radius: 10px;
     font-size: 0.8rem;
   }
 
-  .registration-section {
-    display: none;
-  }
-
-  .title-cont .title a {
-    display: none;
-  } 
-
-  /* Scroll icon repositioned */
+   /* Scroll icon repositioned */
   .scroll i {
     top: 92%;
     right: 6%;
     font-size: 0.9rem;
   }
-
-  /* .registration-section .title-cont .title a {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  } */
 }
 
 /* 📱 Small Phones */
-
 @media (max-width: 480px) {
   .topnav {
     padding: 5px 10px;
@@ -541,33 +435,15 @@ border-radius: 10px;
     line-height: 1.2rem;
   }
 
-   .top_bar_content p {
+  .top_bar_content p {
     font-size: 0.85rem;
     margin: 2px 0;
     padding: 0;
     line-height: 1.2rem;
   }
-
-  /* .registration-section {
-    padding: 5px 10px;
-    text-align: center;
-  }
-
-  .registration-section .title-cont .title a {
-    font-size: 0.85rem;
-    line-height: 1.2rem;
-    display: block;
-    margin: 0;
-    padding: 0;
-  } */
-
-  .registration-section .title-cont .title a {
-    display: none;
-  }  
 }
 
 /* 📱 Phones Small Screens */
-
 @media (max-width: 576px) {
   .container-top {
     flex-direction: column;
@@ -624,15 +500,9 @@ border-radius: 10px;
     bottom: 10px;
     right: 10px;
   }
-
- .registration-section {
-    margin-top: 250px;
-    font-size: 0.75rem;
-  }
 }
 
 /* 📲 Tablets */
-
 @media (max-width: 768px) {
   .container-top {
     flex-direction: column;
@@ -653,15 +523,9 @@ border-radius: 10px;
     top: 88%;
     right: 6%;
   }
-
-  .registration-section {
-    margin-top: 260px;
-    font-size: 0.75rem;
-  }
 }
 
 /* 💻 Medium Screens - Small Laptops */
-
 @media (max-width: 991px) {
   .container-top {
     flex-direction: column;
@@ -694,16 +558,11 @@ border-radius: 10px;
   .dropdown-menu {
     position: static;
     box-shadow: none;
-
-    /* margin: 0 auto;
-    text-align: center; */
   }
 
   .dropdown-item {
     font-size: 0.9rem;
     padding: 6px 10px;
-
-    /* text-align: center; */
   }
 
   .scroll i {
@@ -711,92 +570,77 @@ border-radius: 10px;
     right: 15px;
     font-size: 1rem;
   }
-
-  .registration-container {
-    margin: 80px auto 30px auto;
-    padding: 10px;
-  }
-
-  .title-cont .title a {
-    font-size: 0.85rem;
-    line-height: 1.2rem;
-  }
 }
 
-/* 💻 1200px Screens - Large Desktops */
 
-/* @media (max-width: 1200px) {
-  .container-top {
-    /* flex-direction: column; */
-    flex-direction: row;
+/* ✅ Registration Section */
+.registration-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--bg-color-a);
+  margin-top: 160px; 
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: var(--text-color-c);
+  z-index: 1000;
+}
 
-    align-items: center;
-    text-align: center;
-  }
+.title-cont { 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  width: 100%; 
+  background-color: var(--bg-color-a);
+  padding: 10px 10px;
+  margin-top: 34px;
+}
 
-  .navbar-brand img {
-    width: 120px;
-    height: 120px;
-  }
+.title-cont .title a {
+  word-wrap: break-word;
+  white-space: normal;
+} 
 
-  .titleName {
-    font-size: 1.5rem;
-    margin-top: -10px;
-  }
+.title-cont .title a { 
+  font-family: var(--ff-1); 
+  font-size: 0.8rem; 
+  color: var(--text-color-a); 
+  font-style: italic; 
+  margin-left: 95px; 
+  margin-right: 20px;  
+  margin-top: 0; 
+  width: 100%; 
+  text-decoration: none; 
+  text-align: center;
+}
 
-  .navbar-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+/* ----- MEDIA QUERIES REGISTRATION SECTION ----- */
 
-  .navbar-nav .nav-link {
-    font-size: 0.95rem;
-    margin: 5px;
-  }
+/* 📱 Very Small Phones */
 
-  .registration-container {
-    margin: 90px auto 30px auto;
-    padding: 10px;
-  }
-
-  .title-cont .title a {
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-  }
-} */
-
-/* 🖥️ 1400px Screens Extra-Large Desktops*/
-
-/* @media (min-width: 1201px) and (max-width: 1400px) {
-  .navbar-brand img {
-    width: 160px;
-    height: 160px;
-  }
-
-  .titleName {
-    font-size: 1.7rem;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.1rem;
-  }
-
-  .container-top {
-    padding: 10px 60px;
-  }
-
-  .registration-container {
-    max-width: 1000px;
-    margin: 120px auto 40px auto;
+@media (max-width: 320px) {
+  .registration-section {
+    display: none;
   }
 
   .title-cont .title a {
-    font-size: 1rem;
+    display: none;
+  } 
+}
+
+
+
+mesdia 576px
+ .registration-section {
+    margin-top: 250px;
+    font-size: 0.75rem;
   }
-} */
-
-
 
 /* ----- REGISTRATION SECTION ----- */
 
@@ -825,7 +669,7 @@ border-radius: 10px;
   gap: 2rem;
 
 
-    margin-top: 0px;
+  margin-top: -160px;
   margin-bottom: 10px;
 
   /* margin: -100px 50px 150px -50px;
