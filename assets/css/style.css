@@ -17,7 +17,7 @@
   list-style: none;
   font-family: 'Merriweather', serif;
 
-  /* border: 1px solid red;   */
+  /* border: 1px solid red;     */
 }
 
 html {
@@ -31,6 +31,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
+  padding-top: 260px;
   overflow-x: hidden;
   overflow-y: auto;  
 }
@@ -102,7 +103,8 @@ body {
   width: 100%;
   max-width: 100%;
   margin: 0 auto -40px auto;
-  padding: 0 15px;
+  /* padding: 8px 15px; */
+    padding: 0 15px;
 }
 
 .container-top {
@@ -110,10 +112,10 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
-  padding: 8px 0px;
+  /* padding: 8px 0px; */
   text-align: center;
   width: 100%;
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 
 .topNav {
@@ -122,6 +124,7 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0 10px;
+
 }
 
 .topNav a {
@@ -184,8 +187,8 @@ body {
   align-items: center; 
   justify-content: center; 
   padding-bottom: 0px; 
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
 }
 
@@ -222,16 +225,18 @@ body {
 .navbar {
   position: relative;
   overflow: visible;
-  padding: 10px 20px;
+  padding: 20px 20px;
   width: 100%;
   max-width: 100%;
   z-index: 1000;
+ 
 }
 
 .navbar-nav .nav-item {
   margin: 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
   border-radius: 10px;
+
 }
 
 .navbar-nav .nav-link {
@@ -320,7 +325,7 @@ ul.dropdown-menu {
   transition: all 0.3s ease;
 }
 
-/* ----- MEDIA QUERIES SECTION TOPNAV NAVBAR AND REGISTRATION  ----- */
+/* ----- MEDIA QUERIES SECTION TOPNAV NAVBAR ----- */
 
 /* 📱 Very Small Phones */
 @media (max-width: 320px) {
@@ -482,17 +487,11 @@ ul.dropdown-menu {
   .dropdown-menu {
     position: static;
     box-shadow: none;
-    /* padding: 0; */
   }
 
   .dropdown-item {
     font-size: 0.85rem;
     padding: 6px 10px;
-  }
-
-  .title-cont .title a {
-    font-size: 6px;
-    margin-left: 5px;
   }
 
   .scroll i {
@@ -572,89 +571,83 @@ ul.dropdown-menu {
   }
 }
 
-
-/* ✅ Registration Section */
-.registration-section {
+/* ✅ Registration Title Bar Styling */
+.registration-bar {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  background-color: var(--bg-color-a);
-  margin-top: 160px; 
   width: 100%;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-  color: var(--text-color-c);
-  z-index: 1000;
-}
-
-.title-cont { 
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center; 
-  align-items: center; 
-  text-align: center;
-  width: 100%; 
   background-color: var(--bg-color-a);
-  padding: 10px 10px;
-  margin-top: 34px;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-color-a);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  z-index: 1;
 }
 
-.title-cont .title a {
+.registration-text {
+  margin: 0;
+  padding: 0;
   word-wrap: break-word;
   white-space: normal;
-} 
-
-.title-cont .title a { 
-  font-family: var(--ff-1); 
-  font-size: 0.8rem; 
-  color: var(--text-color-a); 
-  font-style: italic; 
-  margin-left: 95px; 
-  margin-right: 20px;  
-  margin-top: 0; 
-  width: 100%; 
-  text-decoration: none; 
-  text-align: center;
 }
 
-/* ----- MEDIA QUERIES REGISTRATION SECTION ----- */
+/* ----- MEDIA QUERIES Registration Title Bar ----- */
 
 /* 📱 Very Small Phones */
-
 @media (max-width: 320px) {
-  .registration-section {
+.registration-bar {
     display: none;
   }
 
-  .title-cont .title a {
+  .registration-text {
     display: none;
   } 
+} 
+
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+  .registration-bar {
+    display: none;
+  }
+
+  .registration-text {
+    display: none;
+  } 
+} 
+
+/* 📱 Phones */
+@media (max-width: 576px) {
+  body {
+    padding-top: 250px; /* 👈 makes space for fixed navbar */
+  }
+
+  .registration-bar {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    background-color: var(--bg-color-a);
+    border: none;
+  }
 }
 
 
 
-mesdia 576px
- .registration-section {
-    margin-top: 250px;
-    font-size: 0.75rem;
+/* 📲 Tablets */
+@media (max-width: 768px) {
+.registration-bar {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 18px 10px;
+  font-size: 0.8rem;
+  background-color: var(--bg-color-a);
+  border: none;
   }
-
-/* ----- REGISTRATION SECTION ----- */
-
-/* .registration-section {
-  margin-top: 210px; } */
-  /* Pushes it below the fixed navbar */
-
-
-/* .registration-container {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
-
-
+}
 
 /* ----- Hero Page ----- */
 
@@ -666,84 +659,71 @@ mesdia 576px
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
-  gap: 2rem;
-
-
-  margin-top: -160px;
-  margin-bottom: 10px;
-
-  /* margin: -100px 50px 150px -50px;
-  padding: 100px 14%; */
+  gap: 1rem;
+  margin: -40px 50px 30px -50px; 
+  /* padding: 0px 14%;  */
+  padding: 30px 8% 10px 10%; 
   z-index: 1000;
-
-  /* margin-top: -200px;
-  margin-bottom: 10px;
-  padding: 130px 14% 70px 14%;
-  margin-top: -100px;
-  margin-bottom: 150px;
-  margin-left: -50px;
-  margin-right: 50px;
-  padding: 100px 14% 100px 14%; */
- 
 }
 
-/* .hero-text {
-  position: relative;
-  z-index: 20; /* Higher than the hero section and navbar */
-  /* padding: 0 10px;
+.hero-text {
   text-align: center;
- line-height: 2.3rem; */
-
-/* } */ */
+  color: var(--text-color-c);
+  font-style: italic;
+}
 
 .hero-text h1 {
   font-size: 30px;
   font-weight: 900;
-  /* margin: 30px 0; */
-    margin: 25px 0;
-  text-align: center;
-  justify-items: center;
+  margin: 25px 0;
+  /* justify-items: center;
   color: var(--text-color-c);
-  font-style: italic;
+  font-style: italic; */
 }
 
 .hero-text h3 {
   font-size: 22px;
   font-weight: 600;
-  font-style: italic;
+  /* font-style: italic; */
   letter-spacing: 1px;
-  text-align: center;
-padding: 0 auto;
-
-  color: var(--text-color-c);
-  line-height: 2rem;
+  /* text-align: center;
+  color: var(--text-color-c); */
+  line-height: 2.3rem;
+  padding: 15px 0;
+  margin: 10px 0 15px 0;  
 }
 
 .hero-text p {
-  width: 100%;
+  /* width: 100%; */
   max-width: 620px;
-  font-size: 18px;
+  font-size: 17.5px;
   font-weight: 600;
-  font-style: italic;
-  text-align: center;
-line-height: 32px;
+  /* font-style: italic;
+  text-align: center; */
+  line-height: 32px;
   letter-spacing: 0.5px;
-  color: var(--text-color-c);
+  /* color: var(--text-color-c); */
   margin-bottom: 40px;
+   word-break: break-word;
 }
 
-/* .hero-text h3,
-.hero-text p {
-  word-break: break-word;
+
+.hero-text p  br {
+ display: inline-block;
+  width: 100%;
+  height: 1px;
+
+
+  /* word-break: break-word;
   white-space: normal;
   overflow-wrap: break-word;
-  line-height: 1.4rem; 
-} */
+  line-height: 1.4rem;  */
+}  
 
-.main-hero {
+/* .main-hero {
   display: flex;
   align-items: center;
-}
+} */
 
 .hero-img img {
   width: 100%;
@@ -751,8 +731,10 @@ line-height: 32px;
   height: auto;
   margin: 0 auto;
   display: block;
+   padding-right: 20px;
 }
 
+/* ✨ Appointment Button Container */
 .appoint-btn {
   width: 600px;
   display: flex;
@@ -760,6 +742,7 @@ line-height: 32px;
   justify-content: space-around;
 }
 
+/* 🪄 Button Box */
 .appoint-btn .btn {
   position: relative;
   width: 180px;
@@ -769,6 +752,7 @@ line-height: 32px;
   border-radius: 30px;
 }
 
+/* 🌈 Button Link Styling */
 .appoint-btn .btn a {
   position: absolute;
   top: 0;
@@ -794,10 +778,12 @@ line-height: 32px;
   backdrop-filter: blur(15px);
 }
 
+/* 🧚 Hover Text Animation */
 .appoint-btn .btn:hover a {
   letter-spacing: 3px;
 }
 
+/* 💫 Shine Effect */
 .appoint-btn .btn a::before {
   content: '';
   position: absolute;
@@ -814,6 +800,7 @@ line-height: 32px;
   transform: skewX(45deg) translateX(200%);
 }
 
+/* 🔽 Bottom Glow */
 .appoint-btn .btn::before {
   content: '';
   position: absolute;
@@ -836,6 +823,7 @@ line-height: 32px;
   transition-delay: 0.5s;
 }
 
+/* 🔼 Top Glow */
 .appoint-btn .btn::after {
   content: '';
   position: absolute;
@@ -858,21 +846,207 @@ line-height: 32px;
   transition-delay: 0.5s;
 }
 
-.hero-img img {
-  margin-top: 0;
-  width: 100%;
-  padding-right: 20px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.hero-text p br {
-  display: inline-block;
-  width: 100%;
-  height: 1px;
-  background: red;
-}
 
 /* ----- Media Queries Hero Section ----- */
+/* 📱 Very Small Phones  */
+/* @media (max-width: 320px) */
+
+
+/* 📱 Small Phones  */
+@media (max-width: 480px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 80px 5%;
+    margin: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 1.1rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1rem;
+    line-height: 0.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .hero-img img {
+    max-width: 300px;
+    padding-right: 0;
+  }
+
+  .appoint-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .appoint-btn .btn {
+    width: 80%;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 100px 8%;
+    margin: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-img img {
+    max-width: 600px;
+  }
+
+  .appoint-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .appoint-btn .btn {
+    width: 60%;
+    height: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+       grid-template-columns: repeat(2, 1fr);
+
+    padding: 80px 5%; 
+    margin: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-img img {
+    width: 100%;         /* 🖼️ Let it stretch wider */
+    max-width: 650px;   /* 🖼️ Bigger frame */
+    height: auto;
+    padding-right: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .appoint-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .appoint-btn .btn {
+    width: 50%;
+    height: 70px;
+  }
+}
+
+
+
+/* 📉 Extra Small Screens (Optional for extreme cases) */
+/* @media screen and (max-width: 400px) {
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  } */
+
+
+
+
+
+/* 
+
+@media screen and (max-width: 576px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 5% 30px 5%;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+  }
+
+  .hero-text h5 {
+    font-size: 1.2em;
+    margin: 50px 0 10px 0;
+    padding: 10px 0;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .hero-img,
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .main-hero {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img img {
+    max-width: 90%;
+    height: auto;
+    margin: 1rem 0;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
 
 
 /* 📱 Very Small Phones  */
@@ -1274,53 +1448,6 @@ max-height: 800vh;
 } */
 
 
-/* @media (max-width: 1200px) {
-  .hero {
-    padding: 100px 8%;
-    margin: 0;
-  }
-
-  .hero-img img {
-    max-width: 550px;
-  }
-
-  .appoint-btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .appoint-btn .btn {
-    width: 45%;
-  }
-} */
-
-
-/* @media (min-width: 1401px) {
-  .hero {
-    padding: 120px 14%;
-  }
-
-  .hero-img img {
-    max-width: 700px;
-  }
-
-  .appoint-btn .btn {
-    width: 200px;
-    height: 90px;
-  }
-
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-text h3 {
-    font-size: 1.5rem;
-  }
-
-  .hero-text p {
-    font-size: 1.2rem;
-  }
-} */
 
 
 
@@ -1416,39 +1543,6 @@ max-height: 800vh;
   }
 } */
 
-/* 💻 Medium Laptops */
-/*
-@media (max-width: 1200px) {
-  .hero {
-    grid-template-columns: 1fr 1fr;
-    padding: 100px 8% 40px 8%;
-    gap: 2rem;
-  }
-
-  .hero-img img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .hero-text {
-    max-width: 500px;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .appoint-btn {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .appoint-btn .btn {
-    width: 45%;
-    margin: 10px;
-  }
-} */
 
 
 
