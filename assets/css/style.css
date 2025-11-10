@@ -338,7 +338,7 @@ ul.dropdown-menu {
   }
 
   .top-barContent p {
-    font-size: 0.75rem;
+    font-size: 0.70rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -364,6 +364,10 @@ ul.dropdown-menu {
   }
 
   /* Logo and name shrink */
+  .navbar-brand {
+    margin-top: 8px;
+  } 
+
   .logo-img { 
     width: 140px;
     height: 140px;
@@ -409,6 +413,10 @@ ul.dropdown-menu {
     font-size: 0.8rem;
   }
 
+.dropdown-menu .dropdown-item {
+  padding: 5px 20px 2px;
+}
+
    /* Scroll icon repositioned */
   .scroll i {
     top: 92%;
@@ -449,14 +457,19 @@ ul.dropdown-menu {
     line-height: 1.2rem;
   }
 
-  .navbar {
-    padding: 10px 20px;
-  }
+  .navbar-brand {
+    margin-top: 8px;
+  } 
 
    .logo-img { 
     width: 140px;
     height: 140px;
   }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
 }
 
 /* 📱 Phones Small Screens */
@@ -698,8 +711,6 @@ ul.dropdown-menu {
   }
 }
 
-
-
 /* 📲 Tablets */
 @media (max-width: 768px) {
 .registration-bar {
@@ -770,7 +781,6 @@ ul.dropdown-menu {
   margin-bottom: 40px;
    word-break: break-word;
 }
-
 
 .hero-text p  br {
  display: inline-block;
@@ -919,7 +929,11 @@ ul.dropdown-menu {
 /* 📱 Small Phones  */
 @media (max-width: 480px) {
   .hero {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     padding: 80px 5%;
     margin: 0;
   }
@@ -929,13 +943,13 @@ ul.dropdown-menu {
   }
 
   .hero-text h3 {
-    font-size: 1rem;
-    line-height: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
   }
 
   .hero-text p {
-    font-size: 0.9rem;
-    line-height: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
   }
 
   .hero-img img {
