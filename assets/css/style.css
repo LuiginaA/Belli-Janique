@@ -1272,7 +1272,7 @@ ul.dropdown-menu {
 @media (max-width: 320px) {
   .intro {
     flex-direction: column;
-    padding: 60px 5%;
+   
     text-align: center;
   }
 
@@ -1280,13 +1280,28 @@ ul.dropdown-menu {
     width: 100%;
     height: auto;
     margin-bottom: -20px;
+      padding: 30px 8%;
   }
 
   .description {
-    padding-top: -20px;
+    /* padding-top: -20px; */
     margin-top: -20px;
-    margin-left: 10px;
+    margin-right: -40px;
+    margin-left: 50px;
+     padding: 35px 5% 30px 5%;
+       overflow: hidden;
+       max-width: 300px;
   }
+
+.description h2 {
+padding-left: 8px;
+padding-right: 20px;
+margin-left: 7px; 
+text-align: center;
+ white-space: nowrap;
+  overflow: hidden;
+    text-overflow: ellipsis;
+}
 
   .description h2 span {
     font-size: 1.1rem;
@@ -1302,9 +1317,17 @@ ul.dropdown-menu {
   }
 
   .description p {
-    font-size: 0.75rem;
+    /* font-size: 0.60rem;
     padding: 20px auto;
-    margin: auto 30px;
+    margin: 15px 0;
+      white-space: normal;
+  word-wrap: break-word;
+       overflow: hidden;
+       text-align: center; */
+          margin: 15px 0;
+
+    font-size: 1.0rem;
+    line-height: 1.6rem;
   }
 
   .description h3 span:after {
@@ -1317,7 +1340,7 @@ ul.dropdown-menu {
 @media (max-width: 480px) {
   .intro {
     flex-direction: column;
-    padding: 70px 5%;
+    padding: 60px 5%;
     text-align: center;
   }
 
@@ -1328,8 +1351,17 @@ ul.dropdown-menu {
   }
 
   .description {
-    padding-top: -20px;
-    margin-top: -20px;
+  
+
+  margin-top: -20px;
+    margin-right: -15px;
+    margin-left: 40px;
+     padding: 35px 5% 40px 5%;
+       overflow: hidden;
+       text-align: center;
+     
+
+
   }
 
   .description h2 span {
@@ -1345,8 +1377,13 @@ ul.dropdown-menu {
   }
 
   .description p {
-    font-size: 0.85rem;
-    padding: 20px 10px;
+    /* font-size: 0.85rem;
+    padding: 20px 10px; */
+       margin: 10px 0 10px 15px;
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+    max-width: 400px;
+
   }
 
   .description h3 span:after {
