@@ -1282,14 +1282,14 @@ ul.dropdown-menu {
       padding: 30px 8%;
   }
 
-  .description {
+  .description  {
     /* padding-top: -20px; */
     margin-top: -20px;
     margin-right: -40px;
     margin-left: 50px;
      padding: 35px 5% 35px 5%;
-       overflow: hidden;
-       max-width: 300px;
+       /* overflow: hidden; */
+       max-width: 280px;
   }
 
 .description h2 {
