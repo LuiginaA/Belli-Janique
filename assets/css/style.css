@@ -335,7 +335,7 @@ ul.dropdown-menu {
     text-align: center;
     padding: 0;
     margin-top: 10px;
-    margin-bottom: -8px;
+    margin-bottom: -12px;
   }
 
   .top-barContent p {
@@ -471,6 +471,15 @@ ul.dropdown-menu {
 
 /* 📱 Small Phones */
 @media (max-width: 480px) {
+    .container-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: -12px;
+  }
   .topnav {
     padding: 5px 10px;
     height: auto;
@@ -497,7 +506,7 @@ ul.dropdown-menu {
   .top_bar_content p {
     font-size: 0.85rem;
     margin: 2px 0;
-    padding: 0;
+    padding: 10px;
     line-height: 1.2rem;
   }
 
