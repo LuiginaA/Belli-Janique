@@ -122,6 +122,7 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0 10px;
+  background-color: #6f9170;
 }
 
 .topNav a {
@@ -335,6 +336,7 @@ ul.dropdown-menu {
     text-align: center;
     padding: 0;
     margin-top: 10px;
+    margin-bottom: -8px;
   }
 
   .top-barContent p {
