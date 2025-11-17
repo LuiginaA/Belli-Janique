@@ -33,13 +33,13 @@ body {
   margin: 0 auto;
   padding-top: 260px;
   overflow-x: hidden;
-  overflow-y: auto;  
+  overflow-y: auto;
 }
 
 /* font-size: 62.5%;
   This % changes the normal base size of 16px to 10px --- 21px = 2.1rem (because 21 x 10 = 2.1rem */
 
- /* ✅ Root Variables */ 
+ /* ✅ Root Variables */
 :root {
   /* --accent-clr: ; */
   --bg-color-a: #EDE6DE;
@@ -111,13 +111,13 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
-  padding: 5px 0px; 
+  padding: 5px 0px;
   text-align: center;
   width: 100%;
 }
 
 .topNav {
-  background-color: var(--bg-color-a); 
+  background-color: var(--bg-color-a);
   width: 100%;
   max-width: 100%;
   margin: 0;
@@ -125,7 +125,7 @@ body {
 }
 
 .topNav a {
-  background-color: var(--bg-color-a); 
+  background-color: var(--bg-color-a);
   text-decoration: none !important;
   padding: 0px 10px;
   margin-bottom: 0;
@@ -179,15 +179,15 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
-} 
+}
 
 /* .navbar-brand img */
-.logo-img { 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  align-items: center; 
-  justify-content: center; 
-  padding-bottom: 0px; 
+.logo-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0px;
   width: 200px;
   height: 200px;
   object-fit: contain;
@@ -234,7 +234,7 @@ body {
 
 .navbar-nav .nav-item {
   margin: 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 10px;
 }
 
@@ -269,11 +269,11 @@ body {
 
 /* ✅ Dropdown Menu */
 ul.dropdown-menu {
-  position: absolute; 
+  position: absolute;
   top: 100%;
   left: 0;
   z-index: 1050;
-  min-width: 200px; 
+  min-width: 200px;
   padding: 0.5rem;
   margin: 0;
   background-color: var(--bg-color-a);
@@ -284,13 +284,13 @@ ul.dropdown-menu {
 }
 
 .dropdown-menu .dropdown-item {
-  font-size: 0.95rem;  
+  font-size: 0.95rem;
   font-weight: var(--fw-n);
   padding: 5px 0 2px;
   margin-top: -5px;
   color: var(--text-color-a);
   white-space: normal;
-  word-wrap: break-word; 
+  word-wrap: break-word;
   border-radius: 10px;
   background: var(--bg-color-a);
   background-color: transparent;
@@ -316,7 +316,7 @@ ul.dropdown-menu {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   font-weight: 900;
   color: var(--bg-color-c);
   z-index: 999;
@@ -349,7 +349,7 @@ ul.dropdown-menu {
   }
 
   .topNav a {
-    background-color: var(--bg-color-a); 
+    background-color: var(--bg-color-a);
     text-decoration: none !important;
     padding: 0px 10px;
     margin-bottom: 0;
@@ -359,7 +359,7 @@ ul.dropdown-menu {
   .top_bar_content p {
     font-size: 0.75rem;
     text-align: center;
-    line-height: 1.75rem; 
+    line-height: 1.75rem;
     margin: 0;
     padding: 0;
   }
@@ -367,9 +367,9 @@ ul.dropdown-menu {
   /* Logo and name shrink */
   .navbar-brand {
     margin-top: 8px;
-  } 
+  }
 
-  .logo-img { 
+  .logo-img {
     width: 140px;
     height: 140px;
   }
@@ -512,9 +512,9 @@ ul.dropdown-menu {
 
   .navbar-brand {
     margin-top: 8px;
-  } 
+  }
 
-  .logo-img { 
+  .logo-img {
     width: 140px;
     height: 140px;
   }
@@ -565,7 +565,6 @@ ul.dropdown-menu {
   .dropend .dropdown-toggle {
     display: block;
     width: 100%;
-    padding: px;
     margin-left: 0px;
     white-space: normal;
     word-break: break-word;
@@ -595,7 +594,7 @@ ul.dropdown-menu {
   }
 
   .topNav a {
-    background-color: var(--bg-color-a); 
+    background-color: var(--bg-color-a);
     text-decoration: none !important;
     padding: 0px;
     margin-left: -18px;
@@ -782,8 +781,8 @@ ul.dropdown-menu {
 
   .registration-text {
     display: none;
-  } 
-} 
+  }
+}
 
 /* 📱 Small Phones */
 @media (max-width: 480px) {
@@ -793,13 +792,13 @@ ul.dropdown-menu {
 
   .registration-text {
     display: none;
-  } 
-} 
+  }
+}
 
 /* 📱 Phones */
 @media (max-width: 576px) {
   body {
-    padding-top: 250px; /* 👈 makes space for fixed navbar */
+    padding-top: 300px; /* 👈 makes space for fixed navbar */
   }
 
   .registration-bar {
@@ -815,6 +814,10 @@ ul.dropdown-menu {
 
 /* 📲 Tablets */
 @media (max-width: 768px) {
+ body {
+  padding-top: 300px; /* 👈 makes space for fixed navbar */
+}
+
 .registration-bar {
   position: relative;
   top: 0;
@@ -837,9 +840,9 @@ ul.dropdown-menu {
   align-items: center;
   justify-items: center;
   gap: 1rem;
-  margin: -40px 50px 30px -50px; 
+  margin: -40px 50px 30px -50px;
   /* padding: 0px 14%;  */
-  padding: 30px 8% 10px 10%; 
+  padding: 30px 8% 10px 10%;
   z-index: 1000;
 }
 
@@ -867,7 +870,7 @@ ul.dropdown-menu {
   color: var(--text-color-c); */
   line-height: 2.3rem;
   padding: 15px 0;
-  margin: 10px 0 15px 0;  
+  margin: 10px 0 15px 0;
 }
 
 .hero-text p {
@@ -881,11 +884,11 @@ ul.dropdown-menu {
   letter-spacing: 0.5px;
   /* color: var(--text-color-c); */
   margin-bottom: 40px;
-   word-break: break-word;
+  word-break: break-word;
 }
 
 .hero-text p  br {
- display: inline-block;
+  display: inline-block;
   width: 100%;
   height: 1px;
 
@@ -894,7 +897,7 @@ ul.dropdown-menu {
   white-space: normal;
   overflow-wrap: break-word;
   line-height: 1.4rem;  */
-}  
+}
 
 /* .main-hero {
   display: flex;
@@ -905,7 +908,7 @@ ul.dropdown-menu {
   width: 100%;
   max-width: 650px;
   height: auto;
-  margin: 0 auto;
+  margin: 0px auto;
   display: block;
    padding-right: 20px;
 }
@@ -1070,6 +1073,48 @@ ul.dropdown-menu {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 80px 5%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+  }
+
+  .hero-text h5 {
+    font-size: 1.2em;
+    margin: 50px 0 10px 0;
+    padding: 10px 0;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .hero-img,
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .main-hero {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
@@ -1108,7 +1153,7 @@ ul.dropdown-menu {
   .hero {
     grid-template-columns: repeat(2, 1fr);
     /* padding: 80px 5%;  */
-    padding: 60px 5%; 
+    padding: 60px 5%;
     margin: 0;
   }
 
@@ -1154,15 +1199,16 @@ ul.dropdown-menu {
 /* ----- Intro Meet Dr Janique Section ----- */
 
 /* 🌟 Intro Meet Dr Janique Section */
-.intro { 
-  align-items: center; 
-  gap: 5rem; 
-  background-color: var(--bg-color-d); 
+.intro {
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--bg-color-d);
 }
 
 .intro  {
   position: relative;
   color: var(--text-color-c);
+  /* padding: 120px 100px; */
   padding: 220px 100px;
   display: flex;
   justify-content: space-around;
@@ -1206,21 +1252,31 @@ ul.dropdown-menu {
 }
 
 .description h2 {
- /* font-size: 40px; */
- font-size: 30px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--text-color-c);
+
+
+    display: inline-flex;       /* keep text + span together */
+  align-items: baseline;      /* align nicely */
+  justify-content: center;    /* center horizontally */
+  white-space: nowrap;        /* prevent line break */
+  max-width: none;            /* remove forced narrow width */
 }
 
 .description h2 span {
   color: var(--bg-color-f);
-  /* font-size: 60px; */
   font-size: 40px;
+  /* margin-left: 120px; */
+
+margin-left: 8px;           /* small gap instead of big padding */
+  padding-left: 0;
+  display: inline-block;
+
 }
 
 .description h3 {
   margin-top: 20px;
-  /* font-size: 60px; */
   font-weight: 900;
   font-size: 30px;
 }
@@ -1243,7 +1299,6 @@ ul.dropdown-menu {
 }
 
 @keyframes text {
-
   0% {
     left: 0;
   }
@@ -1259,80 +1314,50 @@ ul.dropdown-menu {
 
 .description p {
   max-width: 500px;
-  /* margin-top: 20px; */
   width: 100%;
   margin: 20px auto;
 }
 
 /* ----- INTRO SECTION MEDIA QUERIES----- */
 
-/* Responsive: Intro Section Only */
-
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
   .intro {
     flex-direction: column;
+    padding: 60px 5%;
     text-align: center;
   }
 
   .intro img {
-    width: 100%;
+    width: 95%;       /* scale relative to screen */
+    max-width: 320px; /* cap size so it doesn’t overflow */
     height: auto;
-    margin-bottom: -20px;
-      padding: 30px 8%;
+    margin: 30px auto 0 auto; /* drop down, center */
   }
 
-  .description  {
-    /* padding-top: -20px; */
-    margin-top: -20px;
-    margin-right: -40px;
-    margin-left: 50px;
-     padding: 35px 5% 35px 5%;
-       /* overflow: hidden; */
-       max-width: 280px;
-  }
-
-.description h2 {
-padding-left: 8px;
-padding-right: 20px;
-margin-left: 10px; 
-text-align: center;
-max-width: 290px;
- /* white-space: nowrap;
-  overflow: hidden;
-    text-overflow: ellipsis; */
-}
+ .description h2 {
+    font-size: 0.8rem;
+  } 
 
   .description h2 span {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-left: 3px;
   }
 
   .description h3 {
-    font-size: 0.7;
-  }
-
-  .description h3 span {
-    color: var(--bg-color-f);
-    position: relative;
-  }
+    font-size: 1rem;
+  } 
 
   .description p {
-    /* font-size: 0.60rem;
-    padding: 20px auto;
-    margin: 15px 0;
-      white-space: normal;
-  word-wrap: break-word;
-       overflow: hidden;
-       text-align: center; */
-          margin: 30px 0;
-/* max-width: 280px; */
-    font-size: 0.90rem;
-    line-height: 1.6rem;
-  }
-
-  .description h3 span:after {
-    border-left: 4px solid var(--bg-color-f);
-    background-color: var(--bg-color-d);
+   
+  
+    /* padding-left: 20px;     /* center horizontally */
+    /* padding-right: 10px; */ */
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    max-width: 100%;   
+      /* keep inside screen */
   }
 }
 
@@ -1342,48 +1367,45 @@ max-width: 290px;
     flex-direction: column;
     padding: 60px 5%;
     text-align: center;
+
   }
 
   .intro img {
-    width: 85%;
+    width: 95%;       /* scale relative to screen */
+    max-width: 320px; /* cap size so it doesn’t overflow */
     height: auto;
-    margin-bottom: 10px;
+    margin: 30px auto 0 auto; /* drop down, center */
   }
 
   .description {
-  
+    margin: auto -40px;
+    text-align: center;
+  }
 
-  margin-top: -20px;
-    margin-right: -15px;
-    margin-left: 40px;
-     padding: 35px 5% 40px 5%;
-       overflow: hidden;
-       text-align: center;
-     
+  .description h2 {
+    /* font-size: 1.5rem; */
 
-
+      font-size: 1.3rem;
+    white-space: nowrap;
   }
 
   .description h2 span {
-    font-size: 2rem;
-  }
+    /* font-size: 1.5rem; */
 
-  .description h3 {
     font-size: 1.3rem;
   }
 
- .description h3 span {
-    font-size: 1.5rem;
+  .description h3 {
+    font-size: 1.4rem;
+    color: #7232bd;
   }
 
   .description p {
-    /* font-size: 0.85rem;
-    padding: 20px 10px; */
-       margin: 10px 0 10px 15px;
-    font-size: 1.0rem;
+    /* margin: 15px auto;       */
+    font-size: 1rem;
     line-height: 1.6rem;
-    max-width: 400px;
-
+    text-align: center;
+    max-width: 90%;
   }
 
   .description h3 span:after {
@@ -1393,22 +1415,25 @@ max-width: 290px;
 }
 
 /* 📱 Medium Phones (max-width: 576px) */
-media screen and (max-width: 576px) {
-  .description h2 {
-    font-size: 1.2rem;
+@media (max-width: 576px) {
+ .intro img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    margin: 40px auto 0 auto;  /* no overlap */
   }
 
-  .description h2 span {
-    font-size: 1.5rem;
-  }
-
-  .description h3 {
-    font-size: 1.1rem;
+  .description h3 span:after {
+    border-left: 4px solid var(--bg-color-f);
+    background-color: var(--bg-color-d);
   }
 
   .description p {
-    font-size: 0.9rem;
-    padding: 0 10px;
+    margin: 20px auto;       /* center horizontally */
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    max-width: 90%;
   }
 }
 
@@ -1416,29 +1441,34 @@ media screen and (max-width: 576px) {
 @media (max-width: 768px) {
   .intro {
     flex-direction: column;
-    padding: 10px ;
+    padding: 40px 8%;
     text-align: center;
   }
 
   .intro img {
-    margin-top: -7rem;
-    margin-left: -1rem;
-    margin-bottom: -5rem;
-    width: 390px;
-    height: 340px;
-  }
+    width: 85%;
+    max-width: 380px;
+    height: auto;
+    margin: 50px auto 0 auto;
   }
 
+ .description h2 {
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
+
+  .description h2 span {
+    font-size: 1.4rem;
+  }
+
+  .description h3 span:after {
+    border-left: 4px solid var(--bg-color-f);
+    background-color: var(--bg-color-d);
+  }
+}
+  
 /* 💻 Small Laptops (max-width: 820px) */
 @media (max-width: 820px) {
-  .intro img {
-    margin-top: -7rem;
-    margin-left: -1rem;
-    margin-bottom: -5rem;
-    width: 390px;
-    height: 340px;
-  }
-
   .intro {
     grid-template-columns: 1fr;
     flex-wrap: wrap;
@@ -1448,22 +1478,129 @@ media screen and (max-width: 576px) {
     margin-left: -4rem;
   }
 
-  description h1 {
+  .description h1 {
     font-size: 25px;
   }
 
-  description h1 span {
+  .description h1 span {
     font-size: 40px;
   }
 
-  description h2 {
+  .description h2 {
     font-size: 25px;
   }
 
-  description p {
+  .description p {
     font-size: 15px;
   }
+ 
+  .description h3 span:after {
+    border-left: 4px solid var(--bg-color-f);
+    background-color: var(--bg-color-d);
+  }
 }
+
+
+
+
+
+
+/* 💻 Small Laptops (max-width: 820px)*/
+/* @media (max-width: 820px) {
+  .intro {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .intro img {
+    width: 65%;
+    height: auto;
+    margin: 50px auto 0 auto;
+  }
+ 
+  .description {
+    margin: 20px auto;
+  }
+
+.description h2 {
+    font-size: 1.7rem;
+    color: #38e209; 
+  }
+
+  .description h2 span {
+    font-size: 2rem;
+    color: #c32aa3; 
+    padding-left: 150px;
+  }
+
+  .description h3 {
+    font-size: 1.7rem;
+    color: #FE2C55; 
+  }
+
+  .description h3 span {
+    font-size: 2rem;
+    padding-left: 0px;
+  }
+
+  .description p {
+    font-size: 1rem;
+    padding: 0 10px;
+    color: cadetblue; 
+  } 
+
+  .description h3 span:after {
+    border-left: 4px solid var(--bg-color-f);
+    background-color: var(--bg-color-d);
+  } 
+}  */
+
+/* 💻 Small Laptops (max-width: 991px) */
+/* @media (max-width: 991px) {
+  .intro {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 80px 6%;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .intro img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto 0 auto;
+  }
+
+/* 💻 Small Laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .description {
+    flex: 1 1 100%;       /* let description take full width */
+    max-width: 100%;      /* no restriction */
+    text-align: center;
+  }
+
+  .description h2 {
+    font-size: 1.6rem;
+    white-space: nowrap;
+  }
+
+  .description h2 span {
+    font-size: 1.8rem;
+  }
+
+  .description h3 {
+    font-size: 1.7rem;
+  }
+
+  .description h3 span {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
 
 /*-------- Pledge (Mission and Vision) Section */
 
@@ -1486,12 +1623,9 @@ media screen and (max-width: 576px) {
   align-items: center;
   justify-content: space-between;
   /* padding: 30px 8% 0; */
-
   padding: 60px 8% 60px;
   gap: 40px;
-
   overflow: hidden;
-  gap: 35px;
   z-index: 1000;
 }
 
@@ -1513,7 +1647,7 @@ media screen and (max-width: 576px) {
   letter-spacing: 1px;
   word-spacing: 2px;
   padding-top: 20px;
-  margin: 0;
+  margin-bottom: 50px;
   animation: slideBottom 1s ease forwards;
   animation-delay: 1s;
 }
@@ -1535,7 +1669,7 @@ media screen and (max-width: 576px) {
 
 .pledge-img img {
   position: relative;
-  width: 400px;
+  width: 450px;
   height: 480px;
   border-radius: 50px;
   box-shadow: -15px 15px 15px rgba(0, 0, 0, .75);
@@ -1568,21 +1702,179 @@ media screen and (max-width: 576px) {
 
 /* ----- PLEDGE SECTION Media Queries----- */
 
-@media (max-width: 576px) {
-  .state,
+/* 📱 Extra Small Devices (phones, <576px) */
+@media (max-width: 575px) {
   .pledge {
     flex-direction: column;
+    padding: 40px 5%;
+    gap: 30px;
+  }
+
+  .pledge-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .pledge-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .pledge-content p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  .pledge-img img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* 📱 Small Devices (phones landscape, 576px–767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .pledge {
+    flex-direction: column;
+    padding: 50px 6%;
+    gap: 35px;
+  }
+
+  .pledge-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .pledge-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .pledge-content p {
+    font-size: 1rem;
+  }
+
+  .pledge-img img {
+    width: 350px;
+    height: auto;
+  }
+}
+
+/* 📱 Medium Devices (tablets, 768px–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .pledge {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .pledge-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .pledge-img img {
+    width: 380px;
+    height: auto;
+  }
+}
+
+/* 💻 Large Devices (laptops, 992px–1199px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .pledge {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 8%;
+  }
+
+  .pledge-img img {
+    width: 420px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 📱 320px Very Small Phones */
+ (max-width: 320px) {
+pledge {
+ flex-direction: row;
+    padding: 80px 5%;
+    text-align: center;
+
+
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  /* padding: 30px 8% 0; */
+
+  padding: 20px;
+  gap: 10px;
+
+
+}
+
+
+
+pledge-content {
+  position: relative;
+  max-width: 530px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+
+
+  pledge-img mg {
+    flex-direction: column;
+    text-align: center;
+  }
+
+pledge-content 2 {
+
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+
+(max-width: 576px) {
+  state,
+  pledge {
+    /* flex-direction: column; */
     align-items: center;
     padding: 40px 5% 30px 5%;
     text-align: center;
   }
 
-  .pledge-content {
+  pledge-content {
     max-width: 100%;
     padding: 0;
   }
 
-  .pledge-content p {
+  pledge-content p {
     /* font-size: 1.6rem;
     line-height: 2rem; */
     margin: 15px 0;
@@ -1591,7 +1883,7 @@ media screen and (max-width: 576px) {
     line-height: 1.6rem;
   }
 
-  .pledge-img img {
+  .-img im {
     width: 280px;
     height: auto;
     margin-top: 20px;
@@ -1600,7 +1892,7 @@ media screen and (max-width: 576px) {
 
 
 /* Small tablets (landscape phones, 576px and up) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 .intro {
     flex-direction: column;
     padding: 80px 5%;
@@ -1618,7 +1910,7 @@ media screen and (max-width: 576px) {
   .description p {
     font-size: 1rem;
     padding: 10px;
-  }
+  } */
 
 
 
@@ -1657,37 +1949,37 @@ media screen and (max-width: 576px) {
   align-items: center;
   justify-content: space-between;
 
-  }
+  } */
 
-  .pledge-img img {
+  /* .pledge-img img {
     width: 350px;
-  }
+  } */
 } */
 
 
 
 
 
-@media screen and (max-width: 768px) {
-.state {
+(max-width: 768px) {
+state {
     padding: 40px 5%;
   }
 
-  .pledge {
+  pledge {
     flex-direction: column;
     padding: 40px 5%;
     text-align: center;
   }
 
-  .pledge-content h2,
-  .pledge-content h3,
-  .pledge-content p {
+  pledge-content h2,
+  pledge-content h3,
+  pledge-content p {
     font-size: 1rem;
     padding: 10px;
   }
 
-  .pledge-img img {
-    width: 90%;
+  pledge-img img {
+    width: 100%;
     height: auto;
     margin-top: 20px;
   }
@@ -1700,31 +1992,17 @@ media screen and (max-width: 576px) {
 
 
 
-/* Large devices (desktops 992px and up) */
-@media (min-width: 992px) {
-  .intro, .pledge {
+/* Large devices (desktops 992px and up) */(max-width: 991px) {
+  intro, pledge {
     flex-direction: row;
     padding: 100px 8%;
   }
 
-  .pledge-img img {
+  pledge-img mg {
     width: 420px;
   }
 }
 
-@media (min-width: 1200px) {
-  .pledge-img img {
-    width: 480px;
-  }
-
-  .pledge-content h1 {
-    font-size: 3rem;
-  }
-
-  .pledge-content h2 {
-    font-size: 2rem;
-  }
-}
 
 /* <!-- Why Families Trust --with-- Animated squares --> */
 
