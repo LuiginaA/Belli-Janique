@@ -573,7 +573,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 📱 Phones Small Screens */
+/* 📱 Phones Screens */
 @media (max-width: 576px) {
   .container-top {
     flex-direction: column;
@@ -775,7 +775,7 @@ ul.dropdown-menu {
 
 /* 📱 Very Small Phones */
 @media (max-width: 320px) {
-.registration-bar {
+  .registration-bar {
     display: none;
   }
 
@@ -814,22 +814,22 @@ ul.dropdown-menu {
 
 /* 📲 Tablets */
 @media (max-width: 768px) {
- body {
-  padding-top: 300px; /* 👈 makes space for fixed navbar */
-}
+  body {
+    padding-top: 300px; /* 👈 makes space for fixed navbar */
+  }
 
-.registration-bar {
-  position: relative;
-  top: 0;
-  margin: 0;
-  padding: 18px 10px;
-  font-size: 0.8rem;
-  background-color: var(--bg-color-a);
-  border: none;
+  .registration-bar {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 18px 10px;
+    font-size: 0.8rem;
+    background-color: var(--bg-color-a);
+    border: none;
   }
 }
 
-/* ----- Hero Page ----- */
+/* -----🎯 Hero Quote Section ----- */
 
 .hero {
   position: relative;
@@ -841,7 +841,6 @@ ul.dropdown-menu {
   justify-items: center;
   gap: 1rem;
   margin: -40px 50px 30px -50px;
-  /* padding: 0px 14%;  */
   padding: 30px 8% 10px 10%;
   z-index: 1000;
 }
@@ -856,53 +855,32 @@ ul.dropdown-menu {
   font-size: 30px;
   font-weight: 900;
   margin: 25px 0;
-  /* justify-items: center;
-  color: var(--text-color-c);
-  font-style: italic; */
 }
 
 .hero-text h3 {
   font-size: 22px;
   font-weight: 600;
-  /* font-style: italic; */
   letter-spacing: 1px;
-  /* text-align: center;
-  color: var(--text-color-c); */
   line-height: 2.3rem;
   padding: 15px 0;
   margin: 10px 0 15px 0;
 }
 
 .hero-text p {
-  /* width: 100%; */
   max-width: 620px;
   font-size: 17.5px;
   font-weight: 600;
-  /* font-style: italic;
-  text-align: center; */
   line-height: 32px;
   letter-spacing: 0.5px;
-  /* color: var(--text-color-c); */
   margin-bottom: 40px;
   word-break: break-word;
 }
 
-.hero-text p  br {
+.hero-text p br {
   display: inline-block;
   width: 100%;
   height: 1px;
-
-
-  /* word-break: break-word;
-  white-space: normal;
-  overflow-wrap: break-word;
-  line-height: 1.4rem;  */
 }
-
-/* .main-hero {
-  display: flex;
-  align-items: center;
-} */
 
 .hero-img img {
   width: 100%;
@@ -910,7 +888,7 @@ ul.dropdown-menu {
   height: auto;
   margin: 0px auto;
   display: block;
-   padding-right: 20px;
+  padding-right: 20px;
 }
 
 /* ✨ Appointment Button Container */
@@ -1027,14 +1005,10 @@ ul.dropdown-menu {
 
 
 /* ----- Media Queries Hero Section ----- */
-/* 📱 Very Small Phones  */
-/* @media (max-width: 320px) */
-
 
 /* 📱 Small Phones  */
 @media (max-width: 480px) {
   .hero {
-    /* grid-template-columns: 1fr; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1073,6 +1047,7 @@ ul.dropdown-menu {
   }
 }
 
+/* 📱 Phones Small Screens */
 @media screen and (max-width: 576px) {
   .hero {
     display: flex;
@@ -1115,6 +1090,7 @@ ul.dropdown-menu {
   }
 }
 
+/* 📲 Tablets */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
@@ -1149,10 +1125,10 @@ ul.dropdown-menu {
   }
 }
 
+/* 💻 Medium Screens - Small Laptops */
 @media (max-width: 992px) {
   .hero {
     grid-template-columns: repeat(2, 1fr);
-    /* padding: 80px 5%;  */
     padding: 60px 5%;
     margin: 0;
   }
@@ -1196,7 +1172,7 @@ ul.dropdown-menu {
   }
 }
 
-/* ----- Intro Meet Dr Janique Section ----- */
+/* -----👩‍⚕️ Intro Section ----- */
 
 /* 🌟 Intro Meet Dr Janique Section */
 .intro {
@@ -1208,7 +1184,6 @@ ul.dropdown-menu {
 .intro  {
   position: relative;
   color: var(--text-color-c);
-  /* padding: 120px 100px; */
   padding: 220px 100px;
   display: flex;
   justify-content: space-around;
@@ -1255,9 +1230,7 @@ ul.dropdown-menu {
   font-size: 30px;
   font-weight: 700;
   color: var(--text-color-c);
-
-
-    display: inline-flex;       /* keep text + span together */
+  display: inline-flex;       /* keep text + span together */
   align-items: baseline;      /* align nicely */
   justify-content: center;    /* center horizontally */
   white-space: nowrap;        /* prevent line break */
@@ -1267,12 +1240,9 @@ ul.dropdown-menu {
 .description h2 span {
   color: var(--bg-color-f);
   font-size: 40px;
-  /* margin-left: 120px; */
-
-margin-left: 8px;           /* small gap instead of big padding */
+  margin-left: 8px;           /* small gap instead of big padding */
   padding-left: 0;
   display: inline-block;
-
 }
 
 .description h3 {
@@ -1335,7 +1305,7 @@ margin-left: 8px;           /* small gap instead of big padding */
     margin: 30px auto 0 auto; /* drop down, center */
   }
 
- .description h2 {
+  .description h2 {
     font-size: 0.8rem;
   } 
 
@@ -1349,15 +1319,10 @@ margin-left: 8px;           /* small gap instead of big padding */
   } 
 
   .description p {
-   
-  
-    /* padding-left: 20px;     /* center horizontally */
-    /* padding-right: 10px; */ */
     font-size: 1rem;
     line-height: 1.4rem;
     text-align: center;
     max-width: 100%;   
-      /* keep inside screen */
   }
 }
 
@@ -1367,7 +1332,6 @@ margin-left: 8px;           /* small gap instead of big padding */
     flex-direction: column;
     padding: 60px 5%;
     text-align: center;
-
   }
 
   .intro img {
@@ -1383,25 +1347,19 @@ margin-left: 8px;           /* small gap instead of big padding */
   }
 
   .description h2 {
-    /* font-size: 1.5rem; */
-
-      font-size: 1.3rem;
+    font-size: 1.3rem;
     white-space: nowrap;
   }
 
   .description h2 span {
-    /* font-size: 1.5rem; */
-
     font-size: 1.3rem;
   }
 
   .description h3 {
-    font-size: 1.4rem;
-    color: #7232bd;
+    font-size: 1.4rem;  
   }
 
   .description p {
-    /* margin: 15px auto;       */
     font-size: 1rem;
     line-height: 1.6rem;
     text-align: center;
@@ -1416,7 +1374,7 @@ margin-left: 8px;           /* small gap instead of big padding */
 
 /* 📱 Medium Phones (max-width: 576px) */
 @media (max-width: 576px) {
- .intro img {
+  .intro img {
     width: 90%;
     max-width: 350px;
     height: auto;
@@ -1452,7 +1410,7 @@ margin-left: 8px;           /* small gap instead of big padding */
     margin: 50px auto 0 auto;
   }
 
- .description h2 {
+  .description h2 {
     font-size: 1.4rem;
     white-space: nowrap;
   }
@@ -1500,77 +1458,6 @@ margin-left: 8px;           /* small gap instead of big padding */
   }
 }
 
-
-
-
-
-
-/* 💻 Small Laptops (max-width: 820px)*/
-/* @media (max-width: 820px) {
-  .intro {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .intro img {
-    width: 65%;
-    height: auto;
-    margin: 50px auto 0 auto;
-  }
- 
-  .description {
-    margin: 20px auto;
-  }
-
-.description h2 {
-    font-size: 1.7rem;
-    color: #38e209; 
-  }
-
-  .description h2 span {
-    font-size: 2rem;
-    color: #c32aa3; 
-    padding-left: 150px;
-  }
-
-  .description h3 {
-    font-size: 1.7rem;
-    color: #FE2C55; 
-  }
-
-  .description h3 span {
-    font-size: 2rem;
-    padding-left: 0px;
-  }
-
-  .description p {
-    font-size: 1rem;
-    padding: 0 10px;
-    color: cadetblue; 
-  } 
-
-  .description h3 span:after {
-    border-left: 4px solid var(--bg-color-f);
-    background-color: var(--bg-color-d);
-  } 
-}  */
-
-/* 💻 Small Laptops (max-width: 991px) */
-/* @media (max-width: 991px) {
-  .intro {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 80px 6%;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .intro img {
-    max-width: 300px;
-    height: auto;
-    margin: 20px auto 0 auto;
-  }
-
 /* 💻 Small Laptops (max-width: 991px) */
 @media (max-width: 991px) {
   .description {
@@ -1598,11 +1485,7 @@ margin-left: 8px;           /* small gap instead of big padding */
 }
 
 
-
-
-
-
-/*-------- Pledge (Mission and Vision) Section */
+/*-----🫶 Pledge (Mission and Vision) Section */
 
 .state {
   background: var(--bg-color-b);
