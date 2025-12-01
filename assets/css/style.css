@@ -1500,14 +1500,13 @@ ul.dropdown-menu {
 .pledge {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   min-height: 100vh;
   align-items: center;
   justify-content: space-between;
-  /* padding: 30px 8% 0; */
   padding: 60px 8% 60px;
-  gap: 40px;
+  gap: 35px;
   overflow: hidden;
   z-index: 1000;
 }
@@ -1522,15 +1521,15 @@ ul.dropdown-menu {
 .pledge-content h2 {
   color: #252525;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: var(--ff-1);
   font-size: 34px;
-  font-weight: 600;
+  font-weight: var(--fw-sb);
   font-style: italic;
   line-height: 1.5;
   letter-spacing: 1px;
   word-spacing: 2px;
   padding-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 50px; 
   animation: slideBottom 1s ease forwards;
   animation-delay: 1s;
 }
@@ -1544,7 +1543,7 @@ ul.dropdown-menu {
 }
 
 .pledge-content p {
-  font-weight: 500;
+  font-weight: var(--fw-m);
   margin: 15px 0 30px;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1.3s;
@@ -1563,7 +1562,6 @@ ul.dropdown-menu {
 
 .pledge-img img:hover {
   transform: scale(1.03);
-  /* transition: transform 0.3s ease; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1582,8 +1580,7 @@ ul.dropdown-menu {
   to { transform: translateX(0); opacity: 1; }
 }
 
-
-/* ----- PLEDGE SECTION Media Queries----- */
+/* 🫶 Pledge Section Media Queries */
 
 /* 📱 Extra Small Devices (phones, <576px) */
 @media (max-width: 575px) {
@@ -1608,7 +1605,7 @@ ul.dropdown-menu {
   }
 
   .pledge-img img {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 }
@@ -1659,235 +1656,20 @@ ul.dropdown-menu {
   }
 }
 
-/* 💻 Large Devices (laptops, 992px–1199px) */
-@media (min-width: 992px) and (max-width: 1200px) {
+/* 💻 Large Devices (laptops, 991px–1199px) */
+@media (min-width: 991px) and (max-width: 1200px) {
   .pledge {
     flex-direction: row;
     justify-content: space-between;
-    padding: 60px 8%;
+    padding: 20px 0;
   }
 
   .pledge-img img {
-    width: 420px;
+    width: 380px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 📱 320px Very Small Phones */
- (max-width: 320px) {
-pledge {
- flex-direction: row;
-    padding: 80px 5%;
-    text-align: center;
-
-
-  width: 100%;
-  min-height: 100vh;
-  align-items: center;
-  /* padding: 30px 8% 0; */
-
-  padding: 20px;
-  gap: 10px;
-
-
-}
-
-
-
-pledge-content {
-  position: relative;
-  max-width: 530px;
-  padding: 10px;
-  z-index: 1000;
-}
-
-
-
-  pledge-img mg {
-    flex-direction: column;
-    text-align: center;
-  }
-
-pledge-content 2 {
-
-  text-align: center;
-  font-family: 'Merriweather', serif;
-  font-size: 26px;
-  font-weight: 600;
-  font-style: italic;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  word-spacing: 1px;
-  padding-top: 20px;
-  margin-bottom: 50px;
-}
-
-
-
-(max-width: 576px) {
-  state,
-  pledge {
-    /* flex-direction: column; */
-    align-items: center;
-    padding: 40px 5% 30px 5%;
-    text-align: center;
-  }
-
-  pledge-content {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  pledge-content p {
-    /* font-size: 1.6rem;
-    line-height: 2rem; */
-    margin: 15px 0;
-
-    font-size: 1.0rem;
-    line-height: 1.6rem;
-  }
-
-  .-img im {
-    width: 280px;
-    height: auto;
-    margin-top: 20px;
-  }
-}
-
-
-/* Small tablets (landscape phones, 576px and up) */
-/* @media (max-width: 768px) {
-.intro {
-    flex-direction: column;
-    padding: 80px 5%;
-    text-align: center;
-  }
-
-  .intro img {
-    width: 80%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .description h2,
-  .description h3,
-  .description p {
-    font-size: 1rem;
-    padding: 10px;
-  } */
-
-
-
-
-
-
-
-  /* .intro, .state, .pledge {
-    flex-direction: column;
-    padding: 60px 5%;
-    text-align: center;
-  } */
-
-  /* .pledge-img img, .intro img {
-    width: 300px;
-    height: auto;
-  } */
-}
-
-/* Tablets and small desktops (768px and up) */
-/* @media (min-width: 768px) and (max-width: 992px) {
-  .intro {
-    padding: 60px 6%;
-    flex-direction: row;
-  }
-
-  .description .textbox {
-    margin-left: 20px;
-    padding: 10px;
-  }
-
-  .pledge {
-    /* flex-direction: row;
-    gap: 20px; */
-
-  align-items: center;
-  justify-content: space-between;
-
-  } */
-
-  /* .pledge-img img {
-    width: 350px;
-  } */
-} */
-
-
-
-
-
-(max-width: 768px) {
-state {
-    padding: 40px 5%;
-  }
-
-  pledge {
-    flex-direction: column;
-    padding: 40px 5%;
-    text-align: center;
-  }
-
-  pledge-content h2,
-  pledge-content h3,
-  pledge-content p {
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  pledge-img img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-
- }
-
-
-
-
-
-
-/* Large devices (desktops 992px and up) */(max-width: 991px) {
-  intro, pledge {
-    flex-direction: row;
-    padding: 100px 8%;
-  }
-
-  pledge-img mg {
-    width: 420px;
-  }
-}
-
-
-/* <!-- Why Families Trust --with-- Animated squares --> */
+/* 👨‍👩‍👧‍👦 Why Families Trust with Animated squares Section */
 
 .containerChoose {
   display: flex;
@@ -1901,16 +1683,16 @@ state {
 /* Blurry Background Colors  */
 .containerChoose .color {
   position: absolute;
-  filter: blur(200px);
+  filter: blur(200px); 
   z-index: 1000;
 }
 
 .containerChoose .color:nth-child(1) {
   top: -350px;
-  /* width: 800px;
-  width: 100%; */
-  width: 600px;
-  height: 600px;
+  /* width: 800px; */
+  width: 100%; 
+  /* width: 600px; */
+  height: 100%;
   background: #F8F3EF;
 }
 
@@ -1929,7 +1711,6 @@ state {
   width: 300px;
   height: 300px;
   background: #A79176;
-
 }
 
 /* Floating Glass Squares */
@@ -2012,7 +1793,7 @@ state {
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -2057,9 +1838,199 @@ state {
   color: #252525;
 }
 
-/* ------------------ Responsive Media Queries ------------------ */
+/* 👨‍👩‍👧‍👦 Why Families Trust Section Media Queries */
 
-@media (max-width: 992px) {
+/* 📱 320px Very Small Phones */
+@media (max-width: 320px) {
+  .containerChoose {
+    padding: 20px 5%;
+
+  }
+
+  
+    .cont-choose {
+width: 100%;
+ 
+
+
+    }
+
+    .boxChoose {
+    /* width: 100%;  */
+    display: none; 
+
+  }
+
+  .boxChoose .square {
+    display: none;     /* Hide animated squares on small screens */
+  }
+
+  .cont-choose .why-heading h2 {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background: transparent;
+
+
+  }
+
+  .why-paragraph p {
+    font-size: 0.9rem;
+    line-height: 1;
+    margin: 0;
+    width: 100%;
+  }
+
+  .why-paragraph h6 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-top: 15px;
+  }
+}
+
+/* 📱 480px Small Phones */
+@media (max-width: 480px) {
+  .containerChoose {
+    padding: 30px 6%;
+  }
+
+  .boxChoose {
+    width: 90%;
+  }
+
+  .boxChoose .square {
+    display: none;     /* Hide animated squares on small screens */
+  }
+  
+  .why-heading h2 {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .why-paragraph p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 12px auto;
+    max-width: 90%;
+  }
+
+  .why-paragraph h6 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+}
+
+/* 📱 576px Medium Phones */
+@media (max-width: 576px) {
+  .containerChoose {
+    padding: 40px 8%;
+  }
+
+  .boxChoose {
+    width: 85%;
+  }
+
+  .boxChoose .square {
+    display: none;     /* Hide animated squares on small screens */
+  }
+
+  .why-heading h2 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  .why-paragraph p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 90%;
+  }
+
+  .why-paragraph h6 {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-top: 25px;
+  }
+}
+
+/* 📲 768px Tablets */
+@media (max-width: 768px) {
+  .containerChoose {
+    padding: 50px 8%;
+  }
+
+  .boxChoose {
+    width: 80%;
+  }
+
+  .boxChoose .square {
+    display: block;  /* show bouncing boxes again */
+  }
+
+  .why-heading h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .why-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 85%;
+  }
+
+  .why-paragraph h6 {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-top: 30px;
+  }
+}
+
+/* 💻 991px Small Laptops */
+@media (max-width: 991px) {
+  .containerChoose {
+    padding: 60px 8%;
+  }
+
+  .boxChoose {
+    width: 70%;
+  }
+
+  .boxChoose .square {
+    display: block;  /* show bouncing boxes */
+  }
+
+  .why-heading h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 35px;
+  }
+
+  .why-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+
+  .why-paragraph h6 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-top: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+/* @media (max-width: 992px) {
   .why-heading h2 {
     font-size: 28px;
   }
@@ -2085,14 +2056,14 @@ state {
   }
 
   .boxChoose .square {
-    display: none; /* Hide animated squares on small screens */
-  }
+    display: none; Hide animated squares on small screens */
+  /* }
 
   .containerChoose {
     padding: 1rem;
   }
-}
-
+} */
+/* 
 @media (max-width: 480px) {
   .why-heading h2 {
     font-size: 22px;
@@ -2105,7 +2076,7 @@ state {
   .why-paragraph h6 {
     font-size: 16px;
   }
-}
+} */
 
 /* -----------------Reasons Why You Choose Dr Janique Reason Section */
 
@@ -2626,7 +2597,52 @@ state {
   .reason-img {
     height: 120px;
   }
+} 
+
+
+/* ----------------Slogan Section */
+  
+.slogan-contain {
+  background-color: var(--bg-color-b);
+  height: 100%;
+  padding-top: 80px; 
+  padding-bottom: 20px; 
 }
+
+.sloganHeading {
+  text-align: center;
+  color: var(--text-color-c);
+  font-family: var(--ff-1);
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.sloganHeading h3 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  word-spacing: 1.8px;
+}
+
+.slogan_paragraph {
+  line-height: 2rem;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 2.5rem;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+} 
+
+
+
+
+
+
+
+
+
 
 
 /* --------------------- House Rules Section --------------------- */
@@ -2813,9 +2829,9 @@ state {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 20px;
+  padding: 40px;
   width: 100%;
-  height: 100%;
+height: 100%;
   background-size: cover;
   background-color: var(--bg-color-b);
 }
