@@ -1672,6 +1672,7 @@ ul.dropdown-menu {
 /* 👨‍👩‍👧‍👦 Why Families Trust with Animated squares Section */
 
 .containerChoose {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1717,8 +1718,12 @@ ul.dropdown-menu {
 
 .boxChoose {
   position: relative;
+  box-sizing: border-box;
   z-index: 2000;
-  width: 55%;
+  /* width: 55%; */
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .boxChoose .square {
@@ -1842,241 +1847,142 @@ ul.dropdown-menu {
 
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
-  .containerChoose {
-    padding: 20px 5%;
-
-  }
-
-  
-    .cont-choose {
-width: 100%;
- 
-
-
-    }
-
-    .boxChoose {
-    /* width: 100%;  */
+  .boxChoose .square { 
     display: none; 
-
   }
 
-  .boxChoose .square {
-    display: none;     /* Hide animated squares on small screens */
+  .col-9 { 
+    width: 100%; 
+  }   
+
+  .why-heading h2 { 
+    font-size: 1.1rem; 
+    padding-bottom: 10px;
   }
 
-  .cont-choose .why-heading h2 {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    background: transparent;
-
-
+  .why-paragraph p { 
+    font-size: 0.7rem; 
+    padding: 5px;
   }
 
-  .why-paragraph p {
-    font-size: 0.9rem;
-    line-height: 1;
-    margin: 0;
-    width: 100%;
-  }
-
-  .why-paragraph h6 {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-top: 15px;
+  .why-paragraph h6 { 
+    font-size: 0.90rem; 
+    padding: 5px;
   }
 }
 
 /* 📱 480px Small Phones */
 @media (max-width: 480px) {
-  .containerChoose {
-    padding: 30px 6%;
+  .boxChoose .square { 
+    display: none; 
   }
 
-  .boxChoose {
-    width: 90%;
+  .col-9 { 
+    width: 100%; 
   }
 
-  .boxChoose .square {
-    display: none;     /* Hide animated squares on small screens */
-  }
-  
-  .why-heading h2 {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  .why-heading h2 { 
+    font-size: 1.4rem; 
+    padding: 10px;
   }
 
-  .why-paragraph p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 12px auto;
-    max-width: 90%;
+  .why-paragraph p { 
+    font-size: 1rem; 
+    padding: 8px;
   }
 
-  .why-paragraph h6 {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-top: 20px;
+  .why-paragraph h6 { 
+    font-size: 1.2rem; 
+    padding: 8px;
   }
 }
 
 /* 📱 576px Medium Phones */
 @media (max-width: 576px) {
-  .containerChoose {
-    padding: 40px 8%;
-  }
-
-  .boxChoose {
-    width: 85%;
-  }
-
   .boxChoose .square {
-    display: none;     /* Hide animated squares on small screens */
+    display: none; 
   }
 
-  .why-heading h2 {
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-bottom: 25px;
+  .col-9 { 
+    width: 100%; 
   }
 
-  .why-paragraph p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 15px auto;
-    max-width: 90%;
+  .why-heading h2 { 
+    font-size: 1.6rem; 
+    padding: 15px;
   }
 
-  .why-paragraph h6 {
-    font-size: 1.3rem;
-    line-height: 1.6;
-    margin-top: 25px;
+  .why-paragraph p { 
+    font-size: 1.1rem; 
+    padding: 5px;
+  }
+
+  .why-paragraph h6 { 
+    font-size: 1.3rem; 
+    padding: 5px;
   }
 }
 
 /* 📲 768px Tablets */
 @media (max-width: 768px) {
-  .containerChoose {
-    padding: 50px 8%;
+  .boxChoose { 
+    max-width: 950px; 
   }
 
-  .boxChoose {
-    width: 80%;
+  .boxChoose .square { 
+    display: block; 
   }
 
-  .boxChoose .square {
-    display: block;  /* show bouncing boxes again */
+  .col-9 { 
+    width: 100%; 
   }
 
-  .why-heading h2 {
+  .why-heading h2 { 
     font-size: 1.8rem;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    padding: 15px;
   }
 
-  .why-paragraph p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 15px auto;
-    max-width: 85%;
+  .why-paragraph p { 
+    font-size: 1.2rem; 
+    padding: 5px;
   }
 
-  .why-paragraph h6 {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    margin-top: 30px;
+  .why-paragraph h6 { 
+    font-size: 1.4rem; 
+    padding: 15px;
   }
 }
 
 /* 💻 991px Small Laptops */
 @media (max-width: 991px) {
-  .containerChoose {
-    padding: 60px 8%;
+  .boxChoose { 
+    max-width: 1000px; 
   }
 
-  .boxChoose {
-    width: 70%;
+  .boxChoose .square { 
+    display: block; 
   }
 
-  .boxChoose .square {
-    display: block;  /* show bouncing boxes */
+  .col-9 { 
+    width: 100%; 
   }
 
-  .why-heading h2 {
+  .why-heading h2 { 
     font-size: 2rem;
-    line-height: 1.5;
-    margin-bottom: 35px;
+    padding: 5px;
   }
 
-  .why-paragraph p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 20px auto;
-    max-width: 80%;
+  .why-paragraph p { 
+    font-size: 1.2rem; 
+    padding: 5px;
   }
 
-  .why-paragraph h6 {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-top: 35px;
+  .why-paragraph h6 { 
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
   }
 }
-
-
-
-
-
-
-
-
-/* @media (max-width: 992px) {
-  .why-heading h2 {
-    font-size: 28px;
-  }
-
-  .why-paragraph p {
-    font-size: 16px;
-  }
-
-  .boxChoose .square {
-    opacity: 0.5;
-  }
-}
-
-@media (max-width: 768px) {
-  .why-heading h2 {
-    font-size: 24px;
-    padding: 10px 0;
-  }
-
-  .why-paragraph p {
-    font-size: 15px;
-    padding: 5px 10px;
-  }
-
-  .boxChoose .square {
-    display: none; Hide animated squares on small screens */
-  /* }
-
-  .containerChoose {
-    padding: 1rem;
-  }
-} */
-/* 
-@media (max-width: 480px) {
-  .why-heading h2 {
-    font-size: 22px;
-  }
-
-  .why-paragraph p {
-    font-size: 14px;
-  }
-
-  .why-paragraph h6 {
-    font-size: 16px;
-  }
-} */
 
 /* -----------------Reasons Why You Choose Dr Janique Reason Section */
 
@@ -2219,7 +2125,7 @@ width: 100%;
 .safe-title span {
     display: grid;
     place-items: center;
-    text-align: left;
+    text-align: center;
     background: var(--bg-color-a);
     padding: .75rem 0;
     border-radius: calc(var(--_br) / 2);
@@ -2321,7 +2227,7 @@ width: 100%;
 .drug-title span {
     display: grid;
     place-items: center;
-    text-align: left;
+    text-align: center;
     background: var(--bg-color-a);
     padding: .75rem 0;
     border-radius: calc(var(--_br) / 2);
@@ -2428,7 +2334,7 @@ width: 100%;
 .surgery-title span {
   display: grid;
   place-items: center;
-  text-align: left;
+  text-align: center;
   /* background:white; */
   background: var(--bg-color-a);
   padding: .75rem 0;
@@ -2537,7 +2443,7 @@ width: 100%;
 .medical-title span {
     display: grid;
     place-items: center;
-    text-align: left;
+    text-align: center;
     background: var(--bg-color-a);
     padding: .75rem 0;
     border-radius: calc(var(--_br) / 2);
