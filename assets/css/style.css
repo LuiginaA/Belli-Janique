@@ -73,15 +73,71 @@ body {
     --fw-b: 700;
     --fw-xb: 800;
 
-    --fs-1: 3.5rem;      /* Heading h1 */
-    --fs-2: 3rem;         /* Heading h1 */
-    --fs-3: 2.3rem;       /* Heading h1 */
-    --fs-4: 2rem;         /* Heading h1 */
-    --fs-5: 1.8rem;       /* Heading h1 */
-    --fs-6: 1.6rem;       /* Heading h1 */
-    --fs-p: 1.5rem;       /* Heading h1 */
-    --fs-a: 1rem;         /* Heading h1 */
-    --fs-b: 2.8rem;       /* Heading h1 */
+    /* --fs-1: 3.5rem;
+    --fs-2: 3rem;
+    --fs-3: 2.3rem;
+    --fs-4: 2rem;
+    --fs-5: 1.8rem;
+    --fs-6: 1.6rem;
+    --fs-p: 1.5rem;
+    --fs-a: 1rem;
+    --fs-b: 2.8rem;
+           */
+
+
+/* Font-sizes h1 - p Base (large screens) */
+    --fs-1: 2.5rem;
+    --fs-2: 2rem;
+    --fs-3: 1.75rem;
+    --fs-4: 1.5rem;
+    --fs-5: 1.25rem;
+    --fs-6: 1.125rem;
+    --fs-p: 1rem;
+
+/* 📱 Font-sizes 320px Very Small Phones */
+--vss-1: 1.4rem;
+--vss-2: 1.2rem;
+--vss-3: 1.1rem;
+--vss-4: 1rem;
+--vss-5: 0.9rem;
+--vss-6: 0.85rem;
+--vss-p: 0.75rem;
+
+/* 📱Font-sizes 480px Small Phones */
+--sp-1: 1.6rem;
+--sp-2: 1.4rem;
+--sp-3: 1.2rem;
+--sp-4: 1.1rem;
+--sp-5: 1rem;
+--sp-6: 0.9rem;
+--sp-p: 0.8rem;
+
+/* 📱Font-sizes 576px Medium Phones */
+--msp-1: 1.8rem;
+--msp-2: 1.5rem;
+--msp-3: 1.3rem;
+--msp-4: 1.2rem;
+--msp-5: 1rem;
+--msp-6: 0.95rem;
+--msp-p: 0.85rem;
+
+/* 📲 Font-sizes 768px Tablets */
+--ts-1: 2rem;
+--ts-2: 1.6rem;
+--ts-3: 1.4rem;
+--ts-4: 1.25rem;
+--ts-5: 1.1rem;
+--ts-6: 1rem;
+--ts-p: 0.9rem;
+
+/* 📱 991px Small Laptops */
+--vsl-1: 2.2rem;
+--vsl-2: 1.8rem;
+--vsl-3: 1.6rem;
+--vsl-4: 1.4rem;
+--vsl-5: 1.2rem;
+--vsl-6: 1.1rem;
+--vsl-p: 0.95rem;
 }
 
 /* ✅ Fixed Navbar */
@@ -852,13 +908,15 @@ ul.dropdown-menu {
 }
 
 .hero-text h1 {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: var(--fs-1);
   font-weight: 900;
   margin: 25px 0;
 }
 
 .hero-text h3 {
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: var(--fs-3);
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 2.3rem;
@@ -868,7 +926,8 @@ ul.dropdown-menu {
 
 .hero-text p {
   max-width: 620px;
-  font-size: 17.5px;
+  /* font-size: 17.5px; */
+ font-size: var(--fs-p);
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0.5px;
@@ -926,7 +985,8 @@ ul.dropdown-menu {
   border-radius: 30px;
   color: var(--text-color-a);
   font-weight: 600;
-  font-size: 14px;
+  /* font-size: 14px; */
+   font-size: var(--fs-p);
   letter-spacing: 0.5px;
   text-decoration: none;
   overflow: hidden;
@@ -1018,16 +1078,19 @@ ul.dropdown-menu {
   }
 
   .hero-text h1 {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
+     font-size: var(--sp-1);
   }
 
   .hero-text h3 {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
+     font-size: var(--sp-3);
     line-height: 1.5rem;
   }
 
   .hero-text p {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
+     font-size: var(--sp-p);
     line-height: 1.5rem;
   }
 
@@ -1060,18 +1123,21 @@ ul.dropdown-menu {
   }
 
   .hero-text h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+     font-size: var(--msp-1);
     margin: 15px 0;
   }
 
   .hero-text h5 {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size: var(--msp-5);
     margin: 50px 0 10px 0;
     padding: 10px 0;
   }
 
   .hero-text p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: var(--msp-p);
     line-height: 1.6rem;
     margin-bottom: 20px;
     padding: 0 10px;
@@ -1099,15 +1165,18 @@ ul.dropdown-menu {
   }
 
   .hero-text h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: var(--ts-1);
   }
 
   .hero-text h3 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: var(--ts-3);
   }
 
   .hero-text p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: var(--ts-p);
   }
 
   .hero-img img {
@@ -1134,15 +1203,18 @@ ul.dropdown-menu {
   }
 
   .hero-text h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: var(--vsl-1);
   }
 
   .hero-text h3 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: var(--vsl-3);
   }
 
   .hero-text p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: var(--vsl-p);
   }
 
   .hero-img {
@@ -1227,7 +1299,8 @@ ul.dropdown-menu {
 }
 
 .description h2 {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: var(--fs-2);
   font-weight: 700;
   color: var(--text-color-c);
   display: inline-flex;       /* keep text + span together */
@@ -1248,7 +1321,8 @@ ul.dropdown-menu {
 .description h3 {
   margin-top: 20px;
   font-weight: 900;
-  font-size: 30px;
+  /* font-size: 30px; */
+   font-size: var(--fs-3);
 }
 
 .description h3 span {
@@ -1286,6 +1360,7 @@ ul.dropdown-menu {
   max-width: 500px;
   width: 100%;
   margin: 20px auto;
+  font-size: var(--fs-p);
 }
 
 /* ----- INTRO SECTION MEDIA QUERIES----- */
@@ -1306,8 +1381,9 @@ ul.dropdown-menu {
   }
 
   .description h2 {
-    font-size: 0.8rem;
-  } 
+    /* font-size: 0.8rem; */
+    font-size: var(--vss-2);
+  }
 
   .description h2 span {
     font-size: 1rem;
@@ -1315,14 +1391,16 @@ ul.dropdown-menu {
   }
 
   .description h3 {
-    font-size: 1rem;
-  } 
+    /* font-size: 1rem; */
+    font-size: var(--vss-3);
+  }
 
   .description p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: var(--vss-p);
     line-height: 1.4rem;
     text-align: center;
-    max-width: 100%;   
+    max-width: 100%;
   }
 }
 
@@ -1347,7 +1425,8 @@ ul.dropdown-menu {
   }
 
   .description h2 {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    font-size: var(--sp-2);
     white-space: nowrap;
   }
 
@@ -1356,11 +1435,15 @@ ul.dropdown-menu {
   }
 
   .description h3 {
-    font-size: 1.4rem;  
+    /* font-size: 1.4rem;  */
+    font-size: var(--sp-3);
+
   }
 
   .description p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: var(--sp-p);
+
     line-height: 1.6rem;
     text-align: center;
     max-width: 90%;
@@ -1388,7 +1471,8 @@ ul.dropdown-menu {
 
   .description p {
     margin: 20px auto;       /* center horizontally */
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: var(--msp-p);
     line-height: 1.6rem;
     text-align: center;
     max-width: 90%;
@@ -1411,7 +1495,8 @@ ul.dropdown-menu {
   }
 
   .description h2 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+    font-size: var(--ts-2);
     white-space: nowrap;
   }
 
@@ -1424,7 +1509,7 @@ ul.dropdown-menu {
     background-color: var(--bg-color-d);
   }
 }
-  
+
 /* 💻 Small Laptops (max-width: 820px) */
 @media (max-width: 820px) {
   .intro {
@@ -1451,7 +1536,7 @@ ul.dropdown-menu {
   .description p {
     font-size: 15px;
   }
- 
+
   .description h3 span:after {
     border-left: 4px solid var(--bg-color-f);
     background-color: var(--bg-color-d);
@@ -1467,7 +1552,8 @@ ul.dropdown-menu {
   }
 
   .description h2 {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
+    font-size: var(--vsl-2);
     white-space: nowrap;
   }
 
@@ -1476,14 +1562,14 @@ ul.dropdown-menu {
   }
 
   .description h3 {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
+    font-size: var(--vsl-3);
   }
 
   .description h3 span {
     font-size: 1.8rem;
   }
 }
-
 
 /*-----🫶 Pledge (Mission and Vision) Section */
 
@@ -1521,7 +1607,8 @@ ul.dropdown-menu {
 .pledge-content h2 {
   color: #252525;
   text-align: center;
-  font-family: var(--ff-1);
+  /* font-family: var(--ff-1); */
+    font-family: var(--fs-2);
   font-size: 34px;
   font-weight: var(--fw-sb);
   font-style: italic;
@@ -1529,13 +1616,14 @@ ul.dropdown-menu {
   letter-spacing: 1px;
   word-spacing: 2px;
   padding-top: 20px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
   animation: slideBottom 1s ease forwards;
   animation-delay: 1s;
 }
 
 .pledge-content h3 {
-  font-size: 26px;
+  /* font-size: 26px; */
+    font-family: var(--fs-3);
   font-weight: var( --fw-sb);
   color: var(--bg-color-f);
   animation: slideRight 1s ease forwards;
@@ -1543,6 +1631,7 @@ ul.dropdown-menu {
 }
 
 .pledge-content p {
+    font-family: var(--fs-p);
   font-weight: var(--fw-m);
   margin: 15px 0 30px;
   animation: slideLeft 1s ease forwards;
@@ -1590,18 +1679,29 @@ ul.dropdown-menu {
     gap: 30px;
   }
 
+  .pledge-content {
+    padding: 0;
+    text-align: center;
+  }
+
   .pledge-content h2 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+      font-family: var(--msp-2);
     margin-bottom: 30px;
+    text-align: center;
   }
 
   .pledge-content h3 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+      font-family: var(--msp-3);
+      text-align: center;
   }
 
   .pledge-content p {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
+      font-family: var(--msp-p);
     line-height: 1.6rem;
+    text-align: center;
   }
 
   .pledge-img img {
@@ -1619,15 +1719,21 @@ ul.dropdown-menu {
   }
 
   .pledge-content h2 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
+      font-family: var(--msp-2);
+      text-align: center;
   }
 
   .pledge-content h3 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+      font-family: var(--msp-3);
+      text-align: center;
   }
 
   .pledge-content p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+      font-family: var(--msp-p);
+      text-align: center;
   }
 
   .pledge-img img {
@@ -1684,14 +1790,14 @@ ul.dropdown-menu {
 /* Blurry Background Colors  */
 .containerChoose .color {
   position: absolute;
-  filter: blur(200px); 
+  filter: blur(200px);
   z-index: 1000;
 }
 
 .containerChoose .color:nth-child(1) {
   top: -350px;
   /* width: 800px; */
-  width: 100%; 
+  width: 100%;
   /* width: 600px; */
   height: 100%;
   background: #F8F3EF;
@@ -1810,7 +1916,8 @@ ul.dropdown-menu {
   color: #252525;
   text-align: center;
   font-family: 'Merriweather', serif;
-  font-size: 34px;
+  /* font-size: 34px; */
+  font-size: var(--fs-2);
   font-weight: 600;
   font-style: italic;
   letter-spacing: 1px;
@@ -1823,7 +1930,8 @@ ul.dropdown-menu {
   line-height: 2rem;
   padding-top: 10px;
   font-family: 'Merriweather', serif;
-  font-size: 18px;
+  /* font-size: 18px; */
+    font-size: var(--fs-p);
   font-weight: 400;
   font-style: italic;
   letter-spacing: 1px;
@@ -1835,7 +1943,8 @@ ul.dropdown-menu {
   line-height: 2rem;
   padding-top: 10px;
   font-family: 'Merriweather', serif;
-  font-size: 24px;
+  /* font-size: 24px; */
+    font-size: var(--fs-6);
   font-weight: 600;
   letter-spacing: 1px;
   font-style: italic;
@@ -1847,52 +1956,58 @@ ul.dropdown-menu {
 
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
-  .boxChoose .square { 
-    display: none; 
+  .boxChoose .square {
+    display: none;
   }
 
-  .col-9 { 
-    width: 100%; 
-  }   
+  .col-9 {
+    width: 100%;
+  }
 
-  .why-heading h2 { 
-    font-size: 1.1rem; 
+  .why-heading h2 {
+    /* font-size: 1.1rem; */
+      font-size: var(--vss-2);
     padding-bottom: 10px;
   }
 
-  .why-paragraph p { 
-    font-size: 0.7rem; 
+  .why-paragraph p {
+    /* font-size: 0.7rem; */
+    font-size: var(--vss-p);
     padding: 5px;
   }
 
-  .why-paragraph h6 { 
-    font-size: 0.90rem; 
+  .why-paragraph h6 {
+    /* font-size: 0.90rem; */
+    font-size: var(--vss-6);
     padding: 5px;
   }
 }
 
 /* 📱 480px Small Phones */
 @media (max-width: 480px) {
-  .boxChoose .square { 
-    display: none; 
+  .boxChoose .square {
+    display: none;
   }
 
-  .col-9 { 
-    width: 100%; 
+  .col-9 {
+    width: 100%;
   }
 
-  .why-heading h2 { 
-    font-size: 1.4rem; 
+  .why-heading h2 {
+    /* font-size: 1.4rem; */
+      font-size: var(--sp-2);
     padding: 10px;
   }
 
-  .why-paragraph p { 
-    font-size: 1rem; 
+  .why-paragraph p {
+    /* font-size: 1rem; */
+    font-size: var(--sp-p);
     padding: 8px;
   }
 
-  .why-paragraph h6 { 
-    font-size: 1.2rem; 
+  .why-paragraph h6 {
+    /* font-size: 1.2rem; */
+    font-size: var(--sp-6);
     padding: 8px;
   }
 }
@@ -1900,623 +2015,282 @@ ul.dropdown-menu {
 /* 📱 576px Medium Phones */
 @media (max-width: 576px) {
   .boxChoose .square {
-    display: none; 
+    display: none;
   }
 
-  .col-9 { 
-    width: 100%; 
+  .col-9 {
+    width: 100%;
   }
 
-  .why-heading h2 { 
-    font-size: 1.6rem; 
+  .why-heading h2 {
+    /* font-size: 1.6rem; */
+    font-size: var(--msp-2);
     padding: 15px;
   }
 
-  .why-paragraph p { 
-    font-size: 1.1rem; 
+  .why-paragraph p {
+    /* font-size: 1.1rem; */
+    font-size: var(--msp-p);
     padding: 5px;
   }
 
-  .why-paragraph h6 { 
-    font-size: 1.3rem; 
+  .why-paragraph h6 {
+    /* font-size: 1.3rem; */
+    font-size: var(--msp-6);
     padding: 5px;
   }
 }
 
 /* 📲 768px Tablets */
 @media (max-width: 768px) {
-  .boxChoose { 
-    max-width: 950px; 
+  .boxChoose {
+    max-width: 950px;
   }
 
-  .boxChoose .square { 
-    display: block; 
+  .boxChoose .square {
+    display: block;
   }
 
-  .col-9 { 
-    width: 100%; 
+  .col-9 {
+    width: 100%;
   }
 
-  .why-heading h2 { 
-    font-size: 1.8rem;
+  .why-heading h2 {
+    /* font-size: 1.8rem; */
+    font-size: var(--ts-2);
     padding: 15px;
   }
 
-  .why-paragraph p { 
-    font-size: 1.2rem; 
+  .why-paragraph p {
+    /* font-size: 1.2rem; */
+      font-size: var(--ts-p);
     padding: 5px;
   }
 
-  .why-paragraph h6 { 
-    font-size: 1.4rem; 
+  .why-paragraph h6 {
+    /* font-size: 1.4rem; */
+      font-size: var(--ts-6);
     padding: 15px;
   }
 }
 
 /* 💻 991px Small Laptops */
 @media (max-width: 991px) {
-  .boxChoose { 
-    max-width: 1000px; 
+  .boxChoose {
+    max-width: 1000px;
   }
 
-  .boxChoose .square { 
-    display: block; 
+  .boxChoose .square {
+    display: block;
   }
 
-  .col-9 { 
-    width: 100%; 
+  .col-9 {
+    width: 100%;
   }
 
-  .why-heading h2 { 
-    font-size: 2rem;
+  .why-heading h2 {
+    /* font-size: 2rem; */
+      font-size: var(--vsl-2);
     padding: 5px;
   }
 
-  .why-paragraph p { 
-    font-size: 1.2rem; 
+  .why-paragraph p {
+    /* font-size: 1.2rem; */
+      font-size: var(--vsl-p);
     padding: 5px;
   }
 
-  .why-paragraph h6 { 
-    font-size: 1.9rem;
+  .why-paragraph h6 {
+    /* font-size: 1.9rem; */
+      font-size: var(--vsl-6);
     letter-spacing: 2px;
     word-spacing: 2px;
   }
 }
 
-/* -----------------Reasons Why You Choose Dr Janique Reason Section */
+/* 🩺 Reasons Why Choose Dr Janique Section */
 
-.reason-choose-section {
-  padding: 3rem 0;
-}
-
-.reason-choose-section  {
+.reason-cont .container-reason {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: center; 
   align-items: center;
   min-height: 80vh;
   background: var(--bg-color-a);
   overflow: hidden;
   position: relative;
-  /* padding: 2rem 1rem;   */
 }
 
-.reason-heading h2 {
+/* Heading + Paragraph */
+.reason-cont .reason-heading h2 {
   color: #252525;
   text-align: center;
   font-family: 'Merriweather', serif;
-  font-size: 34px;
+  font-size: var(--fs-2);
   font-weight: 600;
   font-style: italic;
   letter-spacing: 1px;
   word-spacing: 2px;
-  padding-top: 20px;
-  margin: 0;
 }
 
-.reason-paragraph p {
-  line-height: 2rem;
+.reason-cont .reason-paragraph p {
+  line-height: 1.8rem;
   padding-top: 10px;
   font-family: 'Merriweather', serif;
-  font-size: 18px;
+  font-size: var(--fs-p);
   font-weight: 400;
   font-style: italic;
-  letter-spacing: px;
+  letter-spacing: 1px;
   text-align: center;
   color: #252525;
 }
 
-.grid-container-reason {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: repeat (4, 1fr);
-  max-width: 100%;
-  background-color: var(--bg-color-a);
-}
+* 🛡️ Safe, 💊 Drug-Free, 👨‍⚕️ Surgery, 🏥 Medical Aid */
 
-.grid-container-reason {
-  font-family:'Merriweather', serif;
-  font-size: 16px;
-  margin: 3rem;
-}
-
-.reason-choose-img {
-  display: block;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* ---------------------------------Safe Column */
-
-
-.safe-info {
-    --_br: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr auto 1fr;
-    max-width: 25rem;
-    position: relative;
-}
-
-.safe-image {
-    grid-row:  1 / 3;
-    grid-column: 1 / 3;
-    border-radius: var(--_br);
-    overflow: hidden;
-}
-
-.safe-image::before,
-.safe-image::after,
-.safe-title::after {
-    --_size: var(--_br);
-    content: '';
-    position: absolute;
-    width: var(--_size);
-    aspect-ratio: 1;
-    background-image: radial-gradient(circle at 100% 100%, transparent var(--_size), transparent var(--_size), var(--_corner-color, #EDE6DE) calc(var(--_size) + 1px));
-    rotate: -90deg;
-}
-
-.safe-image::before {
-    left: 0;
-    bottom: 0;
-    grid-column: 2;
-    grid-row: 2 / 3;
-}
-
-.safe-image::after {
-    left: 0;
-    bottom: 0;
-    grid-column: 1;
-    grid-row: 1 / 2;
-    box-shadow: -1rem 0 0 #EDE6DE;
-}
-
-.safe-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.safe-title {
-    display: grid;
-    padding: 1rem 1rem 0 1rem;
-    background: var(--bg-color-c);
-    font-weight: 500;
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    border-radius: var(--_br) var(--_br) 0 0;
-    box-shadow:
-        0 1rem 0 #3F3B51,
-        0 0 0 1rem #EDE6DE;
-}
-
-.safe-title::after {
-    --_size: calc(var(--_br) * 1.5);
-    --_corner-color: #3F3B51;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    left: -1rem;
-    bottom: -1rem;
-}
-
-.safe-title span {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    background: var(--bg-color-a);
-    padding: .75rem 0;
-    border-radius: calc(var(--_br) / 2);
-}
-
-.safe-meta {
-    margin: 0;
-    background: var(--bg-color-c);
-    color: var(--bg-color-a);
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
-    font-size: 1rem;
-    line-height: 1.8;
-    padding-top: 1rem;
-    padding-left: 10px;
-    border-radius: 0 var(--_br) var(--_br) var(--_br);
-}
-
-.safe-meta li {
-    text-align: left;
-    font-size: .5rem;
-    list-style-type: none;
-}
-
-/* ---------------------------------Drug Column */
-
-.drug-info {
-    --_br: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr auto 1fr;
-    max-width: 25rem;
-    position: relative;
-}
-
-.drug-image {
-    grid-row:  1 / 3;
-    grid-column: 1 / 3;
-    border-radius: var(--_br);
-    overflow: hidden;
-}
-
-.drug-image::before,
-.drug-image::after,
-.drug-title::after{
-    --_size: var(--_br);
-    content: '';
-    position: absolute;
-    width: var(--_size);
-    aspect-ratio: 1;
-    background-image: radial-gradient(circle at 100% 100%, transparent var(--_size), transparent var(--_size), var(--_corner-color, #EDE6DE) calc(var(--_size) + 1px));
-    rotate: -90deg;
-}
-
-.drug-image::before {
-    left: 0;
-    bottom: 0;
-    grid-column: 2;
-    grid-row: 2 / 3;
-}
-
-.drug-image::after{
-    left: 0;
-    bottom: 0;
-    grid-column: 1;
-    grid-row: 1 / 2;
-    box-shadow: -1rem 0 0 #EDE6DE;
-}
-
-.drug-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.drug-title {
-    display: grid;
-    padding: 1rem 1rem 0 1rem;
-    background: var(--bg-color-c);
-    font-weight: 500;
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    border-radius: var(--_br) var(--_br) 0 0;
-    box-shadow:
-        0 1rem 0 #3F3B51,
-        0 0 0 1rem #EDE6DE;
-}
-
-.drug-title::after {
-    --_size: calc(var(--_br) * 1.5);
-    --_corner-color: #3F3B51;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    left: -1rem;
-    bottom: -1rem;
-}
-
-.drug-title span {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    background: var(--bg-color-a);
-    padding: .75rem 0;
-    border-radius: calc(var(--_br) / 2);
-}
-
-.drug-meta {
-    margin: 0;
-    background: var(--bg-color-c);
-    color: var(--bg-color-a);
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
-    font-size: 1rem;
-    line-height: 1.8;
-    padding-top: 1rem;
-    padding-left: 10px;
-    border-radius: 0 var(--_br) var(--_br) var(--_br);
-}
-
-.drug-meta li {
-    text-align: left;
-    font-size: .5rem;
-    list-style-type: none;
-}
-
-
-/* -------------------- Surgery Column */
-
-.surgery-info {
-  --_br: 1rem;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr auto 1fr;
-  max-width: 25rem;
-  position: relative;
-}
-
-.surgery-image {
-  grid-row:  1 / 3;
-  grid-column: 1 / 3;
-  border-radius: var(--_br);
-  overflow: hidden;
-}
-
-.surgery-image::before,
-.surgery-image::after,
-.surgery-title::after{
-  --_size: var(--_br);
-  content: '';
-  position: absolute;
-  width: var(--_size);
-  aspect-ratio: 1;
-  background-image: radial-gradient(circle at 100% 100%, transparent var(--_size), transparent var(--_size), var(--_corner-color, #EDE6DE) calc(var(--_size) + 1px));
-
-(--_size), transparent var(--_size), var(--_corner-color, #EDE6DE) calc(var(--_size) + 1px));
-
-  rotate: -90deg;
-}
-
-.surgery-image::before{
-  left: 0;
-  bottom: 0;
-  grid-column: 2;
-  grid-row: 2 / 3;
-}
-
-.surgery-image::after{
-  left: 0;
-  bottom: 0;
-  grid-column: 1;
-  grid-row: 1 / 2;
-  /* box-shadow: -1rem 0 0 white; */
-   box-shadow: -1rem 0 0 #EDE6DE;
-}
-
-.surgery-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.surgery-title {
-  display: grid;
-  padding: 1rem 1rem 0 1rem;
-  background: var(--bg-color-c);
-  font-weight: 500;
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  border-radius: var(--_br) var(--_br) 0 0;
-  box-shadow:
-      0 1rem 0 #3f3b51,
-      0 0 0 1rem #EDE6DE;
-}
-
-.surgery-title::after {
-  --_size: calc(var(--_br) * 1.5);
-  --_corner-color: #3F3B51;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  left: -1rem;
-  bottom: -1rem;
-}
-
-.surgery-title span {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  /* background:white; */
+.container-reason {
   background: var(--bg-color-a);
-  padding: .75rem 0;
-  border-radius: calc(var(--_br) / 2);
+  width: 100%;
 }
 
-.surgery-meta {
-  margin: 0;
-  /* background: black; */
-  /* background: var(--bg-color-c);
-  color: white; */
-
-  background: var(--bg-color-c);
-  color: var(--bg-color-a);
-
-  grid-row: 3 / 4;
-  grid-column: 1 / 3;
-  font-size: 1rem;
-  line-height: 1.8;
-  padding-top: 1rem;
-  padding-left: 10px;
-  border-radius: 0 var(--_br) var(--_br) var(--_br);
+.reason-cont .reason-why {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-color-a);
+  gap: 15px;
 }
 
-.surgery-meta li {
-  text-align: left;
-  font-size: .5rem;
-  list-style-type: none;
-}
-
-
-/* ----------------------------Medical *Surgery* Column */
-
-.medical-info {
-    --_br: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr auto 1fr;
-    max-width: 25rem;
+.card-reasonInfo {
     position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.medical-image {
-    grid-row:  1 / 3;
-    grid-column: 1 / 3;
-    border-radius: var(--_br);
-    overflow: hidden;
-}
-
-.medical-image::before,
-.medical-image::after,
-.medical-title::after{
-    --_size: var(--_br);
-    content: '';
-    position: absolute;
-    width: var(--_size);
-    aspect-ratio: 1;
-    background-image: radial-gradient(circle at 100% 100%, transparent var(--_size), transparent var(--_size), var(--_corner-color, #EDE6DE) calc(var(--_size) + 1px));
-    rotate: -90deg;
-}
-
-.medical-image::before{
-    left: 0;
-    bottom: 0;
-    grid-column: 2;
-    grid-row: 2 / 3;
-}
-
-.medical-image::after{
-    left: 0;
-    bottom: 0;
-    grid-column: 1;
-    grid-row: 1 / 2;
-    box-shadow: -1rem 0 0 #EDE6DE;
-}
-
-.medical-image img {
+.card-reasonInfo .imgReason {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 240px;
+    border-radius: 15px;
+    background-size: cover
 }
 
-.medical-title {
-    display: grid;
-    padding: 1rem 1rem 0 1rem;
-    background: var(--bg-color-c);
+.card-reasonInfo .imgReason::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+
+.card-reasonInfo .imgReason::after {
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+
+.card-reasonInfo .reason-content {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #232949;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    padding: 0 30px;  
+}
+
+.card-reasonInfo .reason-content ul {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.25rem;
+    margin-top: 15px;
+}
+
+
+.card-reasonInfo .reason-content .reason-title {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    height: 80px;
+    width: 50%;
+    background: #232949;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-top-right-radius: 25px;  
+}
+
+.card-reasonInfo .reason-content .reason-title::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0 #fff;
+}
+
+.card-reasonInfo .reason-content .reason-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #232949;
+}
+
+.card-reasonInfo .reason-content .reason-title a {
+    position: relative;
+    background: #fff;
+    padding: 10px 15px ;
+    margin: 15px 15px;
+    display: block;
+    border-radius: 7px;
+    color: #000;
     font-weight: 500;
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    border-radius: var(--_br) var(--_br) 0 0;
-    box-shadow:
-        0 1rem 0 #3F3B51,
-        0 0 0 1rem #EDE6DE;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:'Merriweather', serif;
 }
 
-.medical-title::after {
-    --_size: calc(var(--_br) * 1.5);
-    --_corner-color: var(--bg-color-c);
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    left: -1rem;
-    bottom: -1rem;
+.card-reasonInfo .reason-content ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  color: var(--bg-color-a);
 }
 
-.medical-title span {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    background: var(--bg-color-a);
-    padding: .75rem 0;
-    border-radius: calc(var(--_br) / 2);
-}
-
-.medical-meta {
-    margin: 0;
-    background: var(--bg-color-c);
-    color: var(--bg-color-a);
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
-    font-size: 1rem;
-    line-height: 1.8;
-    padding-top: 1rem;
-    padding-left: 10px;
-    border-radius: 0 var(--_br) var(--_br) var(--_br);
-}
-
-.medical-meta li {
-    text-align: left;
-    font-size: .5rem;
-    list-style-type: none;
-}
-
-/* Media Reason Why Choose Dr Janique Section */
-
-/* Responsive */
-@media (max-width: 992px) {
-  .reason-heading h2 {
-    font-size: 1.75rem;
-  }
-  .reason-paragraph p {
-    font-size: 1rem;
-  }
-  .reason-img {
-    height: 160px;
-  }
-}
-@media (max-width: 768px) {
-  .reason-heading h2 {
-    font-size: 1.5rem;
-  }
-  .reason-paragraph p {
-    font-size: 0.95rem;
-  }
-  .reason-img {
-    height: 140px;
-  }
-}
-@media (max-width: 576px) {
-  .reason-heading h2 {
-    font-size: 1.3rem;
-  }
-  .reason-paragraph p {
-    font-size: 0.9rem;
-  }
-  .reason-img {
-    height: 120px;
-  }
-} 
 
 /* ----------------Slogan Section */
-  
+
 .slogan-contain {
   background-color: var(--bg-color-b);
   height: 100%;
-  padding-top: 80px; 
-  padding-bottom: 80px; 
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .sloganHeading {
   text-align: center;
-  color: var(--text-color-c); 
+  color: var(--text-color-c);
   font-family: var(--ff-1);
   font-style: italic;
   letter-spacing: 1px;
@@ -2536,7 +2310,7 @@ ul.dropdown-menu {
   font-size: 22px;
   font-weight: 600;
   margin-top: 20px;
-} 
+}
 
 .sloganHeading h2 {
   font-size: 30px;
@@ -2575,7 +2349,7 @@ ul.dropdown-menu {
 
 .sloganHeading h2 span:nth-child(6) {
   animation-delay: 0.5s;
-} 
+}
 
 @keyframes bounce {
   100% {
@@ -2609,22 +2383,24 @@ ul.dropdown-menu {
 
   .slogan_paragraph h5 {
     line-height: 1.8rem;
-  } 
+  }
 }
 
 /* 📱 Small Phones (max-width: 480px) */
 @media (max-width: 480px) {
   .slogan_paragraph h5 {
     line-height: 2rem;
-  } 
+  }
 }
 
 /* 📱 Medium Phones (max-width: 576px) */
 @media (max-width: 576px) {
   .slogan_paragraph h5 {
     line-height: 2rem;
-  } 
+  }
 }
+
+
 
   /* --------------------- House Rules Section -------------- */
 

@@ -771,6 +771,232 @@ logo  {
     justify-content: center;
   }
 
+
+
+
+
+
+/* ---------------------------------Why Choose Dr Janique Section */
+
+.bg-color-why {
+    background: #fff;  
+}
+
+.choose-cont {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0rem; 
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.why-heading h2 {
+    color: #FFE4E1;
+    color: #000;
+    text-align: center;
+    font-family: Merriweather, sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 20px 0 0;
+}
+
+.why-paragraph p {
+    line-height: 2rem; 
+    padding-top: 10px;
+    font-family: Merriweather, sans-serif;
+    font-size: 18px; 
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #FFE4E1;
+    color: #000;
+}
+
+.why-paragraph h5 {
+    line-height: 2rem;
+    padding-top: 10px;
+    font-family:'Merriweather', serif;
+    font-size: 26px; 
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    color: #FFE4E1;
+    color: #000;
+   
+} 
+
+/* ---------------------------------Why Choose Dr Janique Reason Section */
+
+.bg-color-why {
+    background: #fff;
+}
+
+.whyChoose-cont {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    gap: 15px;
+}
+
+.card-whyInfo {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-whyInfo .imgWhy {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 15px;
+    background-size: cover
+}
+
+.card-whyInfo .imgWhy::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+
+.card-whyInfo .imgWhy::after {
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+
+.card-whyInfo .contentWhy {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #232949;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    padding: 0 30px;  
+}
+
+.card-whyInfo .contentWhy ul {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.25rem;
+    margin-top: 15px;
+}
+
+.card-whyInfo .contentWhy .why-title {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    height: 80px;
+    width: 50%;
+    background: #232949;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-top-right-radius: 25px;  
+}
+
+.card-whyInfo .contentWhy .why-title::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0 #fff;
+}
+
+.card-whyInfo .contentWhy .why-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #232949;
+}
+
+.card-whyInfo .contentWhy .why-title a {
+    position: relative;
+    background: #fff;
+    padding: 10px 15px ;
+    margin: 15px 15px;
+    display: block;
+    border-radius: 7px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:'Merriweather', serif;
+}
+
+
+/* ------------------------------Chiropractics How Quote Section  -*/
+
+.contain-condit {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.chiroQuote_con {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px; 
+}
+
+.chiroQuote_con .quote_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerQuote {
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+}
+
+.chiroQuote_con {
+    background: linear-gradient(90deg, #FFEAE6 40%, #232949 40%);
+    background: linear-gradient(90deg, #FFEAE6 20%, #232949 60%);
+    background: linear-gradient(90deg, #FFEAE6 30%, #232949 50%);
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* ----- INTRO SECTION ----- */
   .intro {
     flex-direction: column;
