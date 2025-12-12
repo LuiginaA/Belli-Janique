@@ -2412,10 +2412,6 @@ ul.dropdown-menu {
   }
 }
 
-
-
-  /* --------------------- House Rules Section -------------- */
-
 /* 🏠 House Rules Section */
 
 .container-house-rules {
@@ -2458,7 +2454,6 @@ ul.dropdown-menu {
   flex-direction: column;
   position: relative;
 }
-
 
 /* Light reflection on card */
 .card::before {
@@ -2519,8 +2514,6 @@ ul.dropdown-menu {
   font-size: 4em;
   position: relative;
   --ionicon-stroke-width: 20px;
-  z-index: ;
-
 }
 
 /* Text Content */
@@ -2552,7 +2545,8 @@ ul.dropdown-menu {
   color: var(--bg-color-c);
 }
 
-/* --------------------- Responsive Design --------------------- */
+/* 🏠 House Rules Media Queries Section */
+
 /* Tablets: 2 cards in a row */
 @media (max-width: 991px) {
   .card {
@@ -2602,14 +2596,14 @@ ul.dropdown-menu {
   margin: 0;
   padding: 40px;
   width: 100%;
-height: 100%;
+  height: 100%;
   background-size: cover;
   background-color: var(--bg-color-b);
 }
-.appointment-heading h2 {
+.appointment-heading h3 {
   text-align: center;
   font-family: 'Merriweather', serif;
-  font-size: 34px;
+  font-size: var(--fs-3);
   font-weight: 600;
   font-style: italic;
   letter-spacing: 2px;
@@ -2632,9 +2626,9 @@ height: 100%;
   padding-left: 0;
 }
 
-.container-appoint-1 h4 {
+.container-appoint-1 h2 {
     font-family: Merriweather, sans-serif;;
-    font-size: 34px;
+    font-size: var(--fs-2);
     font-weight: 600;
     font-style: italic;
     color: var(--bg-color-c);
@@ -2649,19 +2643,22 @@ height: 100%;
   line-height: 2rem;
   padding-top: 10px;
   font-family: 'Merriweather', serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: var(--fs-p);
+  font-weight: 800;
   font-style: italic;
   text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 2px;
   margin-top: 10px;
   margin-bottom: 20px;
   color: var(--bg-color-c);
 }
 
-.container-appoint-1 h5 {
+.container-appoint-1 h3 {
   font-family: 'Merriweather', serif;
   letter-spacing: 1.3px;
   font-size: 28px;
+  font-size: var(--fs-3);
   font-style: italic;
   text-align: center;
   color: #4d4c4b;
@@ -2700,7 +2697,7 @@ height: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   color: var(--text-color-a);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 14px;
   letter-spacing: .5px;
   text-decoration: none;
