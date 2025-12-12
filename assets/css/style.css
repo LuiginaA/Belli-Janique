@@ -2102,7 +2102,7 @@ ul.dropdown-menu {
 
   .why-paragraph h6 {
     /* font-size: 1.9rem; */
-      font-size: var(--vsl-6);
+    font-size: var(--vsl-6);
     letter-spacing: 2px;
     word-spacing: 2px;
   }
@@ -2110,19 +2110,25 @@ ul.dropdown-menu {
 
 /* 🩺 Reasons Why Choose Dr Janique Section */
 
-.reason-cont .container-reason {
+.container-reason  .contReason  {
   display: flex;
   width: 100%;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  background: var(--bg-color-a);
   overflow: hidden;
   position: relative;
 }
 
+.container-reason .contReason  {
+  width: 100%;
+  min-height: 40vh;
+  text-align: center;
+  background: var(--bg-color-d);
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
 /* Heading + Paragraph */
-.reason-cont .reason-heading h2 {
+.container-reason .contReason .reason-heading h2 {
   color: #252525;
   text-align: center;
   font-family: 'Merriweather', serif;
@@ -2131,10 +2137,12 @@ ul.dropdown-menu {
   font-style: italic;
   letter-spacing: 1px;
   word-spacing: 2px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.reason-cont .reason-paragraph p {
-  line-height: 1.8rem;
+.container-reason .contReason .reason-paragraph p {
+  line-height: 2rem;
   padding-top: 10px;
   font-family: 'Merriweather', serif;
   font-size: var(--fs-p);
@@ -2143,13 +2151,16 @@ ul.dropdown-menu {
   letter-spacing: 1px;
   text-align: center;
   color: #252525;
+  margin: 10px;
+  padding-top: 10px;
 }
 
 * 🛡️ Safe, 💊 Drug-Free, 👨‍⚕️ Surgery, 🏥 Medical Aid */
 
 .container-reason {
-  background: var(--bg-color-a);
+  background: var(--bg-color-d);
   width: 100%;
+  height: 100%;
 }
 
 .reason-cont .reason-why {
@@ -2160,126 +2171,126 @@ ul.dropdown-menu {
   align-items: center; 
   width: 100%;
   min-height: 100vh;
-  background: var(--bg-color-a);
-  gap: 15px;
+  background: var(--bg-color-d);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 15px;  
 }
 
 .card-reasonInfo {
-    position: relative;
-    width: 320px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-reasonInfo .imgReason {
-    position: relative;
-    width: 100%;
-    height: 240px;
-    border-radius: 15px;
-    background-size: cover
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 15px;
+  background-size: cover
 }
 
 .card-reasonInfo .imgReason::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 #fff;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: transparent; 
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 var(--bg-color-d); 
 }
 
 .card-reasonInfo .imgReason::after {
-    content: "";
-    position: absolute;
-    bottom: 70px;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 #fff;
+  content: "";
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent; 
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 var(--bg-color-d);
 }
 
 .card-reasonInfo .reason-content {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background: #232949;
-    border-radius: 15px;
-    border-top-left-radius: 0;
-    padding: 0 30px;  
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: #232949;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  padding: 0 30px;  
 }
 
 .card-reasonInfo .reason-content ul {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1.25rem;
-    margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.25rem;
+  margin-top: 15px;
 }
 
-
 .card-reasonInfo .reason-content .reason-title {
-    position: absolute;
-    top: -80px;
-    left: 0;
-    height: 80px;
-    width: 50%;
-    background: #232949;
-    border-top: 10px solid #fff;
-    border-right: 10px solid #fff;
-    border-top-right-radius: 25px;  
+  position: absolute;
+  top: -80px;
+  left: 0;
+  height: 80px;
+  width: 50%;
+  background: #232949;
+  border-top: 10px solid var(--bg-color-d);
+  border-right: 10px solid var(--bg-color-d);
+  border-top-right-radius: 25px;  
 }
 
 .card-reasonInfo .reason-content .reason-title::before {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px -10px 0 #fff;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: transparent; 
+  border-radius: 50%;
+  box-shadow: -10px -10px 0 var(--bg-color-d);
 }
 
 .card-reasonInfo .reason-content .reason-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: -25px;
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 #232949;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 #232949;
 }
 
 .card-reasonInfo .reason-content .reason-title a {
-    position: relative;
-    background: #fff;
-    padding: 10px 15px ;
-    margin: 15px 15px;
-    display: block;
-    border-radius: 7px;
-    color: #000;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 17px;
-    font-family:'Merriweather', serif;
+  position: relative;
+  background: var(--bg-color-d);
+  padding: 10px 15px ;
+  margin: 10px 10px;
+  display: block;
+  border-radius: 7px;
+  color: var(--text-color-a); 
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family:'Merriweather', serif;
+  text-align: center;
 }
 
 .card-reasonInfo .reason-content ul li {
   list-style-type: disc;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-bottom: 8px;
   color: var(--bg-color-a);
 }
 
-
-/* ----------------Slogan Section */
+/* 📣 Slogan Section */
 
 .slogan-contain {
   background-color: var(--bg-color-b);
@@ -2358,7 +2369,8 @@ ul.dropdown-menu {
   }
 }
 
-/* ---------Media Queries Slogan Section ------------ */
+/* 📣 Slogan Section Media Queries*/
+
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
   .slogan-contain {
@@ -2403,6 +2415,8 @@ ul.dropdown-menu {
 
 
   /* --------------------- House Rules Section -------------- */
+
+/* 🏠 House Rules Section */
 
 .container-house-rules {
   display: flex;
@@ -2772,6 +2786,7 @@ height: 100%;
 
 .container-testimonial {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
