@@ -993,6 +993,7 @@ ul.dropdown-menu {
   z-index: 1000;
   transition: 0.5s;
   backdrop-filter: blur(15px);
+  box-shadow: 3px 3px #38e209;
 }
 
 /* 🧚 Hover Text Animation */
@@ -2290,7 +2291,7 @@ ul.dropdown-menu {
   color: var(--bg-color-a);
 }
 
-/* 📣 Slogan Section */
+/* 📣💬 Slogan Section */
 
 .slogan-contain {
   background-color: var(--bg-color-b);
@@ -2369,7 +2370,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 📣 Slogan Section Media Queries*/
+/* 📣💬 Slogan Section Media Queries*/
 
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
@@ -2586,55 +2587,41 @@ ul.dropdown-menu {
   }
 }
 
-
-/* --------------------------------------Appointment info Section */
+/* 📅 Appointment Info Section */
 
 .container-appoint {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 40px;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
   background-color: var(--bg-color-b);
-}
-.appointment-heading h3 {
-  text-align: center;
-  font-family: 'Merriweather', serif;
-  font-size: var(--fs-3);
-  font-weight: 600;
-  font-style: italic;
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  margin: 0;
-  color: var(--bg-color-c);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.container-appoint-1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  line-height: 2rem;
-  width: 100%;
-  height: 280px;
-  padding-left: 0;
+.appoint-heading {
+  text-align: center;
+  color: var(--text-color-c);
+  font-family: var(--ff-1);
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.appoint-heading h3 {
+  font-size: var(--fs-3);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  word-spacing: 1.8px;
+  margin-bottom: 0px;
 }
 
 .container-appoint-1 h2 {
-    font-family: Merriweather, sans-serif;;
+    font-family: var(--ff-1);
     font-size: var(--fs-2);
     font-weight: 600;
     font-style: italic;
     color: var(--bg-color-c);
+    text-shadow: 2px 2px #38e209;
     text-align: center;
     line-height: 2rem;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -2642,7 +2629,7 @@ ul.dropdown-menu {
 .container-appoint-1 p {
   line-height: 2rem;
   padding-top: 10px;
-  font-family: 'Merriweather', serif;
+  font-family: var(--ff-1);
   font-size: var(--fs-p);
   font-weight: 800;
   font-style: italic;
@@ -2654,19 +2641,18 @@ ul.dropdown-menu {
   color: var(--bg-color-c);
 }
 
-.container-appoint-1 h3 {
-  font-family: 'Merriweather', serif;
-  letter-spacing: 1.3px;
-  font-size: 28px;
+.container-appoint-1 .app-quote h3 {
+  font-family: var(--ff-1);
   font-size: var(--fs-3);
   font-style: italic;
   text-align: center;
   color: #4d4c4b;
   text-shadow: 2px 1px #7E806D;
   letter-spacing: 1.3px;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
+/* 📅 Appointment Button */
 
 .appoint-btn2 {
   width: 100%;
@@ -2681,6 +2667,8 @@ ul.dropdown-menu {
   border: 1px solid var(--bg-color-h);
   border-radius: 30px;
 }
+
+/* 📅 Appointment Button Hover Effects */
 
 .appoint-btn2 .btn a {
   position: absolute;
@@ -2705,6 +2693,7 @@ ul.dropdown-menu {
   z-index: 1000;
   transition: 0.5s;
   backdrop-filter: blur(15px);
+  box-shadow: 3px 3px #38e209;
 }
 
 .appoint-btn2 .btn:hover a {
@@ -2769,6 +2758,154 @@ ul.dropdown-menu {
   width: 80%;
   border-radius: 30px;
   transition-delay: 0.5s;
+}
+
+
+/* 📅 320px Very Small Phones */
+@media screen and (max-width: 320px) {
+  .appoint-heading h3 { 
+    font-size: var(--vss-3); 
+  }
+
+  .container-appoint-1 h2 { 
+    font-size: var(--vss-2); 
+  }
+
+  .container-appoint-1 p { 
+    font-size: var(--vss-p); 
+  }
+
+  .container-appoint-1 .app-quote h3 { 
+    font-size: var(--vss-3); 
+    padding-top: 15px;
+  }
+
+  .appoint-btn2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .appoint-btn2 .btn { 
+    width: 120px; 
+    height: 50px; 
+  }
+
+  .appoint-btn2 .btn a { 
+    font-size: 12px; 
+  }
+}
+
+/* 📅 480px Small Phones */
+@media screen and (max-width: 480px) {
+  .appoint-heading h3 { 
+    font-size: var(--sp-3); 
+  }
+
+  .container-appoint-1 h2 { 
+    font-size: var(--sp-2); 
+  }
+
+  .container-appoint-1 p { 
+    font-size: var(--sp-p); 
+  }
+
+  .container-appoint-1 .app-quote h3 { 
+    font-size: var(--sp-3); 
+    padding-top: 20px;
+  }
+
+  .appoint-btn2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .appoint-btn2 .btn { 
+    width: 140px; 
+    height: 50px; 
+  }
+
+  .appoint-btn2 .btn a { 
+    font-size: 13px; }
+}
+
+/* 📅 576px Medium Phones */
+@media screen and (max-width: 576px) {
+  .appoint-heading h3 { 
+    font-size: var(--msp-3); 
+  }
+
+  .container-appoint-1 h2 { 
+    font-size: var(--msp-2); 
+  }
+
+  .container-appoint-1 p { 
+    font-size: var(--msp-p); 
+  }
+
+  .container-appoint-1 .app-quote h3 { 
+    font-size: var(--msp-3); 
+  }
+}
+
+/* 📅 768px Tablets */
+@media screen and (max-width: 768px) {
+  .appoint-heading h3 { 
+    font-size: var(--ts-3); 
+  }
+
+  .container-appoint-1 h2 { 
+    font-size: var(--ts-2); 
+  }
+
+  .container-appoint-1 p { 
+    font-size: var(--ts-p) ; 
+  }
+
+  .container-appoint-1 .app-quote h3 { 
+    font-size: var(--ts-3); 
+  }
+
+  .appoint-btn2 .btn { 
+    width: 160px; 
+    height: 55px; 
+  }
+
+  .appoint-btn2 .btn a { 
+    font-size: 14px; 
+  }
+}
+
+/* 📅 991px Small Laptops */
+@media screen and (max-width: 991px) {
+  .appoint-heading h3 { 
+    font-size: var(--vsl-3); 
+  }
+
+  .container-appoint-1 h2 { 
+    font-size: var(--vsl-2); 
+  }
+
+  .container-appoint-1 p { 
+    font-size: var(--vsl-p) ; 
+    line-height: 1.8rem; 
+  }
+
+  .container-appoint-1 .app-quote h3 { 
+    font-size: var(--vsl-3); 
+  }
+
+  .appoint-btn2 .btn { 
+    width: 180px; 
+    height: 60px; 
+  }
+
+  .appoint-btn2 .btn a { 
+    font-size: 15px; 
+  }
 }
 
 /* ------------------------------------------Testimonial Section */
