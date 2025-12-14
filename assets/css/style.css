@@ -3169,6 +3169,7 @@ footer .wrapper .social-button {
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease-in-out;
+  text-decoration: none;
 }
 
 footer .wrapper .social-button:hover {
@@ -3255,7 +3256,7 @@ footer .sec .logo .logo-img   {
 /* ⚓ Copyright Section */
 
 .copyrightText span {
-  font-size: 4px;
+  font-size: 6px;
   text-align: center;
   width: 100%;
   display: grid;
@@ -3326,6 +3327,8 @@ footer .sec .logo .logo-img   {
     width: 100%;
     margin-bottom: 1rem;
   }
+
+  .copyrightText span p{
+    font-size: 4px;
+  }
 }
-
-
