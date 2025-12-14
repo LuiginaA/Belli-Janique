@@ -3014,6 +3014,10 @@ ul.dropdown-menu {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  .testimonial-intro {
+    font-size: 1.25rem;
+  }
 }
 
 /* ⭐ 480px Small Phones */
@@ -3021,6 +3025,10 @@ ul.dropdown-menu {
   .container-testimonial-bx {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .testimonial-intro {
+    font-size: 1.3rem;
   }
 }
 
