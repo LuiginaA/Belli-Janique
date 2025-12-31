@@ -3052,16 +3052,7 @@ ul.dropdown-menu {
 
 /* END OF HOME PAGE  */
 
-
-/* 📬 Contact + Clinico shared base */
-
-
-/* -------------------------------------------------- */
-/* BASE CONTACT SECTION                               */
-/* -------------------------------------------------- */
-/* -------------------------------------------------- */
-/* 📬 CONTACT SECTION - BASE STYLES                   */
-/* -------------------------------------------------- */
+/* 📬 Contact + Clinico Section */
 
 .contact-container {
   width: 100%;
@@ -3105,7 +3096,6 @@ ul.dropdown-menu {
   padding: 40px;
   background: var(--bg-color-a);
   box-shadow: 0 5px 35px rgba(0,0,0,0.15);
-  /* make form visually taller on desktop-sized layouts */
   min-height: 500px;
 }
 
@@ -3214,7 +3204,6 @@ ul.dropdown-menu {
 }
 
 .map {
-  /* margin-top: 8px; */
   padding: 14px;
   background: var(--bg-color-c);
   margin-top: 30px;
@@ -3227,10 +3216,7 @@ ul.dropdown-menu {
  min-height: 250px;
 }
 
-
-/* -------------------------------------------------- */
-/* 🩺 CLINICO SECTION - BASE STYLES                   */
-/* -------------------------------------------------- */
+/* 🩺 CLINICO SECTION */
 
 .clinico-container {
   width: 100%;
@@ -3284,13 +3270,11 @@ ul.dropdown-menu {
 .appointClinico iframe {
   width: 100%;
   height: 100%;
-  min-height: 650px; /* main Clinico height driver */
+  min-height: 650px; 
   margin-bottom: 30px;
 }
 
-/* -------------------------------------------------- */
-/* 🖼️ CLINICO IMAGES                                  */
-/* -------------------------------------------------- */
+/* 🖼️ CLINICO IMAGES */
 
 .imageBox,
 .imageBox2 {
@@ -3333,27 +3317,16 @@ ul.dropdown-menu {
   flex-direction: column;
 }
 
-/* make images taller on normal/desktop so they better match the Clinico box */
 .greet img,
 .fun img {
-  height: 380px;      /* increased from 300px */
+  height: 380px;   
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 25%;
   border-top-right-radius: 25%;
 }
 
-/* -------------------------------------------------- */
-/* 📏 LAYOUT / SPACING TWEAKS (DESKTOP FIRST)         */
-/* -------------------------------------------------- */
-
-/* Space between info and map in contact section */
-
-/* -------------------------------------------------- */
-/* 📱 RESPONSIVE STYLES & MEDIA QUERIES               */
-/* -------------------------------------------------- */
-
-/* 📬Contact Section Media Queries *
+/* 📬Contact Section Media Queries */
 
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) { 
@@ -3371,7 +3344,6 @@ ul.dropdown-menu {
   .bookings h3 { 
     font-size: 1.1rem; 
     letter-spacing: normal;
-   
   } 
 
   .contactFormBox .row50 {
@@ -3436,7 +3408,6 @@ ul.dropdown-menu {
   } 
 } 
 
-/* Up to 480px: extra gentle squeeze for very small phones */
 /* 📱 480px Small Phones */
 @media (max-width: 480px) { 
   .contactUs { 
@@ -3454,7 +3425,7 @@ ul.dropdown-menu {
     margin-left: 10px;
   } 
 
- .contactFormBox .row50 {
+  .contactFormBox .row50 {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
@@ -3515,7 +3486,7 @@ ul.dropdown-menu {
   } 
 } 
 
-/* Up to 576px: smaller text and tighter spacing */ 
+/* 📱 576px Phones Small Screens */
 @media (max-width: 576px) { 
   .contactUs { 
     padding: 20px 15px; 
@@ -3533,7 +3504,6 @@ ul.dropdown-menu {
   .bookings h3 { 
     font-size: var(--msp-3);
   } 
-
 
    .contactFormBox .row50 {
     flex-direction: column;
@@ -3585,388 +3555,72 @@ ul.dropdown-menu {
   } 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 🖥️ Desktop and up (equalize info + map column) */
-media (min-width: 992px) {
-  .info-map-column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .info-map-column > .info,
-  .info-map-column > .map {
-    flex: 1;
-  }
-
-  .map iframe {
-    height: 100%;
-    min-height: 250px;
-  }
-}
-
-/* 📲 Tablets (up to 768px) */
-media (max-width: 768px) {
+/* 📲 768px Tablets */
+@media (max-width: 768px) {
   .contactUs {
     padding: 25px 15px;
   }
 
-  .contactUs .title h2,
-  .title2 h2 {
-    font-size: 28px;
+  .contactUs .title h2{
+    color: var(--bg-color-g);
+    font-size: 36px;
+    text-align: center;
+    padding-left: 70px;
   }
-
-  /* slightly reduce image height on tablets */
+  
+  .contactUs .title2 h2  {
+    color: var(--bg-color-g);
+    font-size: 32px;
+    text-align: center;
+    padding-left: 20px;
+    word-spacing: normal;
+  }
+  
   .greet img,
   .fun img {
-    height: 250px;
+    height: 300px;
   }
 
   .appointClinico iframe {
-    min-height: 550px;
+    min-height: 400px;
   }
 }
 
 
 
+/* 📱 992px Small Laptops Screens */
+ @media (max-width: 992px) {
+  .contactUs {
+    padding: 25px 15px;
+  }
 
-
-
-/* -------------------------------------------------- */
-/* RESPONSIVE FIXES                                   */
-/* -------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Up to 576px: smaller text and tighter spacing */ 
-media (max-width: 576px) { 
-  .contactUs { 
-    padding: 20px 15px; 
-  } 
-
-  .contactUs .title h2, 
-  .title2 h2 { 
-    font-size: 24px; 
-    letter-spacing: 1px; 
-  } 
+  .contactUs .title h2{
+    font-size: 36px;
+    text-align: center;
+    padding-left: 30px;
+  }
+  
+  .contactUs .title2 h2  {
+    color: var(--bg-color-g);
+    font-size: 36px;
+    text-align: center;
+    padding-left: 70px;
+    word-spacing: normal;
+  }
 
   .contact h3, 
   .bookings h3 { 
-    font-size: 1.1rem; 
+    font-size: var(--vsl-3);
   } 
 
-  .greet-image h3, 
-  .fun-image h3 { 
-    font-size: 18px; 
-  } 
-  
-  .map iframe, 
-  .appointClinico iframe { 
-    min-height: 240px; 
-  } 
-  
   .greet img, 
   .fun img { 
-    height: 280px; 
-    width: 220px; 
+    height: 450px; 
+    width: 400px; 
   } 
-}
+ }
 
-
-/* Up to 768px: make form fields stack and reduce padding */ 
-/* @media (max-width: 768px) { 
-  .contactUs { 
-    padding: 25px 20px; 
-  } 
-
-  .contactUs .title h2, 
-  .title2 h2 { 
-    font-size: 28px; 
-  } 
-
-  .contact { 
-    padding: 25px; 
-  } 
-
-  .bookings { 
-    padding: 20px; 
-  } 
-
-  .clinico { 
-    padding: 25px; 
-  } 
-
-  .contactFormBox .row50 { 
-    flex-direction: column; /* stack First/Last, Email/Phone */ 
-    /* gap: 10px; 
-  } 
-
-  .contact-inputBox { 
-    width: 100%; /* each field full width */ 
-  } 
-
-  /* .map iframe, 
-  .appointClinico iframe { 
-    min-height: 260px; 
-  }  */
-
-  /* .greet img, 
-  .fun img { 
-    height: 320px; 
-    width: 260px; 
-  }  */ */
-} */
-
-/* Up to 991px: change both sections to one column, centered */
-/* @media (max-width: 991px) { 
-  .contactUs { 
-    padding: 30px 40px; 
-  } 
-  .contactUs .title h2, 
-  .title2 h2 { 
-    font-size: 32px; 
-    text-align: center; 
-  } 
-  .contactBox, 
-  .clinicoBox { 
-    flex-direction: column; /* stack items vertically */ 
-    justify-content: center; 
-    align-items: center; 
-  } 
-  /* .form-column, 
-  .info-map-column, 
-  .bookings-column, 
-  .images-column { 
-    flex: 0 0 100%; 
-    width: 100%; 
-  } 
-  .contact, 
-  .bookings, 
-  .info, 
-  .map, 
-  .clinico { 
-    width: 100%; 
-  } 
-  .contact-container, 
-  .clinico-container { 
-    flex-direction: column; 
-    align-items: stretch; 
-  } 
-} */
-
-
-
-
- */
-
-
-/* 📱 480px Small Phones */
-/* @media (max-width: 480px) {
-
-  .contact-container {
-    margin-top: -20px;
-  }
-
-  .contactUs {
-    padding: 15px;
-  }
-
-  .contactUs .title h2,
-  .title2 h2 {
-    color: var(--bg-color-g);
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .contactBox,
-  .clinicoBox {
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px;
-    align-items: center;
-  }
-
-
-  .form-column,
-  .info-map-column,
-  .bookings-column,
-  .images-column {
-    width: 100%;
-    max-width: 420px;
-    flex: none;
-    margin: 0 auto 20px auto;
-  }
-
-
-  .info .infoBoxContact div a {
-    word-break: break-word;
-    overflow-wrap: anywhere;
-  }
-
-
-  .contact.form,
-  .clinico.bookings {
-    max-width: 420px;
-    padding: 15px;
-  }
-
-
-  .contactFormBox .row50 {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .contact-inputBox {
-    width: 100%;
-  }
-
-  .contact-inputBox input,
-  .contact-inputBox textarea {
-    width: 100%;
-    font-size: 1em;
-    padding: 16px;
-  }
-
-
-  .greet img,
-  .fun img {
-    max-width: 245px;
-    height: auto;
-  }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-/* Larger mobile: 576px */
- /* @media (max-width: 576px) {
-  .contactUs {
-    padding: 20px;
-  }
-
- .contactUs {
-    margin: 0;
-  }
-
-  .contactUs .title h2,
-  .title2 h2 {
-    color: var(--bg-color-g);
-    font-size: 40px; 
-    text-align: center;
-
-      font-weight: 600;
-
-    padding: 0;
-    margin: 0 auto;
-  }
-
-    .contactBox,
-  .clinicoBox {
-    flex-direction: column;
-    gap: 0px;
-    padding: 20px;
-  }
-
-  .form-column,
-  .bookings-column,
-  .images-column {
-    width: 100%;
-    flex: none;
-    margin: 0 auto 15px auto;
-  }
-
-
-  .contact-inputBox input,
-  .contact-inputBox textarea {
-    font-size: 1em;
-    padding: 18px;
-    width: 100%;
-  }
-
-  .contact.form,
-  .clinico.bookings {
-    max-width: 400px;
-  }
-  .greet img,
-  .fun img {
-    max-width: 230px;
-  }
-}    */
-
-/* Tablet: 768px */
-/* @media (max-width: 768px) {
-
-  .contactUs .title h2,
-  .title2 h2 {
-    color: var(--bg-color-g);
-    font-size: 40px; 
-    text-align: center;
-  }
-
-  .contactBox,
-  .clinicoBox {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .contact-inputBox input,
-  .contact-inputBox textarea {
-    font-size: 1em;
-    padding: 18px;
-    width: 100%;
-  }
-
-  .form-column,
-  .info-map-column,
-  .bookings-column,
-  .images-column {
-    width: 100%;
-    flex: none;
-    margin: 0 auto 20px auto;
-  }
-  .contact.form,
-  .clinico.bookings {
-    max-width: 600px;
-  }
-  .greet img,
-  .fun img {
-    width: 100%;
-    height: auto;
-  }
-} */
-
-
-
+ 
 
 
 /* ⚓ Footer Section */
