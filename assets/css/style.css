@@ -3415,8 +3415,13 @@ ul.dropdown-menu {
 
 .greet img,
 .fun img {
-  height: 380px;   
-  width: 100%;
+  /* height: 380px;   
+  width: 100%; */
+
+width: 100%; 
+height: auto; 
+max-width: 300px;
+
   object-fit: cover;
   border-top-left-radius: 25%;
   border-top-right-radius: 25%;
@@ -3497,10 +3502,19 @@ ul.dropdown-menu {
     min-height: 220px; 
   }
   
+  .imageBox, 
+  .imageBox2 { 
+    margin-bottom: 20px; 
+    padding: 20px;
+  }
+
   .greet img, 
   .fun img { 
-    height: 260px; 
-    width: 200px; 
+    /* height: 200px; 
+    width: 160px;  */
+    max-width: 230px;
+    border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
   } 
 } 
 
@@ -3577,8 +3591,8 @@ ul.dropdown-menu {
 
   .greet img, 
   .fun img { 
-    height: 300px; 
-    width: 250px; 
+    height: 250px; 
+    width: 200px; 
   } 
 } 
 
@@ -3593,7 +3607,10 @@ ul.dropdown-menu {
     font-size: 35px; 
     letter-spacing: 1px; 
     color: var(--bg-color-g);
-    margin-left: -40px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
   } 
 
   .contact h3, 
@@ -3657,19 +3674,14 @@ ul.dropdown-menu {
     padding: 25px 15px;
   }
 
-  .contactUs .title h2{
+  .contactUs .title h2,
+  title2 h2{
     color: var(--bg-color-g);
     font-size: 36px;
     text-align: center;
-    padding-left: 70px;
-  }
-  
-  .contactUs .title2 h2  {
-    color: var(--bg-color-g);
-    font-size: 32px;
-    text-align: center;
-    padding-left: 20px;
-    word-spacing: normal;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
   }
   
   .greet img,
@@ -3682,10 +3694,8 @@ ul.dropdown-menu {
   }
 }
 
-
-
-/* 📱 992px Small Laptops Screens */
- @media (max-width: 992px) {
+/* 📱 991.98px (992px) Small Laptops Screens */
+ @media (max-width: 991.98px) {
   .contactUs {
     padding: 25px 15px;
   }
@@ -3702,7 +3712,10 @@ ul.dropdown-menu {
     text-align: center;
     padding-left: 70px;
     word-spacing: normal;
-  }
+    margin-left: 0; 
+    padding-left: 0; 
+    width: 100%; 
+}
 
   .contact h3, 
   .bookings h3 { 
@@ -3715,9 +3728,6 @@ ul.dropdown-menu {
     width: 400px; 
   } 
  }
-
-
-
 
 /* ⚓ Footer Section */
 
