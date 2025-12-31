@@ -3052,6 +3052,102 @@ ul.dropdown-menu {
 
 /* END OF HOME PAGE  */
 
+
+/* BEGINNING OF F-A-Q PAGE */
+
+/* ---------------------------------F-A-Q Section */
+
+.container-md-faq {
+  background: var(--bg-color-c); 
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.faq-heading h3 {
+  text-align: center;
+  color: var(--bg-color-a);
+  font-family: var(--ff-1);
+  font-size: var(--fs-3);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding-top: 30px; 
+  margin-bottom: 30px;
+}
+
+.faq-heading h2 {
+  text-align: center;
+  justify-content: center;
+  color: var(--bg-color-a);
+  font-family: var(--ff-1);
+  font-size: var(--fs-2); 
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.faqImg img {
+  width: 750px;
+  height: 100%;
+  margin-left: 40px;
+  padding-left: 20px;
+}
+
+.accordion-container {
+  width: 100%; 
+  max-width: 80rem; 
+  margin: 0 auto; 
+  padding: 0 25px;
+}
+
+.accordion {
+  background: transparent; 
+  padding: 5px;
+  justify-content: space-between; 
+  padding-top: 20px; 
+} 
+
+.accordion-item {
+  background-color: var(--bg-color-d); 
+  background: transparent;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding: 1rem;
+  border: 4px solid var(--text-color-b);
+}
+
+#btn-accord {
+  color: var(--text-color-a); 
+  background-color: var(--bg-color-e);
+  box-shadow: none;   
+}
+
+.accordion-body ul {
+  list-style: none; 
+} 
+
+.accordion-body ul li {
+  font-size: var(--fs-p);
+  font-family: var(--ff-2);
+  font-weight: 500;
+  color: var(--text-color-a); 
+  background: var(--bg-color-g); 
+  padding: 5px; 
+}
+
+
+
+
+
+
+
+
+/* BEGINNING OF CONTACT PAGE  */
+
 /* 📬 Contact + Clinico Section */
 
 .contact-container {
@@ -3620,7 +3716,7 @@ ul.dropdown-menu {
   } 
  }
 
- 
+
 
 
 /* ⚓ Footer Section */
