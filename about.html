@@ -1,109 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+  <title>Dr Janique</title>
 
-	<link rel="stylesheet" href=""> 
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
 
+  <!-- ✅ Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+  <!-- ✅ Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
-<!-- Bootstrap 5 CDN Links -->
+  <!-- ✅ Hover effects -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <!-- ✅ AOS Animation CSS (only one) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
+  <!-- ✅ Your custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-
-
- 
-<!-- Font Awesome & ion-icons -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-
-<!-- js Link -->
-
-    <script src="script.js"></script>  
-
-<!-- Animation Link -->
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> 
-
-    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
-
-
-<!-- Custom File's Link -->
-
-    <link rel="stylesheet" href="assets/css/style.css">  
-
-    <!-- <link rel="stylesheet" href="assets/js/script.js">  -->
-    <title>Dr Janique</title> 
-
+  <!-- ✅ JavaScript file (if you wrote one) -->
+  <!-- <script src="script.js" defer></script>  -->
 </head>
 
 <body>
 
-<!----- Heading ----- Top Banner Section ----->
+<!-- 🔝 Top Banner Section -->
+<!-- Fixed Top Navbar Header Section -->  
 
-<!----- Fixed Top Navbar Header Section ----->  
-    
 <header class="fixed-top topNav navbar-expand-lg">     
     <div class="container-fluid container-top"> 
-        <section class="top-bar_content">  
+        <section class="top top-bar_content">  
             <a class="active" href="contact.html">
                 <p>Call or Text: +27 83 572 4444</p>
             </a>
         </section> 
-        <section class="top-bar_content">  
+        <section class="top top-barContent">  
             <a class="active" href="index.html">
                 <p>The Chiro Wellness Connection</p> 
             </a>
         </section>  
-        <section class="top-bar_content"> 
+        <section class="top top_bar_content"> 
             <a class="active" href="contact.html">
                 <p>Request an Appointment</p>
             </a>
         </section> 
     </div> 
 
-<!----- Navbar Section ----->  
-
-    <nav class="navbar navbar-expand-lg">
+<!-- 🔽 🧭 Navbar Section -->
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
         <div class="container">  
 
             <section>
-                <a class="navbar-brand" href="#home">
-                    <img src="assets/image/logo.png" alt="Logo" width="200" height="200" class="d-inline-block align-text-top">
-
-                    <h5 class="titleName">Dr Janique Belli</h5>
-
+                <a class="navbar-brand d-flex flex-column align-items-center" href="#home">
+                <img src="assets/image/logo.png" alt="Dr Janique Logo" class="logo-img">
+                <h5 class="titleName">Dr Janique Belli</h5>
                 </a>
             </section>
 
-<!----- Toggle Btn Section ----->
-
+<!-- ☰ Toggle Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                            
                 <i class="fa fa-stethoscope fa-lg"></i>
             </button> 
 
-<!-- ----- Collapse Dropdown Links Section -----  -->   
-
+<!-- 📂 Dropdown Links -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
 
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> 
@@ -115,120 +82,107 @@
                         <a class="nav-link" aria-current="page" href="about.html">About Chiropractics</a>
                     </li>
 
+<!-- Conditions Treated -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="conditions.html" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside">Conditions Treated</a>
+                        <a class="nav-link dropdown-toggle" href="#conditions" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Conditions Treated
+                        </a>
                         
-                            <ul class="dropdown-menu shadow">
-                            
-                                <li class="dropend">
+                        <ul class="dropdown-menu shadow">
+<!-- Spinal Health -->
+                            <li class="dropend">
                                 <a href="conditions.html" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> Spinal Health
                                 </a>
+                            
+                                <ul class="dropdown-menu shadow">
                                 
-                                    <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="conditions.html"> Back Pain </a>
+                                    </li>
+                                
+
                                     
-                                        <li><a class="dropdown-item" href=""> Back Pain</a></li>
-                                    
-                                        <li><a class="dropdown-item" href=""> Headaches</a></li>
-                                    
-                                        <li><a class="dropdown-item" href=""> Neck Pain</a></li>
-                                    
-                                    <li><a class="dropdown-item" href=""> Hip Pain</a></li>
-                                    
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#conditions"> Headaches</a></li>
+                                
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"href="#conditions"> Neck Pain</a></li>
+                                
+                                    <li><a class="dropdown-item  dropdown-toggle" data-bs-toggle="dropdown" href="#conditions"> Hip Pain</a></li>
                                 </ul>
                             </li>
-                            
+<!-- Extremities -->
                             <li class="dropend">
                                 <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
                                     data-bs-auto-close="outside"> Extremities</a>
-
                                 <ul class="dropdown-menu shadow">
-                                    <li><a class="dropdown-item" href=""> Leg Pain</a></li>
-                                    <li><a class="dropdown-item" href=""> Knee, Ankle & Foot</a></li>
-                                    <li><a class="dropdown-item" href="">  Shoulder & Elbow</a></li>
-                                    <li><a class="dropdown-item" href=""> Arm & Wrist</a></li>
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"> Leg Pain</a></li>
+
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"> Knee, Ankle & Foot</a></li>
+
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">  Shoulder & Elbow</a></li>
+
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"> Arm & Wrist</a></li>
                                 </ul>
                             </li>
-
+<!-- Injuries -->
                             <li class="dropend">
                                 <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside"> Injuries </a>
+                                data-bs-auto-close="outside"> Injuries </a>
 
                                 <ul class="dropdown-menu shadow">
-                                    <li><a class="dropdown-item" href=""> Herniated Disc</a></li>
-                                    <li><a class="dropdown-item" href=""> Whiplash</a></li>
-                                    <li><a class="dropdown-item" href="">  Pinched Nerve</a></li>
-                                    <li><a class="dropdown-item" href=""> Work, Sport Injuries or Accident</a></li>
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"> Herniated Disc</a></li>
 
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"> Whiplash</a></li>
+
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">  Pinched Nerve</a></li>
+
+                                    <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"> Work, Sport Injuries or Accident</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-
-
+<!-- All You Need To Know -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside">All You Need To Know</a>
-                        
-                            <ul class="dropdown-menu shadow">
-                            
-                                <li class="dropend">
-                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> F A Q
-                                </a>
-                                
-                                
-                                    
-                                        <!-- <li><a class="dropdown-item" href=""> Your First VisitBlog</a></li> -->
-                                    
-                                        <!-- <li><a class="dropdown-item" href=""> ???</a></li>
-                                    
-                                        <li><a class="dropdown-item" href=""> ???</a></li> -->
-                                    
-                                <!-- </ul> 
-                            </li> -->
-                            
-                            <li class="dropend">
-                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside"> Your First Visit</a>
+                    <a class="nav-link dropdown-toggle" href="faq.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        All You Need To Know
+                    </a>
 
-                                <ul class="dropdown-menu shadow">
-                                    <li><a class="dropdown-item" href=""> Discuss</a></li>
-                                    <li><a class="dropdown-item" href=""> Assessment</a></li>
-                                    <li><a class="dropdown-item" href="">  Adjust</a></li>
-                                    <li><a class="dropdown-item" href=""> Book Follow up Appoint</a></li>
-                                </ul> 
+                    <ul class="dropdown-menu shadow">
+
+                        <!-- First Visit dropdown -->
+                        <li class="dropend">
+                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Your First Visit
+                        </a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Discuss</a></li>
+
+                            <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Assessment</a>
                             </li>
 
-                            <li><a class="dropdown-item" href=""> Blog</a></li>
-<!-- 
-                            <li class="dropend">
-                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside"> Blog </a>
+                            <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Adjust</a></li>
 
-                                <ul class="dropdown-menu shadow">
-                                    <li><a class="dropdown-item" href=""> Herniated Disc</a></li>
-                                    <li><a class="dropdown-item" href=""> Whiplash</a></li>
-                                    <li><a class="dropdown-item" href="">  Pinched Nerve</a></li>
-                                    <li><a class="dropdown-item" href=""> Work, Sport Injuries or Accident</a></li>
-
-                                </ul> -->
-                            </li>
+                            <li><a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Book a Follow-up Appointment</a></li>
                         </ul>
+                        </li>
+
+                        <!-- FAQ item -->
+                        <li class="dropend">
+                        <a href="faq.html" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">F A Q</a>
+                        </li>
+
+                        <!-- Blog item -->
+                        <li class="dropend">
+                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
+                        </li>
+                    </ul>
                     </li>
-
-
+<!-- Services -->               
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside">Services</a>
-                        
-                            <ul class="dropdown-menu shadow">
-                            
-                                <!-- <li class="dropend">
-                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"> Blog
-                                </a>
-
-                            </li> -->
-                            
+                        data-bs-auto-close="outside">Services
+                        </a>
+                    
+                        <ul class="dropdown-menu shadow">
+                    
                             <li class="dropend">
                                 <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
                                     data-bs-auto-close="outside"> Privacy</a>
@@ -236,31 +190,65 @@
 
                             <li class="dropend">
                                 <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside">Terms and Conditions</a>
-
+                                data-bs-auto-close="outside">Terms & Conditions
+                                </a>
                             </li>
                         </ul>
                     </li>
-
+<!-- Contact -->
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
                     </li> 
-                
                 </ul>
             </div>
         </div>
     </nav>
-        <nav-end class="title-cont">  
-            <div class="title">
-                <!-- <a> Dr Janique Belli</a> -->
-                <a href="#">Registered Chiropractor :<span>
-                        M.TECH. (CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196</span>
-                </a>
-            </div>
-        </nav-end>  
 </header>
 
+<!--💼 📝 Registration Title Bar Section-->
+    <section class="registration-bar">  
+        <p class="registration-text">       
+            <strong>REGISTERED CHIROPRACTOR &#8287;:&#8287;</strong>(CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
+        </p>     
+    </section>  
+
 <main>
+
+<!----- About Chiropractics Section ----->
+
+<!-- <section class="container-fluid expand-lg" id="aboutChiro-page">
+    <div class="container-aboutChiro aboutChiro">
+        <div class="row">
+            <div class="col-12 chiro-heading"> -->
+
+<!-- <section class="aboutChiro"> -->
+                <!-- <div class="chiro"> 
+                    <div class="chiro-content">
+                    <h1>&ldquo;Chiropractics and The Chiropractor&rdquo;</h1>
+                    <h3>What is a Chiropractor?</h3>
+                    <p>
+                        A chiropractor is a licensed healthcare professional specializing in diagnosing, treating, and preventing biomechanical disorders of the neuromusculoskeletal system, which includes the bones, joints, nerves, muscles, tendons, and ligaments. In South Africa, chiropractors complete six years of rigorous study to earn their &ldquo;Doctor&rdquo; title.  
+                    </p>
+                    <p> 
+                        Chiropractic care focuses on the body&rsquo;s natural ability to heal itself. Through manual adjustments, chiropractors restore proper joint alignment, helping to manage pain and improve overall body function. These adjustments can enhance the performance of various systems throughout the body.  
+                    </p> 
+                    <p>   
+                        Chiropractors address a wide range of conditions and offer a holistic, drug-free approach to health. They serve as an alternative or complement to conventional medicine, aiming to reduce reliance on medications and avoid surgery whenever possible.
+                    </p>
+
+                    </div>
+
+                    <div class="chiro-img">
+                        <div class="rhombus">
+                            <img src="assets/image/chiro.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rhombus2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
 
 <!----- About Chiropractics Section ----->
 
@@ -290,9 +278,12 @@
     </div>
 </section>
 
+
+
+
 <!----- About Chiropractics Quote Section ----->    
 
-<section id="aboutChiro-page"> 
+<!-- <section id="aboutChiro-page">  -->
     <div class="container-about bg-color">             
         <div class="quoteAbout_two">
             <div class="quoteAboutChiro-two">
@@ -534,89 +525,91 @@
 
 
 
-
-
-
-<!----------- Chiropractics Treatment Card Section ------------>
-
-<section id="conditions-page">   
-
- <!-- <div class="aboutCond-img">  -->
-    <!-- <div class="about-container-grid"> -->
-<!-- 
-                <div class="cont-grid-treat color"> 
-                    <div class="grid-container-treat">   -->
-                        <!-- <div class="treatment-card text-center">  -->
-                                       
-
-  <!---------- Treatment Card 1 ---------->
-
-</section> 
-
+<!-- ⬇️ Scroll Icon -->
+            <div class="scroll">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
 
 </main>
 
-<!----- Footer Section ----->    
+<!-- ⚓ Footer Section -->
 
 <footer class="foot">
     <div class="container cont-foot">
+
+<!-- ⚓ About Us -->       
         <div class="sec aboutus">
             <h6>The Chiro Wellness Connection</h6>
             <ul>
                 <li>
-                    <a href="#">&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287; Natural Health Centre</a>
+                    <a href="#" class="padded-text">Natural Health Centre
+                    </a>
                 </li>
                 <li> 
-                    <a href="#"><ion-icon name="location"></ion-icon>
-                    &#8287;&#8287; 87 6th Street
+                    <a href="#" class="icon-text">
+                        <i class="fa-solid fa-location-dot"></i>87 6th Street
+                    </a>
                 </li>
-                <li>
-                    &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287; Boksburg North
+                <li class="text-indent">Boksburg North
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="tel:+27835724444"><ion-icon name="call"></ion-icon>&#8287;
-                    + 27 83 572& 4444</a>
+                    <a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+ 27 83 572 4444
+                    </a>
                 </li>
                 <li>
-                    <a href="mailto:janiquechiro@gmail.com"><ion-icon name="mail"></ion-icon>&#8287;&#8287;&#8287;janiquechiro@gmail.com
+                    <a href="mailto:janiquechiro@gmail.com" class="icon-text">
+                      <i class="fa-solid fa-envelope"></i>janiquechiro@gmail.com
                     </a>
                 </li>
             </ul>
         </div>
 
+<!-- ⚓ Quick Links -->        
         <div class="sec quicklinks">
             <h6>Site Map</h6>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Chiropractics</a></li>
                 <li><a href="#">Conditions Treated</a></li>
-                <li><a href="#">All You Need to Know</a></li>
+                <li><a href="faq.html">All You Need to Know</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 
+<!-- ⚓ Practice Hours -->       
         <div class="sec quicklinks">
             <h6>Practice Hours</h6>
             <ul>
-                <li><a href="#"><ion-icon name="calendar-number"></ion-icon>&#8287;&#8287; Monday - Friday:<br>&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287; 08:00 - 17:00</a></li>
-                <li><a href="#">&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287; Saturday:<br>&#8287;&#8287;&#8287;&#8287; &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;09:00 - 12:00 </a></li>
+                <li>
+                    <a href="#" class="icon-text">
+                    <i class="fas fa-calendar-check"></i>Monday - Friday:<br><span class="text-indent">08:00 - 17:00</span></a>
+                </li>
+                <li> 
+                    <a href="#" class="icon-text">
+                    <i class="fas fa-calendar-check"></i>Saturday:<br><span class="text-indent">09:00 - 12:00</span> 
+                    </a>
+                </li>
             </ul>
             <ul>
                 <li>
-                    <a href="#"><i class="fa-solid fa-truck-medical"></i>&#8287;&#8287;&#8287; Emergency (After Hours)
+                    <a href="#" class="icon-text"><i class="fa-solid fa-truck-medical"></i>Emergency (After Hours)
                     </a>
                 </li>
 
                 <li>
-                    <a href="tel:+27835724444"><ion-icon name="call"></ion-icon>&#8287;&#8287;&#8287;
-                    + 27 83 572& 4444</a>
+                    <a href="tel:+27835724444" class="icon-text">
+                        <i class="fa-solid fa-phone"></i>+27 83 572 4444
+                    </a>
                 </li>
             </ul> 
         </div>
 
+<!-- ⚓ Social Media -->
         <div class="sec social-button">
             <h6>Social Media</h6>
 
@@ -626,42 +619,46 @@
                     <div class="ion-icon">
                         <ion-icon name="logo-whatsapp"></ion-icon>    
                     </div>
-                    <span>How Can I help?</span>
+                    <span>WhatsApp</span>
                 </a>
 
-                <a href="#" class="social-button">
+                <a class="social-button" href="https://www.facebook.com/Dr Janique" target="_blank" rel="noopener">
+                    
                     <div class="ion-icon">
                         <ion-icon name="logo-facebook"></ion-icon>
                     </div>
                     <span>Facebook</span>
                 </a>
 
-                <a href="#" class="social-button">
+                <a class="social-button" href="https://www.instagram.com/drjaniquechiropractic" target="_blank" rel="noopener">
+
                     <div class="ion-icon">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </div>
                     <span>Instagram</span>
                 </a>
+
+                <a class="social-button" href="https://www.tiktok.com/@drjaniquebelli" target="_blank" rel="noopener">
+                    
+                    <div class="ion-icon">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </div>
+                    <span>TikTok</span>
+                </a>
+
             </div>
-    
+
             <div class="sec logo">
                 <a href="#" class="logo-img center">
-                <img src="assets/image/footerlogo.png" alt="">
+                <img src="assets/image/footerlogo.png" alt="The Chiro Wellness Connection Logo">
                 </a>
             </div> 
-
         </div>
     </div>
 
-    <!-- <div class="head-name">
-        <h5>Dr Janique Belli</h5>
-        <p>
-            M.TECH. (CHIRO.) S.A. | MCASA | Registered Chiropractor | Practice N° 0872458 |AHPCSA N° A12196
-        </p>
-    </div> -->
 </footer>
     
-<!----- Copyright Section -----> 
+<!-- ⚓ Copyright Section -->
 
     <div>
         <div class="copyrightText">
@@ -673,44 +670,39 @@
         </div>
     </div> 
 
+
 <!----- Bootstrap 5 JS CDN Links ----->
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script> This does not allow the dropdowns to work -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script> -->
 
-    
-<!----- Font Awesome and Ion Icons Link ----->
-
-    <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    
-    
+  
 <!-- JS Link
 <script src="script.js"></script>   -->
 
 <!----- Script Section ----->
 
+<!-- ✅ Ionicons -->
+
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-<!----- JavaScript Bundle with Popper ----->
+<!--✅ JavaScript Bootstrap Bundle with Popper -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script> 
-    
+    crossorigin="anonymous"></script>
+
+<!-- ✅ Font Awesome -->   
 
     <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
 
-    
-
-<!----- Animation Link ----->  
+<!-- ✅ AOS Animation -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -719,11 +711,10 @@
         });
     </script> 
 
-
-
 <!----- Clinico Link ----->
+<!-- ✅ Cliniko Booking Script -->
 
-    <!-- <script type='text/javascript'>
+    <script type='text/javascript'>
         window.addEventListener('message', function handleIFrameMessage(e) {
             var clinikoBookings = document.getElementById('cliniko-49363333');
             if (typeof e.data !== 'string') return;
@@ -733,15 +724,11 @@
             }
             e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
         });
-    </script> -->
-
-
-
-
-    
+    </script> 
 
 </body>
 </html>
+ 
 
 
 
@@ -754,4 +741,24 @@
 
 
 
+
+
+
+
+
+
+<!----------- Chiropractics Treatment Card Section ------------>
+
+<!-- <section id="conditions-page">   
+
+ <div class="aboutCond-img">  
+     <div class="about-container-grid background-color-blue
+      "> 
+ 
+                <div class="cont-grid-treat color"> 
+                    <div class="grid-container-treat">   
+                         <div class="treatment-card text-center">   -->
+                                       
+
+  <!---------- Treatment Card 1 ---------->
 
