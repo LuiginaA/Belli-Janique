@@ -1,455 +1,1128 @@
-/* ----- Intro Meet Dr Janique Section ----- */ 
+/* -----  Section ----- */ 
 
-.intro {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px 8%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--bg-color-d);
-}
 
-.circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--bg-color-a);
-  clip-path: circle(70% at right -20%); 
-  /* clip-path: circle(80% at 80% 50%); */
-}
 
-.intro  {
-  background-color: var(--bg-color-d);
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 10px;
-  z-index: 100;
-}
 
-.intro img {
-  background-color: var(--bg-color-d);
-  padding: 20px;
-  margin-left: 40px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 30px #252525;
-  filter: brightness(1.1);
-  z-index: 100;
-}
+ /* @media(max-width: 320px) { */
+  /* .chiro-img .rhombus img {
+      display: none;
+    }
+  
+    .chiro-img {
+      display: none;
+    }
+  
+    .chiro-img .rhombus img {
+      display: none;
+    }
+  
+    .chiro .rhombus2 {
+      display: none;
+    } 
+  }    
+  */
 
-.intro img:hover {
-  box-shadow: 0px 0px 50px var(--text-color-b);
-}
 
-.description {
-  padding: 00px 80px 20px 50px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
 
-.description .textbox {
-  position: relative; 
-  max-width: 600px;
-  margin-right: 20px; 
-  margin-left: 0px;
-  margin-top: -60px;
-  padding: 5px;
-  z-index: 100;
-}
+  
 
-.description .textbox h1 {
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--text-color-c);
-  margin-bottom: 5px;
-}
 
-.description .textbox h1 span {
-  font-size: 55px;
-  color: var(--text-color-d);
-  -webkit-text-stroke: var(--text-color-c) 0.5px;
-}
 
-.description.textbox h2 {
-  font-size: 30px;
-  font-weight: 900;
-  margin-bottom: 5px;
-  color: var(--text-color-c);
-}
 
-.description .textbox h2 span {
-  color: var(--text-color-b);
-  position: relative;
-  transition: transform .3s ease;
-}
 
-.description .textbox h2 span:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0px;
-  height: 100%;
-  border-left: 4px solid var(--bg-color-a) ;
-  background-color: var(--bg-color-a);
-  /* background-color: rgb(59, 58, 58); */
-  animation: text 5s infinite backwards steps(10); 
-}
 
-@keyframes text {
-
-  0% {
-    left: 0;
+  @media(max-width: 992px) {
+    .aboutChiro {
+      width: 100%;
+    }  
+      
+    .chiro {
+      padding: 50px 30px 10px 25px;    
+      margin: 0px; 
+    }
+  
+    .chiro-content {
+      max-width: 450px;
+    } 
+    
+    .chiro-content h1 {
+      font-size: 25px;
+    } 
+  
+    .chiro-content h3 {
+      font-size: 20px; 
+    } 
+    
+    .chiro-content p {
+      font-size: 12px;
+    } 
+  
+    .chiro-img {
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 400px;
+      height: 400px;
+      z-index: -1000;
+    }
+  
+    .chiro-img .rhombus {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: -180px;
+      margin-left: 100px;
+      z-index: -1000;
+    }
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      top: -70px;
+      left: 0px;
+      max-width: 450px;
+      z-index: 1000;
+    }
+  
+    .chiro .rhombus2 {
+      position: relative;
+      top: -350px;
+      right: -650px;
+      z-index: -10000;
+    }  
+  } 
+  
+  @media(max-width: 768px) {
+    .aboutChiro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .chiro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 150px;
+      padding: 20px;
+      overflow: hidden; 
+    } 
+  
+    .chiro-img {
+      position: relative;
+      right: 25%; 
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 25px solid var(--bg-color-f); 
+      box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+      opacity: 0;
+      animation: zoomOut 1s ease forwards;
+      animation-delay: 1.6s;
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      top: 10px;
+      left: 50px;
+      width: 100%;
+    } 
+  
+    .chiro .rhombus2 {
+      position: relative;
+      top: -650px;
+      right: 450px;
+      width: 450px;
+      height: 450px;
+      background-color: var(--bg-color-h); 
+      transform: rotate(45deg);
+      z-index: -10000;
+    }  
   }
-
-  50% {
-    left: 100%;
+  
+  @media(max-width: 575px) {
+    .aboutChiro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .chiro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 150px;
+      padding: 20px;
+      overflow: hidden; 
+    } 
+  
+    .chiro-img {
+      position: relative;
+      flex-direction: column;
+      right: 210px;
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 10%;
+      left: 10px;
+      width: 100%;
+    } 
   }
-
-  100% {
-    left: 0;
+  
+  @media(max-width: 440px) {
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 60px;
+      left: -30px;
+      width: 100%;
+    } 
+  
+    .chiro-img {
+      position: relative;
+      flex-direction: column;
+      right: 10%;
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 20%;
+      left: 200;
+      width: 100%;
+    } 
+  
+    .chiro .rhombus2 {
+      display: none;
+    }  
   }
-} 
+  
+  
 
-.description .textbox p {
-  width: 500px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 2.5rem;
-  color: var(--text-color-a);
-  font-weight: 500;
-  font-size: 1.6rem;
-}
 
-.intro .textbox h1,
-.intro .textbox h2,
-.intro .textbox p {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 1.2s ease forwards;
-}
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* ----- INTRO SECTION MEDIA QUERIES----- */
 
-/* Responsive: Intro Section Only */
-@media (max-width: 576px) {
-  .intro {
+
+
+
+
+
+
+
+
+  
+/* =======================================
+   320px — very small phones
+   ======================================= */
+@media (max-width: 320px) {
+
+  .chiro {
     flex-direction: column;
-    padding: 60px 5% 30px 5%;
+    align-items: center; 
     text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px 5px;
   }
 
-  .intro img {
-    width: 280px;
-    height: auto;
-    margin: 20px 0;
-    padding: 10px;
-  }
 
-  .description,
-  .textbox {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  .textbox h1 {
-    font-size: 1.6rem;
-  }
-
-  .textbox h1 span {
-    font-size: 2.4rem;
-  }
-
-  .textbox h2 {
-    font-size: 1.3rem;
-  }
-
-  .textbox p {
-    width: 100%;
+  .chiro-content {
+    max-width: 100%;
     padding: 0 10px;
-    font-size: 0.95rem;
-    line-height: 1.6rem;
   }
 
-  .textbox h2 span:after {
-    display: none;
+  .chiro-img {
+    /* width: 160px;
+    height: 160px; */
+      width: 220px;
+    height: 220px;
+    margin-top: 20px;
+    right: 0;
   }
+
+  .chiro-img .rhombus img {
+    /* max-width: 240px;
+    top: 30px; */
+   max-width: 300px;
+    top: 40px;
+
+
+    left: -120px;
+  }
+
+.chiro .rhombus2 { 
+  width: 300px; 
+  height: 300px; 
+  top: -20%; 
+  right: -20%; 
 }
 
-
-
-/*-------------------- Pledge (Mission and Vision) Section */ 
-
-.state {
-  background: var(--bg-color-b); 
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 8%;
-  align-items: center;
-  justify-content: space-between;
 } 
 
-.pledge {
-  position: relative; 
+
+/* =======================================
+   480px — small phones
+   ======================================= */
+/* @media (max-width: 480px) {
+
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .chiro-content {
+    max-width: 95%;
+  }
+
+  .chiro-img {
+    width: 180px;
+    height: 180px;
+    margin-top: 25px;
+    right: 0;
+  }
+
+  .chiro-img .rhombus img {
+    max-width: 270px;
+    top: 35px;
+    left: -130px;
+  }
+} */
+
+
+/* =======================================
+   576px — large phones
+   ======================================= */
+/* @media (max-width: 576px) {
+
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .chiro-content {
+    max-width: 90%;
+  }
+
+  .chiro-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    right: 0;
+  }
+
+  .chiro-img .rhombus img {
+    max-width: 300px;
+    top: 40px;
+    left: -140px;
+  }
+} */
+
+
+/* =======================================
+   768px — tablets
+   ======================================= */
+/* @media (max-width: 768px) {
+
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .chiro-content {
+    max-width: 85%;
+  }
+
+  .chiro-img {
+    width: 230px;
+    height: 230px;
+    margin-top: 35px;
+    right: 0;
+  }
+
+  .chiro-img .rhombus img {
+    max-width */
+
+
+
+
+
+
+
+
+
+
+
+media(max-width: 30px) {
+.aboutChiro {
+  padding: 20px 0px; 
+  margin-top: -15px;
+  flex-direction: column;
+} 
+
+.chiro {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: space-between; 
-  padding: 30px 8% 0;
-  overflow: hidden; 
-  gap: 35px;
-  z-index: 1000;
+  justify-content: center;
+  padding: 0; 
 } 
-
-.pledge-content {
-  position: relative;
-  max-width: 530px;
+  
+.chiro-content h2 {
+  font-size: var(--vss-2);
+  letter-spacing: 1.8px;
+  word-spacing: 3px; 
   padding: 10px;
-  z-index: 1000; 
+  flex-direction: column;
+  width: 100%; 
 } 
 
-.pledge-content h1 {
-  font-size: 35px;
-  font-weight: var( --fw-m);
-  line-height: 1.2;
-  animation: slideBottom 1s ease forwards;
-  animation-delay: 1s; 
-} 
-
-.pledge-content h2 {
-  font-size: 25px;
-  font-weight: var( --fw-sb);
-  color: var(--bg-color-f);
+.chiro-content h3 {
+  font-size: var(--vss-3);
+  text-align: center;
+  letter-spacing: 1.2px;
+  word-spacing: 1px;
+  padding: 10px 0;
+  margin: auto;  
+  opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 1.6s;  
 } 
 
-.pledge-content p {
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  margin: 15px 0 30px;
+.chiro-content p {
+  font-size: var(--vss-p);
+  text-align: center;
+  line-height: 2;
+  word-spacing: 1px;
+  margin: 15px 5px 30px;
+  opacity: 0;
   animation: slideLeft 1s ease forwards;
-  animation-delay: 1.3s; 
+  animation-delay: 1.3s;  
 } 
 
-.pledge-img img{
-  position: relative;
-  width: 450px;
-  height: 450px;
-  border-radius: 50px;
-  box-shadow: -15px 15px 15px rgba(0, 0, 0, .75);
-  padding: 10px;
-  z-index: 1000;
-} 
-
-.pledge-img img:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
-} 
-
-@keyframes slideBottom {
-  from { transform: translateY(-50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes slideRight {
-  from { transform: translateX(-50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes slideLeft {
-  from { transform: translateX(50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-
-/* ----- PLEDGE SECTION Media Queries----- */ 
-@media (max-width: 576px) {
-
-  .state,
-  .pledge {
+  .chiro-img .rhombus img {
+    position: relative;
     flex-direction: column;
-    align-items: center;
-    padding: 40px 5% 30px 5%;
-    text-align: center;
-  }
+    top: 70px;
+    left: -20px;
+    /* left: -180px;  */
+    width: 100%;
+  }  
 
-  .pledge-content {
-    max-width: 100%;
-    padding: 0;
-  }
+  .chiro-img {
+      position: relative;
+      flex-direction: column;
 
-  .pledge-content h1 {
-    font-size: 1.8rem;
-  }
+   background-color: #38e209;
+      width: 250px;
+      height: 250px;
+      transform: rotate(45deg); 
+      z-index: 2000;
+   
+   left: -100%;
+    
 
-  .pledge-content h2 {
-    font-size: 1.3rem;
-  }
+  }  
 
-  .pledge-content p {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-  }
+.chiro-img .rhombus {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  border: 25px solid var(--bg-color-f); 
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+  opacity: 0;
+  animation: zoomOut 1s ease forwards;
+  animation-delay: 1.6s;
+  z-index: 2000; 
+}  
 
-  .pledge-img img {
-    width: 280px;
-    height: auto;
-    margin-top: 20px;
-  }
-}
-
-
-/* Small tablets (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 768px) {
-  .intro, .state, .pledge {
+  .chiro-img .rhombus img {
+    position: relative;
     flex-direction: column;
-    padding: 60px 5%;
-    text-align: center;
-  }
+    top: 25%;
+    left: -90%; 
+   z-index: -3000;
+    background-color: #7232bd;
+ 
+  }  
 
-  .pledge-img img, .intro img {
-    width: 300px;
-    height: auto;
-  }
-}
 
-/* Tablets and small desktops (768px and up) */
-@media (min-width: 768px) and (max-width: 992px) {
-  .intro {
-    padding: 60px 6%;
-    flex-direction: row;
-  }
-
-  .description .textbox {
-    margin-left: 20px;
-    padding: 10px;
-  }
-
-  .pledge {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .pledge-img img {
-    width: 350px;
-  }
-}
-
-/* Large devices (desktops 992px and up) */
-@media (min-width: 992px) {
-  .intro, .pledge {
-    flex-direction: row;
-    padding: 100px 8%;
-  }
-
-  .pledge-img img {
-    width: 420px;
-  }
+.chiro .rhombus2 {
+  position: absolute;
+  top: -25%;
+  right: -255%;
+  width: 400px;
+  height: 400px;
+  background-color: var(--bg-color-h); 
+  background-color: #f9d71c;
+  transform: rotate(45deg);
+  z-index: -2000; 
+  opacity: 0;
+  animation: rhombus2 1s ease forwards;
+  animation-delay: 2s; 
 }    
 
-@media (min-width: 1200px) {
-  .pledge-img img {
-    width: 480px;
+}   
+
+
+/* @media(max-width: 480px) {
+.aboutChiro {
+  padding: 20px 0px; 
+  margin-top: -15px;
+  flex-direction: column;
+} 
+
+.chiro-content h2 {
+  font-size: var(--sp-2);
+  letter-spacing: 0;
+  word-spacing: 1px; 
+  width: 100%; 
+} 
+
+.chiro-content h3 {
+  font-size: var(--sp-3);
+  letter-spacing: 1.2px;
+  word-spacing: 1px;
+  padding: 10px 0;
+} 
+
+.chiro-content p {
+  font-size: var(--sp-p);
+} 
+
+.chiro-img .rhombus {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  border: 25px solid var(--bg-color-f); 
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+  opacity: 0;
+  animation: zoomOut 1s ease forwards;
+  animation-delay: 1.6s;
+  z-index: -2000; 
+} 
+
+
+.chiro-img .rhombus img {
+  position: relative;
+  flex-direction: column;
+  top: 60px;
+  left: -30px;
+  width: 100%; 
+
+
+
+align-items: center;
+
+}  
+
+  .chiro-img .rhombus {
+    position: absolute; 
+    width: 100%; 
+    height: 70%;
+    border: 25px solid var(--bg-color-f);  
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+    opacity: 0;
+    animation: zoomOut 1s ease forwards;
+    animation-delay: 1.6s;
+    z-index: -2000;
+    left: -40px;
+    background: var(--bg-color-h);
+  } 
+
+  
+    .chiro-img {
+      position: relative;
+      flex-direction: column;
+      right: 10%;
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 20%;
+      left: 200;
+      width: 100%;
+    } 
+  
+    .chiro .rhombus2 {
+      display: none;
+    }  
+  } 
+   */
+  /* @media(max-width: 576px) {
+    .aboutChiro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .chiro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 150px;
+      padding: 20px;
+      overflow: hidden; 
+    } 
+  
+    .chiro-img {
+      position: relative;
+      flex-direction: column;
+      right: 250px;
+      width: 380px;
+      height: 380px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+
+  .chiro-img .rhombus {
+    position: absolute; 
+    width: 100%; 
+    height: 80%;
+    border: 25px solid var(--bg-color-f);  
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+    opacity: 0;
+    animation: zoomOut 1s ease forwards;
+    animation-delay: 1.6s;
+    z-index: -2000;
+    left: 60px;
+  } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: -20%;
+      left: 50px;
+      width: 100%;
+    } 
+
+  .chiro .rhombus2 {
+      position: relative;
+      top: -550px;
+      right: 400px;
+      width: 500px;
+      height: 400px;
+      background-color: var(--bg-color-h); 
+      transform: rotate(45deg);
+      z-index: -2000;
+    }  
+  } */
+
+
+ /* @media(max-width: 768px) {
+    .aboutChiro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .chiro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 150px;
+      padding: 20px;
+      overflow: hidden; 
+    } 
+  
+    .chiro-img {
+      position: relative;
+      right: 25%; 
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 25px solid var(--bg-color-f); 
+      box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+      opacity: 0;
+      animation: zoomOut 1s ease forwards;
+      animation-delay: 1.6s;
+      z-index: -2000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      top: 10px;
+      left: 50px;
+      width: 100%;
+    } 
+  
+    .chiro .rhombus2 {
+      position: relative;
+      top: -650px;
+      right: 450px;
+      width: 450px;
+      height: 450px;
+      background-color: var(--bg-color-h); 
+      transform: rotate(45deg);
+      z-index: -2000;
+    }  
+  }  */
+
+/* @media (max-width: 992px) {
+    .aboutChiro {
+      width: 100%;
+       
+         
+
+    .chiro {
+      padding: 50px 30px 10px 25px;    
+      margin: 0px; 
+    }
+  
+  .chiro-content {
+      max-width: 650px;
+    } 
+
+    .chiro-content h1 {
+      font-size: 25px;
+    } 
+  
+    .chiro-content h3 {
+      font-size: 20px; 
+    } 
+    
+    .chiro-content p {
+      font-size: 12px;
+      font-size: var(--ts-p);
+    } 
+  
+    .chiro-img {
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 400px;
+      height: 400px;
+      z-index: -1000;
+    }
+  
+    .chiro-img .rhombus {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: -180px;
+      margin-left: 100px;
+      z-index: -1000;
+    }
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      top: -70px;
+      left: 0px;
+      max-width: 450px;
+      z-index: 1000;
+    }
+  
+    .chiro .rhombus2 {
+      position: relative;
+      top: -350px;
+      right: -650px;
+      z-index: -2000;
+    }  
+  }  */
+
+
+
+
+
+
+
+ 
+@media (max-width: 320px) {
+  .chiro {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 5px;
   }
 
-  .pledge-content h1 {
-    font-size: 3rem;
+  .chiro-content h2 {
+    font-size: 22px;
+    line-height: 1.6;
   }
 
-  .pledge-content h2 {
-    font-size: 2rem;
+  .chiro-content h3 {
+    font-size: 18px;
+  }
+
+  .chiro-content p {
+    font-size: 14px;
+  }
+
+  .chiro-img {
+    /* width: 160px;
+    height: 160px; */
+    width: 220px; 
+    height: 220px;
+    right: 0;
+    margin-top: 20px;
+  }
+
+  .chiro-img .rhombus img {
+    /* max-width: 180px;
+    top: 20px;
+    left: -70px; */
+
+    max-width: 300px; 
+    top: 40px; 
+    left: -120px;
+  }
+
+  .chiro .rhombus2 {
+    /* width: 220px;;
+    height: 220px; */
+
+      width: 300px;;
+    height: 300px;
+
+    top: -20%;
+    right: -20%;
+  }
+} 
+
+/* media (max-width: 40px) {
+  .chiro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chiro-img {
+    width: 200px;
+    height: 200px;
+    right: 0;
+  }
+
+  .chiro-img .rhombus img {
+    max-width: 260px;
+    top: 35px;
+    left: -110px;
+  }
+
+  .chiro .rhombus2 {
+    width: 260px;
+    height: 260px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+/* 
+media (max-width: 56px) {
+  .chiro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chiro-img {
+    width: 240px;
+    height: 240px;
+    right: 0;
+  }
+
+  .chiro-img .rhombus img {
+    max-width: 300px;
+    top: 45px;
+    left: -130px;
+  }
+
+  .chiro .rhombus2 {
+    width: 300px;
+    height: 300px;
   }
 }
 
+media (max-width: 78px) {
+  .chiro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chiro-img {
+    width: 300px;
+    height: 300px;
+    right: 0;
+  }
+
+  .chiro-img .rhombus img {
+    max-width: 380px;
+    top: 60px;
+    left: -160;
+  }
+
+  .chiro .rhombus2 {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+media (max-width: 99px) {
+  .chiro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chiro-img {
+    width: 350px;
+    height: 350px;
+    right: 0;
+  }
+
+  .chiro-img .rhombus img {
+    max-width: 450px;
+    top: 75px;
+    left: -190px;
+  }
+
+  .chiro .rhombus2 {
+    width: 450px;
+    height: 450px;
+  }
+} */
+
+/* ============================
+   📱 320px — Extra Small Phones
+   ============================ */
+@media (max-width: 320px) {
+
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .chiro-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .chiro-img {
+    position: relative;
+    right: 0;
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+    transform: rotate(45deg);
+  }
+
+  .chiro-img .rhombus img {
+    top: 40px;
+    left: -140px;
+    max-width: 350px;
+  }
+
+  .chiro .rhombus2 {
+    width: 350px;
+    height: 350px;
+    top: -40%;
+    right: -40%;
+  }
+}
+
+/* ============================
+   📱 480px — Small Phones
+   ============================ */
+@media (max-width: 480px) {
+
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .chiro-content {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .chiro-img {
+    right: 0;
+    width: 260px;
+    height: 260px;
+    margin-top: 25px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 55px;
+    left: -170px;
+    max-width: 420px;
+  }
+
+  .chiro .rhombus2 {
+    width: 420px;
+    height: 420px;
+    top: -35%;
+    right: -35%;
+  }
+}
+
+/* ============================
+   📱 576px — Large Phones
+   ============================ */
+@media (max-width: 576px) {
+
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .chiro-content {
+    max-width: 95%;
+  }
+
+  .chiro-img {
+    right: 0;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 70px;
+    left: -200px;
+    max-width: 500px;
+  }
+
+  .chiro .rhombus2 {
+    width: 500px;
+    height: 500px;
+    top: -30%;
+    right: -30%;
+  }
+}
+
+/* ============================
+   📱 768px — Tablets
+   ============================ */
+@media (max-width: 768px) {
+
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .chiro-content {
+    max-width: 90%;
+  }
+
+  .chiro-img {
+    right: 0;
+    width: 350px;
+    height: 350px;
+    margin-top: 40px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 80px;
+    left: -230px;
+    max-width: 580px;
+  }
+
+  .chiro .rhombus2 {
+    width: 580px;
+    height: 580px;
+    top: -28%;
+    right: -28%;
+  }
+}
+
+/* ============================
+   💻 991px — Small Laptops
+   ============================ */
+@media (max-width: 991px) {
+
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .chiro-content {
+    max-width: 85%;
+  }
+
+  .chiro-img {
+    right: 0;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 90px;
+    left: -260px;
+    max-width: 650px;
+  }
+
+  .chiro .rhombus2 {
+    width: 650px;
+    height: 650px;
+    top: -25%;
+    right: -25%;
+  }
+}
+
+@media (max-width: 320px) { .chiro { flex-direction: column; align-items: center; text-align: center; margin-top: 20px; } .chiro-content { max-width: 95%; margin: 0 auto; } .chiro-img { width: 160px; height: 160px; margin-top: 20px; right: 0; } .chiro-img .rhombus img { max-width: 240px; top: 30px; left: -120px; } }
 
 
 
 
 
 
-
-
-
-
-
-/* <!------- Intro Meet Dr Janique Section ------->
-
-<section class="intro" id="intro">
-<div class="circle"></div>
-
-    <picture>
-    <source srcset="assets/image/jani.avif" type="image/avif">
-    <source srcset="assets/image/jani.webp" type="image/webp">
-    <img src="assets/image/jani.jpg" alt="Dr Janique">
-    </picture>
-
-    <!-- <img src="assets/image/jan1.png" alt="" width="600px" height="400px">  -->
-    <div class="description">
-        <div class="textbox">
-
-            <h1>Hello, I’m <span>Dr Janique</span></h1>
-            <h2>Your dedicated <span>Chiropractor</span></h2>
-
-            <p>
-                I earned my Master’s Degree in Chiropractic from the University of Johannesburg, accredited by the European Council of Chiropractic.<br>
-                Nearing the end of my studies, I actively sought a mentor to guide my professional and personal growth. I was referred to a well-regarded chiropractor in the northern suburbs, who taught me various techniques that greatly enriched my knowledge.<br>
-                I am registered with the Allied Health Professions Council of South Africa (AHPCSA) and am a member of the Chiropractic Association of South Africa (CASA) and Paediatric Chiropractic South Africa (PCSA).
-            </p>
-        </div>    
-    </div>
-</section> 
-
-<!----- Pledge Mission and Vision Section ----->
-
-<section class="state">
-    <div class="pledge"> 
-        <div class="pledge-content">
-            <h1>This is my Pledge</h1>
-            <h2>Mission Statement</h2>
-            <p>
-                With passion and compassion, my mission is to help others through a positive mental attitude. I provide chiropractic and wellness care to all my patients.<br>
-                I empower them with inspiration and the information they need to choose the best solutions for themselves and their families.<br>
-                I maintain the highest levels of ethics, integrity, and professional standards—today, tomorrow, and for generations to come.
-            </p>
-           
-            <h2>Vision Statement</h2>
-            <p>
-                Everyone deserves the highest quality of a pain free healthy
-                life.<br>My philosophy is to offer my patients impeccable service in a comfortable environment.<br>Achieving an
-                understanding and knowledge of the chiropractic treatment they receive, how their body functions and maintaining a healthy
-                life.
-            </p>
-        </div>
-
-        <div class="pledge-img">
-
-            <picture>
-            <source srcset="assets/image/pledge1.avif" type="image/avif">
-            <source srcset="assets/image/pledge1.webp" type="image/webp">
-            <img src="assets/image/pledge1.jpg" alt="Pledge">
-            </picture>
-
-        </div>
-    </div>
-
-        <div class="triangle"></div>
-
-</section> */

@@ -3052,115 +3052,169 @@ ul.dropdown-menu {
 
 /* END OF HOME PAGE  */
 
-
-
-
-
 /*  -------- ABOUT PAGE! */
 
-  /*-------- About Chiropractics Section----------??? Mission and Vision Section */
+  /*-------- About Chiropractics Section----------*/
 
-  .aboutChiro {
-    background: var(--bg-color-b); 
-    /* margin-top: 180px; */
-    margin-top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } 
-  
+/* * {
+  border: 1px solid red; 
+} */
+/* 🟦 Section Wrapper */
+ .container-chiro {
+  padding: 30px 8px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-b);
+} 
+
+.cont-Chiro {
+  position: relative; 
+  width: 100%;
+  min-height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding: 30px 8px;  
+  overflow: hidden; 
+  z-index: -2000;
+}
+
+.aboutChiro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 8px; 
+  margin-top: 0;
+  left: 0;
+  width: 100%;
+} 
+
+/* 🧍‍♂️🧍‍♀️ Main Chiro Layout */
   .chiro {
     position: relative; 
     width: 100%;
-    min-height: 100vh;
+    min-width: 100vw;
+    height: 100vh;
+    min-height: 100vh; 
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    padding: 50px 8% 0; 
+    justify-content: space-between;  
+    padding: 30px 8% 0;   
     margin-top: 70px;
     overflow: hidden; 
     z-index: 1000;
   } 
+
+/* 📝 Text Content */  
+
+.chiro-content {
+  max-width: 630px; 
+  /* max-width: 580px; */
+  color: var(--bg-color-c);
+} 
+
+.chiro-content h2 {
+  font-size: var(--fs-2);
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 10px 0;
+  margin: auto;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 1s;   
+} 
+
+.chiro-content h3 {
+  font-size: var(--fs-3);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  padding: 10px 0;
+  margin: auto;  
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.6s;  
+} 
+
+.chiro-content p {
+  font-size: var(--fs-p);
+  font-weight: 600;
+  text-align: center; 
+  line-height: 2;
+  word-spacing: 1px;
+  margin: 15px 0 30px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1.3s;
+} 
+
+/* 🖼️ Image + Rhombus Frame */
+
+.chiro-img {
+  position: relative;
+  right: -7%; 
+  width: 450px;
+  height: 450px;
+  transform: rotate(45deg); 
+  z-index: -2000;
+} 
+
+/* 🔷 Outer Rhombus Frame */
+
+.chiro-img .rhombus {
+  position: absolute; 
+  width: 100%;
+  height: 100%; 
+  border: 25px solid var(--bg-color-f); 
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+  opacity: 0;
+  animation: zoomOut 1s ease forwards;
+  animation-delay: 1.6s;
+  z-index: -2000; 
+} 
   
-  .chiro-content {
-    max-width: 630px;
-  } 
-  
-  .chiro-content h1 {
-    font-size: 32px;
-    line-height: 2.5;
-    text-align: center;
-    opacity: 0;
-    animation: slideBottom 1s ease forwards;
-    animation-delay: 1s;   
-  } 
-  
-  .chiro-content h3 {
-    font-size: 25px;
-    text-align: center;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 1.6s;  
-  } 
-  
-  .chiro-content p {
-    font-size: 16px;
-    margin: 15px 0 30px;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1.3s;  
-  } 
-  
-  .chiro-img {
-    position: relative;
-    right: -7%;   
-    width: 450px;
-    height: 450px;
-    transform: rotate(45deg); 
-    z-index: 10;
-  } 
-  
-  .chiro-img .rhombus {
-    position: absolute; 
-    width: 100%;
-    height: 100%;
-    border: 25px solid var(--bg-color-f); 
-    box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
-    opacity: 0;
-    animation: zoomOut 1s ease forwards;
-    animation-delay: 1.6s;
-  } 
-  
-  .chiro-img .rhombus img {
-    position: absolute; 
-    top: 110px;
-    left: -250px;
-    max-width: 750px;
-    transform: rotate(-45deg); 
-    opacity: 0;
-    animation: missionPic 1s ease forwards;
-    animation-delay: 2s; 
-  } 
-  
-  .chiro .rhombus2 {
-    position: absolute;
-    top: -25%;
-    right: -25%;
-    width: 700px;
-    height: 700px;
-    background-color: var(--bg-color-h); 
-    transform: rotate(45deg);
-    z-index: 1;
-    opacity: 0;
-    animation: rhombus2 1s ease forwards;
-    animation-delay: 2s; 
-  }  
-  
-  /* Keyframes Animation */
-  
+/* 🖼️ Inner Image (rotated) */
+
+.chiro-img .rhombus img {
+  position: absolute; 
+  top: 110px;
+  left: -250px;  
+  max-width: 750px;
+  transform: rotate(-45deg);  
+  opacity: 0;
+  animation: missionPic 1s ease forwards;
+  animation-delay: 2s; 
+  z-index: -2000; 
+} 
+
+/* 🔶 Background Rhombus */
+
+.chiro .rhombus2 {
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  width: 700px;
+  height: 700px;
+  background-color: var(--bg-color-h); 
+  transform: rotate(45deg);
+  z-index: -3000; 
+  opacity: 0;
+  animation: rhombus2 1s ease forwards;
+  animation-delay: 2s; 
+}   
+
+/* 🎞️ Keyframes Animation */
+
   @keyframes slideRight {
   
     0% {
@@ -3252,8 +3306,145 @@ ul.dropdown-menu {
     }
   }
   
+  /*📗 Media Queries About Chiro Section */
+
+
+
   /* ----- Media Queries About Chiro Section ----- */
   
+
+@media(max-width: 440px) {
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 60px;
+      left: -30px;
+      width: 100%;
+    } 
+  
+    .chiro-img {
+      position: relative;
+      flex-direction: column;
+      right: 10%;
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 20%;
+      left: 200;
+      width: 100%;
+    } 
+  
+    .chiro .rhombus2 {
+      display: none;
+    }  
+  }
+
+
+ @media(max-width: 575px) {
+    .aboutChiro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .chiro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 150px;
+      padding: 20px;
+      overflow: hidden; 
+    } 
+  
+    .chiro-img {
+      position: relative;
+      flex-direction: column;
+      right: 210px;
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 10%;
+      left: 10px;
+      width: 100%;
+    } 
+  }
+  
+
+  @media(max-width: 768px) {
+    .aboutChiro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .chiro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 150px;
+      padding: 20px;
+      overflow: hidden; 
+    } 
+  
+    .chiro-img {
+      position: relative;
+      right: 25%; 
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 25px solid var(--bg-color-f); 
+      box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+      opacity: 0;
+      animation: zoomOut 1s ease forwards;
+      animation-delay: 1.6s;
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      top: 10px;
+      left: 50px;
+      width: 100%;
+    } 
+  
+    .chiro .rhombus2 {
+      position: relative;
+      top: -650px;
+      right: 450px;
+      width: 450px;
+      height: 450px;
+      background-color: var(--bg-color-h); 
+      transform: rotate(45deg);
+      z-index: -10000;
+    }  
+  }
+
+
   @media(max-width: 992px) {
     .aboutChiro {
       width: 100%;
@@ -3314,134 +3505,9 @@ ul.dropdown-menu {
     }  
   } 
   
-  @media(max-width: 768px) {
-    .aboutChiro {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }  
+
   
-    .chiro {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      row-gap: 150px;
-      padding: 20px;
-      overflow: hidden; 
-    } 
-  
-    .chiro-img {
-      position: relative;
-      right: 25%; 
-      width: 430px;
-      height: 430px;
-      transform: rotate(45deg); 
-      z-index: -1000;
-    } 
-  
-    .chiro-img .rhombus {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border: 25px solid var(--bg-color-f); 
-      box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
-      opacity: 0;
-      animation: zoomOut 1s ease forwards;
-      animation-delay: 1.6s;
-      z-index: -1000;
-    } 
-  
-    .chiro-img .rhombus img {
-      position: relative;
-      top: 10px;
-      left: 50px;
-      width: 100%;
-    } 
-  
-    .chiro .rhombus2 {
-      position: relative;
-      top: -650px;
-      right: 450px;
-      width: 450px;
-      height: 450px;
-      background-color: var(--bg-color-h); 
-      transform: rotate(45deg);
-      z-index: -10000;
-    }  
-  }
-  
-  @media(max-width: 575px) {
-    .aboutChiro {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }  
-  
-    .chiro {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      row-gap: 150px;
-      padding: 20px;
-      overflow: hidden; 
-    } 
-  
-    .chiro-img {
-      position: relative;
-      flex-direction: column;
-      right: 210px;
-      width: 430px;
-      height: 430px;
-      transform: rotate(45deg); 
-      z-index: -1000;
-    } 
-  
-    .chiro-img .rhombus img {
-      position: relative;
-      flex-direction: column;
-      top: 10%;
-      left: 10px;
-      width: 100%;
-    } 
-  }
-  
-  @media(max-width: 440px) {
-    .chiro-img .rhombus img {
-      position: relative;
-      flex-direction: column;
-      top: 60px;
-      left: -30px;
-      width: 100%;
-    } 
-  
-    .chiro-img {
-      position: relative;
-      flex-direction: column;
-      right: 10%;
-      width: 430px;
-      height: 430px;
-      transform: rotate(45deg); 
-      z-index: -1000;
-    } 
-  
-    .chiro-img .rhombus img {
-      position: relative;
-      flex-direction: column;
-      top: 20%;
-      left: 200;
-      width: 100%;
-    } 
-  
-    .chiro .rhombus2 {
-      display: none;
-    }  
-  }
+ 
   
   @media(max-width: 320px) {
     .chiro-img .rhombus img {
@@ -3460,8 +3526,6 @@ ul.dropdown-menu {
       display: none;
     }  
   }
-
-
 
 
 
