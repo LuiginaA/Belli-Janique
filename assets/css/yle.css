@@ -619,8 +619,106 @@ container-about {
 }  
 
 
-  
- 
+0000
+
+/* ================= Base Desktop Layout (1200px+) ================= */
+
+.container-chiro {
+  padding: 30px 5%;       /* reduce horizontal padding */
+  margin-top: 50px;       /* adjust spacing from navbar */
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: visible;      /* allow rhombus to show outside */
+  position: relative; 
+  background-color: var(--bg-color-b);
+}
+
+.chiro {
+  display: flex;
+  flex-direction: row;    /* side-by-side on desktop */
+  align-items: center;
+  justify-content: center; /* center horizontally */
+  padding: 30px 0;
+  min-height: 100vh;       /* full screen height */
+  overflow: visible;       /* allow rotated rhombus visibility */
+  position: relative;
+}
+
+.chiro-content {
+  max-width: 600px;
+  margin-right: 50px;     /* spacing between text and image */
+  text-align: left;       /* left-aligned for desktop */
+  z-index: 10;
+}
+
+.chiro-content h2 {
+  font-size: var(--fs-2);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.chiro-content h3 {
+  font-size: var(--fs-3);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.chiro-content p {
+  font-size: var(--fs-p);
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Main image container */
+.chiro-img {
+  width: 450px;
+  height: 450px;
+  position: relative;
+  transform: rotate(45deg);
+  z-index: 10;
+}
+
+/* Rhombus frame */
+.chiro-img .rhombus {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  border: 25px solid var(--bg-color-f);
+  box-shadow: -15px 15px 15px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Image inside rhombus */
+.chiro-img .rhombus img {
+  position: absolute; 
+  width: 420px;
+  max-width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 11;
+}
+
+/* Background rhombus */
+.chiro .rhombus2 {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  top: -20%;
+  right: -20%;
+  background-color: var(--bg-color-h);
+  transform: rotate(45deg);
+  z-index: -1;
+  opacity: 1;
+}
+
+/* ✅ Keep all animations as they are */
 
 
 
