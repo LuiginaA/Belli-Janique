@@ -525,12 +525,48 @@ container-about {
   position: relative;
   /* background-color: var(--bg-color-d); */
   min-height: 15vh;
-  z-index: 2000;
+  z-index: -1000;
+
 }
 
 
-.but-modal {
+.but-modalone  {
+  /* position: relative; */
    background-color: var(--bg-color-b);
+   background-color: #ffdc7d;
+     background-color: #8d3636;
+  /* background-color: transparent;   */
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  border: 5px solid var(--bg-color-a);
+  padding: 10px;
+  font-size: 14px;
+  color: #D6CCC0;
+  /* margin: 15px 30px 10px 60px;  */
+  font-style: italic;
+  align-items: center;
+  justify-items: center;
+  background-color: #7232bd;
+margin-left: 200px;
+margin-top: -120rem;
+background-color: transparent;
+z-index: -3000;
+} 
+ 
+.but-modalone {
+/* position: relative; */
+  color: #25d366;
+  color: var(--bg-color-a);
+  color var(--bg-color-f);
+}
+
+
+
+.but-modal2  {
+  position: relative;
+   background-color: var(--bg-color-b);
+   background-color: #ffdc7d;
   /* background-color: transparent;   */
   border: 0;
   border-radius: 5px;
@@ -541,11 +577,16 @@ container-about {
   font-style: italic;
   align-items: center;
   justify-items: center;
+  background-color: #7232bd;
+  margin-left: 120px;
+
 } 
  
-.but-modal .four {
+.but-modal2 {
   color: #25d366;
 }
+
+
 
 
 .modal-content {
@@ -726,6 +767,213 @@ container-about {
 
 
 
+
+/* ===================== 320px Very Small Devices ===================== */
+@media (max-width: 320px) {
+  .chiro {
+    flex-direction: column;
+    align-items: flex-start;   /* move text left */
+    justify-content: flex-start;
+    padding: 20px 10px;
+  }
+
+  .chiro-content {
+    max-width: 100%;
+    margin: 0 0 20px 0;
+    text-align: left;
+  }
+
+  .chiro-content h2 {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+
+  .chiro-content h3 {
+    font-size: 14px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  .chiro-content p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .chiro-img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+  }
+
+  .chiro-img .rhombus {
+    border-width: 12px;
+  }
+
+  .chiro-img .rhombus img {
+    width: 160px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .chiro .rhombus2 {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    right: -5%;
+    z-index: 0;
+  }
+}
+
+/* ===================== 480px Small Phones ===================== */
+@media (max-width: 480px) {
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+  }
+
+  .chiro-content {
+    max-width: 90%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .chiro-content h2 {
+    font-size: 18px;
+  }
+
+  .chiro-content h3 {
+    font-size: 16px;
+  }
+
+  .chiro-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .chiro-img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .chiro-img .rhombus {
+    border-width: 15px;
+  }
+
+  .chiro-img .rhombus img {
+    width: 220px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .chiro .rhombus2 {
+    width: 250px;
+    height: 250px;
+    top: 60%;
+    right: -5%;
+  }
+}
+
+/* ===================== 576px Large Phones ===================== */
+@media (max-width: 576px) {
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+
+  .chiro-content {
+    max-width: 95%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .chiro-content h2 {
+    font-size: 20px;
+  }
+
+  .chiro-content h3 {
+    font-size: 18px;
+  }
+
+  .chiro-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .chiro-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .chiro-img .rhombus {
+    border-width: 18px;
+  }
+
+  .chiro-img .rhombus img {
+    width: 260px;
+  }
+
+  .chiro .rhombus2 {
+    width: 300px;
+    height: 300px;
+    top: 65%;
+    right: 0%;
+  }
+}
+
+/* ===================== 768px Tablets ===================== */
+@media (max-width: 768px) {
+  .chiro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+  }
+
+  .chiro-content {
+    max-width: 90%;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  .chiro-content h2 {
+    font-size: 24px;
+  }
+
+  .chiro-content h3 {
+    font-size: 20px;
+  }
+
+  .chiro-content p {
+    font-size: 16px;
+  }
+
+  .chiro-img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .chiro-img .rhombus {
+    border-width: 20px;
+  }
+
+  .chiro-img .rhombus img {
+    width: 300px;
+  }
+
+  .chiro .rhombus2 {
+    width: 350px;
+    height: 350px;
+    top: 70%;
+    right: 0%;
+  }
+}
 
 
 

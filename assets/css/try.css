@@ -1,0 +1,2493 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: 'Merriweather', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+/* 🖥️ Large Desktops */
+/* ----- Special paddings/margins/text */
+
+/* ✅ Global Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Merriweather', serif;
+
+  /* border: 1px solid red;     */
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 260px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* font-size: 62.5%;
+  This % changes the normal base size of 16px to 10px --- 21px = 2.1rem (because 21 x 10 = 2.1rem */
+
+ /* ✅ Root Variables */
+:root {
+  /* --accent-clr: ; */
+  --bg-color-a: #EDE6DE;
+  --bg-color-b: #F9F9F2;
+  --bg-color-c: #3F3B51;
+  --bg-color-g: #F8F3EF;
+  --bg-color-h: #DBCFC3;
+  --bg-color-d: #D6CCC0;
+  --bg-color-e: #F8F8EF;
+  --bg-color-f: #938270;
+
+  --text-color-a: #252525;
+  --text-color-b: #887561;
+  --text-color-c: #3F3B51;
+  --text-color-d: #BDA686;
+  --text-color-e: #A79176;
+  --text-color-f: #3E3D3D;
+  --text-color-g: #1F1E1E;
+  --text-color-h: #F4EEED;
+  --text-color-back: #FFFAF0;
+
+/* font families */
+
+    --ff-1: Merriweather, sans-serif;
+    --ff-2: 'Lato', sans-serif;
+
+    --fw-l: 300;
+    --fw-n: 400;
+    --fw-m: 500;
+    --fw-sb: 600;
+    --fw-b: 700;
+    --fw-xb: 800;
+
+/* 📱 Font-sizes h1 - p Base (large screens) */
+    --fs-1: 2.5rem;
+    --fs-2: 2rem;
+    --fs-3: 1.75rem;
+    --fs-4: 1.5rem;
+    --fs-5: 1.25rem;
+    --fs-6: 1.125rem;
+    --fs-p: 1rem;
+
+/* 📱 Font-sizes 320px Very Small Phones */
+--vss-1: 1.4rem;
+--vss-2: 1.2rem;
+--vss-3: 1.1rem;
+--vss-4: 1rem;
+--vss-5: 0.9rem;
+--vss-6: 0.85rem;
+--vss-p: 0.75rem;
+
+/* 📱Font-sizes 480px Small Phones */
+--sp-1: 1.6rem;
+--sp-2: 1.4rem;
+--sp-3: 1.2rem;
+--sp-4: 1.1rem;
+--sp-5: 1rem;
+--sp-6: 0.9rem;
+--sp-p: 0.8rem;
+
+/* 📱Font-sizes 576px Medium Phones */
+--msp-1: 1.8rem;
+--msp-2: 1.5rem;
+--msp-3: 1.3rem;
+--msp-4: 1.2rem;
+--msp-5: 1rem;
+--msp-6: 0.95rem;
+--msp-p: 0.85rem;
+
+/* 📲 Font-sizes 768px Tablets */
+--ts-1: 2rem;
+--ts-2: 1.6rem;
+--ts-3: 1.4rem;
+--ts-4: 1.25rem;
+--ts-5: 1.1rem;
+--ts-6: 1rem;
+--ts-p: 0.9rem;
+
+/* 📱 991px Small Laptops */
+--vsl-1: 2.2rem;
+--vsl-2: 1.8rem;
+--vsl-3: 1.6rem;
+--vsl-4: 1.4rem;
+--vsl-5: 1.2rem;
+--vsl-6: 1.1rem;
+--vsl-p: 0.95rem;
+}
+
+/* ✅ Fixed Navbar */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  overflow: visible;
+  z-index: 1030;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Normal Styles */
+
+/* 🔽 🧭 Fixed Top Navbar Section  */
+
+/* ✅ Top Banner Layout */
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  margin: -15px auto;
+  padding: 0px;
+}
+
+.container-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 5px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.topNav {
+  background-color: var(--bg-color-a);
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.topNav a {
+  background-color: var(--bg-color-a);
+  text-decoration: none !important;
+  padding: 0px 10px;
+  margin-bottom: 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ Top Banner Text */
+/* Number */
+.top-bar_content p {
+  font-family: var(--ff-1);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  font-style: italic;
+  padding: 0 2px;
+  margin-top: 20px;
+}
+
+/* Name */
+.top-barContent p {
+  font-family: var(--ff-1);
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+/* Request*/
+.top_bar_content p {
+  font-family: var(--ff-1);
+  font-size: 16.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  font-style: italic;
+  padding: 0 2px;
+  margin-top: 20px;
+}
+
+/* ✅ Logo Section */
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/* .navbar-brand img */
+.logo-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.titleName {
+  font-family: var(--ff-1);
+  font-size: 1.6rem;
+  font-weight: 800;
+  max-width: 200px;
+  margin-top: -20px;
+  font-style: italic;
+  text-align: center;
+  color: #4d4c4b;
+  text-shadow: 0.5px 0.5px #38e209;
+}
+
+/* ✅ Toggle Button */
+.navbar-toggler {
+  border: 2px solid #212529;
+  box-shadow: 5px 5px #6f9170;
+  max-width: 8em;
+  padding: 10px;
+  margin: 1em;
+}
+
+.navbar-toggler i {
+  width: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #212529;
+  cursor: pointer;
+}
+
+/* ✅ 🧭 Navbar Layout */
+.navbar {
+  position: relative;
+  overflow: visible;
+  padding: 0px 20px;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1000;
+}
+
+.navbar-nav .nav-item {
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link {
+  font-size: var(--fs-a);
+  font-weight: var(--fw-b);
+  color: var(--bg-color-c);
+  border-radius: 10px;
+}
+
+.active {
+  font-size: var(--fs-a);
+  font-weight: var(--fw-n);
+  color: var(--text-color-c) !important;
+}
+
+.active:hover {
+  color: var(--text-color-g) !important;
+  background: transparent;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.nav-item a:hover {
+  color: var(--text-color-a);
+  border-radius: 10px;
+  border: 2px solid #6f9170;
+  text-shadow: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+ }
+
+/* ✅ Dropdown Menu */
+ul.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1050;
+  min-width: 200px;
+  padding: 0.5rem;
+  margin: 0;
+  background-color: var(--bg-color-a);
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 0.95rem;
+  font-weight: var(--fw-n);
+  padding: 5px 10px 2px;
+  margin-top: -5px;
+  color: var(--text-color-a);
+  min-width: 200px;
+  white-space: normal;
+  word-wrap: break-word;
+  border-radius: 10px;
+  background: var(--bg-color-a);
+  background-color: transparent;
+}
+
+.about-chiro-link {
+  white-space: nowrap;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.shadow li:hover {
+  background-color: var(--bg-color-a);
+  color: var(--text-color-a);
+  cursor: pointer;
+}
+
+/* Make default caret (dropdown arrow) bigger */
+/* ✅ Dropdown Arrow */
+.navbar .dropdown-toggle::after {
+  font-size: var(--fs-a);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* ------- */
+
+/* ✅ Scroll Icon */
+.scroll i {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--bg-color-c);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* 🧭 Topnav Navbar Section Media Queries */
+
+/* 📱 Very Small Phones */
+@media (max-width: 320px) {
+  /* Top bar sections stack vertically */
+  .container-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: -12px;
+  }
+
+  .top-barContent p {
+    font-size: 0.70rem;
+    white-space: nowrap;
+   
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .topNav a {
+    background-color: var(--bg-color-a);
+    text-decoration: none !important;
+    padding: 0px 10px;
+    margin-bottom: 0;
+  }
+
+  .top-bar_content p,
+  .top_bar_content p {
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 1.75rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Logo and name shrink */
+  .navbar-brand {
+    margin-top: 8px;
+  }
+
+  .logo-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .titleName {
+    font-size: 0.9rem;
+    margin-top: -10px;
+    line-height: 1.1rem;
+  }
+
+  /* Toggle button smaller */
+  .navbar-toggler {
+    max-width: 2em;
+    padding: 6px;
+    margin: 0.5em;
+    border: 0.75px solid #212529;;
+    box-shadow: 2px 2px #6f9170;
+  }
+
+  .navbar-toggler i {
+    font-size: 1rem;
+  }
+
+  /* Nav links stack and shrink */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.8rem;
+    padding: 2px 0;
+  }
+
+ /* 🧼 Navbar Container */
+  .navbar,
+  .navbar-collapse,
+  .navbar-nav {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  /* 🧺 Dropdown Menu */
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border-radius: 0;
+  }
+
+  /* 🧾 Dropend Container */
+  .dropend {
+    position: static !important;
+    width: 100%;
+    margin: 10px;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+
+  /* 🧩 dropend toggle tab */
+  .dropdown-item > .dropdown-toggle {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  /* 🧷 dropdown items */
+  .dropend .dropdown-toggle {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-left: 0px;
+    white-space: normal;
+    word-break: break-word;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+   /* Scroll icon */
+  .scroll i {
+    top: 92%;
+    right: 6%;
+    font-size: 0.9rem;
+  }
+}
+
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+    .container-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: -12px;
+  }
+
+  .topnav {
+    padding: 5px 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-bar_content p {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    padding: 0;
+    line-height: 1.2rem;
+  }
+
+  .top-barContent p {
+    font-size: 0.85rem;
+    margin: 2px 0;
+    padding: 0;
+    line-height: 1.2rem;
+  }
+
+  .top_bar_content p {
+    font-size: 0.85rem;
+    margin: 2px 0;
+    padding: 10px;
+    line-height: 1.2rem;
+  }
+
+  .navbar-brand {
+    margin-top: 8px;
+  }
+
+  .logo-img {
+    width: 140px;
+    height: 140px;
+  }
+
+   /* 🧼 Navbar Container */
+  .navbar,
+  .navbar-collapse,
+  .navbar-nav {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  /* 🧺 Dropdown Menu */
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border-radius: 0;
+  }
+
+  /* 🧾 Dropend Container */
+  .dropend {
+    position: static !important;
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  /* 🧩 Dropend Toggle Tab */
+  .dropdown-item > .dropdown-toggle {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  /* 🧷 Dropdown Items */
+  .dropend .dropdown-toggle {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    white-space: normal;
+    word-break: break-word;
+    text-align: left;
+    box-sizing: border-box;
+  }
+}
+
+/* 📱 Phones Screens */
+@media (max-width: 576px) {
+  .container-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .topnav {
+    padding: 0px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topNav a {
+    background-color: var(--bg-color-a);
+    text-decoration: none !important;
+    padding: 0px;
+    margin-left: -18px;
+  }
+
+  .top-barContent p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-bar_content p,
+  .top_bar_content p {
+    font-size: 14px;
+    margin: 3px;
+  }
+
+  .navbar-brand {
+    margin-top: 10px;
+  }
+
+  .logo-img {
+    height: 160px;
+    width: 160px;
+  }
+
+  .titleName {
+    font-size: 1.1rem;
+  }
+
+  .navbar-toggler {
+    max-width: 6em;
+    padding: 8px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+  }
+
+  .dropdown-item {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .scroll i {
+    font-size: 1rem;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/* 📲 Tablets */
+@media (max-width: 768px) {
+  .container-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .topnav {
+    padding: 0px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-bar_content p,
+  .top_bar_content p {
+    font-family: var(--ff-1);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    font-style: italic;
+    padding-top: 4px;
+    margin: 0;
+  }
+
+  .top-barContent p {
+    font-family: var(--ff-1);
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .titleName {
+    font-size: 1.4rem;
+  }
+
+  .scroll i {
+    top: 88%;
+    right: 6%;
+  }
+}
+
+/* 💻 Medium Screens - Small Laptops */
+@media (max-width: 991px) {
+  .container-top {
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .titleName {
+    font-size: 1.3rem;
+    margin-top: -10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+  }
+
+  .dropdown-item {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+ 
+  }
+
+  .scroll i {
+    bottom: 15px;
+    right: 15px;
+    font-size: 1rem;
+  }
+}
+
+/* 💼 📝 Registration Title Bar Styling */
+
+.registration-bar {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-color-a);
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-color-a);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  z-index: 1;
+}
+
+.registration-text {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* 💼 📝 Registration Title Bar Media Queries */
+
+/* 📱 Very Small Phones */
+@media (max-width: 320px) {
+  .registration-bar {
+    display: none;
+  }
+
+  .registration-text {
+    display: none;
+  }
+}
+
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+  .registration-bar {
+    display: none;
+  }
+
+  .registration-text {
+    display: none;
+  }
+}
+
+/* 📱 Phones */
+@media (max-width: 576px) {
+  body {
+    padding-top: 300px; /* 👈 makes space for fixed navbar */
+  }
+
+  .registration-bar {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    background-color: var(--bg-color-a);
+    border: none;
+  }
+}
+
+/* 📲 Tablets */
+@media (max-width: 768px) {
+  body {
+    padding-top: 300px; /* 👈 makes space for fixed navbar */
+  }
+
+  .registration-bar {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 18px 10px;
+    font-size: 0.8rem;
+    background-color: var(--bg-color-a);
+    border: none;
+  }
+}
+
+/* END OF NAVBAR AND REGISTRATION BAR */
+ 
+
+/* ================= BASE DESKTOP ================= */
+/* -------------------- BASE / DESKTOP 1200px+ -------------------- */
+
+/*  BASE / DESKTOP 1200px */
+
+/* 🧍‍♂️🧍‍♀️ Main Chiro Layout */
+.aboutChiro {
+  position: relative;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 50px 8% 0;
+  overflow: hidden;
+}
+
+/* 📝 Text Content */  
+.chiro-content {
+  max-width: 630px;
+  color: var(--bg-color-c);
+  text-align: center;
+}
+
+.chiro-content h2 {
+  font-size: var(--fs-2); 
+  font-weight: 600;
+  line-height: 1.4;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 1s; 
+} 
+
+.chiro-content h4 {
+  font-size: var(--fs-4); 
+  font-weight: 600;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.3s;   
+
+  /* line-height: 1.35;
+  text-align: left;
+  margin-bottom: 25px;  */
+ 
+} 
+
+.chiro-content p {
+  font-size: var(--fs-p); 
+  line-height: 1.6;
+  margin: 15px 0 30px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1.6s;
+}
+
+/* IMAGE & RHOMBUS */
+/* 🖼️ Image + Rhombus Frame */
+.chiro-img {
+  position: relative;
+  right: -7%;
+  width: 450px;
+  height: 450px; 
+  transform: rotate(45deg);
+}
+
+/* 🔷 Outer Rhombus Frame */
+.chiro-img .rhombus {
+  position: absolute; 
+  width: 100%;
+  height: 100%; 
+  border: 25px solid var(--bg-color-f); 
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: zoomOut 1s ease forwards;
+  animation-delay: 1.6s;
+  z-index: 2;
+}
+
+/* 🖼️ Inner Image (rotated) */
+.chiro-img .rhombus img {
+  position: absolute; 
+  top: 110px;
+  left: -250px;
+  width: 550px;
+  max-width: 750px;
+  transform: rotate(-35deg); 
+  opacity: 0;
+  animation: missionPic 1s ease forwards;
+  animation-delay: 2s; 
+  z-index: 3; 
+}
+
+/* 🔶 Background Rhombus */
+.aboutChiro .rhombus2 {
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  width: 700px;
+  height: 700px;
+  background-color: var(--bg-color-h); 
+  transform: rotate(45deg);
+  z-index: -1000; 
+  opacity: 1;
+  animation: rhombus2 1s ease forwards;
+  animation-delay: 2s; 
+}
+
+/* /* 🎞️ Keyframes Animation */ 
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity:0;
+    }
+
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity:0;
+    }
+
+    100% {
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1.1);
+        opacity:0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes missionPic { 
+    0% {
+        transform:translate(300px,-300px) scale(0) rotate(-45deg);
+        opacity:0;
+    }
+
+    100% {
+        transform:translate(0, 0) scale(1) rotate(-45deg);
+        opacity:1;
+    }
+}
+
+@keyframes rhombus2 { 
+    0% {
+        right: -40%;
+        opacity: 0;
+    }
+
+    100% {
+        right: -10%;
+         /* right: -25%; */
+        opacity: 1;
+    }
+}
+
+/* -- MEDIA QUERIES --- */
+/* -----------------------------
+   SMALLER SCREENS LAYOUT FIX
+   -----------------------------
+   This handles tablets and phones
+----------------------------- */
+/* ==============================
+   AboutChiro: RESPONSIVE FIX
+============================== */
+
+/* Tablets / small laptops */
+/* @media (max-width: 992px) {
+  .aboutChiro {
+    flex-direction: column;      
+    align-items: center;         
+    justify-content: flex-start; 
+    height: auto;                
+    padding-top: 100px;        
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  .chiro-content {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .chiro-img {
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    position: relative;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chiro-img .rhombus {
+    width: 100%;
+    height: 100%;
+    border-width: 25px;
+    margin: 0 auto;
+  }
+
+  .chiro-img .rhombus img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .aboutChiro .rhombus2 {
+    width: 600px;
+    height: 600px;
+    top: -15%;
+    right: -25%;
+    transform: rotate(45deg);
+  }
+} */
+
+/* Small tablets / landscape phones */
+/* @media (max-width: 768px) {
+  .chiro-img {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .chiro-img .rhombus {
+    border-width: 18px;
+  }
+
+  .chiro-img .rhombus img {
+    width: 400px;
+  }
+
+  .aboutChiro .rhombus2 {
+    width: 450px;
+    height: 450px;
+    top: -10%;
+    right: -20%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .aboutChiro {
+    padding-top: 60px;      
+    padding-bottom: 40px;
+  }
+
+  .chiro-img {
+    width: 240px;
+    height: 240px;
+    margin-top: 30px;
+  }
+
+  .chiro-img .rhombus {
+    border-width: 14px;
+  }
+
+  .chiro-img .rhombus img {
+    width: 320px;
+  }
+
+  .aboutChiro .rhombus2 {
+    width: 380px;
+    height: 380px;
+    top: -5%;
+    right: -15%;
+  }
+} */
+
+
+
+/* 0000000 */
+/* @media (max-width: 600px) {
+
+  .aboutChiro {
+    padding: 100px 5% 60px;
+  }
+
+  .chiro-content h2 {
+    font-size: calc(var(--fs-2) * 0.8);
+  }
+
+  .chiro-content h4 {
+    font-size: calc(var(--fs-4) * 0.85);
+  }
+
+  .chiro-content p {
+    font-size: calc(var(--fs-p) * 0.9);
+  }
+
+  .chiro-img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .chiro-img .rhombus {
+    border-width: 14px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 60px;
+    left: -150px;
+    width: 350px;
+  }
+
+  .aboutChiro .rhombus2 {
+    width: 380px;
+    height: 380px;
+    top: -10%;
+    right: -30%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .chiro-img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .chiro-img .rhombus {
+    border-width: 18px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 75px;
+    left: -180px;
+    width: 420px;
+  }
+
+  .aboutChiro .rhombus2 {
+    width: 450px;
+    height: 450px;
+    top: -15%;
+    right: -25%;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .aboutChiro {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 120px 6% 80px;
+    text-align: center;
+  }
+
+  .chiro-content {
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .chiro-img {
+    right: 0;
+    width: 380px;
+    height: 380px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 90px;
+    left: -210px;
+    width: 480px;
+  }
+
+  .aboutChiro .rhombus2 {
+    width: 550px;
+    height: 550px;
+    top: -20%;
+    right: -20%;
+  }
+
+} */
+
+
+/* @media (max-width: 600px) {
+
+  .chiro-img {
+    width: 230px;
+    height: 230px;
+    margin-top: 70px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 60px;
+    left: -145px;
+    width: 330px;
+  }
+
+  .aboutChiro .rhombus2 {
+    right: -40%;
+    top: -5%;
+  }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .chiro-img {
+    width: 290px;
+    height: 290px;
+    margin-top: 60px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 80px;
+    left: -170px;
+    width: 390px;
+  }
+
+} */
+
+
+
+
+
+/* 
+@media (max-width: 992px) {
+  .chiro-img {
+    width: 340px;
+    height: 340px;
+    margin-top: 40px;
+  }
+
+  .chiro-img .rhombus img {
+    top: 95px;
+    left: -200px;
+    width: 440px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .aboutChiro {
+    height: auto;
+    min-height: 0;
+  }
+} */
+
+
+
+
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+
+
+ /* @media(max-width: 320px) { */
+  /* .chiro-img .rhombus img {
+      display: none;
+    }
+  
+    .chiro-img {
+      display: none;
+    }
+  
+    .chiro-img .rhombus img {
+      display: none;
+    }
+  
+    .chiro .rhombus2 {
+      display: none;
+    } 
+  }    
+  */
+
+
+
+  
+
+
+
+
+/* 
+
+  @media(max-width: 992px) {
+    .aboutChiro {
+      width: 100%;
+    }  
+      
+    .chiro {
+      padding: 50px 30px 10px 25px;    
+      margin: 0px; 
+    }
+  
+    .chiro-content {
+      max-width: 450px;
+    } 
+    
+    .chiro-content h1 {
+      font-size: 25px;
+    } 
+  
+    .chiro-content h3 {
+      font-size: 20px; 
+    } 
+    
+    .chiro-content p {
+      font-size: 12px;
+    } 
+  
+    .chiro-img {
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 400px;
+      height: 400px;
+      z-index: -1000;
+    }
+  
+    .chiro-img .rhombus {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: -180px;
+      margin-left: 100px;
+      z-index: -1000;
+    }
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      top: -70px;
+      left: 0px;
+      max-width: 450px;
+      z-index: 1000;
+    }
+  
+    .chiro .rhombus2 {
+      position: relative;
+      top: -350px;
+      right: -650px;
+      z-index: -10000;
+    }  
+  } 
+  
+  @media(max-width: 768px) {
+    .aboutChiro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .chiro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 150px;
+      padding: 20px;
+      overflow: hidden; 
+    } 
+  
+    .chiro-img {
+      position: relative;
+      right: 25%; 
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 25px solid var(--bg-color-f); 
+      box-shadow: -15px 15px 15px rgba(0, 0, 0, .2);
+      opacity: 0;
+      animation: zoomOut 1s ease forwards;
+      animation-delay: 1.6s;
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      top: 10px;
+      left: 50px;
+      width: 100%;
+    } 
+  
+    .chiro .rhombus2 {
+      position: relative;
+      top: -650px;
+      right: 450px;
+      width: 450px;
+      height: 450px;
+      background-color: var(--bg-color-h); 
+      transform: rotate(45deg);
+      z-index: -10000;
+    }  
+  }
+  
+  @media(max-width: 575px) {
+    .aboutChiro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .chiro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 150px;
+      padding: 20px;
+      overflow: hidden; 
+    } 
+  
+    .chiro-img {
+      position: relative;
+      flex-direction: column;
+      right: 210px;
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 10%;
+      left: 10px;
+      width: 100%;
+    } 
+  }
+  
+  @media(max-width: 440px) {
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 60px;
+      left: -30px;
+      width: 100%;
+    } 
+  
+    .chiro-img {
+      position: relative;
+      flex-direction: column;
+      right: 10%;
+      width: 430px;
+      height: 430px;
+      transform: rotate(45deg); 
+      z-index: -1000;
+    } 
+  
+    .chiro-img .rhombus img {
+      position: relative;
+      flex-direction: column;
+      top: 20%;
+      left: 200;
+      width: 100%;
+    } 
+  
+    .chiro .rhombus2 {
+      display: none;
+    }  
+  }
+   */
+  
+
+
+
+/* 🩺 About Chiropratics Section */
+
+.container-aboutquote  .contAbout_quote  {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: -1000;
+}
+
+.container-aboutquote .contAbout_quote  {
+  width: 100%;
+  min-height: 60vh;
+  text-align: center;
+  background: var(--bg-color-d);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Heading + Paragraph */
+.container-aboutquote .contAbout_quote .about_quote-heading h2 {
+  color: #252525;
+  text-align: center;
+  font-family: var(--ff-1);
+  font-size: var(--fs-3);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Heading + Paragraph */
+.container-aboutquote .contAbout_quote .about_quote-heading h3 {
+  color: #252525;
+  text-align: center;
+  font-family: var(--ff-1);
+  font-size: var(--fs-4);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container-aboutquote .contAbout_quote .about_quote-para p {
+  line-height: 2rem;
+  padding-top: 10px;
+  font-family: var(--ff-1);
+  font-size: var(--fs-p);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #252525;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+/* About Chiropratics Media Queries Section */
+
+/* 📱 320px Very Small Phones */
+@media (max-width: 320px) {
+  .container-aboutquote {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .about_quote-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .about_quote-heading h3 {
+    font-size: var(--vss-3);
+    font-weight: 600;
+  }
+
+  .about_quote-para p {
+    font-size: var(--vss-p);
+}
+}
+
+
+/* 📱 Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+.container-aboutquote {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .about_quote-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+.about_quote-heading h2 {
+    font-size: var(--sp-2);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 3px;
+    line-height: 2.2rem;
+  }
+
+.about_quote-heading h3 {
+    font-size: var(--sp-3);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 1px;
+    line-height: 2.2rem;
+  }
+
+  .about_quote-para p {
+    font-size: var(--sp-p);
+    font-weight: 600;
+  }
+}
+
+/* 📱 Medium Phones (max-width: 576px) */
+@media (max-width: 576px) {
+.container-aboutquote {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  
+.about_quote-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+.about_quote-heading h2 {
+    font-size: var(--msp-2);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 2.2px;
+    line-height: 2.2rem;
+  }
+
+.about_quote-heading h3 {
+    font-size: var(--msp-3);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 1.8px;
+    line-height: 2.2rem;
+  }
+
+  .about_quote-para p {
+    font-size: var(--msp-p);
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+}
+
+/* 📲 Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+.container-aboutquote {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  
+.about_quote-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+.about_quote-heading h2 {
+    font-size: var(--ts-2);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 2.2px;
+    line-height: 2.2rem;
+  }
+
+.about_quote-heading h3 {
+    font-size: var(--ts-3);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 1.8px;
+    line-height: 2.2rem;
+  }
+
+  .about_quote-para p {
+    font-size: var(--ts-p);
+    font-weight: 600;
+     word-spacing: 2px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+/* 💻 Small Laptops (max-width: 991px) */
+@media (max-width: 991px) {
+.container-aboutquote {
+    width: 100%;
+    height: 100%; 
+    align-items: center;
+  }
+  
+
+.about_quote-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+.about_quote-heading h2 {
+    font-size: var(--vsl-2);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 2.2px;
+    line-height: 2.2rem;
+  }
+
+.about_quote-heading h3 {
+    font-size: var(--vsl-3);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 1.8px;
+    line-height: 2.2rem;
+  }
+
+  .about_quote-para p {
+    font-size: var(--vsl-p);
+    font-weight: 600;
+    padding-bottom: 20px;
+    
+  
+}
+}
+
+/* 4-part image of adjustment with modals Section  */
+
+
+container-chiropractics {
+  /* height: 2000px; */
+  width: 100%;
+  height: 100%;
+ 
+}
+
+bg-color-adjust 
+
+chiro-Contain chiroPractor  chiro_prac{
+  position: relative;
+    background-color: var(--bg-color-d);
+    background-color: #38e209;
+    min-height: 100vh;
+    z-index: -1000;
+wid
+}
+
+about_conditions {
+  height: 700px;
+  margin-left: 150px;
+}
+
+about_conditions img {
+  width: 22%;
+  position: relative;
+  margin-top: 70px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  padding-left: 10px;
+  z-index: -1000;
+}
+  
+/* .adjust-img1 {
+  left: 80px;
+}  
+
+.adjust-img2 {
+  left: 40px;
+}  
+
+.adjust-img3 {
+  left: -80px;
+}  
+
+.adjust-img4 {
+  left: -40px;
+}   */
+
+ 
+/* 4-part image of adjustment with modals Section*/
+
+/* aboutCont {
+  height: 2000px; 
+  height: 100%;
+  marg
+  
+ 
+}  */
+
+/* bg-color-adjust {
+
+    background-color: var(--bg-color-d);
+    min-height: 100vh;
+    z-index: 1000;
+
+  
+} */
+
+/* 4-part image of adjustment with modals Section*/
+
+.container-chiropractics { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-height: 150vh;
+  background: var(--bg-color-c);
+  margin: 0;
+  padding: 30px 20px 10px 20px; 
+  background-color: #c32aa3;
+}
+
+.chiroPractor {
+  background: var(--bg-color-c);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 100%;
+  max-height: 140vh;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 80px;
+  background-color: #a7ceb5;
+} 
+
+/* .about_conditions {
+position: relative;
+width: 100%;
+  height: 100%;
+min-height: fit-content;
+align-items: center;
+
+justify-content: center;
+     z-index: 1000;
+     border: 1px solid red; 
+} */
+
+
+  
+
+
+.about_conditions { 
+  /* position: relative; */
+  position: absolute;
+  flex: 22%;
+  min-width: 360px;
+  max-width: 380px;
+  background: var(--bg-color-a);
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2000;
+}
+
+.about_conditions img {
+  width: 22%;
+  position: relative;
+  margin-top: 70px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  padding-left: 10px; 
+  z-index: 1000;
+}
+
+/* 000000000000000 */
+
+/* -------  Chiropractics Modal Section ------- */ 
+
+.butModal-Container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.but_Modal {
+  width: 22%; 
+  max-height: fit-content;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}  
+
+.but-modalone,
+.but-modal2,
+.but-modalthree,
+.but-modal4 {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  z-index: 2000;
+  border: 2px solid white;
+}
+
+
+.modal-content {
+  pointer-events: auto;
+  background-color: #7cf91c;
+  max-width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 100%;
+}
+
+.modal-header {
+  color: #060601;
+  color: #0100ec;
+  text-align: left;
+}
+
+.modal-body  {
+  font-size: 14px;
+  opacity: 1;
+  color: #060601;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* About Chiropratics Quote Two Section */
+
+.container-about {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: -1000;
+}
+
+.quoteAbout_two {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background: var(--bg-color-g);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Heading + Paragraph */
+.quoteAboutChiro-two h2  {
+  color: #252525;
+  text-align: center;
+  font-family: var(--ff-1);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.quoteAboutChiro-two p {
+  line-height: 2rem;
+  padding-top: 10px;
+  font-family: var(--ff-1);
+  font-size: var(--fs-p);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  text-align: center;
+  color: #252525;
+  margin: 20px;
+}
+
+.quoteAboutChiro-two h6 {
+  line-height: 2rem;
+  padding-top: 10px;
+  font-family: var(--ff-1);
+  font-size: var(--fs-6);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  text-align: center;
+  color: #252525;
+  margin: 20px;
+}
+
+/* Chiropratics Quote Two Media Queries Section */
+/* 📱 320px Very Small Phones */
+@media (max-width: 320px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .quoteAboutChiro-two h2  {
+    font-size: var(--vss-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--vss-p);
+  }
+
+  .quoteAboutChiro-two h6 {
+    font-size: var(--vss-6);
+  }
+}
+
+/* 📱 Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .quoteAboutChiro-two h2 {
+    font-size: var(--sp-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--sp-p);
+  }
+
+  .quoteAboutChiro-two h6 {
+  font-size: var(--sp-6);
+  }
+}
+
+/* 📱 Medium Phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .quoteAboutChiro-two h2  {
+    font-size: var(--msp-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--msp-p);
+  }
+    
+  .quoteAboutChiro-two h6 {
+    font-size: var(--msp-6);
+  }
+}
+
+/* 📲 Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .quoteAboutChiro-two h2 {
+    font-size: var(--ts-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--ts-p);
+  }
+
+  .quoteAboutChiro-two h6 {
+    font-size: var(--ts-6);
+  }
+}
+
+/* 💻 Small Laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .quoteAboutChiro-two h2 {
+    font-size: var(--vsl-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--vsl-p);
+  }
+
+  .quoteAboutChiro-two h6 {
+    font-size: var(--vsl-6);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Chiropratics Quote Two Section */
+
+.container-about   {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: -1000;
+}
+
+.quoteAbout_two  {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background: var(--bg-color-g);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Heading + Paragraph */
+.quoteAboutChiro-two h2  {
+  color: #252525;
+  text-align: center;
+  font-family: var(--ff-1);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.quoteAboutChiro-two p {
+  line-height: 2rem;
+  padding-top: 10px;
+  font-family: var(--ff-1);
+  font-size: var(--fs-p);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  text-align: center;
+  color: #252525;
+  margin: 20px;
+
+}
+
+.quoteAboutChiro-two h6 {
+  line-height: 2rem;
+  padding-top: 10px;
+  font-family: var(--ff-1);
+  font-size: var(--fs-6);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  text-align: center;
+  color: #252525;
+  margin: 20px;
+
+}
+
+
+/* Chiropratics Quote Two Media Queries Section */
+
+/* 📱 320px Very Small Phones */
+@media (max-width: 320px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+
+  .quoteAboutChiro-two h2  {
+    font-size: var(--vss-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--vss-p);
+
+}
+    .quoteAboutChiro-two h6 {
+  font-size: var(--vss-6);
+  
+}
+}
+
+/* 📱 Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+
+  .quoteAboutChiro-two h2  {
+    font-size: var(--sp-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--sp-p);
+
+}
+    .quoteAboutChiro-two h6 {
+  font-size: var(--sp-6);
+  
+}
+}
+
+/* 📱 Medium Phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .quoteAboutChiro-two h2  {
+    font-size: var(--msp-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--msp-p);
+
+}
+    .quoteAboutChiro-two h6 {
+  font-size: var(--msp-6);
+  
+}
+}
+
+
+/* 📲 Tablets (max-width: 768px) */
+@media (max-width: 768px) 
+{
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+
+  .quoteAboutChiro-two h2  {
+    font-size: var(--ts-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--ts-p);
+
+}
+    .quoteAboutChiro-two h6 {
+  font-size: var(--ts-6);
+  
+}
+}
+
+
+/* 💻 Small Laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .container-about {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .quoteAbout_two {
+    width: 100%;
+    margin: 10px;
+  }
+
+
+  .quoteAboutChiro-two h2  {
+    font-size: var(--vsl-2);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .quoteAboutChiro-two p {
+    font-size: var(--vsl-p);
+
+}
+    .quoteAboutChiro-two h6 {
+  font-size: var(--vsl-6);
+  
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
