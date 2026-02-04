@@ -456,7 +456,7 @@
                                 </h2> 
                             </div>
                         <h5>you back into shape!</h5>
-                                             
+                                            
                     </div>
                 </div>
             </div>
@@ -465,21 +465,21 @@
 <!-- 🏠 House Rules Section -->
 
 <section class="container-house-rules" id="house-page">
-  <div class="container-rules">
-  
+    <div class="container-rules">
+
 <!-- ⏰ Card 1: Hours -->  
 
     <div class="card">
-      <div class="rule-icon">
-        <ion-icon name="alarm-outline"></ion-icon>
-      </div>
-      <div class="content-rule">
-        <h5>Practice Hours:</h5>
-        <p>Monday to Friday <br> 8:00 to 17:00</p>
-        <p>Saturday <br> 9:00 to 12 noon</p>
-        <p><strong>Please make sure to Book an Appointment to Guarantee a suitable time!</strong>
-        </p>
-      </div>
+        <div class="rule-icon">
+            <ion-icon name="alarm-outline"></ion-icon>
+        </div>
+        <div class="content-rule">
+            <h5>Practice Hours:</h5>
+            <p>Monday to Friday <br> 8:00 to 17:00</p>
+            <p>Saturday <br> 9:00 to 12 noon</p>
+            <p><strong>Please make sure to Book an Appointment to Guarantee a suitable time!</strong>
+            </p>
+        </div>
     </div>
 
 <!-- 💵 Card 2: Rates for Consults-->
@@ -699,11 +699,11 @@
 </section>
 
 <!-- ⬇️ Scroll Icon -->
-            <div class="scroll">
-                <a href="#">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </a>
-            </div>
+<div class="scroll">
+    <a href="#">
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
+</div>
 
 </main>
 
@@ -777,21 +777,34 @@
 </footer>
     
 <!-- © Copyright Section -->
-    <div>
-        <div class="copyrightText">
-            <span>
-                <p>2025 © Luigina Argentin. All Rights Reserved.</p>
-                <p>Terms of use</p>
-                <p>Privacy policy</p>
-            </span>
-        </div>
-    </div> 
+<div>
+    <div class="copyrightText">
+        <span>
+            <p>2025 © Luigina Argentin. All Rights Reserved.</p>
+            <p>Terms of use</p>
+            <p>Privacy policy</p>
+        </span>
+    </div>
+</div> 
+
+
+<!----- Script Section ----->
+
+<!----- Bootstrap 5 JS CDN Links ----->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script> This does not allow the dropdowns to work -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script> -->
+
+
+<!-- JS Link -->
+<script src="assets/js/app.js"></script>
 
 <!-- ✅ Ionicons -->
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-<!-- ✅ Bootstrap Bundle -->
+<!-- ✅  JavaScript Bootstrap Bundle with Popper  (Bootstrap Bundle) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
@@ -799,10 +812,29 @@
 <!-- ✅ Font Awesome -->   
     <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
 
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+
+
 <!-- ✅ AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ offset: 1 });
+    </script>
+    
+<!----- Clinico Link ----->
+<!-- ✅ Cliniko Booking Script -->
+
+   <script type='text/javascript'>
+        window.addEventListener('message', function handleIFrameMessage(e) {
+            var clinikoBookings = document.getElementById('cliniko-49363333');
+            if (typeof e.data !== 'string') return;
+            if (e.data.search('cliniko-bookings-resize') > -1) {
+                var height = Number(e.data.split(':')[1]);
+                clinikoBookings.style.height = height + 'px';
+            }
+            e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
+        });
     </script> 
 
 </body>
