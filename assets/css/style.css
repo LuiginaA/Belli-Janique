@@ -39,7 +39,7 @@ body {
 /* font-size: 62.5%;
   This % changes the normal base size of 16px to 10px --- 21px = 2.1rem (because 21 x 10 = 2.1rem */
 
- /* ✅ Root Variables */
+ /* 🎨 Root Variables */
 :root {
   /* --accent-clr: ; */
   --bg-color-a: #EDE6DE;
@@ -142,7 +142,7 @@ body {
 
 /* 🔽 🧭 Fixed Top Navbar Section  */
 
-/* ✅ Top Banner Layout */
+/* 🔝 Top Banner Layout */
 .container-fluid {
   width: 100%;
   max-width: 100%;
@@ -184,7 +184,8 @@ body {
   padding: 0;
 }
 
-/* ✅ Top Banner Text */
+/* 🧭 Top Banner Text */
+
 /* Number */
 .top-bar_content p {
   font-family: var(--ff-1);
@@ -249,7 +250,7 @@ body {
   text-shadow: 0.5px 0.5px #38e209;
 }
 
-/* ✅ Toggle Button */
+/* ☰ Toggle Button */
 .navbar-toggler {
   border: 2px solid #212529;
   box-shadow: 5px 5px #6f9170;
@@ -311,7 +312,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-/* ✅ Dropdown Menu */
+/* 📂 Dropdown Menu */
 ul.dropdown-menu {
   position: absolute;
   top: 100%;
@@ -353,14 +354,12 @@ ul.dropdown-menu {
 }
 
 /* Make default caret (dropdown arrow) bigger */
-/* ✅ Dropdown Arrow */
+/* 📂 Dropdown Arrow */
 .navbar .dropdown-toggle::after {
   font-size: var(--fs-a);
   margin-left: 0.5rem;
   vertical-align: middle;
 }
-
-/* ------- */
 
 /* ✅ Scroll Icon */
 .scroll i {
@@ -374,11 +373,11 @@ ul.dropdown-menu {
   transition: all 0.3s ease;
 }
 
-/* 🧭 Topnav Navbar Section Media Queries */
+/* 🔝🧭 Topnav Navbar Section Media Queries */
 
-/* 📱 Very Small Phones */
+/* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
-  /* Top bar sections stack vertically */
+/* Top bar sections stack vertically */
   .container-top {
     flex-direction: column;
     justify-content: center;
@@ -392,7 +391,6 @@ ul.dropdown-menu {
   .top-barContent p {
     font-size: 0.70rem;
     white-space: nowrap;
-   
     margin-top: 0;
     padding: 0;
     text-align: center;
@@ -414,7 +412,7 @@ ul.dropdown-menu {
     padding: 0;
   }
 
-  /* Logo and name shrink */
+/* Logo and name shrink */
   .navbar-brand {
     margin-top: 8px;
   }
@@ -430,7 +428,7 @@ ul.dropdown-menu {
     line-height: 1.1rem;
   }
 
-  /* Toggle button smaller */
+/* Toggle button smaller */
   .navbar-toggler {
     max-width: 2em;
     padding: 6px;
@@ -443,7 +441,7 @@ ul.dropdown-menu {
     font-size: 1rem;
   }
 
-  /* Nav links stack and shrink */
+/* Nav links stack and shrink */
   .navbar {
     padding: 15px 20px;
   }
@@ -458,7 +456,7 @@ ul.dropdown-menu {
     padding: 2px 0;
   }
 
- /* 🧼 Navbar Container */
+/* 🧼 Navbar Container */
   .navbar,
   .navbar-collapse,
   .navbar-nav {
@@ -470,7 +468,7 @@ ul.dropdown-menu {
     overflow-x: hidden;
   }
 
-  /* 🧺 Dropdown Menu */
+/* 🧺 Dropdown Menu */
   .dropdown-menu {
     position: static !important;
     transform: none !important;
@@ -481,7 +479,7 @@ ul.dropdown-menu {
     border-radius: 0;
   }
 
-  /* 🧾 Dropend Container */
+/* 🧾 Dropend Container */
   .dropend {
     position: static !important;
     width: 100%;
@@ -490,7 +488,7 @@ ul.dropdown-menu {
     box-sizing: border-box;
   }
 
-  /* 🧩 dropend toggle tab */
+/* 🧩 dropend toggle tab */
   .dropdown-item > .dropdown-toggle {
     display: block;
     width: 100%;
@@ -499,7 +497,7 @@ ul.dropdown-menu {
     box-sizing: border-box;
   }
 
-  /* 🧷 dropdown items */
+/* 🧷 dropdown items */
   .dropend .dropdown-toggle {
     display: block;
     width: 100%;
@@ -511,7 +509,7 @@ ul.dropdown-menu {
     box-sizing: border-box;
   }
 
-   /* Scroll icon */
+/* Scroll icon */
   .scroll i {
     top: 92%;
     right: 6%;
@@ -519,9 +517,9 @@ ul.dropdown-menu {
   }
 }
 
-/* 📱 Small Phones */
+/* 📱 480px Small Phones */
 @media (max-width: 480px) {
-    .container-top {
+  .container-top {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -570,7 +568,7 @@ ul.dropdown-menu {
     height: 140px;
   }
 
-   /* 🧼 Navbar Container */
+/* 🧼 Navbar Container */
   .navbar,
   .navbar-collapse,
   .navbar-nav {
@@ -582,7 +580,7 @@ ul.dropdown-menu {
     overflow-x: hidden;
   }
 
-  /* 🧺 Dropdown Menu */
+/* 🧺 Dropdown Menu */
   .dropdown-menu {
     position: static !important;
     transform: none !important;
@@ -593,7 +591,7 @@ ul.dropdown-menu {
     border-radius: 0;
   }
 
-  /* 🧾 Dropend Container */
+/* 🧾 Dropend Container */
   .dropend {
     position: static !important;
     width: 100%;
@@ -603,7 +601,7 @@ ul.dropdown-menu {
     box-sizing: border-box;
   }
 
-  /* 🧩 Dropend Toggle Tab */
+/* 🧩 Dropend Toggle Tab */
   .dropdown-item > .dropdown-toggle {
     display: block;
     width: 100%;
@@ -612,7 +610,7 @@ ul.dropdown-menu {
     box-sizing: border-box;
   }
 
-  /* 🧷 Dropdown Items */
+/* 🧷 Dropdown Items */
   .dropend .dropdown-toggle {
     display: block;
     width: 100%;
@@ -624,7 +622,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 📱 Phones Screens */
+/* 📱576px Phones Screens */
 @media (max-width: 576px) {
   .container-top {
     flex-direction: column;
@@ -703,7 +701,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 📲 Tablets */
+/* 📲 768px Tablets */
 @media (max-width: 768px) {
   .container-top {
     flex-direction: column;
@@ -758,7 +756,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 💻 Medium Screens - Small Laptops */
+/* 💻 991px Medium Screens - Small Laptops */
 @media (max-width: 991px) {
   .container-top {
     align-items: center;
@@ -794,9 +792,9 @@ ul.dropdown-menu {
   .dropdown-item {
     font-size: 0.9rem;
     padding: 6px 10px;
- 
   }
 
+/* ⬇️ Scroll Icon */
   .scroll i {
     bottom: 15px;
     right: 15px;
@@ -829,7 +827,7 @@ ul.dropdown-menu {
 
 /* 💼 📝 Registration Title Bar Media Queries */
 
-/* 📱 Very Small Phones */
+/* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
   .registration-bar {
     display: none;
@@ -840,7 +838,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 📱 Small Phones */
+/* 📱 480px Small Phones */
 @media (max-width: 480px) {
   .registration-bar {
     display: none;
@@ -851,10 +849,10 @@ ul.dropdown-menu {
   }
 }
 
-/* 📱 Phones */
+/* 📱 576px Phones */
 @media (max-width: 576px) {
   body {
-    padding-top: 300px; /* 👈 makes space for fixed navbar */
+    padding-top: 300px; 
   }
 
   .registration-bar {
@@ -868,10 +866,10 @@ ul.dropdown-menu {
   }
 }
 
-/* 📲 Tablets */
+/* 📲 768px Tablets */
 @media (max-width: 768px) {
   body {
-    padding-top: 300px; /* 👈 makes space for fixed navbar */
+    padding-top: 300px; 
   }
 
   .registration-bar {
@@ -888,7 +886,7 @@ ul.dropdown-menu {
 /* END OF NAVBAR AND REGISTRATION BAR */
 
 
-/* -----🎯 Hero Quote Section ----- */
+/* 🎯 Hero Quote Section  */
 
 .hero {
   position: relative;
@@ -911,6 +909,7 @@ ul.dropdown-menu {
 }
 
 .hero-text h1 {
+  font-family: var(--ff-1);
   font-size: var(--fs-1);
   font-weight: 900;
   margin: 25px 0;
@@ -1065,7 +1064,7 @@ ul.dropdown-menu {
 
 /* 🎯 Hero Hero Media Queries Section */
 
-/* 📱 Small Phones  */
+/* 📱 480px Small Phones  */
 @media (max-width: 480px) {
   .hero {
     display: flex;
@@ -1106,7 +1105,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 📱 Phones Small Screens */
+/* 📱 576px Phones Small Screens */
 @media screen and (max-width: 576px) {
   .hero {
     display: flex;
@@ -1149,7 +1148,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 📲 Tablets */
+/* 📲 768px Tablets */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
@@ -1184,7 +1183,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 💻 Medium Screens - Small Laptops */
+/* 💻 992px Medium Screens - Small Laptops */
 @media (max-width: 992px) {
   .hero {
     grid-template-columns: repeat(2, 1fr);
@@ -1212,8 +1211,8 @@ ul.dropdown-menu {
   }
 
   .hero-img img {
-    width: 100%;         /* 🖼️ Let it stretch wider */
-    max-width: 650px;   /* 🖼️ Bigger frame */
+    width: 100%;       
+    max-width: 650px;   
     height: auto;
     padding-right: 0;
     margin: 0 auto;
@@ -1231,7 +1230,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 👩‍⚕️ Intro Section */
+/* 👩‍⚕️ Introduction to Meet Dr Janique Section */
 
 /* 🌟 Intro Meet Dr Janique Section */
 .intro {
@@ -1289,17 +1288,17 @@ ul.dropdown-menu {
   font-size: var(--fs-2);
   font-weight: 700;
   color: var(--text-color-c);
-  display: inline-flex;       /* keep text + span together */
-  align-items: baseline;      /* align nicely */
-  justify-content: center;    /* center horizontally */
-  white-space: nowrap;        /* prevent line break */
-  max-width: none;            /* remove forced narrow width */
+  display: inline-flex;       
+  align-items: baseline;    
+  justify-content: center;   
+  white-space: nowrap;        
+  max-width: none;            
 }
 
 .description h2 span {
   color: var(--bg-color-f);
   font-size: 40px;
-  margin-left: 8px;           /* small gap instead of big padding */
+  margin-left: 8px;          
   padding-left: 0;
   display: inline-block;
 }
@@ -1315,7 +1314,7 @@ ul.dropdown-menu {
   position: relative;
 }
 
-/* ✨ Text Animation */
+/* 🎞️ ✨ Text Animation */
 .description h3 span:after {
   content: "";
   position: absolute;
@@ -1359,10 +1358,10 @@ ul.dropdown-menu {
   }
 
   .intro img {
-    width: 95%;       /* scale relative to screen */
-    max-width: 320px; /* cap size so it doesn’t overflow */
+    width: 95%;       
+    max-width: 320px; 
     height: auto;
-    margin: 30px auto 0 auto; /* drop down, center */
+    margin: 30px auto 0 auto; 
   }
 
   .description h2 {
@@ -1395,10 +1394,10 @@ ul.dropdown-menu {
   }
 
   .intro img {
-    width: 95%;       /* scale relative to screen */
-    max-width: 320px; /* cap size so it doesn’t overflow */
+    width: 95%;       
+    max-width: 320px; 
     height: auto;
-    margin: 30px auto 0 auto; /* drop down, center */
+    margin: 30px auto 0 auto; 
   }
 
   .description {
@@ -1438,7 +1437,7 @@ ul.dropdown-menu {
     width: 90%;
     max-width: 350px;
     height: auto;
-    margin: 40px auto 0 auto;  /* no overlap */
+    margin: 40px auto 0 auto; 
   }
 
   .description h3 span:after {
@@ -1447,7 +1446,7 @@ ul.dropdown-menu {
   }
 
   .description p {
-    margin: 20px auto;       /* center horizontally */
+    margin: 20px auto;      
     font-size: var(--msp-p);
     line-height: 1.6rem;
     text-align: center;
@@ -1521,8 +1520,8 @@ ul.dropdown-menu {
 /* 💻 Small Laptops (max-width: 991px) */
 @media (max-width: 991px) {
   .description {
-    flex: 1 1 100%;       /* let description take full width */
-    max-width: 100%;      /* no restriction */
+    flex: 1 1 100%;    
+    max-width: 100%;    
     text-align: center;
   }
 
@@ -1796,17 +1795,17 @@ ul.dropdown-menu {
 .boxChoose .square {
   position: absolute;
   backdrop-filter: blur(25px);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  border: 1.8px solid rgba(255, 255, 255, 0.5);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   animation: animateBox 10s linear infinite;
   animation-delay: calc(-1s * var(--i));
 }
 
-/* Animation for Floating Boxes */
+/* 🎞️  Animation for Floating Boxes */
 @keyframes animateBox {
   0%, 100% {
     transform: translateY(-40px);
@@ -2099,7 +2098,7 @@ ul.dropdown-menu {
   padding-top: 10px;
 }
 
-* 🛡️ Safe, 💊 Drug-Free, 👨‍⚕️ Surgery, 🏥 Medical Aid */
+/* 🛡️ Safe, 💊 Drug-Free, 👨‍⚕️ Surgery, 🏥 Medical Aid */
 
 .container-reason {
   background: var(--bg-color-d);
@@ -2572,18 +2571,17 @@ ul.dropdown-menu {
 }
 
 .container-appoint-1 h2 {
-    font-family: var(--ff-1);
-    font-size: var(--fs-2);
-    font-weight: 600;
-    font-style: italic;
-    color: var(--bg-color-c);
-    text-shadow: 2px 2px #38e209;
-    text-align: center;
-    line-height: 2rem;
-    letter-spacing: 1.5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: ;
+  font-family: var(--ff-1);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--bg-color-c);
+  text-shadow: 2px 2px #38e209;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .container-appoint-1 p {
@@ -2667,7 +2665,7 @@ ul.dropdown-menu {
   left: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to left, rgba(255,255,255,0.15),) transparent;
+  background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
   transform: skewX(45deg) translateX(0);
   transition: 0.5s;
 }
@@ -2881,8 +2879,8 @@ ul.dropdown-menu {
   min-height: 100vh;
   gap: 40px;
   background: linear-gradient(45deg, #938270, #EDE6DE);
-  padding-top: 120px;    /* ⭐ Extra space above */
-  padding-bottom: 120px; /* ⭐ Extra space below */
+  padding-top: 120px;    
+  padding-bottom: 120px; 
 }
 
 .container-testimonial {
@@ -2893,14 +2891,14 @@ ul.dropdown-menu {
   align-items: flex-start; 
   width: 100%;
   min-height: 20vh;
-  gap: 30px;             /* ⭐ Space between cards */
+  gap: 30px;           
 }
 
 /* ⭐ Section Title */
 .testimonial-heading {
   text-align: center;
   margin-bottom: 40px;
-  padding-top: 20px;     /* ⭐ Pushes title down from border */
+  padding-top: 20px;     
 }
 
 .testimonial-heading h2 {
@@ -2934,7 +2932,7 @@ ul.dropdown-menu {
   width: 280px;
   height: 280px;
   padding: 100px 50px;
-  margin: 20px;          /* ⭐ Extra margin around each card */
+  margin: 20px;          
   background-color: #EDE6DE;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0,0,0,0.15);
@@ -2958,7 +2956,7 @@ ul.dropdown-menu {
 }
 
 .container-testimonial .card-testimonial:hover .imgBx {
-  top: -100px;           /* ⭐ Moves image up on hover */
+  top: -100px;          
   scale: 0.75;
   box-shadow: 0 15px 45px rgba(0,0,0,0.2);
 }
@@ -3021,9 +3019,9 @@ ul.dropdown-menu {
   color: #f9d71c;        /* ⭐ Gold stars */
 }
 
-/* ⭐ Testimonial Section Media Queries */
+/* 📱 Testimonial Section Media Queries */
 
-/* ⭐ 320px Very Small Phones */
+/* 📱 320px Very Small Phones */
 @media screen and (max-width: 320px) {
   .container-testimonial-bx {
     padding-top: 40px;
@@ -3035,7 +3033,7 @@ ul.dropdown-menu {
   }
 }
 
-/* ⭐ 480px Small Phones */
+/* 📱 480px Small Phones */
 @media screen and (max-width: 480px) {
   .container-testimonial-bx {
     padding-top: 60px;
@@ -3047,7 +3045,7 @@ ul.dropdown-menu {
   }
 }
 
-/* ⭐ 768px Tablets */
+/* 📱 768px Tablets */
 @media screen and (max-width: 768px) {
   .container-testimonial-bx {
     padding-top: 80px;
@@ -3055,7 +3053,7 @@ ul.dropdown-menu {
   }
 }
 
-/* ⭐ 991px Small Laptops */
+/* 📱 991px Small Laptops */
 @media screen and (max-width: 991px) {
   .container-testimonial-bx {
     padding-top: 100px;
@@ -3063,17 +3061,12 @@ ul.dropdown-menu {
   }
 }
 
-/* END OF HOME PAGE  */
+/* END OF (HOME) INDEX PAGE  */
 
 /*  -------- ABOUT PAGE! */
 
 /* 🎭 CHIROPRACTIC DRAMATIC SECTION! */
 
-/* 📱 RESPONSIVE MEDIA QUERIES */
-
-
-
-/* 📱 🎭 CHIROPRACTIC DRAMATIC SECTION */
 /* 🟦 Section Wrapper */
 .container-chiro {   
   padding: 30px 8% 80px 8%; 
@@ -3095,7 +3088,6 @@ ul.dropdown-menu {
   padding: 0 0 80px 0;
   margin: 0;  
   overflow: hidden; 
-  
 }
 
 .aboutChiro {
@@ -3106,23 +3098,6 @@ ul.dropdown-menu {
   margin-top: 0;
   width: 100%;
 } 
-
-/* 🧍‍♂️🧍‍♀️ Main Chiro Layout */
-/* .chiro {
-  position: relative; 
-  width: 100%;
-  max-width: 1800px;
-  height: auto;
-  min-height: 100vh; 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  align-items: center;
-  padding: 30px 5%;   
-  margin-top: 0;
-  overflow: visible; 
-  z-index: 1000;
-}  */
 
 /* 🧍‍♂️🧍‍♀️ Main Chiro Layout */
 .chiro {
@@ -3137,9 +3112,6 @@ ul.dropdown-menu {
   overflow: visible; 
   z-index: 1000;
 }
-
-
-
 
 /* 📝 Text Content */  
 .chiro-content {
@@ -3309,7 +3281,7 @@ ul.dropdown-menu {
 
 /* 📱 🎭 CHIROPRACTIC DRAMATIC MEDIA QUERIES SECTION */
 
-/* Grid layout ONLY for 992px and above */
+/* 📱 Grid layout ONLY for 992px and above */
 @media (min-width: 992px) {
   .chiro {
     display: grid;
@@ -3319,7 +3291,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 991px - Tablet Landscape - Stacked Layout */
+/* 📱 991px - Tablet Landscape - Stacked Layout */
 @media (max-width: 991px) and (min-width: 769px) {
   .cont-Chiro {
     padding: 0 0 60px 0;
@@ -3385,7 +3357,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 768px and below - Tablet Portrait */
+/* 📱 768px and below - Tablet Portrait */
 @media (max-width: 768px) {
   .cont-Chiro {
     padding: 0 0 50px 0;
@@ -3451,7 +3423,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 576px and below - Mobile Landscape */
+/* 📱 576px and below - Mobile Landscape */
 @media (max-width: 576px) {
   .cont-Chiro {
     padding: 0 0 40px 0;
@@ -3521,7 +3493,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 480px and below - Mobile Portrait */
+/* 📱 480px and below - Mobile Portrait */
 @media (max-width: 480px) {
   .cont-Chiro {
     padding: 0 0 30px 0;
@@ -3589,7 +3561,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 320px - Small Mobile */
+/* 📱 320px - Small Mobile */
 @media (max-width: 320px) {
   .cont-Chiro {
     padding: 0 0 25px 0;
@@ -3658,7 +3630,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 🩺 About Chiropratics Section */
+/* 📝 🩺 About Chiropratics Section */
 
 .container-aboutquote .contAbout_quote {
   display: flex;
@@ -3721,7 +3693,7 @@ ul.dropdown-menu {
   padding-top: 10px;
 }
 
-/* About Chiropratics Paragraph Media Queries Section */
+/* 📝 About Chiropratics Paragraph Media Queries Section */
 
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
@@ -3892,7 +3864,7 @@ ul.dropdown-menu {
   }
 }
 
-/* 4-part image of adjustment with modals Section*/
+/* 🖼️ 4-part Image of Adjustment With Modals Section*/
 
 .container-chiropractics { 
   display: flex;
@@ -3957,10 +3929,9 @@ ul.dropdown-menu {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0,0,0,0); 
-  /* background: transparent; */
   color: var(--bg-color-g);
-  width: 95%;          /* longer */
-  padding: 4px 10px;     /* shorter */
+  width: 95%;         
+  padding: 4px 10px;    
   border-radius: 5px;
   z-index: 2000;
   border: 1.8px solid var(--bg-color-c);
@@ -3977,8 +3948,7 @@ ul.dropdown-menu {
   border: 1.8px solid var(--bg-color-g);
 }
 
-/* Modal styling Section*/
-
+/* Modal styling Section */
 .modal-content {
   position: relative;
   pointer-events: auto;
@@ -4011,11 +3981,10 @@ ul.dropdown-menu {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* 4-part image of adjustment with modals Media Section*/ 
+/* 🖼️ 4-part Image of Adjustment With Modals Media Section*/ 
 
 /* 📱 320px Very Small Phones */      
 @media (max-width: 320px) {
-
   /* Hide all images */
   .image-card img {
     display: none;
@@ -4054,14 +4023,13 @@ ul.dropdown-menu {
   .but-modaltwo:hover,
   .but-modalthree:hover,
   .but-modalfour:hover {
-  color: var(--bg-color-g);
-  border: 1.8px solid var(--bg-color-g);
+    color: var(--bg-color-g);
+    border: 1.8px solid var(--bg-color-g);
   }
 }
 
 /* 📱 480px Small Phones */      
 @media (max-width: 480px) {
-
   /* Hide all images */
   .image-card img {
     display: none;
@@ -4086,7 +4054,7 @@ ul.dropdown-menu {
   .but-modaltwo,
   .but-modalthree,
   .but-modalfour {
-    position: relative;   /* remove overlay behavior */
+    position: relative;  
     top: 0;
     left: 0;
     transform: none;
@@ -4099,8 +4067,8 @@ ul.dropdown-menu {
   .but-modaltwo:hover,
   .but-modalthree:hover,
   .but-modalfour:hover {
-  color: var(--bg-color-g);
-  border: 1.8px solid var(--bg-color-g);
+    color: var(--bg-color-g);
+    border: 1.8px solid var(--bg-color-g);
   }
 }
 
@@ -4110,17 +4078,17 @@ ul.dropdown-menu {
   .but-modaltwo,
   .but-modalthree,
   .but-modalfour {
-    height: 75px; /* FIXED height for all buttons */ 
-    display: flex; /* centers text vertically */ 
+    height: 75px; 
+    display: flex;
     align-items: center; 
     justify-content: center; 
-    padding: 0 10px; /* horizontal padding only */ 
-    text-align: center; /* keep your original alignment */ 
-    line-height: 1.2; /* keeps text readable */ 
+    padding: 0 10px; 
+    text-align: center; 
+    line-height: 1.2; 
   }
 }
 
-/* About Chiropratics Quote Two Section */
+/* 💬 About Chiropratics Quote Two Section */
 
 .container-about {
   display: flex;
@@ -4131,15 +4099,16 @@ ul.dropdown-menu {
   overflow: hidden;
   position: relative;
   z-index: -1000;
+  background-color: var(--bg-color-g);
 }
 
 .quoteAbout_two {
   width: 100%;
-  min-height: 100vh;
+  min-height: 15vh;
   text-align: center;
   background: var(--bg-color-g);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
 /* Heading + Paragraph */
@@ -4184,7 +4153,7 @@ ul.dropdown-menu {
   margin: 20px;
 }
 
-/* Chiropratics Quote Two Media Queries Section */
+/* 💬 Chiropratics Quote Two Media Queries Section */
 
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
@@ -4326,7 +4295,971 @@ ul.dropdown-menu {
   }
 }
 
-/* BEGINNING OF F-A-Q PAGE */
+/* END OF ABOUT CHIRO QUOTE TWO PAGE */
+
+/* ------ 🧬 🔲 BEGINNING OF MODALITIES USED PAGE */
+
+/*🧬 🔲 Chiropractics Modalities Paragraph Section */
+
+.container-modalities .container-modalities {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-modalities .contModalities {
+  width: 100%;
+  min-height: 60vh;
+  text-align: center;
+  background: var(--bg-color-d);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Heading + Paragraph */
+.container-modalities .contModalities .modalities-heading h2 {
+  color: #252525;
+  text-align: center;
+  font-family: var(--ff-1);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin: 20px;
+  padding: 20px;
+  color: var(--bg-color-c);
+}
+
+.container-modalities .contModalities .modalities-paragraph p {
+  line-height: 2rem;
+  padding-top: 10px;
+  font-family: var(--ff-1);
+  font-size: var(--fs-6);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 30px;
+  padding-top: 10px;
+  color: var(--bg-color-c);
+}
+
+.container-modalities .container-modalities .modalities-heading h3 {
+  text-align: center;
+  font-family: var(--ff-1);
+  font-size: var(--fs-3);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-top: 50px;
+  padding-top: 70px;
+  color: var(--bg-color-c);
+}
+
+
+/* 🧬 🔲 About Chiropratics Modalities Paragraph Media Queries Section */
+
+/* 📱 320px Very Small Phones */
+@media (max-width: 320px) {
+  .container-modalities {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+.modalities-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+.modalities-heading h3 {
+    font-size: var(--vss-p);
+    font-weight: 200;
+    line-height: 1.2rem;
+  }
+
+  .modalities-paragraph p {
+    font-size: var(--vss-p);
+  }
+}
+
+/* 📱 Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .container-modalities {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+    
+  .modalities-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .modalities-heading h2 {
+    font-size: var(--sp-2);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 3px;
+    line-height: 2.3rem;
+  }
+
+  .modalities-heading h3 {
+    font-size: var(--sp-3);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 1px;
+    line-height: 2.2rem;
+  }
+
+  .modalities-paragraph p {
+    font-size: var(--sp-p);
+    font-weight: 600;
+  }
+}
+
+/* 📱 Medium Phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .container-modalities {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .modalities-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .modalities-heading h2 {
+    font-size: var(--msp-2);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 2.2px;
+    line-height: 2.2rem;
+  }
+
+  .modalities-heading h3 {
+    font-size: var(--msp-3);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 1.8px;
+    line-height: 2.2rem;
+  }
+
+  .modalities-paragraph p {
+    font-size: var(--msp-p);
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+}
+
+/* 📲 Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .container-modalities {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .modalities-heading{
+    width: 100%;
+    margin: 10px;
+  }
+
+  .modalities-heading h2 {
+    font-size: var(--ts-2);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 2.2px;
+    line-height: 2.2rem;
+  }
+
+  .modalities-heading h3 {
+    font-size: var(--ts-3);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 1.8px;
+    line-height: 2.2rem;
+  }
+
+  .modalities-paragraph p {
+    font-size: var(--ts-p);
+    font-weight: 600;
+    word-spacing: 2px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* 💻 Small Laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .container-modalities {
+    width: 100%;
+    height: 100%; 
+    align-items: center;
+  }
+  
+  .modalities-heading {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .modalities-heading h2 {
+    font-size: var(--vsl-2);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 2.2px;
+    line-height: 2.4rem;
+  }
+
+  .modalities-heading h3 {
+    font-size: var(--vsl-3);
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: 1.8px;
+    line-height: 2.4rem;
+  }
+
+  .modalities-paragraph p {
+    font-size: var(--vsl-p);
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+}
+
+
+/* 🔲 Other Modalities ( Instrument Assisted Treatment) Used Section */
+
+/* 🎠 CAROUSEL SECTION */
+
+:root {
+  --border-color: #ccc;
+  --w-image: 500px;
+  --calculate: calc(3 / 2);
+}
+
+.carousel-tech-cont {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: var(--bg-color-d);
+}
+
+.carousel-tech {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-tech .list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-tech .list::before {
+  position: absolute;
+  width: var(--w-image);
+  height: 100%;
+  content: '';
+  top: 0;
+  right: 0;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.carousel-tech .list::after {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  content: '';
+  background-color: #9ec992; 
+  width: 400px;
+  height: 300px;
+  z-index: 10;
+  pointer-events: none;
+  border-radius: 20px 50px 110px 230px;
+  filter: blur(150px);
+  opacity: 0.6;
+}
+
+.carousel-tech .list .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.carousel-tech .list .item.active {
+  display: block;
+  z-index: 2;
+}
+
+.carousel-tech .list .item.other_1 {
+  display: block;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-tech .list .item.other_2 {
+  display: block;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-tech .list .item .image {
+  width: var(--w-image);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 500;
+}
+
+.carousel-tech .list .item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  margin-bottom: 0px;
+  filter: drop-shadow(0 50px 30px rgba(136, 117, 97, 1));
+}
+
+.carousel-tech .list .item .image figcaption {
+  position: absolute;
+  bottom: 20px; 
+  left: 20px;
+  right: 20px;
+  font-family: var(--ff-1);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: left;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px; 
+  border-radius: 8px;
+  z-index: 20;
+  line-height: 1.3;
+  max-width: calc(100% - 40px);
+}
+
+.carousel-tech .list .item .main-content {
+  height: 100%;
+  width: calc(100% - var(--w-image));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-tech .list .item .main-content .content {
+  padding: 50px 80px;
+  max-width: 800px;
+}
+
+.carousel-tech .list .item .main-content .content h2 {
+  font-family: var(--ff-1);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: var(--text-color-a);
+}
+
+.carousel-tech .list .item .main-content .content h4 {
+  font-family: var(--ff-1);
+  font-size: var(--fs-3);
+  font-weight: 500;
+  font-style: italic;
+  margin: 20px 0;
+  color: var(--text-color-a);
+  font-weight: 400;
+} 
+
+.carousel-tech .list .item .main-content .content p {
+  font-family: var(--ff-2);
+  font-size: var(--fs-p);
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 15px 0;
+  color: var(--text-color-a);
+}
+
+.short-description {
+  font-family: var(--ff-2);
+  font-size: var(--fs-6);
+  line-height: 1.7;
+  margin: 20px 0;
+  color: var(--text-color-a);
+}
+
+.full-content {
+  display: none;
+}
+
+.learn-more-btn {
+  background-color: var(--bg-color-c);
+  color: #fff;
+  padding: 12px 35px;
+  font-family: var(--ff-1);
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(63, 59, 81, 0.3);
+}
+
+.learn-more-btn:hover {
+  background-color: var(--text-color-a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(63, 59, 81, 0.4);
+}
+
+.arrows {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.arrows button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  border: 1px solid var(--border-color);
+  color: var(--bg-color-c);
+  font-family: var(--ff-2);
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+
+.arrows button:hover {
+  background-color: var(--text-color-h);
+  transform: scale(1.1);
+}
+
+/* 🎞️ Animation for active slide */
+.carousel-tech .list .item.active .main-content {
+  animation: showContent 1s ease-in-out 1 forwards;
+}
+
+@keyframes showContent {
+  from {
+    clip-path: circle(0% at 70% 50%);
+  }
+  to {
+    clip-path: circle(100% at 70% 50%);
+  }
+}
+
+/* 🎞️  Next animation */
+.next .item.other_1 {
+  z-index: 1;
+}
+
+.next .item .image img,
+.next .item .image figcaption {
+  animation: effectNext 0.5s ease-in-out 1 forwards;
+}
+
+@keyframes effectNext {
+  from {
+    transform: translateX(calc(var(--transform-from)));
+  }
+  to {
+    transform: translateX(calc(var(--transform-from) - var(--w-image)));
+  }
+}
+
+.next .item.active .image {
+  --transform-from: var(--w-image);
+}
+
+.next .item.other_1 .image {
+  z-index: 3;
+  --transform-from: 0px;
+  overflow: hidden;
+}
+
+.next .item.other_2 .image {
+  z-index: 3;
+  --transform-from: calc(var(--w-image) * 2);
+}
+
+/* 🎞️  Previous animation */
+.prev .list .item .image img,
+.prev .list .item .image figcaption {
+  animation: effectPrev 0.5s ease-in-out 1 forwards;
+}
+
+@keyframes effectPrev {
+  from {
+    transform: translateX(calc(var(--transform-from)));
+  }
+  to {
+    transform: translateX(calc(var(--transform-from) + var(--w-image)));
+  }
+}
+
+.prev .list .item.active .image {
+  --transform-from: calc(var(--w-image) * -1);
+  overflow: hidden;
+}
+
+.prev .list .item.other_1 .image {
+  --transform-from: 0px;
+  z-index: 3;
+}
+
+.prev .list .item.other_2 .image {
+  --transform-from: var(--w-image);
+  z-index: 3;
+}
+
+.prev .list .item.other_2 .main-content {
+  opacity: 0;
+}
+
+/* 🔲 MODAL STYLES */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: var(--bg-color-a);
+  margin: 5% auto;
+  padding: 0;
+  border: none;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  animation: slideDown 0.4s ease;
+  position: relative;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  color: var(--text-color-a);
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: var(--bg-color-c);
+  transform: rotate(90deg);
+}
+
+.modal-body {
+  padding: 50px 40px 40px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: var(--bg-color-d);
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: var(--bg-color-c);
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-a);
+}
+
+.modal-body h2 {
+  font-family: var(--ff-1);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  color: var(--bg-color-c);
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.modal-body h4 {
+  font-family: var(--ff-1);
+  font-size: var(--fs-3);
+  font-weight: 500;
+  color: var(--text-color-b);
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.modal-body p {
+  font-family: var(--ff-2);
+  font-size: var(--fs-p);
+  line-height: 1.8;
+  color: var(--text-color-a);
+  margin-bottom: 20px;
+}
+
+/* 📱 🎠  CAROUSEL MEDIA QUERIES */
+
+/* 📲 Tablets and below (768px) */
+@media (max-width: 768px) {
+  :root {
+    --w-image: 100%;
+  }
+
+  body {
+    padding-top: 300px;
+  }
+
+  .carousel-tech-cont {
+    height: auto;
+    padding: 0;
+    overflow: visible;
+    background-color: transparent;
+  }
+
+  .carousel-tech {
+    height: auto;
+  }
+
+  .carousel-tech .list {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .carousel-tech .list::before,
+  .carousel-tech .list::after {
+    display: none;
+  }
+
+  .carousel-tech .list .item {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .carousel-tech .list .item.active,
+  .carousel-tech .list .item.other_1,
+  .carousel-tech .list .item.other_2,
+  .carousel-tech .list .item {
+    display: flex !important;
+  }
+
+  .carousel-tech .list .item .main-content {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    display: block !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel-tech .list .item .main-content .content {
+    padding: 50px 35px 40px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .carousel-tech .list .item .main-content .content h2 {
+    font-size: var(--ts-1);
+    margin-bottom: 12px;
+  }
+
+  .carousel-tech .list .item .main-content .content h4 {
+    font-size: var(--ts-2);
+    margin: 10px 0;
+  }
+
+  .carousel-tech .list .item .main-content .content .short-description {
+    font-size: var(--ts-p);
+    line-height: 1.7;
+    margin: 15px 0;
+  }
+
+  .carousel-tech .list .item .main-content .content .learn-more-btn {
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+
+  .carousel-tech .list .item .image {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 350px;
+    max-height: 450px;
+    order: 2;
+    overflow: hidden;
+    display: block !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel-tech .list .item .image picture {
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel-tech .list .item .image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel-tech .list .item .image figcaption {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    right: 15px;
+    font-size: 0.95em;
+  }
+
+  .arrows {
+    display: none !important;
+  }
+
+  .carousel-tech .list .item.active .main-content,
+  .next .item .image img,
+  .next .item .image figcaption,
+  .prev .list .item .image img,
+  .prev .list .item .image figcaption {
+    animation: none !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+
+  .modal-body {
+    padding: 40px 25px 30px;
+  }
+
+  .modal-close {
+    font-size: 30px;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+/* 📱 Medium Phones and below (576px) */
+@media (max-width: 576px) {
+  .carousel-tech .list .item .main-content .content {
+    padding: 40px 25px 35px;
+  }
+
+  .carousel-tech .list .item .main-content .content h2 {
+    font-size: var(--msp-1);
+  }
+
+  .carousel-tech .list .item .main-content .content h4 {
+    font-size: var(--msp-2);
+  }
+
+  .carousel-tech .list .item .main-content .content .short-description {
+    font-size: var(--msp-p);
+  }
+
+  .carousel-tech .list .item .image {
+    min-height: 320px;
+    max-height: 400px;
+  }
+
+  .carousel-tech .list .item .image picture {
+    height: 350px;
+  }
+
+  .carousel-tech .list .item .image img {
+    height: 350px;
+  }
+
+  .carousel-tech .list .item .image figcaption {
+    font-size: 0.9em;
+  }
+}
+
+
+/* 📱 Small Phones and below (480px) */
+@media (max-width: 480px) {
+  .carousel-tech .list .item .main-content .content {
+    padding: 35px 20px 30px;
+  }
+
+  .carousel-tech .list .item .main-content .content h2 {
+    font-size: var(--sp-1);
+  }
+
+  .carousel-tech .list .item .main-content .content h4 {
+    font-size: var(--sp-2);
+  }
+
+  .carousel-tech .list .item .main-content .content .short-description {
+    font-size: var(--sp-p);
+  }
+
+  .carousel-tech .list .item .image {
+    min-height: 300px;
+    max-height: 380px;
+  }
+
+  .carousel-tech .list .item .image picture {
+    height: 330px;
+  }
+
+  .carousel-tech .list .item .image img {
+    height: 330px;
+  }
+
+  .carousel-tech .list .item .image figcaption {
+    font-size: 0.85em;
+  }
+
+  .modal-content {
+    width: 98%;
+    margin: 15% auto;
+  }
+
+  .modal-body {
+    padding: 35px 20px 25px;
+  }
+
+  .modal-body h2 {
+    font-size: var(--sp-1);
+  }
+
+  .modal-body h4 {
+    font-size: var(--sp-2);
+  }
+
+  .modal-body p {
+    font-size: var(--sp-p);
+  }
+}
+
+/* 📱 Very Small Phones (320px) */
+@media (max-width: 320px) {
+  .carousel-tech .list .item .main-content .content {
+    padding: 30px 15px 25px;
+  }
+
+  .carousel-tech .list .item .main-content .content h2 {
+    font-size: var(--vss-1);
+  }
+
+  .carousel-tech .list .item .main-content .content h4 {
+    font-size: var(--vss-2);
+  }
+
+  .carousel-tech .list .item .main-content .content .short-description {
+    font-size: var(--vss-p);
+  }
+
+  .carousel-tech .list .item .image {
+    min-height: 280px;
+    max-height: 350px;
+  }
+
+  .carousel-tech .list .item .image picture {
+    height: 300px;
+  }
+
+  .carousel-tech .list .item .image img {
+    height: 300px;
+  }
+
+  .carousel-tech .list .item .image figcaption {
+    font-size: 0.75em;
+  }
+}
+
+
+/* END OF CAROUSEL AND MEDIA QUERIES SECTION */
+
+/* ------ BEGINNING OF F-A-Q PAGE */
 
 /* ❓ F-A-Q Section */
 
@@ -4423,7 +5356,6 @@ ul.dropdown-menu {
 
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
-
   /* 📘 FAQ Image */
   .faqImg img {
     max-width: 180px;
@@ -4441,7 +5373,6 @@ ul.dropdown-menu {
 
 /* 📱 480px Small Phones */
 @media (max-width: 480px) {
-
   .faqImg img {
     max-width: 240px;
     margin-left: 0;
@@ -4455,7 +5386,6 @@ ul.dropdown-menu {
 
 /* 📱 576 px Very Small Phones */
 @media (max-width: 576px) {
-
   .faqImg img {
     max-width: 300px;
     margin-left: 0;
@@ -4465,15 +5395,6 @@ ul.dropdown-menu {
 
 /* 📱 768px Very Small  */
 @media (max-width: 768px) {
-
-  .faqImg img {
-    max-width: 350px;
-    margin-left: 0;
-    padding-left: 0;
-  }
-}
-@media (max-width: 768px) {
-
   .faqImg img {
     max-width: 350px;
     margin-left: 0;
@@ -4483,7 +5404,6 @@ ul.dropdown-menu {
 
 /* 991.98px Very Small Phones */
 @media (max-width: 991.98px) {
-
   .faqImg img {
     max-width: 450px;
     margin-left: 0;
@@ -4491,13 +5411,478 @@ ul.dropdown-menu {
   }
 }
 
+/* BLOG SECTION */
+
+
+/* ---- END OF ABOUT CHIROPRACTICS PAGE */
+
+
+ /* ------- 🩺 🏥 Beginning of CONDITIONS TREATED PAGE */
+
+
+/* 🏥 CONDITIONS TREATED PAGE */
+
+
+/* 🏥 Conditions Treated Container */
+.conditions-treated {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 0;
+  background-color: var(--bg-color-b);
+}
+
+/* 🦵 Extremities Section - Alternate Background */
+.conditions-extremities {
+  background-color: var(--bg-color-d);
+}
+
+/* 🚑 Injuries Section - Alternate Background */
+.conditions-injuries {
+  background-color: var(--bg-color-g);
+}
+
+/* 💊 Treatment Conditions Wrapper */
+.treatment_conditions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📋 Conditions Treated Content - Headings & Text */
+.conditions-treated-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--bg-color-c);
+}
+
+.conditions-treated-content h2 {
+  font-size: var(--fs-2);
+  font-family: var(--ff-1);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.conditions-treated-content h3 {
+  font-size: var(--fs-3);
+  font-family: var(--ff-1);
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1;
+}
+
+.conditions-treated-content p {
+  font-size: var(--fs-6);
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.8;
+  text-align: center;
+  margin: 10px 6rem 10px 6rem;
+}
+
+/* 🏷️ Section Title (Spinal Health / Extremities / Injuries) */
+.conditions-treated-content h1 {
+  font-size: var(--fs-1);
+  font-family: var(--ff-1);
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  margin: 3rem;
+  line-height: 1;
+}
+
+
+/* 🔲 CONDITION CARD - THE OVERLAPPING LAYOUT */
+
+
+/* 🔲 Condition Info Box (the card background) */
+.conditions_info-box {
+  position: relative;
+  border: 4px solid var(--bg-color-f);
+  border-top-left-radius: 160px;
+  border-top-right-radius: 160px;
+  min-height: 600px;
+  overflow: visible;              /* ⭐ lets the image escape the box */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;      /* ⭐ pushes text + button to bottom */
+  padding: 25px 20px 30px 25px;  /* ⭐ tighter padding so text has room */
+  background-color: var(--bg-color-c);
+  margin-right: 35px;            /* ⭐ reduced from 60px */
+  z-index: 1;
+}
+
+/* 🖼️ Condition Info Image (overlaps outside the card) */
+.conditions_info-img {
+  position: absolute;
+  right: -45px;                  /* ⭐ reduced from -100px, image still overlaps but tighter */
+  top: 50%;
+  transform: translateY(-50%);   /* ⭐ centers vertically */
+  width: 65%;                    /* ⭐ reduced from 100%, image is narrower */
+  height: 600px;
+  z-index: 2;                     /* ⭐ sits above the card */
+  pointer-events: none;           /* ⭐ mouse clicks pass through */
+  border-top-left-radius: 160px;
+  border-top-right-radius: 160px;
+  background: transparent;
+  border: 4px solid var(--bg-color-f);
+  object-fit: cover;
+}
+
+/* 📝 Condition Title & Text (stays left, below the image) */
+.conditions_info-title,
+.conditions_info-text {
+  position: relative;
+  z-index: 5;
+  max-width: 80%;                 /* ⭐ wider now that card padding is tighter */
+  color: var(--bg-color-a);
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.conditions_info-title {
+  font-family: var(--ff-1);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.conditions_info-text {
+  font-family: var(--ff-2);
+  font-size: var(--fs-p);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* 🔘 Learn More Button */
+.conditions-btn {
+  position: relative;
+  background-color: transparent;
+  color: var(--bg-color-a);
+  border: 2px solid var(--bg-color-a);
+  padding: 8px 20px;              /* ⭐ reduced from 12px 35px - tighter button */
+  font-family: var(--ff-1);
+  font-size: 0.9em;               /* ⭐ slightly smaller text */
+  font-weight: 600;
+  border-radius: 30px;
+  margin-top: 15px;               /* ⭐ reduced from 25px */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(63, 59, 81, 0.3);
+  z-index: 10;                    /* ⭐ button stays clickable above image */
+  align-self: flex-start;         /* ⭐ button stays left aligned */
+  white-space: nowrap;            /* ⭐ keeps "Learn More" on one line */
+}
+
+.conditions-btn:hover {
+  background-color: var(--bg-color-a);
+  color: var(--bg-color-c);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(63, 59, 81, 0.4);
+}
+
+
+/* 🔲 CONDITION MODALS  */
+
+
+/* 🔲 Modal Background Overlay */
+.condition-modal .modal-content {
+  background-color: var(--bg-color-a);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔲 Modal Header */
+.condition-modal-header {
+  border-bottom: 2px solid var(--bg-color-d);
+  padding: 20px 25px;
+}
+
+/* 🔲 Modal Title */
+.condition-modal-title {
+  font-family: var(--ff-1);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--bg-color-c);
+  margin-bottom: 0;
+}
+
+/* 🔲 Modal Body */
+.condition-modal-body {
+  padding: 25px;
+  font-family: var(--ff-2);
+  font-size: var(--fs-p);
+  color: var(--text-color-a);
+  line-height: 1.8;
+}
+
+/* 🔲 Modal Footer */
+.condition-modal-footer {
+  border-top: 2px solid var(--bg-color-d);
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* ⭐ Blog button left, Close button right */
+}
+
+/* 📝 Modal Blog Button */
+.conditions-blog-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-color-c);
+  color: var(--bg-color-a);
+  padding: 10px 22px;
+  font-family: var(--ff-1);
+  font-size: 0.95em;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(63, 59, 81, 0.25);
+}
+
+.conditions-blog-btn i {
+  font-size: 0.9em;
+}
+
+.conditions-blog-btn:hover {
+  background-color: var(--text-color-a);
+  color: var(--bg-color-a);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(63, 59, 81, 0.35);
+}
+
+
+/* 📱 CONDITIONS TREATED - MEDIA QUERIES  */
+
+/* 📱 320px Very Small Phones - 1 column stacked */
+@media (max-width: 320px) {
+
+  .conditions-treated-content h1 {
+    font-size: 1.4rem;            /* ⭐ fits on one line at 320px */
+    white-space: nowrap;
+    margin: 1.5rem 0.5rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 0.85rem;
+    margin: 8px 0.8rem;
+  }
+
+  /* Card shrinks, image tucks in closer */
+  .conditions_info-box {
+    min-height: 380px;
+    margin-right: 30px;           /* ⭐ less space needed on tiny screens */
+    padding: 20px;
+  }
+
+  .conditions_info-img {
+    right: -40px;
+    height: 380px;
+    width: 80%;
+  }
+
+  .conditions_info-title {
+    font-size: 1rem;
+  }
+
+  .conditions-btn {
+    padding: 8px 20px;
+    font-size: 0.85em;
+  }
+}
+
+/* 📱 480px Small Phones - 1 column stacked */
+@media (max-width: 480px) {
+
+  .conditions-treated-content h1 {
+    font-size: 1.6rem;
+    margin: 1.8rem 0.8rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 0.9rem;
+    margin: 8px 1rem;
+  }
+
+  .conditions_info-box {
+    min-height: 420px;
+    margin-right: 40px;
+    padding: 25px;
+  }
+
+  .conditions_info-img {
+    right: -50px;
+    height: 420px;
+    width: 85%;
+  }
+
+  .conditions-btn {
+    padding: 10px 25px;
+    font-size: 0.9em;
+  }
+}
+
+/* 📱 576px Medium Phones - 1 column stacked */
+@media (max-width: 576px) {
+
+  .conditions-treated-content h1 {
+    font-size: 1.8rem;
+    margin: 2rem 1rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 0.95rem;
+    margin: 10px 1.5rem;
+  }
+
+  .conditions_info-box {
+    min-height: 460px;
+    margin-right: 45px;
+    padding: 30px;
+  }
+
+  .conditions_info-img {
+    right: -60px;
+    height: 460px;
+    width: 90%;
+  }
+}
+
+/* 📲 768px Tablets - 2 COLUMNS */
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .conditions-treated-content h1 {
+    font-size: 2rem;
+    margin: 2rem 1.5rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 1rem;
+    margin: 10px 2rem;
+  }
+
+  /* ⭐ 2 columns so cards are wider — image can overlap more comfortably */
+  .conditions_info-box {
+    min-height: 500px;
+    margin-right: 40px;
+    padding: 25px 20px 30px 25px;
+  }
+
+  .conditions_info-img {
+    right: -55px;
+    height: 500px;
+    width: 70%;
+  }
+
+  .conditions_info-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* 💻 991px Small Laptops - 2 COLUMNS */
+@media (min-width: 769px) and (max-width: 991px) {
+
+  .conditions-treated-content h1 {
+    font-size: 2.2rem;
+    margin: 2.5rem 2rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 2rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 1rem;
+    margin: 10px 3rem;
+  }
+
+  /* ⭐ 2 columns: cards have good width, image overlaps nicely */
+  .conditions_info-box {
+    min-height: 550px;
+    margin-right: 40px;
+    padding: 28px 22px 32px 28px;
+  }
+
+  .conditions_info-img {
+    right: -55px;
+    height: 550px;
+    width: 70%;
+  }
+}
+
+/* 💻 1200px+ Large Screens - 4 COLUMNS (default) */
+@media (min-width: 992px) {
+
+  .conditions_info-box {
+    min-height: 600px;
+    margin-right: 35px;
+    padding: 25px 20px 30px 25px;
+  }
+
+  .conditions_info-img {
+    right: -45px;
+    height: 600px;
+    width: 65%;
+  }
+}
+
+ /* ------- 🩺 🏥 END of CONDITIONS TREATED PAGE */
 
 
 
-
-
-
-/* BEGINNING OF CONTACT PAGE  */
+/* ------- BEGINNING OF CONTACT PAGE  */
 
 /* 📬 Contact + Clinico Section */
 
@@ -4650,6 +6035,8 @@ ul.dropdown-menu {
   text-decoration: none;
 }
 
+/* 🗺️ Map Section */
+
 .map {
   padding: 14px;
   background: var(--bg-color-c);
@@ -4690,7 +6077,7 @@ ul.dropdown-menu {
   margin-left: -40px;
 }
 
-/* Clinico left column (booking) */
+/* 📅 Clinico Left Column (Booking) */
 
 .clinico {
   padding: 40px;
@@ -4859,8 +6246,6 @@ ul.dropdown-menu {
 
   .greet img, 
   .fun img { 
-    /* height: 200px; 
-    width: 160px;  */
     max-width: 230px;
     border-top-left-radius: 8%;
     border-top-right-radius: 8%;
@@ -4969,7 +6354,7 @@ ul.dropdown-menu {
     font-size: var(--msp-3);
   } 
 
-   .contactFormBox .row50 {
+  .contactFormBox .row50 {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
@@ -5025,8 +6410,7 @@ ul.dropdown-menu {
     padding: 25px 15px;
   }
 
-  .contactUs .title h2,
-  title2 h2{
+  .contactUs .title h2 {
     color: var(--bg-color-g);
     font-size: 36px;
     text-align: center;
@@ -5046,7 +6430,7 @@ ul.dropdown-menu {
 }
 
 /* 📱 991.98px (992px) Small Laptops Screens */
- @media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .contactUs {
     padding: 25px 15px;
   }
@@ -5078,9 +6462,9 @@ ul.dropdown-menu {
     height: 450px; 
     width: 400px; 
   } 
- }
+}
 
-/* ⚓ Footer Section */
+/* ⚓ FOOTER SECTION */
 
 footer {
   display: grid;
@@ -5152,7 +6536,6 @@ footer .cont-foot .quicklinks ul li a {
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
-   
   transition: all 0.3s ease;   /* ⭐ Smooth animation */
   position: relative;
 }
@@ -5171,8 +6554,8 @@ footer .cont-foot .quicklinks ul li a::after {
 
 /* ⭐ On Hover: Slide to the right */
 footer .cont-foot .quicklinks ul li a:hover {
- transform: translateX(8px);   /* ⭐ Moves link slightly to the side  */
-  color: var(--bg-color-c);   /* Optional: change color on hover */
+  transform: translateX(8px);   /* ⭐ Moves link slightly to the side */
+  color: var(--bg-color-c);     /* Optional: change color on hover */
 }
 
 footer .cont-foot .quicklinks ul li a:hover::after {
@@ -5224,7 +6607,7 @@ footer .wrapper .social-button .ion-icon {
   text-align: center;
   border-radius: 50px;
   line-height: 60px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 footer .wrapper .social-button .ion-icon img {
@@ -5236,19 +6619,19 @@ footer .wrapper .social-button .ion-icon img {
 }
 
 footer .wrapper .social-button:nth-child(1):hover .ion-icon {
-  background:#25d366;
+  background: #25d366;
 }
 
-footer  .wrapper .social-button:nth-child(2):hover .ion-icon {
-  background:#1877f2;
+footer .wrapper .social-button:nth-child(2):hover .ion-icon {
+  background: #1877f2;
 }
 
 footer .wrapper .social-button:nth-child(3):hover .ion-icon {
-  background: linear-gradient(15deg,#7232bd, #c32aa3, #ffdc7d);
+  background: linear-gradient(15deg, #7232bd, #c32aa3, #ffdc7d);
 }
 
 footer .wrapper .social-button:nth-child(4):hover .ion-icon {
-  background: linear-gradient(15deg,#25F4EE, #FE2C55, #000000, #FFFFFF);
+  background: linear-gradient(15deg, #25F4EE, #FE2C55, #000000, #FFFFFF);
 }
 
 footer .wrapper .social-button .ion-icon {
@@ -5286,25 +6669,23 @@ footer .wrapper .social-button:nth-child(4) span {
 }
 
 /* ⚓ Footer Logo */
-
-footer .sec .logo .logo-img   {
+footer .sec .logo .logo-img {
   display: inline-block;
   padding: 20px 0 20px 50px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-/* ⚓ Copyright Section */
-
+/* © Copyright Section */
 .copyrightText span {
   font-size: 6px;
   text-align: center;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 30px 15px 15px;
   background: var(--bg-color-a);
-  border-top: 2px solid rgba(0,0,0,0.15);
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
 }
 
 /* ⚓ Utility Classes */
@@ -5330,8 +6711,6 @@ footer .sec .logo .logo-img   {
   vertical-align: middle;
 }
 
-/* ----- Footer End ----- */
-
 /* ⚓ Footer Media Queries Section */
 
 /* 📲 Medium Devices - Tablets */
@@ -5343,7 +6722,7 @@ footer .sec .logo .logo-img   {
   footer .cont-foot {
     max-width: 100%;      /* ⭐ Allow full width on smaller screens */
     grid-template-columns: repeat(2, 1fr);
-    grid-gap:20px;
+    grid-gap: 20px;
   }
 
   footer .cont-foot .logo .logo-img {
@@ -5357,7 +6736,7 @@ footer .sec .logo .logo-img   {
   footer .cont-foot {
     max-width: 100%;      /* ⭐ Full width for small devices */
     grid-template-columns: repeat(1, 1fr);
-    grid-gap:20px;
+    grid-gap: 20px;
   }
 }
 
@@ -5368,7 +6747,76 @@ footer .sec .logo .logo-img   {
     margin-bottom: 1rem;
   }
 
-  .copyrightText span p{
+  .copyrightText span p {
     font-size: 4px;
   }
 }
+
+
+/* --------- Page Not Found 404 Section ---------- */
+
+/* 🚫 404 Page Section */
+
+.container_404 {
+  min-height: 100vh;
+  background-color: var(--bg-color-a); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.page_404 {
+  max-width: 800px;
+  width: 100%;
+}
+
+.page_404 h2 {
+  font-family: var(--ff-1);
+  font-size: 100px;
+  color: var(--bg-color-c);
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.page_404 h3 {
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+.skeleton-image  {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 0.9rem;
+}
+
+.skeleton-wrapper img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+.page_404 p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.page_404 a {
+  color: var(--bg-color-g);
+  padding: 10px 25px;
+  background: var(--bg-color-c);
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+
+.page_404 a:hover {
+  background: var(--bg-color-f);
+}
+
+
+
+

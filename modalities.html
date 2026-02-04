@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Dr Janique - Conditions Treated</title>
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!-- ✅ Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- ✅ Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- ✅ Hover effects -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+
+  <!-- ✅ AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <!-- ✅ Your custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/conditions-treated.css"> -->
+</head>
+<body>
+
+<!-- 🔝 Top Banner Section -->
+<header class="fixed-top topNav navbar-expand-lg">     
+    <div class="container-fluid container-top"> 
+        <section class="top top-bar_content">  
+            <a class="active" href="contact.html">
+                <p>Call or Text: +27 83 572 4444</p>
+            </a>
+        </section> 
+        <section class="top top-barContent">  
+            <a class="active" href="index.html">
+                <p>The Chiro Wellness Connection</p> 
+            </a>
+        </section>  
+        <section class="top top_bar_content"> 
+            <a class="active" href="contact.html">
+                <p>Request an Appointment</p>
+            </a>
+        </section> 
+    </div> 
+
+<!-- 🧭 Navbar Section -->
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">  
+
+            <section>
+                <a class="navbar-brand d-flex flex-column align-items-center" href="index.html">
+                <img src="assets/image/logo.png" alt="Dr Janique Logo" class="logo-img">
+                <h5 class="titleName">Dr Janique Belli</h5>
+                </a>
+            </section>
+
+<!-- ☰ Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-stethoscope fa-lg"></i>
+            </button> 
+
+<!-- 📂 Dropdown Links -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+<!-- 🧬 About Chiropractics -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Chiropractics</a>
+                        <ul class="dropdown-menu shadow">
+                            <li class="dropend">
+                                <a href="about.html" class="dropdown-item dropdown-toggle about-chiro-link">About Chiropractics</a>
+                            </li>
+                            <li class="dropend">
+                                <a href="modalities.html" class="dropdown-item dropdown-toggle">Modalities Used</a>
+                            </li>
+                            <li class="dropend">
+                                <a href="faq.html" class="dropdown-item dropdown-toggle">FAQ</a>
+                            </li>
+                            <li class="dropend">
+                                <a href="blog.html" class="dropdown-item dropdown-toggle">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+
+<!-- 🏥 Conditions Treated -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="conditions-treated.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Conditions Treated</a>
+                        <ul class="dropdown-menu shadow">
+
+<!-- 🦴 Spinal Health -->
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="conditions-treated.html#spinal-health" data-bs-toggle="dropdown" data-bs-auto-close="outside">Spinal Health</a>
+                                <ul class="dropdown-menu shadow"> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#back-pain">Back Pain</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#headaches">Headaches</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#neck-pain">Neck Pain</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#hip-pain">Hip Pain</a></li> 
+                                </ul>
+                            </li>
+
+<!-- 🦵 Extremities -->
+                            <li class="dropend">
+                                <a href="conditions-treated.html#extremities" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Extremities</a> 
+                                <ul class="dropdown-menu shadow"> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#leg-pain">Leg Pain</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#knee-ankle-foot">Knee, Ankle &amp; Foot</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#shoulder-elbow">Shoulder &amp; Elbow</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#arm-wrist">Arm &amp; Wrist</a></li> 
+                                </ul> 
+                            </li>
+
+<!-- 🚑 Injuries -->
+                            <li class="dropend">
+                                <a href="conditions-treated.html#injuries" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Injuries</a> 
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href="conditions-treated.html#herniated-disc">Herniated Disc</a></li>
+                                    <li><a class="dropdown-item" href="conditions-treated.html#whiplash">Whiplash</a></li>
+                                    <li><a class="dropdown-item" href="conditions-treated.html#pinched-nerve">Pinched Nerve</a></li>
+                                    <li><a class="dropdown-item" href="conditions-treated.html#accident-injuries">Work, Sport or Accident Injuries</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+<!-- 📘 All You Need To Know -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">All You Need To Know</a>
+                        <ul class="dropdown-menu shadow">
+                            <li class="dropend"> 
+                                <a href="#" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">Your First Visit</a> 
+                                <ul class="dropdown-menu shadow"> 
+                                    <li><a class="dropdown-item" href="discuss.html">Discuss</a></li> 
+                                    <li><a class="dropdown-item" href="assess.html">Assessment</a></li> 
+                                    <li><a class="dropdown-item" href="adjust.html">Adjust</a></li> 
+                                    <li><a class="dropdown-item" href="contact.html">Book a Follow-up Appointment</a></li> 
+                                </ul> 
+                            </li>
+                        </ul> 
+                    </li>
+
+<!-- 💼 Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
+                        <ul class="dropdown-menu shadow"> 
+                            <li class="dropend">
+                                <a href="privacy.html" class="dropdown-item dropdown-toggle">Privacy</a>
+                            </li>
+                            <li class="dropend">
+                                <a href="terms.html" class="dropdown-item dropdown-toggle">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </li>
+
+<!-- 📬 Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- 💼 Registration Title Bar Section -->
+    <section class="registration-bar">  
+        <p class="registration-text">       
+            <strong>REGISTERED CHIROPRACTOR&#8287;:&#8287;</strong>(CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
+        </p>     
+    </section>  
+
+<main>
+
+<!-- 🧬 Chiropractics Treatment Section -->
+
+<section class="container-fluid container-modalities expand-lg">
+    <div class="contModalities"> 
+        <div class="row justify-content-center">
+            <div class="col-10 modalities-heading">
+                <h2>Modalities Designed to Help Your Body Heal</h2>
+
+                <div class="modalities-paragraph">
+                    <p>
+                        “Chiropractic care brings together a spectrum of powerful techniques designed to work on every layer your body depends on, helping reduce pain, improve mobility, restore natural balance, and support you in feeling and functioning at your best.”
+                    </p>
+                </div>
+                <div class="modalities-heading">
+                    <h3>
+                        A spectrum of chiropractic techniques that support every layer your body depends on, helping you move, heal, and thrive. 
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  Other Modalities Used Section  -->
+
+<section class="carousel-tech-cont"> 
+    <div class="carousel-tech next">
+        <div class="list">
+
+<!-- ARTICLE 1: Chiropractic Adjustments -->
+            <article class="item other_1" data-service="chiro-adj">
+                
+                <div class="main-content" style="background-color: #EDE6DE;">
+                    
+                    <div class="content">
+                        
+                        <h2>Chiropractic Adjustments</h2>
+                        
+                        <h4>How an Adjustment Works</h4> 
+                        
+                        <p class="short-description">
+                            The chiropractic adjustment represents the fundamental core principle of chiropractic soft tissue disorders and health problems.
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <!-- Hidden full content for modal -->
+                        <div class="full-content" style="display: none;">
+                            <p>
+                                The chiropractic adjustment represents the fundamental core
+                                principle of the chiropractic treatment.
+                            </p>
+                            <p>
+                                It is used successfully to treat a variety of different soft
+                                tissue disorders as well as a number of other health problems.
+                            </p>
+                            <p>
+                                The Chiropractic Adjustment or Manipulation is the process
+                                of applying a quick but gentle pressure to "subluxated"
+                                vertebrae in a corrective manner.
+                            </p>
+                            <p>
+                                Subluxation exists when a vertebra loses its normal superior
+                                and inferior alignment, or when a vertebra loses its normal
+                                motion.
+                            </p>
+                            <p>
+                                The chiropractic adjustment delivers gentle movement into
+                                these restricted joints and tight muscles. By encouraging proper
+                                motion, pain and inflammation are reduced.
+                            </p>
+                            <p>
+                                The adjustments are not and should not be painful. In fact,
+                                most patients look forward to their chiropractic adjustments.
+                            </p>
+                            <p>
+                                The adjustments usually provide patients with immediate
+                                relief from pain and discomfort, improved mobility and muscle tightness
+                                and an increase in one's sense of well being.
+                            </p>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                <figure class="image">
+                    <picture>
+                        <source srcset="assets/image/chiro-adj.avif" type="image/avif">
+                        <source srcset="assets/image/chiro-adj.webp" type="image/webp">
+                        <img src="assets/image/chiro-adj.jpg" alt="chiro adjustment"> 
+                    </picture>  
+                    <figcaption>Chiropractic Adjustment</figcaption>
+                </figure>
+            
+            </article>
+
+<!-- ARTICLE 2: Hypervolt -->
+            <article class="item active" data-service="hypervolt">
+                <div class="main-content" style="background-color: #C3B091;">
+                    <div class="content">
+                        <h2>Hypervolt</h2>
+                        <h4>Massage Gun</h4>
+                        
+                        <p class="short-description">
+                            Advanced percussion therapy device that delivers powerful, targeted muscle treatment for faster recovery and enhanced pain relief.
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <!-- Hidden full content for modal -->
+                        <div class="full-content" style="display: none;">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ad at veniam, quis architecto nemo voluptate quam sunt obcaecati, officia aliquam sequi ex nesciunt dolorum eveniet nihil quia dignissimos exercitationem?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, culpa impedit eos voluptatum vel dolores in sed dolor ab expedita odio et? Ea, modi dolorem? Ab beatae fugiat aliquam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, culpa impedit eos voluptatum vel dolores in sed dolor ab expedita odio et? Ea, modi dolorem? Ab beatae fugiat aliquam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa, culpa impedit eos voluptatum vel dolores in sed dolor ab expedita odio et? Ea, modi dolorem? Ab beatae fugiat aliquam?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="image">
+                    <picture>
+                        <source srcset="assets/image/hypervolt.avif" type="image/avif">
+                        <source srcset="assets/image/hypervolt.webp" type="image/webp">
+                        <img src="assets/image/hypervolt.jpg" alt="chiro hypervolt massage"> 
+                    </picture>  
+                    <figcaption>Hypervolt - Massage Gun</figcaption>
+                </figure>
+            </article>
+
+<!-- ARTICLE 3: FAKTR - BladING -->
+            <article class="item" data-service="FAKTR - Blading">
+                <div class="main-content" style="background-color: #DAC8AE;">
+                    <div class="content">
+                        <h2>FAKTR - Blading</h2>
+                        <h4>Instrument Assisted</h4>
+                        
+                        <p class="short-description">
+                                FAKTR stands for Functional and Kinetic Treatment with Rehabilitation. Dr. Janique is certified in this advanced treatment method, 
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <div class="full-content" style="display: none;">
+                            <p>
+                                What to Expect
+                                        During your FAKTR session, you may experience some temporary discomfort as scar tissue is broken down, but this is part of the healing process. Most patients require multiple sessions depending on their condition, with treatment frequency determined during your initial consultation. Recovery between sessions is typically minimal, allowing you to continue with most daily activities.
+                            </p>
+                            <p>
+                                How FAKTR Differs
+                                        While based on similar principles to the Graston technique, FAKTR goes beyond traditional instrument-assisted soft tissue mobilization by incorporating functional movement, rehabilitation exercises, and multiple treatment modalities into each session, creating a more comprehensive approach to healing.
+                            </p>
+                            <p>
+                                Pre and Post-Treatment Care
+                                        Before your session, wear comfortable clothing that allows easy access to the treatment area. After treatment, staying well-hydrated and following any prescribed exercises will optimize your healing process and help maintain the improvements achieved during your session.
+                            </p>
+                            <p>
+                                Ready to Start Your Recovery?
+                                        Contact us today to schedule a consultation and discover if FAKTR is the right solution for your condition. Dr. Janique will assess your specific situation and create a personalized treatment plan to get you back to optimal health. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="image">
+                    <picture>
+                        <source srcset="assets/image/your-image.avif" type="image/avif">
+                        <source srcset="assets/image/your-image.webp" type="image/webp">
+                        <img src="assets/image/your-image.jpg" alt="description"> 
+                    </picture>  
+                    <figcaption>Your Caption</figcaption>
+                </figure>
+            </article>
+
+<!-- ARTICLE 4: Dry Needling -->
+            <article class="item" data-service="dry-needling">
+                <div class="main-content" style="background-color: #E3DAC9;">
+                    <div class="content">
+                        <h2>Dry Needling</h2>
+                        <h4>Functional Dry Needling</h4>
+                        
+                        <p class="short-description">
+                    
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel 
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <div class="full-content" style="display: none;">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel 
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel obcaecati itaque sed exercitationem dolores dolorum!As many paragraphs as you need...</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel obcaecati itaque sed exercitationem dolores dolorum!
+                                This will show in the modal...</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="image">
+                    <picture>
+                        <source srcset="assets/image/needle.avif" type="image/avif">
+                        <source srcset="assets/image/needle.webp" type="image/webp">
+                        <img src="assets/image/needle.jpg" alt="description"> 
+                    </picture>  
+                    <figcaption>Dry Needling</figcaption>
+                </figure>
+            </article>
+
+<!-- ARTICLE 5: Dry Cupping -->
+            <article class="item" data-service="dry-cupping">
+                <div class="main-content" style="background-color: #D2B48C;">
+                    <div class="content">
+                        <h2>Dry Cupping</h2>
+                        <h4>Cupping</h4>
+                        
+                        <p class="short-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel 
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <div class="full-content" style="display: none;">
+                            <p>All your detailed content goes here...</p>
+                            <p>As many paragraphs as you need...</p>
+                            <p>This will show in the modal...</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="image">
+                    <picture>
+                        <source srcset="assets/image/cupping.avif" type="image/avif">
+                        <source srcset="assets/image/cupping.webp" type="image/webp">
+                        <img src="assets/image/cupping.jpg" alt="dry-cupping"> 
+                    </picture>  
+                    <figcaption>Dry Cupping</figcaption>
+                </figure>
+            </article>
+
+<!-- ARTICLE 6: Kinesiology Taping -->
+            <article class="item" data-service="kinesiology-tapping">
+                <div class="main-content" style="background-color: #E2D7CA;">
+                    <div class="content">
+                        <h2>Kinesiology Taping</h2>
+                        <h4>Tapping</h4>
+                        
+                        <p class="short-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel 
+
+                            Your 2-3 sentence preview that shows in the carousel.
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <div class="full-content" style="display: none;">
+                            <p>All your detailed content goes here...</p>
+                            <p>As many paragraphs as you need...</p>
+                            <p>This will show in the modal...</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="image">
+                    <picture>
+                        <source srcset="assets/image/tapping.avif" type="image/avif">
+                        <source srcset="assets/image/tapping.webp" type="image/webp">
+                        <img src="assets/image/tapping.jpg" alt="description"> 
+                    </picture>  
+                    <figcaption>Kinesiology Tapping</figcaption>
+                </figure>
+            </article>
+
+<!-- ARTICLE 7: Massage -->
+            <article class="item" data-service="deep-tissue-massage">
+                <div class="main-content" style="background-color: #F8F8EC;">
+                    <div class="content">
+                        <h2>Massage</h2>
+                        <h4>Deep Tissue Massage</h4>
+                        
+                        <p class="short-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel 
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <div class="full-content" style="display: none;">
+                            <p>All your detailed content goes here...</p>
+                            <p>As many paragraphs as you need...</p>
+                            <p>This will show in the modal...</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="image">
+                    <picture>
+                        <source srcset="assets/image/massage.avif" type="image/avif">
+                        <source srcset="assets/image/massage.webp" type="image/webp">
+                        <img src="assets/image/massage.jpg" alt="massage">
+                    </picture>  
+                    <figcaption>Deep Tissue Massage</figcaption>
+                </figure>
+            </article>
+
+<!-- ARTICLE 8: Prenatal Care -->
+            <article class="item" data-service="pre-natal">
+                <div class="main-content" style="background-color: #EFDECD;">
+                    <div class="content">
+                        <h2>Prenatal</h2>
+                        <h4>Prenatal Care</h4>
+                        
+                        <p class="short-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel 
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <div class="full-content" style="display: none;">
+                            <p>All your detailed content goes here...</p>
+                            <p>As many paragraphs as you need...</p>
+                            <p>This will show in the modal...</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="image">
+                    <picture>
+                        <source srcset="assets/image/prenatal.avif" type="image/avif">
+                        <source srcset="assets/image/prenatal.webp" type="image/webp">
+                        <img src="assets/image/prenatal.jpg" alt="description"> 
+                    </picture>  
+                    <figcaption>Prenatal Care</figcaption>
+                </figure>
+            </article>
+
+<!-- ARTICLE 9: Ergonomic Exercises and Stretches -->
+            <article class="item" data-service="ergonomic-exercises-and-stretches">
+                <div class="main-content" style="background-color: #C5B196;">
+                    <div class="content">
+                        <h2>Ergonomic</h2>
+                        <h4>Exercises and Stretches</h4>
+                        
+                        <p class="short-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur. Nesciunt ipsa labore vel 
+                        </p>
+
+                        <button class="learn-more-btn">Learn More</button>
+
+                        <div class="full-content" style="display: none;">
+                            <p>All your detailed content goes here...</p>
+                            <p>As many paragraphs as you need...</p>
+                            <p>This will show in the modal...</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="image">
+                    <picture>
+                        <source srcset="massage.avif" type="image/avif">
+                        <source srcset="assets/image/massage.webp" type="image/webp">
+                        <img src="assets/image/massage.jpg" alt="description"> 
+                    </picture>  
+                    <figcaption>Ergonomic</figcaption>
+                </figure>
+            </article>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+    </div> 
+</section>
+
+<!-- ⬇️ Scroll Icon -->
+<div class="scroll">
+    <a href="#">
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
+</div>
+
+</main>
+
+<!-- 🔲 MODAL SECTION (Place this AFTER </main> and BEFORE <footer>) -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-body">
+            <h2 id="modalTitle"></h2>
+            <h4 id="modalSubtitle"></h4>
+            <div id="modalDescription"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ⚓ Footer Section -->
+<footer class="foot">
+    <div class="container cont-foot">
+        <div class="sec aboutus">
+            <h6>The Chiro Wellness Connection</h6>
+            <ul>
+                <li><a href="#" class="padded-text">Natural Health Centre</a></li>
+                <li><a href="#" class="icon-text"><i class="fa-solid fa-location-dot"></i>87 6th Street</a></li>
+                <li class="text-indent">Boksburg North</li>
+            </ul>
+            <ul>
+                <li><a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+ 27 83 572 4444</a></li>
+                <li><a href="mailto:janiquechiro@gmail.com" class="icon-text"><i class="fa-solid fa-envelope"></i>janiquechiro@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h6>Site Map</h6>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Chiropractics</a></li>
+                <li><a href="conditions-treated.html">Conditions Treated</a></li>
+                <li><a href="faq.html">All You Need to Know</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h6>Practice Hours</h6>
+            <ul>
+                <li><a href="#" class="icon-text"><i class="fas fa-calendar-check"></i>Monday - Friday:<br><span class="text-indent">08:00 - 17:00</span></a></li>
+                <li><a href="#" class="icon-text"><i class="fas fa-calendar-check"></i>Saturday:<br><span class="text-indent">09:00 - 12:00</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="icon-text"><i class="fa-solid fa-truck-medical"></i>Emergency (After Hours)</a></li>
+                <li><a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+27 83 572 4444</a></li>
+            </ul> 
+        </div>
+        <div class="sec social-button">
+            <h6>Social Media</h6>
+            <div class="wrapper">
+                <a class="social-button" target="_blank" href="https://wa.me/27835724444">
+                    <div class="ion-icon"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                    <span>WhatsApp</span>
+                </a>
+                <a class="social-button" href="https://www.facebook.com/Dr Janique" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-facebook"></ion-icon></div>
+                    <span>Facebook</span>
+                </a>
+                <a class="social-button" href="https://www.instagram.com/drjaniquechiropractic" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-instagram"></ion-icon></div>
+                    <span>Instagram</span>
+                </a>
+                <a class="social-button" href="https://www.tiktok.com/@drjaniquebelli" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-tiktok"></ion-icon></div>
+                    <span>TikTok</span>
+                </a>
+            </div>
+            <div class="sec logo">
+                <a href="#" class="logo-img center">
+                    <img src="assets/image/footerlogo.png" alt="The Chiro Wellness Connection Logo">
+                </a>
+            </div> 
+        </div>
+    </div>
+</footer>
+    
+<!-- © Copyright Section -->
+    <div>
+        <div class="copyrightText">
+            <span>
+                <p>2025 © Luigina Argentin. All Rights Reserved.</p>
+                <p>Terms of use</p>
+                <p>Privacy policy</p>
+            </span>
+        </div>
+    </div> 
+
+<!-- ✅ Ionicons -->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- ✅ Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+<!-- ✅ Font Awesome -->   
+    <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
+
+<!-- ✅ AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 1 });
+    </script> 
+
+</body>
+</html>
+
+
+
+
+
+
+

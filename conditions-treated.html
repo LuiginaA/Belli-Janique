@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Dr Janique - Conditions Treated</title>
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!-- ✅ Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- ✅ Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- ✅ Hover effects -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+
+  <!-- ✅ AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <!-- ✅ Your custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/conditions-treated.css"> -->
+</head>
+<body>
+
+<!-- 🔝 Top Banner Section -->
+<header class="fixed-top topNav navbar-expand-lg">     
+    <div class="container-fluid container-top"> 
+        <section class="top top-bar_content">  
+            <a class="active" href="contact.html">
+                <p>Call or Text: +27 83 572 4444</p>
+            </a>
+        </section> 
+        <section class="top top-barContent">  
+            <a class="active" href="index.html">
+                <p>The Chiro Wellness Connection</p> 
+            </a>
+        </section>  
+        <section class="top top_bar_content"> 
+            <a class="active" href="contact.html">
+                <p>Request an Appointment</p>
+            </a>
+        </section> 
+    </div> 
+
+<!-- 🧭 Navbar Section -->
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">  
+
+            <section>
+                <a class="navbar-brand d-flex flex-column align-items-center" href="index.html">
+                <img src="assets/image/logo.png" alt="Dr Janique Logo" class="logo-img">
+                <h5 class="titleName">Dr Janique Belli</h5>
+                </a>
+            </section>
+
+<!-- ☰ Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-stethoscope fa-lg"></i>
+            </button> 
+
+<!-- 📂 Dropdown Links -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+<!-- 🧬 About Chiropractics -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Chiropractics</a>
+                        <ul class="dropdown-menu shadow">
+                            <li class="dropend">
+                                <a href="about.html" class="dropdown-item dropdown-toggle about-chiro-link">About Chiropractics</a>
+                            </li>
+                            <li class="dropend">
+                                <a href="modalities.html" class="dropdown-item dropdown-toggle">Modalities Used</a>
+                            </li>
+                            <li class="dropend">
+                                <a href="faq.html" class="dropdown-item dropdown-toggle">FAQ</a>
+                            </li>
+                            <li class="dropend">
+                                <a href="blog.html" class="dropdown-item dropdown-toggle">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+
+<!-- 🏥 Conditions Treated -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="conditions-treated.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Conditions Treated</a>
+                        <ul class="dropdown-menu shadow">
+
+<!-- 🦴 Spinal Health -->
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="conditions-treated.html#spinal-health" data-bs-toggle="dropdown" data-bs-auto-close="outside">Spinal Health</a>
+                                <ul class="dropdown-menu shadow"> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#back-pain">Back Pain</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#headaches">Headaches</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#neck-pain">Neck Pain</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#hip-pain">Hip Pain</a></li> 
+                                </ul>
+                            </li>
+
+<!-- 🦵 Extremities -->
+                            <li class="dropend">
+                                <a href="conditions-treated.html#extremities" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Extremities</a> 
+                                <ul class="dropdown-menu shadow"> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#leg-pain">Leg Pain</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#knee-ankle-foot">Knee, Ankle &amp; Foot</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#shoulder-elbow">Shoulder &amp; Elbow</a></li> 
+                                    <li><a class="dropdown-item" href="conditions-treated.html#arm-wrist">Arm &amp; Wrist</a></li> 
+                                </ul> 
+                            </li>
+
+<!-- 🚑 Injuries -->
+                            <li class="dropend">
+                                <a href="conditions-treated.html#injuries" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Injuries</a> 
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href="conditions-treated.html#herniated-disc">Herniated Disc</a></li>
+                                    <li><a class="dropdown-item" href="conditions-treated.html#whiplash">Whiplash</a></li>
+                                    <li><a class="dropdown-item" href="conditions-treated.html#pinched-nerve">Pinched Nerve</a></li>
+                                    <li><a class="dropdown-item" href="conditions-treated.html#accident-injuries">Work, Sport or Accident Injuries</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+<!-- 📘 All You Need To Know -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">All You Need To Know</a>
+                        <ul class="dropdown-menu shadow">
+                            <li class="dropend"> 
+                                <a href="#" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">Your First Visit</a> 
+                                <ul class="dropdown-menu shadow"> 
+                                    <li><a class="dropdown-item" href="discuss.html">Discuss</a></li> 
+                                    <li><a class="dropdown-item" href="assess.html">Assessment</a></li> 
+                                    <li><a class="dropdown-item" href="adjust.html">Adjust</a></li> 
+                                    <li><a class="dropdown-item" href="contact.html">Book a Follow-up Appointment</a></li> 
+                                </ul> 
+                            </li>
+                        </ul> 
+                    </li>
+
+<!-- 💼 Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
+                        <ul class="dropdown-menu shadow"> 
+                            <li class="dropend">
+                                <a href="privacy.html" class="dropdown-item dropdown-toggle">Privacy</a>
+                            </li>
+                            <li class="dropend">
+                                <a href="terms.html" class="dropdown-item dropdown-toggle">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </li>
+
+<!-- 📬 Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- 💼 Registration Title Bar Section -->
+    <section class="registration-bar">  
+        <p class="registration-text">       
+            <strong>REGISTERED CHIROPRACTOR&#8287;:&#8287;</strong>(CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
+        </p>     
+    </section>  
+
+<main>
+
+
+<!-- 🦴 SECTION 1: SPINAL HEALTH   -->
+
+
+<section id="spinal-health" class="conditions-treated"> 
+    <div class="treatment_conditions"> 
+        <div class="conditions-treated-content">
+            <h2>Dr Janique</h2>
+            <h3>Is able to Treat Various Conditions</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde aperiam, illum laborum voluptas impedit facilis suscipit praesentium ducimus quae voluptatum odit enim, quidem quis voluptates eligendi nihil, officia doloribus.
+            </p>
+            <h1>Spinal Health</h1>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+<!-- 🦴 Back Pain -->
+            <div id="back-pain" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/spine.jpg" class="conditions_info-img" alt="Back Pain">
+                    <h4 class="conditions_info-title">Back Pain</h4>
+                    <p class="conditions_info-text">Easing your daily discomfort.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#spinalBackPainModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 🧠 Headaches -->
+            <div id="headaches" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/neck.jpg" class="conditions_info-img" alt="Headaches">
+                    <h4 class="conditions_info-title">Headaches</h4>
+                    <p class="conditions_info-text">Relief from tension headaches.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#spinalHeadachesModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 🦴 Neck Pain -->
+            <div id="neck-pain" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/hip.jpg" class="conditions_info-img" alt="Neck Pain">
+                    <h4 class="conditions_info-title">Neck Pain</h4>
+                    <p class="conditions_info-text">Restoring neck mobility.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#spinalNeckPainModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 🦖 Hip Pain -->
+            <div id="hip-pain" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/shoulders.jpg" class="conditions_info-img" alt="Hip Pain">
+                    <h4 class="conditions_info-title">Hip Pain</h4>
+                    <p class="conditions_info-text">Targeted hip joint care.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#spinalHipPainModal">Learn More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 🔲 SPINAL HEALTH MODALS -->
+
+<!-- 🔲 Back Pain Modal -->
+    <div class="modal fade condition-modal" id="spinalBackPainModal" tabindex="-1" aria-labelledby="spinalBackPainLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="spinalBackPainLabel">Back Pain</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Back pain is one of the most common conditions Dr Janique treats. Whether it is caused by poor posture, a sports injury, or long hours at a desk, chiropractic adjustments can help restore alignment and reduce pain.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#back-pain-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Headaches Modal -->
+    <div class="modal fade condition-modal" id="spinalHeadachesModal" tabindex="-1" aria-labelledby="spinalHeadachesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="spinalHeadachesLabel">Headaches</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Many headaches stem from tension in the neck and upper back. Dr Janique uses gentle chiropractic techniques to address the root cause rather than simply masking the symptoms.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#headaches-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Neck Pain Modal -->
+    <div class="modal fade condition-modal" id="spinalNeckPainModal" tabindex="-1" aria-labelledby="spinalNeckPainLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="spinalNeckPainLabel">Neck Pain</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Neck pain can limit your movement and affect your daily life. Dr Janique works to realign the cervical spine and restore natural mobility through safe and effective chiropractic care.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#neck-pain-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Hip Pain Modal -->
+    <div class="modal fade condition-modal" id="spinalHipPainModal" tabindex="-1" aria-labelledby="spinalHipPainLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="spinalHipPainLabel">Hip Pain</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Hip pain often connects to spinal misalignment. Dr Janique addresses both the hip joint and the spine together to provide lasting relief and improved function.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#hip-pain-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- 🦵 SECTION 2: EXTREMITIES  -->
+
+
+<section id="extremities" class="conditions-treated conditions-extremities"> 
+    <div class="treatment_conditions"> 
+        <div class="conditions-treated-content">
+            <h2>Dr Janique</h2>
+            <h3>Treats a Range of Extremity Issues</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde aperiam, illum laborum voluptas impedit facilis suscipit praesentium ducimus quae voluptatum odit enim, quidem quis voluptates eligendi nihil, officia doloribus.
+            </p>
+            <h1>Extremities</h1>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+<!-- 🦵 Leg Pain -->
+            <div id="leg-pain" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/leg.jpg" class="conditions_info-img" alt="Leg Pain">
+                    <h4 class="conditions_info-title">Leg Pain</h4>
+                    <p class="conditions_info-text">Relieving leg tension and pain.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#extremityLegPainModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 🦵 Knee, Ankle & Foot -->
+            <div id="knee-ankle-foot" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/knee.jpg" class="conditions_info-img" alt="Knee Ankle and Foot">
+                    <h4 class="conditions_info-title">Knee, Ankle &amp; Foot</h4>
+                    <p class="conditions_info-text">Joint care and support.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#extremityKneeModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 🦾 Shoulder & Elbow -->
+            <div id="shoulder-elbow" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/shoulder.jpg" class="conditions_info-img" alt="Shoulder and Elbow">
+                    <h4 class="conditions_info-title">Shoulder &amp; Elbow</h4>
+                    <p class="conditions_info-text">Restoring upper body movement.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#extremityShoulderModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 🤚 Arm & Wrist -->
+            <div id="arm-wrist" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/arm.jpg" class="conditions_info-img" alt="Arm and Wrist">
+                    <h4 class="conditions_info-title">Arm &amp; Wrist</h4>
+                    <p class="conditions_info-text">Targeted arm and wrist care.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#extremityArmModal">Learn More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 🔲 EXTREMITIES MODALS -->
+
+<!-- 🔲 Leg Pain Modal -->
+    <div class="modal fade condition-modal" id="extremityLegPainModal" tabindex="-1" aria-labelledby="extremityLegPainLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="extremityLegPainLabel">Leg Pain</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Leg pain can have many causes, from sciatica to muscle strain. Dr Janique identifies the source and applies the right treatment to get you back on your feet comfortably.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#leg-pain-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Knee, Ankle & Foot Modal -->
+    <div class="modal fade condition-modal" id="extremityKneeModal" tabindex="-1" aria-labelledby="extremityKneeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="extremityKneeLabel">Knee, Ankle &amp; Foot</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Knee, ankle, and foot problems can affect your balance and mobility. Dr Janique uses hands-on techniques to reduce inflammation and restore proper joint function.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#knee-ankle-foot-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Shoulder & Elbow Modal -->
+    <div class="modal fade condition-modal" id="extremityShoulderModal" tabindex="-1" aria-labelledby="extremityShoulderLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="extremityShoulderLabel">Shoulder &amp; Elbow</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Shoulder and elbow pain can stem from repetitive movements or poor posture. Dr Janique helps restore range of motion and reduce discomfort through effective chiropractic care.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#shoulder-elbow-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Arm & Wrist Modal -->
+    <div class="modal fade condition-modal" id="extremityArmModal" tabindex="-1" aria-labelledby="extremityArmLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="extremityArmLabel">Arm &amp; Wrist</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Arm and wrist pain is common, especially for those who work at computers. Dr Janique addresses underlying spinal issues that may be contributing to nerve irritation in the arms and wrists.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#arm-wrist-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- 🚑 SECTION 3: INJURIES  -->
+
+
+<section id="injuries" class="conditions-treated conditions-injuries"> 
+    <div class="treatment_conditions"> 
+        <div class="conditions-treated-content">
+            <h2>Dr Janique</h2>
+            <h3>Helping You Recover From Injuries</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde aperiam, illum laborum voluptas impedit facilis suscipit praesentium ducimus quae voluptatum odit enim, quidem quis voluptates eligendi nihil, officia doloribus.
+            </p>
+            <h1>Injuries</h1>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+<!-- 💥 Herniated Disc -->
+            <div id="herniated-disc" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/disc.jpg" class="conditions_info-img" alt="Herniated Disc">
+                    <h4 class="conditions_info-title">Herniated Disc</h4>
+                    <p class="conditions_info-text">Safe disc treatment care.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#injuryDiscModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 💥 Whiplash -->
+            <div id="whiplash" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/whiplash.jpg" class="conditions_info-img" alt="Whiplash">
+                    <h4 class="conditions_info-title">Whiplash</h4>
+                    <p class="conditions_info-text">Recovery from whiplash injuries.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#injuryWhiplashModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 🔌 Pinched Nerve -->
+            <div id="pinched-nerve" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/nerve.jpg" class="conditions_info-img" alt="Pinched Nerve">
+                    <h4 class="conditions_info-title">Pinched Nerve</h4>
+                    <p class="conditions_info-text">Relieving nerve pressure.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#injuryNerveModal">Learn More</button>
+                </div>
+            </div>
+
+<!-- 🚑 Work/Sport/Accident -->
+            <div id="accident-injuries" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="conditions_info-box">
+                    <img src="assets/image/injury.jpg" class="conditions_info-img" alt="Work Sport Accident Injuries">
+                    <h4 class="conditions_info-title">Work, Sport or Accident</h4>
+                    <p class="conditions_info-text">Full injury recovery support.</p>
+                    <button class="conditions-btn" data-bs-toggle="modal" data-bs-target="#injuryAccidentModal">Learn More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 🔲 INJURIES MODALS -->
+
+<!-- 🔲 Herniated Disc Modal -->
+    <div class="modal fade condition-modal" id="injuryDiscModal" tabindex="-1" aria-labelledby="injuryDiscLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="injuryDiscLabel">Herniated Disc</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>A herniated disc can cause sharp pain and limit your movement. Dr Janique uses gentle, non-invasive techniques to help the disc heal and reduce pressure on surrounding nerves.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#herniated-disc-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Whiplash Modal -->
+    <div class="modal fade condition-modal" id="injuryWhiplashModal" tabindex="-1" aria-labelledby="injuryWhiplashLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="injuryWhiplashLabel">Whiplash</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Whiplash injuries often occur from car accidents and can cause lasting neck pain. Dr Janique creates a tailored recovery plan to restore neck function and reduce inflammation.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#whiplash-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Pinched Nerve Modal -->
+    <div class="modal fade condition-modal" id="injuryNerveModal" tabindex="-1" aria-labelledby="injuryNerveLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="injuryNerveLabel">Pinched Nerve</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>A pinched nerve causes pain, numbness, or tingling. Dr Janique works to realign the spine and release pressure on the affected nerve, helping you find relief naturally.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#pinched-nerve-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 🔲 Work/Sport/Accident Modal -->
+    <div class="modal fade condition-modal" id="injuryAccidentModal" tabindex="-1" aria-labelledby="injuryAccidentLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content condition-modal-content">
+                <div class="modal-header condition-modal-header">
+                    <h3 class="modal-title condition-modal-title" id="injuryAccidentLabel">Work, Sport or Accident Injuries</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body condition-modal-body">
+                    <p>Whether the injury happened at work, on the sports field, or in an accident, Dr Janique is experienced in helping patients recover. A personalised treatment plan ensures you get back to doing what you love.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque aliquam accusamus sed nihil magnam mollitia culpa eius, error aspernatur.</p>
+                </div>
+                <div class="modal-footer condition-modal-footer">
+                    <a href="blog.html#accident-injuries-blog" class="conditions-blog-btn" target="_blank">
+                        <i class="fa-solid fa-book-open"></i> Read More on Blog
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ⬇️ Scroll Icon -->
+            <div class="scroll">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+
+</main>
+
+<!-- ⚓ Footer Section -->
+<footer class="foot">
+    <div class="container cont-foot">
+        <div class="sec aboutus">
+            <h6>The Chiro Wellness Connection</h6>
+            <ul>
+                <li><a href="#" class="padded-text">Natural Health Centre</a></li>
+                <li><a href="#" class="icon-text"><i class="fa-solid fa-location-dot"></i>87 6th Street</a></li>
+                <li class="text-indent">Boksburg North</li>
+            </ul>
+            <ul>
+                <li><a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+ 27 83 572 4444</a></li>
+                <li><a href="mailto:janiquechiro@gmail.com" class="icon-text"><i class="fa-solid fa-envelope"></i>janiquechiro@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h6>Site Map</h6>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Chiropractics</a></li>
+                <li><a href="conditions-treated.html">Conditions Treated</a></li>
+                <li><a href="faq.html">All You Need to Know</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h6>Practice Hours</h6>
+            <ul>
+                <li><a href="#" class="icon-text"><i class="fas fa-calendar-check"></i>Monday - Friday:<br><span class="text-indent">08:00 - 17:00</span></a></li>
+                <li><a href="#" class="icon-text"><i class="fas fa-calendar-check"></i>Saturday:<br><span class="text-indent">09:00 - 12:00</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="icon-text"><i class="fa-solid fa-truck-medical"></i>Emergency (After Hours)</a></li>
+                <li><a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+27 83 572 4444</a></li>
+            </ul> 
+        </div>
+        <div class="sec social-button">
+            <h6>Social Media</h6>
+            <div class="wrapper">
+                <a class="social-button" target="_blank" href="https://wa.me/27835724444">
+                    <div class="ion-icon"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                    <span>WhatsApp</span>
+                </a>
+                <a class="social-button" href="https://www.facebook.com/Dr Janique" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-facebook"></ion-icon></div>
+                    <span>Facebook</span>
+                </a>
+                <a class="social-button" href="https://www.instagram.com/drjaniquechiropractic" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-instagram"></ion-icon></div>
+                    <span>Instagram</span>
+                </a>
+                <a class="social-button" href="https://www.tiktok.com/@drjaniquebelli" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-tiktok"></ion-icon></div>
+                    <span>TikTok</span>
+                </a>
+            </div>
+            <div class="sec logo">
+                <a href="#" class="logo-img center">
+                    <img src="assets/image/footerlogo.png" alt="The Chiro Wellness Connection Logo">
+                </a>
+            </div> 
+        </div>
+    </div>
+</footer>
+    
+<!-- © Copyright Section -->
+    <div>
+        <div class="copyrightText">
+            <span>
+                <p>2025 © Luigina Argentin. All Rights Reserved.</p>
+                <p>Terms of use</p>
+                <p>Privacy policy</p>
+            </span>
+        </div>
+    </div> 
+
+<!-- ✅ Ionicons -->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- ✅ Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+<!-- ✅ Font Awesome -->   
+    <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
+
+<!-- ✅ AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 1 });
+    </script> 
+
+</body>
+</html>
