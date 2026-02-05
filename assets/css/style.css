@@ -4682,26 +4682,34 @@ ul.dropdown-menu {
   font-size: var(--fs-2);
   font-weight: 600;
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: var(--text-color-a);
 }
 
 .carousel-tech .list .item .main-content .content h4 {
   font-family: var(--ff-1);
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   font-weight: 500;
   font-style: italic;
-  margin: 20px 0;
+  margin: 18px 0;
   color: var(--text-color-a);
   font-weight: 400;
 } 
+
+/* Keep headings on one line */
+.carousel-tech .list .item .main-content .content h2,
+.carousel-tech .list .item .main-content .content h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .carousel-tech .list .item .main-content .content p {
   font-family: var(--ff-2);
   font-size: var(--fs-p);
   font-weight: 400;
-  line-height: 1.8;
-  margin: 15px 0;
+  line-height: 1.6;
+  margin: 10px 0;
   color: var(--text-color-a);
 }
 
@@ -4740,11 +4748,12 @@ ul.dropdown-menu {
 
 .arrows {
   position: absolute;
-  bottom: 34px;
+  bottom: 50px;
   left: 50px;
   display: flex;
   gap: 10px;
   z-index: 100;
+
 }
 
 .arrows button {
@@ -5258,6 +5267,7 @@ ul.dropdown-menu {
 
 
 /* END OF CAROUSEL AND MEDIA QUERIES SECTION */
+
 
 /* ------ BEGINNING OF F-A-Q PAGE */
 
