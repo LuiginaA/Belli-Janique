@@ -4740,7 +4740,7 @@ ul.dropdown-menu {
 
 .arrows {
   position: absolute;
-  bottom: 50px;
+  bottom: 34px;
   left: 50px;
   display: flex;
   gap: 10px;
