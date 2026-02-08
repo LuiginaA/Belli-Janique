@@ -7748,17 +7748,33 @@ footer .sec .logo .logo-img {
   margin-bottom: 30px;
 }
 
+/* 🔘 Go Back Home Button */
 .page_404 a {
-  color: var(--bg-color-g);
-  padding: 10px 25px;
+  color: var(--bg-color-a);
+  border: 2px solid var(--bg-color-a);
+  padding: 10px 25px;             
   background: var(--bg-color-c);
   display: inline-block;
   text-decoration: none;
   margin-bottom: 60px;
+  font-family: var(--ff-1);
+  font-size: 0.9em;               /* ⭐ slightly smaller text */
+  font-weight: 600;
+  border-radius: 30px;
+  margin-top: 15px;               /* ⭐ reduced from 25px */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(63, 59, 81, 0.3);
+  z-index: 10;                    /* ⭐ button stays clickable above image */
+  align-self: flex-start;         /* ⭐ button stays left aligned */
 }
 
 .page_404 a:hover {
-  background: var(--bg-color-f);
+  background-color: var(--bg-color-a);
+  border: 2px solid var(--bg-color-c);
+  color: var(--bg-color-c);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(63, 59, 81, 0.4);
 }
 
 
