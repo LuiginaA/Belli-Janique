@@ -128,6 +128,51 @@ body {
 --vsl-p: 0.95rem;
 }
 
+/* ============================================================ */
+/* 🎯 SCROLL OFFSET FIX - Works for ALL anchor links           */
+/* ============================================================ */
+
+/* Base - Desktop */
+[id] {
+  scroll-margin-top: 350px;
+}
+
+/* 320px Very Small Phones */
+@media (max-width: 320px) {
+  [id] {
+    scroll-margin-top: 220px;
+  }
+}
+
+/* 480px Small Phones */
+@media (max-width: 480px) {
+  [id] {
+    scroll-margin-top: 240px;
+  }
+}
+
+/* 576px Medium Phones */
+@media (max-width: 576px) {
+  [id] {
+    scroll-margin-top: 260px;
+  }
+}
+
+/* 768px Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+  [id] {
+    scroll-margin-top: 280px;
+  }
+}
+
+/* 991px Small Laptops */
+@media (min-width: 769px) and (max-width: 991px) {
+  [id] {
+    scroll-margin-top: 320px;
+  }
+}
+
+
 /* ✅ Fixed Navbar */
 .fixed-top {
   position: fixed;
@@ -208,6 +253,11 @@ body {
 }
 
 /* Request*/
+.top_bar_content {
+  position: relative;
+  z-index: 10; /* ⭐ Lifts this section above the logo */
+}
+
 .top_bar_content p {
   font-family: var(--ff-1);
   font-size: 16.5px;
@@ -3963,7 +4013,7 @@ ul.dropdown-menu {
 
 .modal-header {
   color: var(--bg-color-c);
-  text-align: left;
+  text-align: center;
 }
 
 .modal-body  {
@@ -5683,7 +5733,7 @@ ul.dropdown-menu {
 
 /* 📱 320px Very Small Phones - 1 column stacked */
 @media (max-width: 320px) {
-
+  
   .conditions-treated-content h1 {
     font-size: 1.4rem;            /* ⭐ fits on one line at 320px */
     white-space: nowrap;
@@ -5890,18 +5940,10 @@ ul.dropdown-menu {
 }
 
 
-
-
-
-
-
-
-
-
-
  /* ------- 🩺 🏥 END of CONDITIONS TREATED PAGE */
 
-/* Your First Visit Quote Section */
+
+/* ⭐ Your First Visit Quote Section */
 
 .container-first-visit-quote .contVisit_quote {
   display: flex;
@@ -5978,7 +6020,7 @@ ul.dropdown-menu {
 }
 
 
- /* Your First Visit Quote Media Queries Section  */
+ /* ⭐ Your First Visit Quote Media Queries Section  */
 
 /* 📱 320px Very Small Phones */
 @media (max-width: 320px) {
@@ -6204,7 +6246,6 @@ ul.dropdown-menu {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
- 
 } 
 
 /* ============================================================ */
@@ -6298,6 +6339,7 @@ ul.dropdown-menu {
   font-family: var(--ff-1);
   font-weight: 700;
   font-style: italic;
+  word-spacing: 3px;
   text-align: center;
   margin-top: 60px;
   margin-right: 20px;
@@ -6311,10 +6353,27 @@ ul.dropdown-menu {
   font-family: var(--ff-2);
   font-weight: 500;
   font-style: italic;
-  line-height: 1.2;
+  line-height: 1.5;
   text-align: center;
   margin-right: 40px;
 } 
+
+.all-you-know-quote {
+  position: relative;
+  font-size: var(--fs-4);
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-style: italic;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -130px;
+  margin-right: 20px;
+  padding: 30px;
+  line-height: 2;
+  z-index: 1000;
+}
 
 /* ============================================================ */
 /* 🕐 TIMELINE SECTION - The 4 Steps                            */
@@ -6325,7 +6384,7 @@ ul.dropdown-menu {
   margin: 0 auto;
   /* padding: 0px 20px 80px; */
   position: relative;
-    padding: 60px 20px 80px;
+  padding: 60px 20px 80px;
 }
 
 .visit-timeline-heading {
@@ -6335,9 +6394,11 @@ ul.dropdown-menu {
   font-style: italic;
   color: var(--bg-color-c);
   text-align: center;
+  word-spacing: 3px;
+  letter-spacing: 1px;
   margin-bottom: 80px;
-  /* margin-top: 280px;  */
-    margin-top: 280px;    
+  /* margin-top: 280px;   */
+  margin-top: 150px;  
 }
 
 .visit-timeline-content {
@@ -6450,7 +6511,7 @@ ul.dropdown-menu {
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);  
   backdrop-filter: blur(1px);    /* ⭐ Adds blur to background image */
-  -webkit-backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1px);
   border-radius: 40px;
   z-index: 1;
 }
@@ -6484,6 +6545,10 @@ ul.dropdown-menu {
 
 .visit-step-adjustment {
   background-image: url('../image/adjust.jpg');
+}
+
+.visit-step-homecare {
+  background-image: url('../image/care.jpg');
 }
 
 .visit-step-followup {
@@ -6606,21 +6671,27 @@ ul.dropdown-menu {
   font-weight: 600;
   margin-bottom: 20px;
   margin-top: 30px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-.visit-modal-cta-button {
-  text-align: center;
-  margin-bottom: 10px;
+.visit-modal-footer {
+  border-top: 2px solid var(--bg-color-d);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: flex-end; /* ⭐ Schedule left, Close right */
+  align-items: center;
+  gap: 12px; /* ⭐ Space between buttons */
 }
 
 .visit-cta-link {
   display: inline-block;
   background-color: var(--bg-color-c);
   color: var(--bg-color-a);
-  padding: 12px 30px;
+  padding: 10px 24px;
   font-family: var(--ff-1);
   font-weight: 600;
-  border-radius: 30px;
+  border-radius: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -6631,17 +6702,12 @@ ul.dropdown-menu {
   transform: translateY(-2px);
 }
 
-.visit-modal-footer {
-  border-top: 2px solid var(--bg-color-d);
-  padding: 20px 30px;
-}
-
 .visit-modal-close {
   background-color: var(--bg-color-c);
   color: var(--bg-color-a);
   border: none;
   border-radius: 25px;
-  padding: 10px 25px;
+  padding: 10px 24px;
   font-family: var(--ff-1);
   font-weight: 600;
 }
@@ -6652,7 +6718,8 @@ ul.dropdown-menu {
 }
 
 /* ============================================================ */
-/* 📱 MEDIA QUERIES                                              */
+/* 📱 
+/* ⭐ Your First Visit Media Queries */
 /* ============================================================ */
 
 /* 💻 991px - Small Laptops */
@@ -6712,7 +6779,8 @@ ul.dropdown-menu {
   .visit-timeline-heading {
     font-size: var(--ts-1);
     margin-bottom: 60px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
+     margin-top: 100px;
   }
 
   .visit-timeline-item {
@@ -6747,6 +6815,10 @@ ul.dropdown-menu {
   .visit-timeline-heading {
     font-size: var(--msp-1);
     margin-top: 80px;
+  }
+
+  .visit-timeline-item {
+    scroll-margin-top: 180px;    /* ⭐ Less offset on phones */
   }
 
   .visit-timeline-content::before {
@@ -6824,6 +6896,7 @@ ul.dropdown-menu {
 }
 
 
+/* ⭐ END OF Your First Visit Section */
 
 
 /* ------- BEGINNING OF CONTACT PAGE  */
