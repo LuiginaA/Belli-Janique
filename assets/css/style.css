@@ -5479,9 +5479,9 @@ ul.dropdown-menu {
 
  /* ------- 🩺 🏥 Beginning of CONDITIONS TREATED PAGE */
 
-
-/* 🏥 CONDITIONS TREATED PAGE */
-
+ /* ============================================================ */
+/* 🏥 CONDITIONS TREATED PAGE                                    */
+/* ============================================================ */
 
 /* 🏥 Conditions Treated Container */
 .conditions-treated {
@@ -5499,6 +5499,11 @@ ul.dropdown-menu {
 /* 🚑 Injuries Section - Alternate Background */
 .conditions-injuries {
   background-color: var(--bg-color-g);
+}
+
+/* 👶 Life Stages Section - Alternate Background */
+.conditions-life-stages {
+  background-color: var(--bg-color-b);
 }
 
 /* 💊 Treatment Conditions Wrapper */
@@ -5733,7 +5738,18 @@ ul.dropdown-menu {
 
 /* 📱 320px Very Small Phones - 1 column stacked */
 @media (max-width: 320px) {
-  
+
+  /* ⭐ Scroll offset for very small screens */
+  .conditions-treated,
+  .conditions-extremities,
+  .conditions-injuries,
+  .treatment_conditions .col-12,
+  .treatment_conditions .col-sm-6,
+  .treatment_conditions .col-md-6,
+  .treatment_conditions .col-lg-3 {
+    scroll-margin-top: 180px;
+  }
+
   .conditions-treated-content h1 {
     font-size: 1.4rem;            /* ⭐ fits on one line at 320px */
     white-space: nowrap;
@@ -5779,6 +5795,17 @@ ul.dropdown-menu {
 /* 📱 480px Small Phones - 1 column stacked */
 @media (max-width: 480px) {
 
+  /* ⭐ Scroll offset for small phones */
+  .conditions-treated,
+  .conditions-extremities,
+  .conditions-injuries,
+  .treatment_conditions .col-12,
+  .treatment_conditions .col-sm-6,
+  .treatment_conditions .col-md-6,
+  .treatment_conditions .col-lg-3 {
+    scroll-margin-top: 190px;
+  }
+
   .conditions-treated-content h1 {
     font-size: 1.6rem;
     margin: 1.8rem 0.8rem;
@@ -5818,6 +5845,17 @@ ul.dropdown-menu {
 /* 📱 576px Medium Phones - 1 column stacked */
 @media (max-width: 576px) {
 
+  /* ⭐ Scroll offset for medium phones */
+  .conditions-treated,
+  .conditions-extremities,
+  .conditions-injuries,
+  .treatment_conditions .col-12,
+  .treatment_conditions .col-sm-6,
+  .treatment_conditions .col-md-6,
+  .treatment_conditions .col-lg-3 {
+    scroll-margin-top: 200px;
+  }
+
   .conditions-treated-content h1 {
     font-size: 1.8rem;
     margin: 2rem 1rem;
@@ -5851,6 +5889,17 @@ ul.dropdown-menu {
 
 /* 📲 768px Tablets - 2 COLUMNS */
 @media (min-width: 577px) and (max-width: 768px) {
+
+  /* ⭐ Scroll offset for tablets */
+  .conditions-treated,
+  .conditions-extremities,
+  .conditions-injuries,
+  .treatment_conditions .col-12,
+  .treatment_conditions .col-sm-6,
+  .treatment_conditions .col-md-6,
+  .treatment_conditions .col-lg-3 {
+    scroll-margin-top: 220px;
+  }
 
   .conditions-treated-content h1 {
     font-size: 2rem;
@@ -5890,6 +5939,17 @@ ul.dropdown-menu {
 
 /* 💻 991px Small Laptops - 2 COLUMNS */
 @media (min-width: 769px) and (max-width: 991px) {
+
+  /* ⭐ Scroll offset for small laptops */
+  .conditions-treated,
+  .conditions-extremities,
+  .conditions-injuries,
+  .treatment_conditions .col-12,
+  .treatment_conditions .col-sm-6,
+  .treatment_conditions .col-md-6,
+  .treatment_conditions .col-lg-3 {
+    scroll-margin-top: 250px;
+  }
 
   .conditions-treated-content h1 {
     font-size: 2.2rem;
@@ -5938,7 +5998,6 @@ ul.dropdown-menu {
     width: 90%;                  /* ⭐ WIDER image */
   }
 }
-
 
  /* ------- 🩺 🏥 END of CONDITIONS TREATED PAGE */
 

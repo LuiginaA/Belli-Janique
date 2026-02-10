@@ -1,0 +1,460 @@
+
+
+/* 🏥 CONDITIONS TREATED PAGE */
+
+
+/* 🏥 Conditions Treated Container */
+.conditions-treated {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 0;
+  background-color: var(--bg-color-b);
+}
+
+/* 🦵 Extremities Section - Alternate Background */
+.conditions-extremities {
+  background-color: var(--bg-color-d);
+}
+
+/* 🚑 Injuries Section - Alternate Background */
+.conditions-injuries {
+  background-color: var(--bg-color-g);
+}
+
+/* 💊 Treatment Conditions Wrapper */
+.treatment_conditions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📋 Conditions Treated Content - Headings & Text */
+.conditions-treated-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--bg-color-c);
+}
+
+.conditions-treated-content h2 {
+  font-size: var(--fs-2);
+  font-family: var(--ff-1);
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.conditions-treated-content h3 {
+  font-size: var(--fs-3);
+  font-family: var(--ff-1);
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1;
+}
+
+.conditions-treated-content p {
+  font-size: var(--fs-6);
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.8;
+  text-align: center;
+  margin: 10px 6rem 10px 6rem;
+}
+
+/* 🏷️ Section Title (Spinal Health / Extremities / Injuries) */
+.conditions-treated-content h1 {
+  font-size: var(--fs-1);
+  font-family: var(--ff-1);
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  margin: 3rem;
+  line-height: 1;
+}
+
+/* ============================================================ */
+/* 🔲 CONDITION CARD - THE OVERLAPPING LAYOUT                    */
+/* ============================================================ */
+
+/* 🔲 Condition Info Box (the card background) */
+.conditions_info-box {
+  position: relative;
+  border: 4px solid var(--bg-color-f);
+  border-top-left-radius: 160px;
+  border-top-right-radius: 160px;
+  min-height: 520px;             /* ⭐ Smaller card - was 600px */
+  overflow: visible;              /* ⭐ lets the image escape the box */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;      /* ⭐ pushes text + button to bottom */
+  padding: 25px 20px 30px 25px;  /* ⭐ tighter padding so text has room */
+  background-color: var(--bg-color-c);
+  margin-right: 25px;            /* ⭐ Less margin = more room for image */
+  z-index: 1;
+}
+
+/* 🖼️ Condition Info Image (overlaps outside the card) */
+.conditions_info-img {
+  position: absolute;
+  right: -80px;                  /* ⭐ Sticks out more horizontally */
+  top: 50%;
+  transform: translateY(-50%);   /* ⭐ centers vertically */
+  width: 90%;                    /* ⭐ MUCH WIDER - was 65% */
+  height: 520px;                 /* ⭐ Same height as card */
+  z-index: 2;                     /* ⭐ sits above the card */
+  pointer-events: none;           /* ⭐ mouse clicks pass through */
+  border-top-left-radius: 160px;
+  border-top-right-radius: 160px;
+  background: transparent;
+  border: 4px solid var(--bg-color-f);
+  object-fit: cover;
+}
+
+/* 📝 Condition Title & Text (stays left, below the image) */
+.conditions_info-title,
+.conditions_info-text {
+  position: relative;
+  z-index: 5;
+  max-width: 80%;                 /* ⭐ wider now that card padding is tighter */
+  color: var(--bg-color-a);
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.conditions_info-title {
+  font-family: var(--ff-1);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.conditions_info-text {
+  font-family: var(--ff-2);
+  font-size: var(--fs-p);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* 🔘 Learn More Button */
+.conditions-btn {
+  position: relative;
+  background-color: transparent;
+  color: var(--bg-color-a);
+  border: 2px solid var(--bg-color-a);
+  padding: 8px 20px;              /* ⭐ reduced from 12px 35px - tighter button */
+  font-family: var(--ff-1);
+  font-size: 0.9em;               /* ⭐ slightly smaller text */
+  font-weight: 600;
+  border-radius: 30px;
+  margin-top: 15px;               /* ⭐ reduced from 25px */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(63, 59, 81, 0.3);
+  z-index: 10;                    /* ⭐ button stays clickable above image */
+  align-self: flex-start;         /* ⭐ button stays left aligned */
+  white-space: nowrap;            /* ⭐ keeps "Learn More" on one line */
+}
+
+.conditions-btn:hover {
+  background-color: var(--bg-color-a);
+  color: var(--bg-color-c);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(63, 59, 81, 0.4);
+}
+
+/* ============================================================ */
+/* 🔲 CONDITION MODALS                                           */
+/* ============================================================ */
+
+/* 🔲 Modal Background Overlay */
+.condition-modal .modal-content {
+  background-color: var(--bg-color-a);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔲 Modal Header */
+.condition-modal-header {
+  border-bottom: 2px solid var(--bg-color-d);
+  padding: 20px 25px;
+}
+
+/* 🔲 Modal Title */
+.condition-modal-title {
+  font-family: var(--ff-1);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--bg-color-c);
+  margin-bottom: 0;
+}
+
+/* 🔲 Modal Body */
+.condition-modal-body {
+  padding: 25px;
+  font-family: var(--ff-2);
+  font-size: var(--fs-p);
+  color: var(--text-color-a);
+  line-height: 1.8;
+}
+
+/* 🔲 Modal Footer */
+.condition-modal-footer {
+  border-top: 2px solid var(--bg-color-d);
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* ⭐ Blog button left, Close button right */
+}
+
+/* 📝 Modal Blog Button */
+.conditions-blog-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-color-c);
+  color: var(--bg-color-a);
+  padding: 10px 22px;
+  font-family: var(--ff-1);
+  font-size: 0.95em;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(63, 59, 81, 0.25);
+}
+
+.conditions-blog-btn i {
+  font-size: 0.9em;
+}
+
+.conditions-blog-btn:hover {
+  background-color: var(--text-color-a);
+  color: var(--bg-color-a);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(63, 59, 81, 0.35);
+}
+
+/* ============================================================ */
+/* 📱 CONDITIONS TREATED - MEDIA QUERIES                         */
+/* ============================================================ */
+
+/* 📱 320px Very Small Phones - 1 column stacked */
+@media (max-width: 320px) {
+  
+  .conditions-treated-content h1 {
+    font-size: 1.4rem;            /* ⭐ fits on one line at 320px */
+    white-space: nowrap;
+    margin: 1.5rem 0.5rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 0.85rem;
+    margin: 8px 0.8rem;
+  }
+
+  /* Card shrinks, image tucks in closer */
+  .conditions_info-box {
+    min-height: 380px;
+    margin-right: 30px;           /* ⭐ less space needed on tiny screens */
+    padding: 20px;
+  }
+
+  .conditions_info-img {
+    right: -40px;
+    height: 380px;
+    width: 80%;
+  }
+
+  .conditions_info-title {
+    font-size: 1rem;
+  }
+
+  .conditions-btn {
+    padding: 8px 20px;
+    font-size: 0.85em;
+  }
+}
+
+/* 📱 480px Small Phones - 1 column stacked */
+@media (max-width: 480px) {
+
+  .conditions-treated-content h1 {
+    font-size: 1.6rem;
+    margin: 1.8rem 0.8rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 0.9rem;
+    margin: 8px 1rem;
+  }
+
+  .conditions_info-box {
+    min-height: 420px;
+    margin-right: 40px;
+    padding: 25px;
+  }
+
+  .conditions_info-img {
+    right: -50px;
+    height: 420px;
+    width: 85%;
+  }
+
+  .conditions-btn {
+    padding: 10px 25px;
+    font-size: 0.9em;
+  }
+}
+
+/* 📱 576px Medium Phones - 1 column stacked */
+@media (max-width: 576px) {
+
+  .conditions-treated-content h1 {
+    font-size: 1.8rem;
+    margin: 2rem 1rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 0.95rem;
+    margin: 10px 1.5rem;
+  }
+
+  .conditions_info-box {
+    min-height: 460px;
+    margin-right: 45px;
+    padding: 30px;
+  }
+
+  .conditions_info-img {
+    right: -60px;
+    height: 460px;
+    width: 90%;
+  }
+}
+
+/* 📲 768px Tablets - 2 COLUMNS */
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .conditions-treated-content h1 {
+    font-size: 2rem;
+    margin: 2rem 1.5rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 1rem;
+    margin: 10px 2rem;
+  }
+
+  /* ⭐ 2 columns so cards are wider — image WIDER not taller */
+  .conditions_info-box {
+    min-height: 440px;           /* ⭐ Smaller card */
+    margin-right: 30px;
+    padding: 25px 20px 30px 25px;
+  }
+
+  .conditions_info-img {
+    right: -70px;                /* ⭐ More horizontal overlap */
+    height: 440px;               /* ⭐ Same as card height */
+    width: 85%;                  /* ⭐ WIDER image */
+  }
+
+  .conditions_info-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* 💻 991px Small Laptops - 2 COLUMNS */
+@media (min-width: 769px) and (max-width: 991px) {
+
+  .conditions-treated-content h1 {
+    font-size: 2.2rem;
+    margin: 2.5rem 2rem;
+  }
+
+  .conditions-treated-content h2 {
+    font-size: 2rem;
+  }
+
+  .conditions-treated-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .conditions-treated-content p {
+    font-size: 1rem;
+    margin: 10px 3rem;
+  }
+
+  /* ⭐ 2 columns: cards smaller, image WIDER */
+  .conditions_info-box {
+    min-height: 480px;           /* ⭐ Smaller card */
+    margin-right: 30px;
+    padding: 28px 22px 32px 28px;
+  }
+
+  .conditions_info-img {
+    right: -75px;                /* ⭐ More horizontal overlap */
+    height: 480px;               /* ⭐ Same as card height */
+    width: 88%;                  /* ⭐ WIDER image */
+  }
+}
+
+/* 💻 1200px+ Large Screens - 4 COLUMNS (default) */
+@media (min-width: 992px) {
+
+  .conditions_info-box {
+    min-height: 520px;           /* ⭐ Smaller card */
+    margin-right: 25px;
+    padding: 25px 20px 30px 25px;
+  }
+
+  .conditions_info-img {
+    right: -80px;                /* ⭐ Sticks out more horizontally */
+    height: 520px;               /* ⭐ Same as card height */
+    width: 90%;                  /* ⭐ WIDER image */
+  }
+}
